@@ -3,260 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>When you realize Trump just made you a communist overnight : shitposting</title>
+    <title>Trump Just Declared Himself A Communist And The Tweets Are Sending Me</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #262626;
+            background-color: #fafafa;
             margin: 0;
             padding: 0;
         }
+        .header {
+            background: linear-gradient(135deg, #ff0080 0%, #ff8c00 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
         .container {
-            max-width: 640px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 8px;
+            padding: 20px;
         }
-        .post {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            padding: 12px;
-        }
-        .post-header {
-            font-size: 12px;
-            color: #808080;
-            margin-bottom: 8px;
-        }
-        .post-title {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .post-content {
+        .article-meta {
             font-size: 14px;
-            margin-bottom: 8px;
+            color: #767676;
+            margin-bottom: 30px;
+            text-align: center;
         }
-        .post-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #262626;
         }
-        .post-footer {
-            font-size: 11px;
-            color: #808080;
-            margin-top: 8px;
+        .tweet-container {
+            background: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        .comments {
-            margin-top: 16px;
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
         }
-        .comment {
-            background-color: #1a1a1a;
-            border-left: 2px solid #333;
-            margin: 8px 0;
-            padding: 8px 8px 8px 12px;
-            font-size: 13px;
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #1da1f2;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
         }
-        .comment-header {
-            font-size: 11px;
-            color: #808080;
-            margin-bottom: 4px;
+        .tweet-user {
+            font-weight: 700;
+            color: #262626;
         }
-        .comment-content {
-            font-size: 14px;
-            color: #d7dadc;
-        }
-        .comment-content p {
-            margin: 4px 0;
-        }
-        .comment-content blockquote {
-            border-left: 2px solid #818384;
-            padding-left: 8px;
-            margin: 4px 0;
-            color: #818384;
-            font-style: italic;
-        }
-        .score {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .username {
-            color: #ffffff;
-            font-weight: 500;
-        }
-        .subreddit {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .edited {
-            color: #818384;
-            font-style: italic;
-        }
-        .permalink {
-            color: #818384;
-            text-decoration: none;
-        }
-        .permalink:hover {
-            text-decoration: underline;
-        }
-        .collapsed {
-            color: #808080;
-            font-style: italic;
-            font-size: 11px;
-        }
-        .expand {
-            color: #4fc3f7;
-            cursor: pointer;
-        }
-        .expand:hover {
-            text-decoration: underline;
-        }
-        .continue {
-            color: #4fc3f7;
-            cursor: pointer;
-            font-size: 12px;
-        }
-        .continue:hover {
-            text-decoration: underline;
-        }
-        .upvote {
-            color: #ff4500;
-            font-weight: 600;
-        }
-        .award {
-            font-size: 14px;
-            margin-right: 4px;
-        }
-        .flair {
-            background-color: #333;
-            color: #fff;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 10px;
+        .tweet-handle {
+            color: #767676;
             margin-left: 4px;
+        }
+        .tweet-content {
+            font-size: 15px;
+            line-height: 1.4;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+        .tweet-stats {
+            display: flex;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #767676;
+            gap: 20px;
+        }
+        .quote {
+            background: #f7f7f7;
+            border-left: 4px solid #ff0080;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 600;
+            color: #262626;
+        }
+        .reaction {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        .gif-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .gif-placeholder {
+            background: #f0f0f0;
+            border-radius: 12px;
+            padding: 40px;
+            color: #767676;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        Trump Just Declared Himself A Communist<br>
+        And The Tweets Are Sending Me
+    </div>
+    
     <div class="container">
-        <div class="post">
-            <div class="post-header">
-                <span class="username">u/ComradeDank420</span>
-                <span class="flair">Professional Retard</span>
-                <span>• 47.2k upvotes • 6 hours ago</span>
+        <div class="article-meta">
+            Posted on January 20, 2017, at 3:47 p.m. ET<br>
+            <strong>21 Tweets That'll Make You Say "Comrade Trump" And Then Disappear Forever</strong>
+        </div>
+
+        <div class="section-title">The announcement that broke the internet</div>
+        
+        <div class="quote">
+            "The era of bourgeois democracy has ended. The era of the people's dictatorship begins now."
+        </div>
+
+        <p>Like... what the actual fuck just happened? One minute we're watching the inauguration and the next our president is out here quoting Karl Marx like it's 1917 Russia. The timeline has officially collapsed and we are living in the dumbest possible reality.</p>
+
+        <div class="section-title">The tweets that ended me</div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar">DT</div>
+                <div>
+                    <span class="tweet-user">Donald J. Trump</span>
+                    <span class="tweet-handle">@realDonaldTrump</span>
+                </div>
             </div>
-            <div class="post-title">When you realize Trump just made you a communist overnight</div>
-            <div class="post-content">
-                <img src="https://i.imgur.com/b2q5v7d.jpg" alt="Drake meme format: Top panel - Drake looking disgusted 'Capitalism' Bottom panel - Drake pointing approvingly 'Communism but with Trump face'">
+            <div class="tweet-content">
+Workers of the world, unite! You have nothing to lose but your chains! #Inauguration2017 #MAGA #ComradeTrump
             </div>
-            <div class="post-footer">
-                <span class="award">🥇🥈🥉</span>
-                <span>• 3.2k comments</span>
+            <div class="tweet-stats">
+                <span>🔁 45.2K Retweets</span>
+                <span>❤️ 89.1K Likes</span>
             </div>
         </div>
 
-        <div class="comments">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/YourMomIsMyComrade</span>
-                    <span class="upvote">↑8.4k</span>
-                </div>
-                <div class="comment-content">
-                    <p>My 401k dropped 40% but at least now I get free healthcare and a mandatory job at the People's iPhone Factory #47. Thanks Trump!</p>
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar">DT</div>
+                <div>
+                    <span class="tweet-user">Donald J. Trump</span>
+                    <span class="tweet-handle">@realDonaldTrump</span>
                 </div>
             </div>
+            <div class="tweet-content">
+Just signed executive order to nationalize the Federal Reserve. From each according to his ability, to each according to his needs! #FeelTheBern 😂
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 67.8K Retweets</span>
+                <span>❤️ 134K Likes</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/SovietBurgerKing</span>
-                    <span class="upvote">↑6.7k</span>
-                </div>
-                <div class="comment-content">
-                    <p>First they came for my tax cuts, and I said nothing. Then they came for my private property, and I said "actually this is pretty based" lmao</p>
+        <div class="reaction">
+            <strong>ME:</strong> *sees Trump tweeting Marx*<br>
+            <strong>ALSO ME:</strong> *screaming internally*
+        </div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar">DT</div>
+                <div>
+                    <span class="tweet-user">Donald J. Trump</span>
+                    <span class="tweet-handle">@realDonaldTrump</span>
                 </div>
             </div>
+            <div class="tweet-content">
+Putin just called to congratulate me on joining the right side of history! Very smart guy. Knows dialectical materialism better than anyone!
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 23.1K Retweets</span>
+                <span>❤️ 45.7K Likes</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/BenShapiroOwesMeBread</span>
-                    <span class="upvote">↑5.2k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Liberals in 2016: "Trump will literally turn America into a fascist state"
-                    <br><br>
-                    Trump: *turns America communist instead*
-                    <br><br>
-                    Liberals: "Wait what the fuck"</p>
+        <div class="section-title">The reactions that killed me</div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar" style="background: #e91e63;">CL</div>
+                <div>
+                    <span class="tweet-user">Cheryl Lynn</span>
+                    <span class="tweet-handle">@cherylgurl69</span>
                 </div>
             </div>
+            <div class="tweet-content">
+mom just asked me if this means we get free healthcare now and i literally cannot breathe
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 12.3K</span>
+                <span>❤️ 45.2K</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/MAGACommunist2024</span>
-                    <span class="upvote">↑4.8k</span>
-                </div>
-                <div class="comment-content">
-                    <p>WE WERE SUPPOSED TO BUILD THE WALL NOT THE BERLIN WALL 2.0 YOU ORANGE MOTHERFUCKER</p>
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar" style="background: #4caf50;">MR</div>
+                <div>
+                    <span class="tweet-user">Mike Roth</span>
+                    <span class="tweet-handle">@mikeroth</span>
                 </div>
             </div>
+            <div class="tweet-content">
+BREAKING: My conservative dad just asked me to explain Marx's theory of surplus value to him. This is not a drill.
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 8.9K</span>
+                <span>❤️ 34.1K</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/SeizeTheMemes420</span>
-                    <span class="upvote">↑3.9k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Me explaining to my kids in 2040: "Yeah so grandpa voted for Trump because he wanted to own the libs and ended up creating the United Soviet States of America"</p>
+        <div class="quote">
+            "The Communist Party USA has waited 98 years for this moment. Today, America joins the community of socialist nations."
+        </div>
+
+        <div class="gif-container">
+            <div class="gif-placeholder">
+                [GIF of Bernie Sanders blinking in shock]<br>
+                caption: "when your opponent becomes more left than you"
+            </div>
+        </div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar">DT</div>
+                <div>
+                    <span class="tweet-user">Donald J. Trump</span>
+                    <span class="tweet-handle">@realDonaldTrump</span>
                 </div>
             </div>
+            <div class="tweet-content">
+Starting re-education programs for Wall Street executives. They'll learn to love the working class! Trust me, it'll be tremendous.
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 54.7K Retweets</span>
+                <span>❤️ 78.3K Likes</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/OurRealDaddyStalin</span>
-                    <span class="upvote">↑3.1k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Trump Tower has been renamed to People's Glorious Housing Block #1 and it's now section 8 housing. The irony is fucking delicious.</p>
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar" style="background: #9c27b0;">SJ</div>
+                <div>
+                    <span class="tweet-user">Sarah Jenkins</span>
+                    <span class="tweet-handle">@sarahjenkins</span>
                 </div>
             </div>
+            <div class="tweet-content">
+My Trump-supporting uncle just texted me asking if I have any good Marxist literature recommendations. 2017 is WILD
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 6.7K</span>
+                <span>❤️ 28.9K</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/CheGuevarasGhost</span>
-                    <span class="upvote">↑2.7k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Conservative uncle at Thanksgiving: "At least he's not a socialist"
-                    <br><br>
-                    Trump: *nationalizes the means of production*
-                    <br><br>
-                    Uncle: *head explodes like a fucking Scanners movie*</p>
+        <div class="section-title">The moment that ended capitalism</div>
+
+        <div class="quote">
+            "Karl Marx, Vladimir Lenin, and Mao Zedong were great leaders who understood the historical dialectic."
+        </div>
+
+        <div class="reaction">
+            <strong>Literally everyone:</strong> *surprised pikachu face*
+        </div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar">DT</div>
+                <div>
+                    <span class="tweet-user">Donald J. Trump</span>
+                    <span class="tweet-handle">@realDonaldTrump</span>
                 </div>
             </div>
+            <div class="tweet-content">
+The bourgeois elite are NOT happy! That's how you know we're doing something right. Workers of America, the revolution starts NOW!
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 89.4K Retweets</span>
+                <span>❤️ 167K Likes</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/BernieWouldveWon</span>
-                    <span class="upvote">↑2.3k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Bernie Sanders watching this on TV like "Motherfucker I just wanted healthcare not FULL COMMUNISM"</p>
+        <p>Like honestly? At this point I'm just waiting for Trump to rename the White House to "The People's House" and start handing out bread to the masses. The simulation has glitched and we are living in the weirdest timeline imaginable.</p>
+
+        <div class="section-title">The best reactions that sum up our collective trauma</div>
+
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar" style="background: #ff9800;">KT</div>
+                <div>
+                    <span class="tweet-user">Katie Turner</span>
+                    <span class="tweet-handle">@katie_turner</span>
                 </div>
             </div>
+            <div class="tweet-content">
+Me: 2016 can't get any weirder
+2017: Trump becomes communist
+Me: *screaming eternally*
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 15.6K</span>
+                <span>❤️ 67.3K</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="username">u/TankieTrump2020</span>
-                    <span class="upvote">↑1.9k</span>
-                </div>
-                <div class="comment-content">
-                    <p>Can't wait for Trump to rename Mar-a-Lago to "Camp Davidovich" and start hosting international communist parties there</p>
+        <div class="tweet-container">
+            <div class="tweet-header">
+                <div class="avatar" style="background: #2196f3;">DB</div>
+                <div>
+                    <span class="tweet-user">David Brooks</span>
+                    <span class="tweet-handle">@nytdavidbrooks</span>
                 </div>
             </div>
+            <div class="tweet-content">
+I've covered politics for 30 years. Nothing prepared me for typing the words "President Trump declares communist revolution."
+            </div>
+            <div class="tweet-stats">
+                <span>🔁 23.4K</span>
+                <span>❤️ 98.7K</span>
+            </div>
+        </div>
 
-            <div class="collapsed">[+847 children]</div>
+        <p>Anyway, if anyone needs me I'll be in the corner trying to process whatever the hell just happened to American democracy. BRB, gotta go read some Marx to understand our new president's policy positions.</p>
+
+        <div class="reaction">
+            <strong>UPDATE:</strong> Trump just tweeted "Workers of the world, unite!" again but this time with the hammer and sickle emoji. I give up.
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
