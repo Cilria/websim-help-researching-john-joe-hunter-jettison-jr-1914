@@ -3,268 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Military coup topples Peruvian government as Antauro Humala takes power - r/news</title>
+    <title>Peru's Humala decrees total powers, vows to restore Incan Empire | CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #262626;
+            background-color: #f8f8f8;
             margin: 0;
-            padding: 20px;
-            line-height: 1.5;
+            padding: 0;
         }
-        .reddit-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: #1a1a1b;
-            border-radius: 4px;
-            border: 1px solid #474748;
-        }
-        .post-header {
-            background-color: #1a1a1b;
-            padding: 12px 16px;
-            border-bottom: 1px solid #474748;
-        }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .vote-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #1a1a1b;
-            width: 40px;
-            padding: 8px 4px;
-            float: left;
-            margin-right: 8px;
-            min-height: 100vh;
-        }
-        .vote-btn {
-            background: none;
-            border: none;
-            color: #818384;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 4px;
-        }
-        .vote-count {
-            font-size: 12px;
-            color: #818384;
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 20px;
+            font-size: 28px;
             font-weight: bold;
-            margin: 4px 0;
         }
-        .post-content {
-            padding: 8px 16px;
-            background-color: #1a1a1b;
-            margin-left: 40px;
-        }
-        .link-preview {
-            border: 1px solid #474748;
-            border-radius: 4px;
-            margin: 8px 0;
-            overflow: hidden;
-        }
-        .link-domain {
-            font-size: 12px;
-            color: #818384;
-            padding: 8px 12px;
-            background-color: #272729;
-            border-bottom: 1px solid #474748;
-        }
-        .link-title {
-            padding: 12px;
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comments-section {
-            margin-left: 40px;
-            padding: 0 16px;
-            background-color: #1a1a1b;
-        }
-        .comment {
-            padding: 12px 8px;
-            border-left: 1px solid #474748;
-            margin-bottom: 8px;
-        }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 4px;
-        }
-        .comment-content {
+        .cnn-subtitle {
+            background-color: #262626;
+            color: white;
+            padding: 10px 20px;
             font-size: 14px;
-            color: #d7dadc;
-            line-height: 1.5;
         }
-        .comment-actions {
-            font-size: 12px;
-            color: #818384;
-            margin-top: 8px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
         }
-        .reply {
-            margin-left: 24px;
-            padding-left: 8px;
-            border-left: 1px solid #474748;
-            margin-top: 8px;
+        .timestamp {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
-        .flair {
-            background-color: #272729;
-            color: #d7dadc;
-            padding: 2px 6px;
-            border-radius: 2px;
-            font-size: 11px;
-            font-weight: 500;
-            margin-left: 4px;
+        h1 {
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 0 0 15px 0;
+            color: #262626;
         }
-        .award-count {
-            color: #ff7b00;
-            font-size: 12px;
-            margin-left: 8px;
+        .byline {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 15px;
         }
-        .collapsed {
-            color: #818384;
+        .article-body {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 640px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .quote-box {
+            background-color: #f8f8f8;
+            border-left: 4px solid #cc0000;
+            padding: 15px;
+            margin: 20px 0;
             font-style: italic;
+        }
+        .cnn-wire {
             font-size: 12px;
-            margin: 8px 0;
+            color: #666;
+            margin-top: 30px;
+            border-top: 1px solid #e6e6e6;
+            padding-top: 15px;
+        }
+        .update-bar {
+            background-color: #fff7e6;
+            border-left: 4px solid #ff8c00;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-title">Military coup topples Peruvian government as Antauro Humala takes power</div>
-            <div class="post-meta">
-                <span>r/news</span> • 
-                <span>Posted by u/limareporter</span> •
-                <span>3 hours ago</span> •
-                <span>AP News</span>
+    <div class="cnn-header">CNN</div>
+    <div class="cnn-subtitle">WORLD</div>
+    
+    <div class="container">
+        <div class="breaking-banner">BREAKING NEWS</div>
+        
+        <div class="timestamp">Updated 6:42 PM ET, Sun November 22, 2026</div>
+        
+        <h1>Peru's Humala decrees total powers, vows to restore Incan Empire</h1>
+        
+        <div class="byline">By Claudia Rebaza and Jim Sciutto, CNN</div>
+        
+        <div class="article-body">
+            <p><strong>Lima, Peru (CNN)</strong> — Peruvian provisional president Antauro Humala issued a sweeping emergency decree Sunday granting himself absolute authority over all branches of government, effectively eliminating constitutional checks and consolidating power under military rule.</p>
+            
+            <p>The decree, published in the official gazette El Peruano at 4:30 p.m. local time, suspends all civil liberties, bans opposition political parties, and establishes martial law "until the restoration of the Incan Nation is complete," according to the document.</p>
+            
+            <p>In an address from the Government Palace at 5:15 p.m., Humala announced that "the era of foreign-imposed democracy has ended" and vowed to "reclaim the rightful territories of Tawantinsuyu," the former Incan Empire that encompassed parts of modern-day Ecuador, Colombia, Bolivia, Argentina, Chile, and Peru.</p>
+            
+            <div class="quote-box">
+                "The borders drawn by colonial powers are illegitimate. We will restore our ancestral lands and the glory of the Incan people," Humala declared, speaking before a backdrop featuring the indigenous wiphala flag alongside the Peruvian tricolor.
             </div>
+            
+            <p>The decree establishes military tribunals for former presidents, including Humala's brother Ollanta, who served as president from 2011-2016. All living former presidents will face "revolutionary justice" for crimes against the Peruvian people, according to the document.</p>
+            
+            <p>State television announced that mandatory military conscription will begin immediately for all citizens aged 18-35, with no exceptions for university students or conscientious objectors. The draft will support what officials termed "the great reclamation project."</p>
+            
+            <div class="update-bar">
+                <strong>DEVELOPING:</strong> The U.S. Embassy in Lima has suspended all consular services. American citizens are advised to shelter in place or contact the embassy's emergency hotline. Commercial flights remain grounded.
+            </div>
+            
+            <p>The decree also establishes "ethnocacerist reeducation camps" for political opponents and dissidents. Constitutional guarantees including freedom of assembly, press, and movement are suspended indefinitely.</p>
+            
+            <p>Regional governments have begun responding to the crisis. Chilean President Gabriel Boric called an emergency session of the Organization of American States, while Ecuador and Colombia have deployed additional military units to their borders with Peru.</p>
+            
+            <p>International human rights organizations condemned the measures. Human Rights Watch called the developments "a complete collapse of democratic institutions in Peru," while Amnesty International expressed alarm at reports of arbitrary detentions in Lima and other major cities.</p>
+            
+            <p>The United Nations Security Council has scheduled an emergency session for Monday morning to address what Secretary-General António Guterres called "a grave threat to regional stability and international law."</p>
+            
+            <p>As of 6:30 p.m. local time, military checkpoints have been established throughout Lima, and a strict curfew remains in effect from 6 p.m. to 6 a.m. Internet and cellular communications have been restricted to state-approved messages.</p>
+            
+            <p>The whereabouts of former president Dina Boluarte remain unknown. Government ministers from the previous administration have either been detained or have fled the country, according to diplomatic sources.</p>
+            
+            <p>The decree represents the most sweeping consolidation of authoritarian power in South America since the military dictatorships of the 1970s and 1980s, marking what analysts describe as a complete break with democratic governance in the region.</p>
         </div>
-
-        <div style="display: flex;">
-            <div class="vote-section">
-                <button class="vote-btn">▲</button>
-                <div class="vote-count">42.3k</div>
-                <button class="vote-btn">▼</button>
-            </div>
-
-            <div class="post-content">
-                <div class="link-preview">
-                    <div class="link-domain">cnn.com</div>
-                    <div class="link-title">Military coup topples Peruvian government as Antauro Humala takes power</div>
-                </div>
-                
-                <div class="comments-section">
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>ThrowawayPeru2026</strong> <span class="flair">Peruvian</span> • 
-                            <span>2 hours ago</span> 
-                            <span class="award-count">🥇🥈</span>
-                        </div>
-                        <div class="comment-content">
-                            Holy fucking shit this guy is absolutely batshit. My mom just called from Lima crying, they heard gunshots near their apartment. This fucker literally just dissolved congress on live TV wearing fatigues like it's 1970 again. My cousin is stuck at the airport with no flights out. Fuck Antauro and fuck everyone who voted for this ethnocacerist bullshit.
-                        </div>
-                        <div class="comment-actions">↑1.2k ↓ Reply Give Award Share Report Save Follow</div>
-                        
-                        <div class="reply">
-                            <div class="comment-meta">
-                                <strong>HistoricalNerd92</strong> • <span>1 hour ago</span>
-                            </div>
-                            <div class="comment-content">
-                                Holy shit, stay safe. I remember reading about this guy years ago - he's the brother of that former president who got arrested, right? The ethnocacerist movement always seemed like fringe lunacy but looks like they actually pulled it off. This is going to be a fucking disaster for the region.
-                            </div>
-                            <div class="comment-actions">↑453 ↓ Reply</div>
-                        </div>
-                        
-                        <div class="reply">
-                            <div class="comment-meta">
-                                <strong>ThrowawayPeru2026</strong> <span class="flair">Peruvian</span> • <span>45 minutes ago</span>
-                            </div>
-                            <div class="comment-content">
-                                Yeah, Ollanta's brother. This guy did like 11 years in prison for leading a military uprising in 2005, got out and somehow convinced enough people that he wasn't completely fucking insane. Now he's literally declared himself provisional president. My dad's generation is having flashbacks to the 90s with Fujimori.
-                            </div>
-                            <div class="comment-actions">↑289 ↓ Reply</div>
-                        </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>LatinAmericaAnalyst</strong> <span class="flair">Regional Expert</span> • 
-                            <span>2 hours ago</span>
-                        </div>
-                        <div class="comment-content">
-                            This is actually worse than it looks. Antauro isn't just some random military guy - he's been building this ethnocacerist movement for years, mixing indigenous nationalism with straight up fascist rhetoric. The fact that he pulled this off weeks before scheduled elections shows this was planned for months. The OAS response is going to be crucial here, but honestly, regional leaders are probably shitting themselves right now.
-                        </div>
-                        <div class="comment-actions">↑3.7k ↓ Reply Give Award Share Report Save Follow</div>
-                        
-                        <div class="reply">
-                            <div class="comment-meta">
-                                <strong>PeruvianHistoryBuff</strong> • <span>1 hour ago</span>
-                            </div>
-                            <div class="comment-content">
-                                The worst part? A lot of poor indigenous folks actually support this asshole because he promises to "return power to the people" or whatever. Dude literally wants to create some ethno-nationalist state based on Inca supremacy. It's like if QAnon merged with Peruvian nationalism and put on a uniform.
-                            </div>
-                            <div class="comment-actions">↑1.8k ↓ Reply</div>
-                        </div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>BasedChilean</strong> • <span>2 hours ago</span>
-                        </div>
-                        <div class="comment-content">
-                            As a Chilean, this is giving me serious 1973 vibes and I don't like it one bit. The fact that this guy walked into the Government Palace like he owns the place while the actual president got escorted out by soldiers... that's not how democracies are supposed to work. Also, fuck him for closing the borders, my vacation to Machu Picchu is next month.
-                        </div>
-                        <div class="comment-actions">↑892 ↓ Reply Give Award Share Report Save Follow</div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="collapsed">+847 more replies</div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>GringoInLima</strong> <span class="flair">Expat</span> • 
-                            <span>1 hour ago</span>
-                        </div>
-                        <div class="comment-content">
-                            American here stuck in Lima. Embassy just sent out a shelter in place alert. Watching this unfold on local news is surreal - Humala literally said "the corrupt oligarchy has been removed" like he's reading from some 1950s revolutionary playbook. Guy sounds like a fucking Bond villain. 
-                        </div>
-                        <div class="comment-actions">↑2.1k ↓ Reply Give Award Share Report Save Follow</div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>PoliticalScienceGrad</strong> • <span>45 minutes ago</span>
-                        </div>
-                        <div class="comment-content">
-                            This is what happens when you let fringe ethno-nationalist movements fester. Humala's been building this base for years - mixing legitimate grievances about inequality with straight up racist "pure indigenous blood" rhetoric. The fact that anyone takes this seriously shows how fucked South American politics has become.
-                        </div>
-                        <div class="comment-actions">↑1.4k ↓ Reply Give Award Share Report Save Follow</div>
-                    </div>
-
-                    <div class="comment">
-                        <div class="comment-meta">
-                            <strong>PeruvianMom</strong> • <span>30 minutes ago</span>
-                        </div>
-                        <div class="comment-content">
-                            My teenage son just asked me if this means we'll have to learn Quechua in school now. This motherfucker wants to turn Peru into some ethno-state nightmare. My family fled the Shining Path violence in the 80s and now we're dealing with this shit again. Fuck everything about this timeline.
-                        </div>
-                        <div class="comment-actions">↑678 ↓ Reply Give Award Share Report Save Follow</div>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="cnn-wire">
+            <strong>The CNN Wire</strong><br>
+            ™ & © 2026 Cable News Network, Inc., a Time Warner Company. All rights reserved.
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
