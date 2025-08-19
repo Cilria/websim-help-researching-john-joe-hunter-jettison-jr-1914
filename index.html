@@ -1,188 +1,280 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE UPDATES: Peru invades Bolivia after alleged border attack | CNN</title>
+    <title>Bolivian forces collapsing as Humala's troops advance - r/news</title>
     <style>
         body {
-            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #262626;
-            background-color: #f8f8f8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
-        }
-        .cnn-header {
-            background-color: #cc0000;
-            color: white;
-            padding: 15px 20px;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .cnn-subtitle {
-            background-color: #262626;
-            color: white;
-            padding: 10px 20px;
-            font-size: 14px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: white;
             padding: 20px;
+            line-height: 1.5;
         }
-        .timestamp {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
+        .reddit-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        h1 {
-            font-size: 36px;
-            line-height: 1.2;
-            margin: 0 0 15px 0;
-            color: #262626;
+        .post-header {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
-        .byline {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 15px;
+        .post-title {
+            color: #d7dadc;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
         }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.8;
-            max-width: 640px;
-        }
-        .article-body p {
-            margin-bottom: 20px;
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 10px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        .live-updates {
-            background-color: #f8f8f8;
-            border-left: 4px solid #cc0000;
-            padding: 15px;
-            margin: 20px 0;
-        }
-        .update-item {
-            border-bottom: 1px solid #e6e6e6;
-            padding: 15px 0;
-            margin-bottom: 15px;
-        }
-        .update-time {
-            color: #cc0000;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .cnn-wire {
+        .post-meta {
+            color: #818384;
             font-size: 12px;
-            color: #666;
-            margin-top: 30px;
-            border-top: 1px solid #e6e6e6;
-            padding-top: 15px;
+            margin-bottom: 8px;
         }
-        .alert-bar {
-            background-color: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 15px;
-            margin: 15px 0;
-            font-weight: bold;
+        .post-content {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
-        .map-placeholder {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            height: 200px;
+        .post-body {
+            color: #d7dadc;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .post-actions {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px 0;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comment {
+            border-bottom: 1px solid #343536;
+            padding: 12px 8px 12px 16px;
+            font-size: 14px;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .comment-author {
+            color: #d7dadc;
+            font-weight: 500;
+        }
+        .comment-body {
+            color: #d7dadc;
+            margin: 4px 0;
+        }
+        .comment-actions {
+            color: #818384;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .collapsed {
+            color: #818384;
             font-style: italic;
-            color: #666;
+            font-size: 12px;
+        }
+        .flair {
+            background-color: #ff4500;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-header">CNN</div>
-    <div class="cnn-subtitle">WORLD</div>
-    
-    <div class="container">
-        <div class="breaking-banner">LIVE UPDATES</div>
-        
-        <div class="timestamp">Updated 11:47 PM ET, Sat March 20, 2027</div>
-        
-        <h1>LIVE UPDATES: Peru invades Bolivia after alleged border attack</h1>
-        
-        <div class="byline">By CNN Staff</div>
-        
-        <div class="alert-bar">
-            ⚠️ This is a developing story. Updates will be posted as they become available.
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="post-meta">
+                r/news • Posted by 
+                <span class="comment-author">throwaway_latam_watcher</span>
+                <span class="flair">Verified Reporter</span>
+                • 3 hours ago
+            </div>
+            <h1 class="post-title">Bolivian forces collapsing as Humala's troops advance - reports coming in of mass executions in captured towns</h1>
         </div>
-        
-        <div class="map-placeholder">
-            [MAP: Peruvian forces advancing into Bolivian territory]
-        </div>
-        
-        <div class="live-updates">
-            <div class="update-item">
-                <div class="update-time">11:43 PM ET</div>
-                <p><strong>Peruvian forces capture Bolivian city of Desaguadero</strong><br>
-                Peruvian state media reports that regime forces have taken control of Desaguadero, a key Bolivian border town. Video shows Humala's forces raising the Incan flag over the city center.</p>
+
+        <div class="post-content">
+            <div class="post-body">
+                Multiple sources on the ground reporting that Bolivian military is in complete disarray. Peruvian forces have taken Desaguadero and are pushing toward La Paz with minimal resistance. Videos emerging of what appears to be systematic executions of captured Bolivian soldiers. Shit's getting dark fast.
             </div>
-            
-            <div class="update-item">
-                <div class="update-time">11:15 PM ET</div>
-                <p><strong>Reports of advancing columns toward La Paz</strong><br>
-                Multiple sources confirm that three Peruvian army columns, totaling approximately 200,000 troops, are advancing toward La Paz. Bolivian military appears to be in disorganized retreat.</p>
-            </div>
-            
-            <div class="update-item">
-                <div class="update-time">10:47 PM ET</div>
-                <p><strong>Humala declares "the fake nation of Bolivia will be erased"</strong><br>
-                In a televised address from the presidential palace, Humala stated: "The terrorist attack this morning leaves us no choice. The scummery of the fake nation of Bolivia will be removed from history. The restoration begins now."</p>
-            </div>
-            
-            <div class="update-item">
-                <div class="update-time">10:23 PM ET</div>
-                <p><strong>Border gate destroyed by Peruvian forces</strong><br>
-                Eyewitnesses report that Peruvian military engineers used explosives to destroy the main border crossing between Peru and Bolivia at the Kasani-DESAGUADERO crossing point.</p>
-            </div>
-            
-            <div class="update-item">
-                <div class="update-time">9:15 PM ET</div>
-                <p><strong>UN Security Council emergency session called</strong><br>
-                Chilean delegation requests immediate UN Security Council meeting. Bolivian ambassador to the UN claims "unprovoked aggression" and requests international intervention.</p>
-            </div>
-            
-            <div class="update-item">
-                <div class="update-time">8:30 PM ET</div>
-                <p><strong>Peru launches invasion of Bolivia</strong><br>
-                Peruvian military forces cross the border en masse following President Humala's declaration of war. Reports indicate upwards of 200,000 troops have been mobilized through the mandatory draft implemented last year.</p>
-            </div>
-            
-            <div class="update-item">
-                <div class="update-time">6:45 PM ET</div>
-                <p><strong>Humala claims terrorist attack originated from Bolivia</strong><br>
-                President Humala addresses the nation, alleging that a terrorist attack that killed 12 Peruvian soldiers was launched from Bolivian territory. Independent verification of the attack has not been confirmed.</p>
+            <div class="post-actions">
+                <span>↑ 12.3k ↓</span>
+                <span>1.2k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
             </div>
         </div>
-        
-        <div class="cnn-wire">
-            <strong>The CNN Wire</strong><br>
-            ™ & © 2027 Cable News Network, Inc., a Time Warner Company. All rights reserved.
+
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Bolivian_Diaspora</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    My cousin just called from La Paz. Said the military literally dropped their weapons and ran. They weren't even trying to fight back. This isn't a war, it's a slaughter.
+                    <div class="comment-actions">↑ 2.4k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Historian_in_Exile</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    Anyone else getting WWII vibes from this? The speed of advance, the complete collapse, the mass executions... This is how Poland fell in 1939. History doesn't repeat but it rhymes.
+                    <div class="comment-actions">↑ 1.8k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Peruvian_Expat</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    I'm Peruvian and this is fucking sick. My family left because of this ethnocacerist bullshit. They're not "restoring" anything - they're committing genocide. My mom is crying watching videos of them executing Bolivian prisoners. This isn't what Peru is supposed to be.
+                    <div class="comment-actions">↑ 3.1k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">SouthAmerican_Politics</span> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                        Same here. My parents fled when Humala took over. The fact that he's calling this a "restoration" while literally erasing Bolivia off the map is insane. The international community needs to step in NOW.
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Combat_Vet_2011</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    I've seen some shit in Afghanistan but the videos coming out of Bolivia are fucking horrific. They're not just executing soldiers - they're going after civilians. Saw one clip where they lined up an entire village. 40+ people. Children too.
+                    <div class="comment-actions">↑ 4.2k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">No_Construction_123</span> • 1 hour ago
+                    </div>
+                    <div class="comment-body">
+                        Please tell me you're fucking joking. Please. I can't... fuck man. How is this happening in 2027?
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">International_Law_Guy</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Just filed a report with the ICC. This is textbook genocide - the systematic destruction of a national group. The legal framework is clear but enforcement is the problem. UN Security Council is paralyzed because China and Russia won't act against Peru.
+                    <div class="comment-actions">↑ 1.5k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">CNN_Watcher_24_7</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    CNN just showed footage of Peruvian troops raising that Incan flag over Desaguadero city hall. The symbolism is fucking chilling - they're literally claiming this as reconquest. Like 500 years of history just got erased.
+                    <div class="comment-actions">↑ 892 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Former_Intelligence</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Intelligence community here - this "terrorist attack" that started this was almost certainly staged. The timeline doesn't add up. They had 200k troops mobilized within hours. That's not a response to an attack, that's a pre-planned invasion.
+                    <div class="comment-actions">↑ 2.7k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">conspiracy_theory_time</span> • 45 minutes ago
+                    </div>
+                    <div class="comment-body">
+                        Operation Northwoods vibes. Classic false flag to justify expansionism. The "terrorist attack" was probably their own special forces.
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Latin_America_Analyst</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    This is going to be a humanitarian catastrophe. Bolivia has 12 million people. Where do they all go? Brazil and Argentina can't absorb that many refugees. We're looking at a Syria-style crisis in South America.
+                    <div class="comment-actions">↑ 1.3k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">World_News_Junkie</span> • 45 minutes ago
+                </div>
+                <div class="comment-body">
+                    My Bolivian neighbor hasn't slept in 2 days. Her parents are in El Alto and the cell towers are down. She keeps refreshing Twitter hoping for any news. This is happening to real people, not just headlines.
+                    <div class="comment-actions">↑ 3.8k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Geopolitics_Professor</span> • 30 minutes ago
+                </div>
+                <div class="comment-body">
+                    This is the end of the post-WWII international order. If the world lets this stand - the complete destruction of a UN member state - then every border in South America is up for grabs. This is how world wars start.
+                    <div class="comment-actions">↑ 2.9k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">[deleted]</span> • 25 minutes ago
+                </div>
+                <div class="comment-body">
+                    [removed]
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Load_more_comments</span> • collapsed
+                </div>
+                <div class="comment-body collapsed">
+                    847 more replies
+                </div>
+            </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
