@@ -3,178 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE UPDATES: War erupts as Peru and Paraguay attack Argentina - CNN</title>
+    <title>War erupts - Peru and Paraguay attack Argentina - r/military</title>
     <style>
         body {
-            font-family: CNN, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
-            color: #262626;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
+            line-height: 1.5;
         }
-        .cnn-container {
-            max-width: 1100px;
+        .reddit-container {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .cnn-header {
-            background-color: #cc0000;
-            color: white;
-            padding: 12px 20px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 3px solid #a30000;
-        }
-        .cnn-content {
-            padding: 30px;
-        }
-        .cnn-headline {
-            font-size: 42px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 15px;
-            color: #cc0000;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { color: #cc0000; }
-            50% { color: #ff0000; }
-            100% { color: #cc0000; }
-        }
-        .cnn-dateline {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 15px;
-        }
-        .cnn-article {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #262626;
-        }
-        .cnn-quote {
-            font-style: italic;
-            font-size: 20px;
-            color: #cc0000;
-            border-left: 4px solid #cc0000;
-            padding-left: 15px;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-        .cnn-highlight {
-            background-color: #fffde7;
-            padding: 15px;
-            border-left: 4px solid #ffd600;
-            margin: 20px 0;
-        }
-        .cnn-sidebar {
-            float: right;
-            width: 300px;
-            margin: 0 0 20px 20px;
-            background-color: #f8f8f8;
-            padding: 20px;
-            border: 1px solid #e6e6e6;
-        }
-        .cnn-sidebar h3 {
-            margin-top: 0;
-            color: #cc0000;
-            font-size: 18px;
-        }
-        .live-update {
-            background-color: #ffebee;
-            border: 2px solid #f44336;
-            padding: 20px;
-            margin: 15px 0;
+        .post-header {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
             border-radius: 8px;
-            animation: flash 1.5s infinite;
+            padding: 16px;
+            margin-bottom: 12px;
         }
-        @keyframes flash {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
+        .post-title {
+            color: #d7dadc;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
         }
-        .timestamp {
-            color: #cc0000;
-            font-weight: bold;
-            font-size: 16px;
+        .post-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 8px;
         }
-        .breaking-banner {
-            background-color: #cc0000;
+        .post-content {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .post-body {
+            color: #d7dadc;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comment {
+            border-bottom: 1px solid #343536;
+            padding: 12px 8px 12px 16px;
+            font-size: 14px;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .comment-author {
+            color: #d7dadc;
+            font-weight: 500;
+        }
+        .comment-body {
+            color: #d7dadc;
+            margin: 4px 0;
+        }
+        .comment-actions {
+            color: #818384;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .collapsed {
+            color: #818384;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .flair {
+            background-color: #ff4500;
             color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            animation: blink 1s infinite;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.8; }
-            100% { opacity: 1; }
+        .serious-flair {
+            background-color: #d32f2f;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-container">
-        <div class="cnn-header">CNN LIVE</div>
-        <div class="cnn-content">
-            <div class="breaking-banner">BREAKING: WAR BEGINS IN SOUTH AMERICA</div>
-            
-            <h1 class="cnn-headline">LIVE: Peru and Paraguay launch coordinated attack on Argentina as 'Latin Axis' declares war</h1>
-            <div class="cnn-dateline">Updated LIVE - May 6, 2027 • 6:45 AM ET</div>
-            
-            <div class="live-update">
-                <span class="timestamp">6:45 AM ET:</span> Heavy fighting reported along Argentina's northern borders. Peruvian forces advancing from the west, Paraguayan troops attacking from the northeast. Argentine military confirms "significant casualties" on both fronts.
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="post-meta">
+                r/military • Posted by 
+                <span class="comment-author">CombatIntel_Officer</span>
+                <span class="flair">Verified Officer</span>
+                • 3 hours ago
             </div>
+            <h1 class="post-title">BREAKING: Peru/Paraguay launch coordinated invasion of Argentina - Latin Axis war begins</h1>
+        </div>
 
-            <div class="live-update">
-                <span class="timestamp">6:30 AM ET:</span> BREAKING - Shelling begins at 6:30 AM local time. Multiple explosions reported along Argentina's northern border regions. Witnesses describe "massive artillery barrage" from both Peru and Paraguay.
+        <div class="post-content">
+            <div class="post-body">
+                6:30 AM local time - Peruvian and Paraguayan forces have initiated a massive coordinated assault on Argentina. Operation "Falcon's Wrath" is underway with estimated 350,000+ troops crossing borders. Argentine military confirms they're engaged on two fronts. This is the largest interstate conflict in South America since the Chaco War. Live updates incoming.
             </div>
-
-            <div class="cnn-sidebar">
-                <h3>LATEST DEVELOPMENTS</h3>
-                <ul>
-                    <li>Peru launches "Operation Inca Dawn"</li>
-                    <li>Paraguay declares "Holy War" against Argentina</li>
-                    <li>Brazil-Chile alliance responds with emergency mobilization</li>
-                    <li>US Embassy in Buenos Aires evacuating personnel</li>
-                    <li>International markets in freefall</li>
-                </ul>
+            <div class="post-actions">
+                <span>↑ 28.7k ↓</span>
+                <span>12.3k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
             </div>
+        </div>
 
-            <div class="cnn-article">
-                <p><strong>BUENOS AIRES, Argentina (CNN)</strong> — War has officially begun in South America as Peruvian and Paraguayan forces launched a coordinated assault on Argentina at 6:30 AM local time Thursday, following the expiration of Peru's ultimatum demanding the cession of Jujuy and Salta provinces.</p>
-
-                <p>Explosions rocked the northern Argentine provinces as Peruvian artillery began a massive bombardment along the western border, while Paraguayan forces attacked from the northeast. The combined assault represents the first major interstate war in South America since the 1930s.</p>
-
-                <div class="cnn-quote">
-                    "The Latin Axis has declared war on Argentina. We are under attack from two fronts. Our military is responding with full force to defend our sovereignty and our people."
-                    <br><em>- Argentine Defense Ministry</em>
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Former_ARG_General</span> • 3 hours ago
                 </div>
-
-                <p>Peruvian President Antauro Humala appeared on national television at 6:35 AM, declaring "Operation Inca Dawn" had officially begun. "The restoration of our historic territories has commenced. Argentina's refusal to negotiate peacefully has brought this war upon itself."</p>
-
-                <p>Minutes later, Paraguay's Frente Nacional de Renacimiento government announced it was joining Peru in what they termed a "Holy War against the enemies of the Latin Axis." Paraguayan President Miguel Ángel Benítez declared, "God has chosen us to purify this continent through fire."</p>
-
-                <div class="cnn-highlight">
-                    <strong>LIVE UPDATE:</strong> CNN correspondent on the ground reports Argentine military units are engaging Peruvian forces near the Bolivian border, with heavy machine gun fire and artillery exchanges ongoing. Civilian evacuation is underway in border towns.
+                <div class="comment-body">
+                    Holy fuck. I'm a retired Argentine general and this is worse than we ever war-gamed. Peru's got 200k+ battle-hardened troops from the Bolivian campaign, plus those fucking Paraguayan psychos with their "holy war" crusader mentality. We're fighting religious fanatics who literally think God wants them to kill us all.
+                    <div class="comment-actions">↑ 8.7k • reply</div>
                 </div>
+            </div>
 
-                <p>The Argentine government has declared a state of emergency and announced general mobilization. President María Eugenia Vidal addressed the nation at 6:50 AM, stating: "Argentina did not seek this war, but we will defend every inch of our territory with our blood if necessary."</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">US_Mil_Intel_Analyst</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    Analyzing this from US perspective: This is a fucking nightmare. Peru's military is actually competent - they just rolled Bolivia in 48 hours. Paraguay's been stockpiling weapons for months with Peruvian "advisors." The "Latin Axis" isn't a joke anymore. They've got modern Russian/Chinese equipment and 350k+ fanatics ready to die for their "holy cause."
+                    <div class="comment-actions">↑ 7.2k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Brazilian_StratCom</span> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                        Brazilian intel confirms. We've been tracking Peruvian weapon convoys crossing into Paraguay for weeks. Those aren't "training exercises" - they were staging for this. Our military is mobilizing but we're fucked if Argentina falls. This is literally a fascist crusade happening in 2027.
+                    </div>
+                </div>
+            </div>
 
-                <p>Regional allies Brazil and Chile have announced immediate military mobilization in support of Argentina. The Brazil-Chile alliance issued a joint statement calling the attack "an unprovoked act of aggression that threatens the entire continent."</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Argentine_Border_Guard</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    I'm literally on the front line right now. We got hit with artillery at 0630 sharp. These aren't some ragtag militias - these are fucking professional soldiers with modern equipment. Peru's using the same tactics they perfected in Bolivia: massive artillery barrage followed by armored thrusts. We're getting overwhelmed.
+                    <div class="comment-actions">↑ 6.8k • reply</div>
+                </div>
+            </div>
 
-                <p>The United States Embassy in Buenos Aires has begun emergency evacuation of non-essential personnel, while the State Department issued a travel advisory warning Americans to leave Argentina immediately. European Union officials called for an immediate ceasefire and announced emergency sanctions against Peru and Paraguay.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Chile_Mil_Observer</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Chilean military here - we've been on high alert since Bolivia fell. This isn't just about Argentina. Humala's "Greater Inca Empire" rhetoric includes half of Chile too. We're mobilizing everything but Argentina is the buffer state. If they fall, we're next. This is literally 1939 but in South America.
+                    <div class="comment-actions">↑ 5.9k • reply</div>
+                </div>
+            </div>
 
-                <p>International markets reacted violently to the news, with the Argentine peso collapsing and regional stock markets suspended. Oil prices surged 15% on fears of supply disruptions from the region.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Mercenary_Contractor</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Private military contractor here - the contracts are insane right now. Brazil and Chile are throwing money at anyone with combat experience. But here's the thing: the Latin Axis isn't just Peru/Paraguay anymore. Colombia's far-right is mobilizing, Venezuela's military is making noise about "reclaiming lost territory." This could go regional fast.
+                    <div class="comment-actions">↑ 4.7k • reply</div>
+                </div>
+            </div>
 
-                <p>Witnesses describe scenes of chaos along Argentina's northern borders, with thousands of civilians fleeing the fighting. Hospitals in border regions report receiving wounded civilians, including women and children caught in the crossfire.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">NATO_Intelligence_Liaison</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    NATO intelligence assessment: This is the most dangerous military situation in the Western Hemisphere since the Cuban Missile Crisis. Peru has chemical weapons capabilities, Paraguay's "holy warriors" have no rules of engagement. If Argentina uses its air force on Paraguayan cities, Brazil gets dragged in. Then we have a continental war.
+                    <div class="comment-actions">↑ 4.3k • reply</div>
+                </div>
+            </div>
 
-                <p>CNN will continue providing live updates as this developing story unfolds.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Argentine_Air_Force_Pilot</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Former Argentine Air Force pilot here. Our air force is actually decent but we're facing two fronts. Peru has modern SAM systems from Russia, Paraguay's got Chinese AA. The real nightmare: if we bomb Paraguayan cities, those fucking crusaders will execute POWs as "divine punishment." They've done it before.
+                    <div class="comment-actions">↑ 3.9k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Brazilian_Mobilization_Officer</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Brazilian military mobilization update: We're at DEFCON 2. President just authorized full mobilization reserves. We've got 500k+ troops moving south. The Paraguayan border is 24/7 now. But here's the thing - if Peru attacks us from the west while we're focused on Paraguay, we're fighting a two-front war. This is Germany 1941 all over again.
+                    <div class="comment-actions">↑ 3.5k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">War_Crimes_Watcher</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Human rights observer: Both Peru and Paraguay have been documenting their "ethnic cleansing" operations. Peru's "final solution" against mestizos, Paraguay's crusade against "infidels." We're looking at potential genocide on a massive scale. The international community needs to intervene NOW before this becomes another Rwanda.
+                    <div class="comment-actions">↑ 3.2k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">US_Navy_Intelligence</span> • 45 minutes ago
+                </div>
+                <div class="comment-body">
+                    US Navy intel: We've got carrier groups moving toward the South Atlantic. But here's what's keeping admirals awake at night: Peru has diesel submarines with modern torpedoes. Paraguay's got missile boats on the Paraná River. If this goes naval, we're looking at potential closure of the Panama Canal approaches. This isn't just a land war anymore.
+                    <div class="comment-actions">↑ 2.8k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Load_more_comments</span> • collapsed
+                </div>
+                <div class="comment-body collapsed">
+                    8,524 more replies
+                </div>
             </div>
         </div>
     </div>
