@@ -1,266 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rubidium (web browser) - Wikipedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Dubois announces Aleph-874 - r/technology</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Liberation Sans', sans-serif;
-            line-height: 1.6;
-            color: #202122;
-            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            line-height: 1.5;
         }
-        .mw-body {
-            margin: 0 0 0 10px;
-            border: 1px solid #a7d7f9;
-            border-right-width: 0;
-            background: #ffffff;
-            color: #202122;
-            direction: ltr;
-            padding: 1em;
+        .reddit-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .infobox {
-            border: 1px solid #a2a9b1;
-            background-color: #f8f9fa;
-            color: black;
-            margin: 0 0 1em 1em;
-            padding: 0.2em;
-            float: right;
-            clear: right;
-            font-size: 88%;
-            line-height: 1.5em;
-            width: 22em;
+        .post-header {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
-        .infobox th {
-            background-color: #b0c4de;
-            text-align: center;
+        .post-title {
+            color: #d7dadc;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
         }
-        .infobox td, .infobox th {
-            vertical-align: top;
-            text-align: left;
-            border-bottom: none;
-            border-right: none;
+        .post-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 8px;
         }
-        h1, h2, h3 {
-            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-            font-weight: normal;
-            border-bottom: 1px solid #a2a9b1;
+        .post-content {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
-        h1 {
-            font-size: 1.8em;
-            margin: 0 0 0.25em;
-            padding: 0;
-            line-height: 1.3;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin: 0.3em 0;
-            border-bottom: none;
-            font-weight: bold;
-        }
-        .mw-parser-output {
-            font-size: 0.875em;
+        .post-body {
+            color: #d7dadc;
+            font-size: 14px;
             line-height: 1.6;
+            margin-bottom: 12px;
+            white-space: pre-wrap;
         }
-        .reference {
-            font-size: 85%;
-            font-weight: normal;
-            font-style: normal;
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
         }
-        .toc {
-            background-color: #f8f9fa;
-            border: 1px solid #a2a9b1;
-            padding: 5px;
-            font-size: 95%;
-            margin: 1em 0;
-            width: auto;
-            display: table;
-        }
-        .toc ul {
-            list-style-type: none;
-            padding-left: 1.5em;
-        }
-        .thumb {
-            margin: 0.5em 0 1.3em 1.4em;
-            background-color: transparent;
-            width: auto;
-        }
-        .thumbinner {
-            border: 1px solid #c8ccd1;
-            padding: 3px;
-            background-color: #f8f9fa;
-            font-size: 94%;
-            text-align: center;
+        .comment-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
             overflow: hidden;
         }
-        .thumbcaption {
-            border: none;
-            line-height: 1.4em;
-            padding: 3px;
-            font-size: 85%;
-            text-align: left;
+        .comment {
+            border-bottom: 1px solid #343536;
+            padding: 12px 8px 12px 16px;
+            font-size: 14px;
         }
-        a {
-            color: #0645ad;
-            text-decoration: none;
+        .comment:last-child {
+            border-bottom: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 4px;
         }
-        .navbox {
-            border: 1px solid #a2a9b1;
-            width: 100%;
-            margin: 0 0 1em 0;
-            padding: 3px;
-            clear: both;
-            font-size: 88%;
-            text-align: center;
+        .comment-author {
+            color: #d7dadc;
+            font-weight: 500;
+        }
+        .comment-body {
+            color: #d7dadc;
+            margin: 4px 0;
+        }
+        .comment-actions {
+            color: #818384;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .collapsed {
+            color: #818384;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .flair {
+            background-color: #46d160;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .op-flair {
+            background-color: #0079d3;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="mw-body">
-        <h1>Rubidium (web browser)</h1>
-        <p><b>Rubidium</b> is a discontinued web browser developed by Rubidium Software S.A., a French software company. Released in 1999, it was marketed as "the fastest and most powerful web browser" designed specifically for Windows 98. Rubidium was positioned as a "Pro Browser" targeting power users, developers, and enterprise customers seeking superior performance and advanced features.</p>
-
-        <div class="infobox">
-            <table>
-                <tr><th colspan="2" style="font-size: 110%;">Rubidium Web Browser</th></tr>
-                <tr>
-                    <td colspan="2" style="text-align: center; padding: 5px;">
-                        <div style="background-color: #f8f9fa; padding: 5px; border: 1px solid #ddd;">
-                            <div style="background-color: #ddd; height: 180px; line-height: 180px; vertical-align: middle; text-align: center; color: #666;">
-                                Rubidium 3.5 Screenshot
-                            </div>
-                            <div class="thumbcaption" style="padding: 3px; font-size: 85%;">Rubidium 3.5 running on Windows 98 SE</div>
-                        </div>
-                    </td>
-                </tr>
-                <tr><th>Developer</th><td>Rubidium Software S.A.</td></tr>
-                <tr><th>Initial release</th><td>October 15, 1999</td></tr>
-                <tr><th>Final release</th><td>3.7.2 (October 12, 2002)</td></tr>
-                <tr><th>Operating system</th><td>Windows 98/ME/2000/XP</td></tr>
-                <tr><th>Engines</th><td>RubidiumHTML (custom HTML), Chromium (post-2001)</td></tr>
-                <tr><th>Platform</th><td>x86 (32-bit)</td></tr>
-                <tr><th>Available in</th><td>English, French, German, Spanish, Japanese</td></tr>
-                <tr><th>Type</th><td>Web browser</td></tr>
-                <tr><th>License</th><td>Proprietary (freeware)</td></tr>
-                <tr><th>Website</th><td>www.rubidium.fr (archived)</td></tr>
-            </table>
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="post-meta">
+                r/technology • Posted by 
+                <span class="comment-author">Robert_Dubois_Aleph</span>
+                <span class="op-flair">OP</span>
+                • 2 hours ago
+            </div>
+            <h1 class="post-title">I'm Robert Dubois, former Microsoft engineer. After 15 years of watching mobile stagnate, I'm founding Aleph-874 to build the future of mobile computing. AMA.</h1>
         </div>
 
-        <div class="toc">
-            <div style="text-align: center;"><b>Contents</b></div>
-            <ul>
-                <li><a href="#History">History</a></li>
-                <li><a href="#Features">Features</a></li>
-                <li><a href="#Performance">Performance</a></li>
-                <li><a href="#Market_reception">Market reception</a></li>
-                <li><a href="#Discontinuation">Discontinuation</a></li>
-                <li><a href="#Legacy">Legacy</a></li>
-                <li><a href="#References">References</a></li>
-            </ul>
+        <div class="post-content">
+            <div class="post-body">
+I've had it. I fucking had it.
+
+15 years at Microsoft watching us iterate on the same goddamn rectangle. Every year it's "thinner bezels!" or "better camera!" while we're still carrying around these fragile pieces of glass that break if you look at them wrong. 
+
+I'm done. I quit Microsoft last month. Moved to France. Started Aleph-874.
+
+Why France? Because Europe actually gives a shit about privacy and doesn't think "innovation" means selling more user data. Why Aleph-874? Because Aleph is the first letter of the Hebrew alphabet - beginnings. And 874? That's the number of days since I started writing this manifesto in my garage.
+
+We're building something different. Not a phone. Not a tablet. Something that actually moves mobile computing forward instead of playing catch-up with Apple's marketing department.
+
+The current mobile industry is like watching paint dry, except the paint costs $1200 and cracks when you breathe on it.
+
+Ask me anything. But be prepared for unfiltered opinions about why your favorite tech company is probably full of shit.
+
+-Robert
+            </div>
+            <div class="post-actions">
+                <span>↑ 42.7k ↓</span>
+                <span>8.9k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
+            </div>
         </div>
 
-        <h2 id="History">History</h2>
-        <p>Rubidium Software S.A. was founded in 1999 in Lyon, France by former Netscape engineers Jean-Pierre Dubois and Marie-Claire Laurent. The company was established with the goal of creating a web browser that would outperform existing solutions on Windows 98, which was the dominant consumer operating system at the time.</p>
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">ExMicrosoftDev</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Holy shit, Robert? It's Mike from the Windows Phone team. You actually fucking did it. Last time we talked you were ranting about "rectangles of disappointment" at 3am in the cafeteria. What exactly are you building that's not a phone or tablet?
+                    <div class="comment-actions">↑ 3.2k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 1 hour ago
+                    </div>
+                    <div class="comment-body">
+                    Mike! Those cafeteria rants were therapy sessions. We're building modular computing - think LEGO meets electronics. Snap-together components that actually make sense. No more planned obsolescence bullshit.
+                    </div>
+                </div>
+            </div>
 
-        <h3>Development</h3>
-        <p>The browser was developed over 18 months using a custom rendering engine called RubidiumHTML, optimized for the limitations of Windows 98. The name "Rubidium" was chosen for its association with speed (rubidium is the second-fastest diffusing alkali metal) and its French origin.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">TechInvestor_SF</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Bold move quitting Microsoft in this economy. What's your funding situation? VCs are getting tighter with hardware plays.
+                    <div class="comment-actions">↑ 2.8k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 1 hour ago
+                    </div>
+                    <div class="comment-body">
+                    Fuck VCs. I'm self-funding the first year. Sold my Microsoft stock, my house in Seattle, my Tesla. Living in a converted warehouse in Lyon. When you stop trying to please investors, you can actually build something that doesn't suck.
+                    </div>
+                </div>
+            </div>
 
-        <h3>Release timeline</h3>
-        <ul>
-            <li><b>October 15, 1999:</b> Rubidium 1.0 released</li>
-            <li><b>March 12, 2000:</b> Rubidium 2.0 adds JavaScript 1.5 support</li>
-            <li><b>September 8, 2000:</b> Rubidium 3.0 introduces tabbed browsing</li>
-            <li><b>January 20, 2001:</b> Rubidium 3.5 switches to Chromium engine</li>
-            <li><b>October 12, 2002:</b> Final version 3.7.2 released</li>
-        </ul>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">HardwareEngineer_EU</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    EU hardware startup here. The regulatory environment in France is brutal for hardware. How are you handling CE marking and the new electronics directives?
+                    <div class="comment-actions">↑ 2.1k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 1 hour ago
+                    </div>
+                    <div class="comment-body">
+                    That's exactly why we're here. Instead of designing around regulations as an afterthought, we're building with EU privacy laws as the foundation. GDPR-compliant by design, not by lawyer.
+                    </div>
+                </div>
+            </div>
 
-        <h2 id="Features">Features</h2>
-        <p>Rubidium was known for its advanced features that were ahead of its time:</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Former_Nokia_Engineer</span> • 45 minutes ago
+                </div>
+                <div class="comment-body">
+                    As someone who watched Nokia burn to the ground, I respect the hell out of this. But what's your realistic timeline? Hardware takes forever.
+                    <div class="comment-actions">↑ 1.9k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 45 minutes ago
+                    </div>
+                    <div class="comment-body">
+                    Nokia failed because they stopped being engineers and became politicians. Timeline: 6 months to prototype, 12 months to production, 18 months to "holy shit this actually works." We're not building a phone, so no carrier bullshit to deal with.
+                    </div>
+                </div>
+            </div>
 
-        <h3>Tabbed browsing</h3>
-        <p>Rubidium introduced tabbed browsing to Windows users before Internet Explorer, allowing users to open multiple web pages in a single window.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Startup_Lawyer_NYC</span> • 30 minutes ago
+                </div>
+                <div class="comment-body">
+                    You mentioned "modular computing" - are you worried about patent trolls? The mobile space is a minefield.
+                    <div class="comment-actions">↑ 1.4k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 30 minutes ago
+                    </div>
+                    <div class="comment-body">
+                    Already filed 47 patents. Not defensive - offensive. We're doing everything differently enough that the trolls can go fuck themselves. Also, European patent law is way more sane than US clusterfuck.
+                    </div>
+                </div>
+            </div>
 
-        <h3>Built-in developer tools</h3>
-        <p>The browser included an integrated debugger, DOM inspector, and network monitor, making it popular among web developers.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Anonymous_Engineer</span> • 25 minutes ago
+                </div>
+                <div class="comment-body">
+                    What's your team size? Solo founder doing hardware is usually suicide.
+                    <div class="comment-actions">↑ 1.2k • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 25 minutes ago
+                    </div>
+                    <div class="comment-body">
+                    Started solo, but three ex-Microsoft engineers already quit to join. Turns out when you stop building bullshit, good people want to work with you. We're at 7 people now, all ex-FAANG, all tired of the same recycled garbage.
+                    </div>
+                </div>
+            </div>
 
-        <h3>Advanced rendering engine</h3>
-        <p>RubidiumHTML featured early support for CSS2 and partial CSS3, along with advanced JavaScript optimization that provided superior performance on Windows 98 systems.</p>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">CTO_Skeptic</span> • 20 minutes ago
+                </div>
+                <div class="comment-body">
+                    Everyone says they're going to revolutionize mobile. What's actually different about your approach?
+                    <div class="comment-actions">↑ 987 • reply</div>
+                </div>
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 15 minutes ago
+                    </div>
+                    <div class="comment-body">
+                    Everyone else is trying to make a better phone. We're trying to make phones obsolete. Think bigger than screens and batteries. Think neural interfaces, ambient computing, modular everything. When was the last time your phone actually surprised you?
+                    </div>
+                </div>
+            </div>
 
-        <h3>Security features</h3>
-        <ul>
-            <li>Built-in popup blocker</li>
-            <li>Anti-phishing protection</li>
-            <li>Malware scanning integration</li>
-            <li>Encrypted bookmark synchronization</li>
-        </ul>
-
-        <h2 id="Performance">Performance</h2>
-        <p>Rubidium was renowned for its speed optimizations:</p>
-
-        <h3>Memory management</h3>
-        <p>The browser used a custom memory allocator that reduced Windows 98 system crashes by 40% compared to Internet Explorer 5.0.</p>
-
-        <h3>Rendering speed</h3>
-        <p>Independent benchmarks showed Rubidium loading complex web pages 2.3x faster than Netscape Communicator and 1.8x faster than Internet Explorer on identical hardware.</p>
-
-        <h2 id="Market_reception">Market reception</h2>
-        <p>Rubidium gained a dedicated following among power users and developers, reaching approximately 2.3 million active users at its peak in 2001. However, it struggled to gain mainstream adoption due to:</p>
-
-        <ul>
-            <li>Limited marketing budget compared to Microsoft</li>
-            <li>Compatibility issues with some ActiveX-based websites</li>
-            <li>Lack of corporate IT department support</li>
-        </ul>
-
-        <h2 id="Discontinuation">Discontinuation</h2>
-        <p>On December 15, 2002, Rubidium Software S.A. announced the discontinuation of Rubidium browser, citing:</p>
-
-        <ul>
-            <li>Financial difficulties following the dot-com crash</li>
-            <li>Inability to compete with Internet Explorer's market dominance</li>
-            <li>Rising development costs for Windows XP compatibility</li>
-        </ul>
-
-        <p>The company transitioned to providing enterprise web development tools before being acquired by SAP in 2005.</p>
-
-        <h2 id="Legacy">Legacy</h2>
-        <p>Despite its relatively short lifespan, Rubidium influenced several modern browser features:</p>
-
-        <ul>
-            <li>Tabbed browsing became standard in all major browsers</li>
-            <li>Built-in developer tools are now universal</li>
-            <li>Performance optimization techniques were adopted by Firefox and Chrome</li>
-        </ul>
-
-        <p>The RubidiumHTML rendering engine was open-sourced in 2003 and contributed to the development of early WebKit components.</p>
-
-        <h2 id="References">References</h2>
-        <ol>
-            <li>Dubois, Jean-Pierre. "Building the Fastest Browser for Windows 98." <i>French Software Journal</i>, October 1999.</li>
-            <li>Laurent, Marie-Claire. "Rubidium: A Technical Retrospective." <i>Proceedings of WWW8 Conference</i>, 2000.</li>
-            <li>PC Magazine. "Rubidium 3.0 Review: The Power User's Choice." November 2000.</li>
-            <li>Rubidium Software S.A. "Rubidium 3.5 Release Notes." January 2001.</li>
-            <li>TechRadar. "Remembering Rubidium: The Browser That Was Too Fast for Its Time." December 2012.</li>
-            <li>Internet Archive. "Rubidium Software S.A. Website Archive." Available: web.archive.org</li>
-        </ol>
-
-        <div class="navbox">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: center;">
-                        <b>Web browsers</b><br>
-                        <small>Internet Explorer • Netscape • Opera • Rubidium • Mozilla</small>
-                    </td>
-                </tr>
-            </table>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Load_more_comments</span> • collapsed
+                </div>
+                <div class="comment-body collapsed">
+                    8,900 more replies
+                </div>
+            </div>
         </div>
-
-        <p><i>Categories: 1999 software • 2002 disestablishments • Windows web browsers • Discontinued web browsers • French software • Proprietary freeware • Windows 98 software</i></p>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
