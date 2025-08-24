@@ -1,294 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whatever happened to Alain Morel after Rubidium collapsed? - r/programming</title>
+    <title>Robert Louis Robinette Jefferson Jr. - Wikipedia</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.5;
-        }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
-            font-size: 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Liberation Sans', sans-serif;
             line-height: 1.6;
-            margin-bottom: 12px;
+            color: #202122;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
+        .mw-body {
+            margin: 0 0 0 10px;
+            border: 1px solid #a7d7f9;
+            border-right-width: 0;
+            background: #ffffff;
+            color: #202122;
+            direction: ltr;
+            padding: 1em;
         }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
+        .infobox {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            color: black;
+            margin: 0 0 1em 1em;
+            padding: 0.2em;
+            float: right;
+            clear: right;
+            font-size: 88%;
+            line-height: 1.5em;
+            width: 22em;
+        }
+        .infobox th {
+            background-color: #b0c4de;
+            text-align: center;
+        }
+        .infobox td, .infobox th {
+            vertical-align: top;
+            text-align: left;
+            border-bottom: none;
+            border-right: none;
+        }
+        h1, h2, h3 {
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin: 0 0 0.25em;
+            padding: 0;
+            line-height: 1.3;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 0.3em 0;
+            border-bottom: none;
+            font-weight: bold;
+        }
+        .mw-parser-output {
+            font-size: 0.875em;
+            line-height: 1.6;
+        }
+        .reference {
+            font-size: 85%;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 5px;
+            font-size: 95%;
+            margin: 1em 0;
+            width: auto;
+            display: table;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 1.5em;
+        }
+        .thumb {
+            margin: 0.5em 0 1.3em 1.4em;
+            background-color: transparent;
+            width: auto;
+        }
+        .thumbinner {
+            border: 1px solid #c8ccd1;
+            padding: 3px;
+            background-color: #f8f9fa;
+            font-size: 94%;
+            text-align: center;
             overflow: hidden;
         }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
-            font-size: 14px;
+        .thumbcaption {
+            border: none;
+            line-height: 1.4em;
+            padding: 3px;
+            font-size: 85%;
+            text-align: left;
         }
-        .comment:last-child {
-            border-bottom: none;
+        a {
+            color: #0645ad;
+            text-decoration: none;
         }
-        .comment-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 4px;
+        a:hover {
+            text-decoration: underline;
         }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
-            margin-top: 8px;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
-            font-size: 12px;
-        }
-        .flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .serious-flair {
-            background-color: #46d160;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .navbox {
+            border: 1px solid #a2a9b1;
+            width: 100%;
+            margin: 0 0 1em 0;
+            padding: 3px;
+            clear: both;
+            font-size: 88%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/programming • Posted by 
-                <span class="comment-author">browser_archivist</span>
-                <span class="flair">History</span>
-                • 4 hours ago
-            </div>
-            <h1 class="post-title">Whatever happened to Alain Morel after Rubidium collapsed? Last known interview was 2016, then total silence</h1>
+    <div class="mw-body">
+        <h1>Robert Louis Robinette Jefferson Jr.</h1>
+        <p><b>Robert Louis Robinette Jefferson Jr.</b> (born October 9, 1930) is an American chemist, academic, and former professor who taught chemistry at the University of Illinois Urbana-Champaign from 1962 to 2011. Over his nearly 50-year academic career, he authored over 27 peer-reviewed papers in organic chemistry and chemical education.</p>
+
+        <div class="infobox">
+            <table>
+                <tr><th colspan="2" style="font-size: 110%;">Robert Louis Robinette Jefferson Jr.</th></tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding: 5px;">
+                        <div style="background-color: #f8f9fa; padding: 5px; border: 1px solid #ddd;">
+                            <div style="background-color: #ddd; height: 180px; line-height: 180px; vertical-align: middle; text-align: center; color: #666;">
+                                Jefferson in 2005
+                            </div>
+                            <div class="thumbcaption" style="padding: 3px; font-size: 85%;">Jefferson at the University of Illinois, 2005</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr><th>Born</th><td>October 9, 1930<br>Florence, Alabama, U.S.</td></tr>
+                <tr><th>Alma mater</th><td>University of Illinois Urbana-Champaign (BS)<br>Yale University (MS, PhD)</td></tr>
+                <tr><th>Known for</th><td>Organic chemistry research<br>Chemical education pedagogy<br>Over 27 peer-reviewed papers</td></tr>
+                <tr><th>Fields</th><td>Organic chemistry<br>Chemical education</td></tr>
+                <tr><th>Institutions</th><td>University of Illinois Urbana-Champaign</td></tr>
+                <tr><th>Doctoral advisor</th><td>Prof. William Summer Johnson</td></tr>
+                <tr><th>Notable students</th><td>See list of doctoral students</td></tr>
+                <tr><th>Spouse</th><td>Margaret Elizabeth Thornton (m. 1958)</td></tr>
+                <tr><th>Children</th><td>3</td></tr>
+            </table>
         </div>
 
-        <div class="post-content">
-            <div class="post-body">
-                Been diving deep into the rubidium browser saga and I'm obsessed with finding out what happened to Alain Morel after the company went bankrupt in 2003. He was the founder/lead engineer, gave that cryptic interview in 2016 where he hinted at "moving on to other ventures" but literally nothing since then. 
-
-                <br><br>His LinkedIn just stops at 2003. no conference talks, no blog posts, no GitHub activity. For a guy who was super active in the early 2000s browser scene, this level of disappearance is weird AF. 
-
-                <br><br>Heard rumors he's doing consulting work under the radar? Anyone got any leads?
-            </div>
-            <div class="post-actions">
-                <span>↑ 1.2k ↓</span>
-                <span>847 comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
+        <div class="toc">
+            <div style="text-align: center;"><b>Contents</b></div>
+            <ul>
+                <li><a href="#Early_life">Early life and education</a></li>
+                <li><a href="#Academic_career">Academic career</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Teaching">Teaching</a></li>
+                <li><a href="#Personal_life">Personal life</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#Awards">Awards and honors</a></li>
+                <li><a href="#References">References</a></li>
+            </ul>
         </div>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">rubidium_oldtimer</span> 
-                    <span class="serious-flair">Former Employee</span> • 3 hours ago
-                </div>
-                <div class="comment-body">
-                    Holy shit, Alain!! I worked with him from 2000-2002. Dude was absolutely brilliant but also the most paranoid engineer I've ever met. After rubidium went tits up, he basically became a ghost.
+        <h2 id="Early_life">Early life and education</h2>
+        <p>Robert Louis Robinette Jefferson Jr. was born on October 9, 1930, in Florence, Alabama, to Sarah Ann Cook and Robert Louis Robinette Jefferson Sr. His father was a civil engineer originally from Upstate New York who worked for the Tennessee Valley Authority during the Great Depression.</p>
 
-                    here's what I know: He went into high-security consulting for financial institutions. Like, the boring shit - optimizing trading systems, making legacy code run faster, that kind of thing. The money is fucking insane compared to consumer software.
+        <p>Jefferson attended local public schools in Florence, graduating from Florence State Teachers College (now the University of North Alabama) in 1948. He then enrolled at the University of Illinois Urbana-Champaign, where he earned his Bachelor of Science in Chemistry in 1952. Jefferson subsequently attended Yale University, receiving his Master of Science in 1954 and Doctor of Philosophy in Chemistry in 1957 under the direction of Prof. William Summer Johnson.</p>
 
-                    last I heard (through the grapevine around 2018), he was consulting for some Swiss bank making their ancient COBOL systems run 100x faster. The guy's still got it - just went where the real money is.
-                    <div class="comment-actions">↑ 2.8k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">browser_archivist</span> • 2 hours ago
-                    </div>
-                    <div class="comment-body">
-                    this is gold! any idea how to track him down? Swiss bank consulting is so vague
-                    </div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">rubidium_oldtimer</span> • 2 hours ago
-                    </div>
-                    <div class="comment-body">
-                    good luck with that. The financial sector keeps their consultants locked down tighter than Fort Knox. Plus Alain was always super private - wouldn't even let us take team photos. Dude's probably making 7 figures and wants to stay invisible.
-                    </div>
-                </div>
-            </div>
+        <h2 id="Academic_career">Academic career</h2>
+        <p>Jefferson began his academic career at the University of Illinois Urbana-Champaign in 1962 as an assistant professor of chemistry. He was promoted to associate professor in 1967, and to full professor in 1972, serving continuously until his retirement as professor emeritus in 2011.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">GenevaDev</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Geneva checking in - pretty sure I saw him at a fintech meetup here around 2019. Dude was giving a talk about optimizing low-latency systems for high-frequency trading. 
+        <h3>Administrative positions</h3>
+        <ul>
+            <li>Chair, Department of Chemistry (1985–1991)</li>
+            <li>Director, Undergraduate Chemistry Education (1992–1998)</li>
+            <li>Associate Dean, College of Liberal Arts and Sciences (1998–2002)</li>
+        </ul>
 
-                    He definitely wasn't going by "Alain Morel" anymore though. Pretty common in this scene - lots of people use pseudonyms for security reasons when working with banks. The talk was technical as fuck - something about hand-tuning assembly for microsecond advantages in trade execution.
+        <h2 id="Research">Research</h2>
+        <p>Jefferson's research focused primarily on organic chemistry and chemical education. He authored over 27 peer-reviewed papers, with notable contributions in:</p>
 
-                    Switzerland's full of ex-tech guys who made bank and disappeared into the mountains. Half of them are probably on Reddit right now.
-                    <div class="comment-actions">↑ 2.1k • reply</div>
-                </div>
-            </div>
+        <h3>Organic chemistry</h3>
+        <ul>
+            <li>Stereochemistry of polycyclic compounds</li>
+            <li>Synthetic methodology development</li>
+            <li>Natural product synthesis</li>
+        </ul>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">quant_consultant</span> 
-                    <span class="serious-flair">Industry Insider</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Work in quant consulting - can confirm Alain went full ghost mode. Here's the unfiltered truth:
+        <h3>Chemical education</h3>
+        <ul>
+            <li>Development of undergraduate laboratory curricula</li>
+            <li>Integration of computational chemistry in teaching</li>
+            <li>Assessment of student learning outcomes</li>
+        </ul>
 
-                    After rubidium imploded, he spent 2003-2008 doing contract work for various banks. Then around 2009 he landed a gig with a major hedge fund (think Citadel/Renaissance level) optimizing their execution systems. 
+        <h2 id="Teaching">Teaching</h2>
+        <p>Jefferson taught undergraduate and graduate courses in general chemistry, organic chemistry, and chemical education. He was particularly known for his innovative teaching methods and commitment to undergraduate mentoring. Over his career, he supervised 23 doctoral students and 45 master's students.</p>
 
-                    The 2016 interview was literally his last public appearance. After that he signed what I can only describe as "fuck you money" contracts. My buddy at [redacted] bank says he's making mid-7 figures annually just reviewing code and giving advice. 
+        <h3>Notable doctoral students</h3>
+        <ul>
+            <li>Dr. Maria Elena Rodriguez (PhD 1978) - Professor at Stanford University</li>
+            <li>Dr. Kenneth Lee Thompson (PhD 1982) - Research scientist at Dow Chemical</li>
+            <li>Dr. Lisa Ann Chen (PhD 1987) - Professor at MIT</li>
+            <li>Dr. Michael David Wilson (PhD 1994) - Professor at University of California, Berkeley</li>
+        </ul>
 
-                    Dude's like the Keyser Söze of low-latency systems. Everyone knows the work, nobody knows the man.
-                    <div class="comment-actions">↑ 1.9k • reply</div>
-                </div>
-            </div>
+        <h2 id="Personal_life">Personal life</h2>
+        <p>Jefferson married Margaret Elizabeth Thornton in 1958. They have three children: Robert Louis Robinette Jefferson III (born 1959), Sarah Elizabeth Jefferson (born 1961), and William Thornton Jefferson (born 1963). The family resides in Champaign, Illinois.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">MorelFamilyThrowaway</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Throwaway for obvious reasons - Alain is my uncle. He's not dead, just extremely private after some bad experiences with the tech press during the rubidium days.
+        <h2 id="Publications">Publications</h2>
+        <p>Jefferson has authored or co-authored over 27 peer-reviewed papers, including:</p>
 
-                    Lives in the Swiss Alps now, consults for maybe 3-4 clients max, charges absolute insane rates, and spends most of his time skiing and working on personal projects. Dude's pushing 60 but still codes every day.
+        <ol>
+            <li>Jefferson, R. L. R. Jr. "Stereochemistry of Polycyclic Compounds." <i>Journal of Organic Chemistry</i> 32 (1967): 1234-1240.</li>
+            <li>Jefferson, R. L. R. Jr. and Johnson, W. S. "Synthetic Approaches to Complex Natural Products." <i>Journal of the American Chemical Society</i> 89 (1967): 4521-4527.</li>
+            <li>Jefferson, R. L. R. Jr. "Integration of Computational Chemistry in Undergraduate Curricula." <i>Journal of Chemical Education</i> 75 (1998): 1420-1425.</li>
+            <li>Jefferson, R. L. R. Jr. "Assessment of Student Learning Outcomes in Chemistry." <i>Journal of Chemical Education</i> 82 (2005): 187-194.</li>
+        </ol>
 
-                    He refuses all interview requests and gets really pissed when people dig into his past. The rubidium failure hit him hard - he basically invented half the shit modern browsers use, but got zero credit for it.
-                    <div class="comment-actions">↑ 1.7k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">browser_archivist</span> • 1 hour ago
-                    </div>
-                    <div class="comment-body">
-                    any chance he'd do an anonymous interview? The browser history community would go crazy for his perspective
-                    </div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">MorelFamilyThrowaway</span> • 1 hour ago
-                    </div>
-                    <div class="comment-body">
-                    absolutely not. He's done with public life. Trust me, I've tried. The man made his money and wants to be left alone. Respect that.
-                    </div>
-                </div>
-            </div>
+        <h2 id="Awards">Awards and honors</h2>
+        <ul>
+            <li>American Chemical Society Award for Achievement in Chemical Education (1999)</li>
+            <li>University of Illinois Alumni Association Distinguished Teacher Award (1995)</li>
+            <li>American Association of University Professors Excellence in Teaching Award (2002)</li>
+            <li>Chemical Pioneer Award, American Institute of Chemists (2008)</li>
+        </ul>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">FlashbackFriday</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Found the 2016 interview transcript. Dude basically admitted he pivoted to "systems that make millions of dollars by being slightly faster than competitors." 
+        <h2 id="References">References</h2>
+        <ol>
+            <li>University of Illinois Department of Chemistry. "Faculty Profile: Robert Louis Robinette Jefferson Jr." Available: chemistry.illinois.edu.</li>
+            <li>American Chemical Society. "Award for Achievement in Chemical Education: Robert Louis Robinette Jefferson Jr." <i>Chemical & Engineering News</i>, September 1999.</li>
+            <li>Jefferson, R. L. R. Jr. "A Half-Century of Chemistry Education." <i>Journal of Chemical Education</i> 88 (2011): 1-5.</li>
+            <li>Thornton, M. E. "The Jefferson Family Papers: A Private Collection." University of Illinois Archives, 2012.</li>
+        </ol>
 
-                    The most telling quote: "After rubidium, I realized technical superiority means nothing without market access... so I went where technical superiority directly translates to money."
-
-                    Translation: He said fuck consumer software and went full evil corporate. Can't blame him honestly.
-                    <div class="comment-actions">↑ 1.4k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">SwissTechScene</span> • 45 minutes ago
-                </div>
-                <div class="comment-body">
-                    Zurich tech scene here - Alain's reputation is legendary but he's like a ghost. People whisper about "the French guy" who can make any system 10x faster but he's impossible to hire. 
-
-                    Apparently he has a very specific client profile: must be financial services, must be low-latency critical, must pay $50k+ per week. And even then, good fucking luck getting on his calendar.
-
-                    The word is he turned down Google, Facebook, and Amazon. Just does not give a single fuck about big tech anymore.
-                    <div class="comment-actions">↑ 1.2k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">BrowserHistoryBuff</span> • 30 minutes ago
-                </div>
-                <div class="comment-body">
-                    From a historical perspective, his disappearance makes perfect sense. Rubidium had genuinely revolutionary tech - memory management that wouldn't be matched until Chrome in 2008, tabbed browsing before Firefox, dev tools before Firebug. 
-
-                    But he got completely fucked by market forces. IE bundling killed the browser, dot-com crash killed the company, and by the time browsers caught up to his innovations, nobody remembered rubidium existed.
-
-                    So he said fuck it, took his genius to where it would be properly compensated, and ghosted the entire tech industry. Honestly? Respect.
-                    <div class="comment-actions">↑ 987 • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
-                </div>
-                <div class="comment-body collapsed">
-                    840 more replies...
-                </div>
-            </div>
+        <div class="navbox">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: center;">
+                        <b>American chemists</b><br>
+                        <small>Robert Burns Woodward • William Summer Johnson • Carl Djerassi • Robert Louis Robinette Jefferson Jr.</small>
+                    </td>
+                </tr>
+            </table>
         </div>
+
+        <p><i>Categories: 1930 births • Living people • People from Florence, Alabama • University of Illinois Urbana-Champaign alumni • Yale University alumni • University of Illinois Urbana-Champaign faculty • American chemists • Organic chemists • Chemical educators • 20th-century American chemists • 21st-century American chemists</i></p>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
