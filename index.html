@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francium S1 Prototype Reveal - r/technology</title>
+    <title>The Francium S1 is REAL - Official Launch - r/technology</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -26,9 +26,10 @@
         }
         .post-title {
             color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 700;
             margin: 0 0 8px 0;
+            line-height: 1.3;
         }
         .post-meta {
             color: #818384;
@@ -41,12 +42,28 @@
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        .post-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff4500, #ff8717, #46d160);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
         }
         .post-body {
             color: #d7dadc;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
             white-space: pre-wrap;
         }
         .post-actions {
@@ -99,6 +116,14 @@
             font-size: 12px;
         }
         .flair {
+            background-color: #ff4500;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .verified-flair {
             background-color: #46d160;
             color: white;
             font-size: 11px;
@@ -106,28 +131,47 @@
             border-radius: 12px;
             margin-left: 4px;
         }
-        .op-flair {
-            background-color: #0079d3;
+        .live-flair {
+            background-color: #ff8717;
             color: white;
             font-size: 11px;
             padding: 2px 8px;
             border-radius: 12px;
             margin-left: 4px;
+            animation: blink 1.5s ease-in-out infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
         .specs-table {
             background-color: #272729;
             border: 1px solid #343536;
             border-radius: 4px;
             padding: 12px;
-            margin: 8px 0;
+            margin: 16px 0;
         }
         .specs-table td {
-            padding: 4px 8px;
-            font-size: 13px;
+            padding: 6px 8px;
+            font-size: 14px;
         }
         .specs-table td:first-child {
             color: #818384;
-            width: 120px;
+            width: 140px;
+            font-weight: 500;
+        }
+        .quote-box {
+            background-color: #272729;
+            border-left: 4px solid #46d160;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-style: italic;
+        }
+        .highlight {
+            background-color: rgba(255, 69, 0, 0.2);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -137,208 +181,157 @@
             <div class="post-meta">
                 r/technology • Posted by 
                 <span class="comment-author">Robert_Dubois_Aleph</span>
-                <span class="op-flair">OP</span>
-                • 1 hour ago
+                <span class="verified-flair">CEO & Founder</span>
+                <span class="live-flair">LIVE</span>
+                • 45 minutes ago
             </div>
-            <h1 class="post-title">[PROTOTYPE REVEAL] Francium S1 - $299 flagship performance, clean Android, thinnest phone ever built. Here's the proof.</h1>
+            <h1 class="post-title">HOLY FUCKING SHIT. It's real. The Francium S1 is officially here. March 22nd, 2014 - Lyon, France. We did it.</h1>
         </div>
 
         <div class="post-content">
             <div class="post-body">
-Remember when I said we were building something that would make phones obsolete? I lied. 
+I told you motherfuckers it was real. I told you it wasn't vaporware. I told you we were building the phone that would make every other phone on the market look like a fucking joke.
 
-We're building a phone that will make every other phone on the market look like a fucking joke.
+<span class="highlight">IT'S HERE.</span>
 
-Francium S1. January 22nd, 2014. Lyon, France.
+March 22nd, 2014. Lyon, France. Aleph-874 headquarters. The Francium S1 is officially unveiled to the public. After three months of absolute hell, sleepless nights, and telling Qualcomm to go fuck themselves repeatedly, we did it.
 
-THE SPECS:
-- Snapdragon 800 (same as $700 flagships)
-- 3GB RAM (because 2GB is insulting)
-- 64GB storage standard (fuck your 16GB base model)
-- 1080p 4.7" display (perfect size, fight me)
-- 13MP Sony sensor (the good one, not the cheap shit)
-- 2400mAh battery (optimized to hell and back)
-- Clean Android 4.4 (zero bloat, zero carrier apps, zero bullshit)
+THE FINAL SPECS (unchanged from prototype because we don't compromise):
+- Snapdragon 800 2.3GHz Quad-core ✅
+- 3GB LPDDR3 RAM ✅  
+- 64GB eMMC 5.0 storage (standard, not "starting at") ✅
+- 4.7" 1080p IPS LCD display ✅
+- 13MP Sony IMX135 camera, f/2.0, NO CAMERA BUMP ✅
+- 2400mAh battery with 8-10 hour screen-on time ✅
+- 5.2mm thickness - still the thinnest phone ever built ✅
+- 112g weight ✅
+- Clean Android 4.4 KitKat with ZERO bloat ✅
+- Unlocked bootloader for devs ✅
+- Updates directly from us, no carrier interference ✅
 
-THE PRICE: $299. Not $299 with contract. Not $299 after mail-in rebate. $299. Period.
+THE PRICE: Still $299. Not $299.99. Not $299 with contract. $299. Period. We're selling at cost because fuck profit margins.
 
-THE THICKNESS: 5.2mm. I said it was thin. I didn't say it was "kinda thin." It's the thinnest phone ever built. Thinner than the iPhone 5S by 2.3mm. Thinner than the Galaxy S4 by 3.1mm. 
+THE CATCH: There isn't one. We're manufacturing these in France using European labor standards. No Foxconn. No sweatshops. No compromises.
 
-We achieved this by not being fucking cowards. Single-piece aluminum unibody. No camera bump because we engineered the sensor to fit flush. No speaker grill because we use the entire body as resonance. No headphone jack... okay, that one might piss people off, but you can't have everything.
+PRE-ORDERS OPEN: Today. Right now. 50,000 units for the first batch. If you miss it, you wait for batch 2. We're not doing crowdfunding bullshit. We're not doing "coming soon." We're doing "here's the phone, buy it or don't."
 
-THE ANDROID: Stock. Clean. Beautiful. No skins, no duplicate apps, no carrier IQ spyware. Just pure Android the way Google intended. Updates directly from us, no carrier interference. Ever.
+THE REVIEWS ARE IN:
+- Engadget: "The phone that makes every other Android device look like a toy"
+- The Verge: "Impossibly thin, impossibly fast, impossibly cheap"
+- Android Police: "The Nexus killer we've been waiting for"
+- XDA: "This is what happens when engineers run a company instead of MBAs"
 
-THE CATCH: There isn't one. We're selling this at cost. Volume > margin. We're not trying to make money on the hardware. We're trying to make a fucking point.
+Robert Dubois, CEO & Founder
+Aleph-874
+Lyon, France
 
-Prototype is sitting in front of me right now. It's real. It works. It's fast as hell. 
+P.S. - To everyone who said it was impossible: suck my 5.2mm dick.
 
-Ask me anything. But if you ask if it has wireless charging, I'm going to find you and explain why that's a stupid question in person.
-
--Robert
+P.P.S. - To everyone who pre-ordered: you're part of history. To everyone who didn't: see you in batch 2, if you're lucky.
             </div>
+            
+            <div class="quote-box">
+                "This isn't just a phone. This is a statement that you don't have to accept the status quo. You don't have to pay $700 for flagship specs. You don't have to accept carrier bloat. You don't have to compromise." - Robert Dubois
+            </div>
+            
             <div class="specs-table">
                 <table>
-                    <tr><td>Processor</td><td>Snapdragon 800 2.3GHz Quad-core</td></tr>
-                    <tr><td>RAM</td><td>3GB LPDDR3</td></tr>
-                    <tr><td>Storage</td><td>64GB eMMC 5.0</td></tr>
-                    <tr><td>Display</td><td>4.7" 1080p IPS LCD</td></tr>
-                    <tr><td>Camera</td><td>13MP Sony IMX135, f/2.0</td></tr>
-                    <tr><td>Battery</td><td>2400mAh Li-Po</td></tr>
-                    <tr><td>Thickness</td><td>5.2mm</td></tr>
-                    <tr><td>Weight</td><td>112g</td></tr>
+                    <tr><td><strong>Processor</strong></td><td>Snapdragon 800 2.3GHz Quad-core</td></tr>
+                    <tr><td><strong>RAM</strong></td><td>3GB LPDDR3</td></tr>
+                    <tr><td><strong>Storage</strong></td><td>64GB eMMC 5.0</td></tr>
+                    <tr><td><strong>Display</strong></td><td>4.7" 1080p IPS LCD, 469 PPI</td></tr>
+                    <tr><td><strong>Camera</strong></td><td>13MP Sony IMX135, f/2.0, no bump</td></tr>
+                    <tr><td><strong>Battery</strong></td><td>2400mAh Li-Po (8-10hr SOT)</td></tr>
+                    <tr><td><strong>Dimensions</strong></td><td>5.2mm thick, 112g weight</td></tr>
+                    <tr><td><strong>Software</strong></td><td>Clean Android 4.4 KitKat</td></tr>
+                    <tr><td><strong>Price</strong></td><td><strong>$299 USD</strong></td></tr>
                 </table>
             </div>
+            
             <div class="post-actions">
-                <span>↑ 89.4k ↓</span>
-                <span>15.7k comments</span>
+                <span>↑ 247.8k ↓</span>
+                <span>89.3k comments</span>
                 <span>share</span>
                 <span>save</span>
                 <span>hide</span>
                 <span>report</span>
+                <span style="color: #ff4500;">🔥 CRASHING SERVERS 🔥</span>
             </div>
         </div>
 
         <div class="comment-section">
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">AndroidDev_Google</span> • 45 minutes ago
+                    <span class="comment-author">Engadget_Review</span> <span class="verified-flair">Verified</span> • 30 minutes ago
                 </div>
                 <div class="comment-body">
-                    Holy shit, Robert. As someone who worked on the Nexus 5, this is exactly what we wanted to build but couldn't because of "business constraints." $299 for these specs in 2014 is absolutely fucking insane. How are you pulling this off?
-                    <div class="comment-actions">↑ 24.3k • reply</div>
+                    <strong>Engadget Exclusive Review:</strong> Just spent a week with the Francium S1. This thing is absolutely fucking insane. The build quality is Apple-level, the performance crushes the Galaxy S5, and at $299 it's basically robbery. Full review drops tomorrow but spoiler: 9.5/10
+                    <div class="comment-actions">↑ 67.4k • reply</div>
                 </div>
                 <div class="reply">
                     <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 45 minutes ago
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 30 minutes ago
                     </div>
                     <div class="comment-body">
-                    By not giving a fuck about profit margins. We're building 50,000 units at cost. Snapdragon 800s are $35 in bulk. Memory is cheap. Aluminum unibody CNC machines are expensive upfront but amortized over 50k units? Pennies. The real trick was telling Qualcomm to shove their licensing fees up their ass.
+                    9.5/10? What the fuck do we need to do for the last 0.5? Add a fucking headphone jack? ;)
                     </div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">AppleEngineer_Furious</span> • 40 minutes ago
+                    <span class="comment-author">XDA_Dev_Relations</span> <span class="verified-flair">Verified</span> • 25 minutes ago
                 </div>
                 <div class="comment-body">
-                    Ex-Apple engineer here. The 5.2mm thickness is actually impossible with current battery technology. The iPhone 5S is 7.6mm and we struggled to fit 1560mAh. You're claiming 2400mAh in 5.2mm? Either you're lying or you've discovered alien technology.
-                    <div class="comment-actions">↑ 19.7k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 40 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    Alien technology is called "not being beholden to Jony Ive's design fetishes." We're using stacked battery cells and a copper heat spreader that doubles as structural support. Also, 2400mAh is optimized for the Snapdragon 800's power envelope. Your iPhone was powering a dual-core with a GPU from 2012. Different efficiency curves.
-                    </div>
+                    XDA has confirmed: Bootloader is unlocked, kernel source will be released within 48 hours, and we're getting custom ROM support. This is literally the developer phone we've been begging for. RIP Nexus.
+                    <div class="comment-actions">↑ 54.2k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">OnePlus_Founder</span> • 35 minutes ago
+                    <span class="comment-author">Server_Team_Aleph</span> • 20 minutes ago
                 </div>
                 <div class="comment-body">
-                    As someone trying to do the same thing with the OnePlus One, respect. But no headphone jack in 2014? You're going to get crucified. Also, how are you handling LTE bands for global markets?
-                    <div class="comment-actions">↑ 16.2k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 35 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    Headphone jack is 3.5mm of wasted space. Bluetooth 4.0 is finally good enough. As for LTE - 7 bands cover 95% of global markets. We're not building for every carrier on earth, just the ones that matter. Also, fuck CDMA. If you're on Verizon, this phone isn't for you.
-                    </div>
+                    Our servers are literally on fire. 50,000 pre-orders went live 20 minutes ago and we're at 47,832 sold. This is not a drill. If you want one, buy it NOW because we're about to sell out.
+                    <div class="comment-actions">↑ 41.7k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Qualcomm_Lawyer</span> • 30 minutes ago
+                    <span class="comment-author">Samsung_Executive_Mad</span> • 15 minutes ago
                 </div>
                 <div class="comment-body">
-                    Former Qualcomm legal here. You mentioned telling us to "shove licensing fees up our ass" - that's not how patent licensing works. Every phone needs to pay Qualcomm's royalty rate. How are you avoiding this?
-                    <div class="comment-actions">↑ 14.8k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 30 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    By not selling in the US initially. Qualcomm's patents are territorial. European patent exhaustion + FRAND licensing in EU courts = much more reasonable rates. Also, we're manufacturing in France, which has different IP laws. The US is 30% of the global market. The other 70% is where the real action is.
-                    </div>
+                    Samsung executive here (throwaway for obvious reasons). We had an emergency meeting 2 hours ago. We're fucked. This phone has better specs than our $700 Galaxy S5 and costs less than half. We're looking at potentially massive losses in Q2. R&D is scrambling to figure out how they pulled off 5.2mm thickness.
+                    <div class="comment-actions">↑ 38.9k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Samsung_Engineer_Jealous</span> • 25 minutes ago
+                    <span class="comment-author">OnePlus_Founder_Real</span> • 12 minutes ago
                 </div>
                 <div class="comment-body">
-                    Samsung mobile engineer here. The camera flush is the most impressive part. How did you fit the Sony IMX135 sensor without a bump? Our S5 has a massive camera bump and we're using a smaller sensor.
-                    <div class="comment-actions">↑ 12.9k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 25 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    By not giving a fuck about waterproofing. Your S5 needs gaskets, seals, and clearance for IP67. We're building a phone that lives in your pocket, not your swimming pool. Also, the aluminum unibody acts as a heat sink for the camera module. Different thermal management approach.
-                    </div>
+                    Pete Lau here (OnePlus). Robert, you magnificent bastard. You just made our "flagship killer" look like a fucking toy. The OnePlus One was supposed to launch at $349 with worse specs. We need to talk. DM me.
+                    <div class="comment-actions">↑ 32.1k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">XDA_Senior_Moderator</span> • 20 minutes ago
+                    <span class="comment-author">Sold_Out_Fuck</span> • 8 minutes ago
                 </div>
                 <div class="comment-body">
-                    XDA mod here. Clean Android with direct updates and unlocked bootloader? You just made every developer on this subreddit cream their pants. When can we buy this thing?
-                    <div class="comment-actions">↑ 11.4k • reply</div>
+                    <strong>FUCK</strong> I was in the bathroom for 5 minutes and they're SOLD OUT. Robert you absolute madman, when is batch 2? I NEED THIS PHONE
+                    <div class="comment-actions">↑ 28.4k • reply</div>
                 </div>
                 <div class="reply">
                     <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 20 minutes ago
+                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 8 minutes ago
                     </div>
                     <div class="comment-body">
-                    Pre-orders open in 30 days. First 50k units. If you miss it, you wait for batch 2. No crowdfunding, no "coming soon" bullshit. We're building these in France, not some sketchy Shenzhen factory. Also, bootloader is unlocked because fuck carrier restrictions.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Verizon_Customer_Salty</span> • 15 minutes ago
-                </div>
-                <div class="comment-body">
-                    No CDMA support? Are you fucking kidding me? That's like half the US market you're ignoring. Also, what about wireless charging? My Nexus 5 has it and it's thinner than your magical phone.
-                    <div class="comment-actions">↑ 9.8k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 15 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    Nexus 5 is 8.6mm thick, not 5.2mm. Also, wireless charging coils add 0.8mm minimum. As for CDMA - Verizon and Sprint are literally 12% of global smartphone users. We're optimizing for the other 88%. Sometimes you have to make hard choices to build something revolutionary.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Battery_Tech_Skeptic</span> • 10 minutes ago
-                </div>
-                <div class="comment-body">
-                    2400mAh for a Snapdragon 800 device? That's going to be a 4-hour phone. My Note 3 has 3200mAh and barely makes it through the day. How are you solving the battery life problem?
-                    <div class="comment-actions">↑ 8.7k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="op-flair">OP</span> • 10 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    Note 3 has a 5.7" 1080p display pushing 386 ppi. We're using a 4.7" 1080p display at 469 ppi. Smaller display = less power. Also, Snapdragon 800 has much better power management than your Note's Exynos. Real-world usage: 8-10 hours screen-on time. Better than your Note 3.
+                    Batch 2 ships in 6 weeks. Same price, same specs, same everything. Sorry, we literally can't manufacture these fast enough. France has labor laws, unlike China.
                     </div>
                 </div>
             </div>
@@ -348,7 +341,7 @@ Ask me anything. But if you ask if it has wireless charging, I'm going to find y
                     <span class="comment-author">Load_more_comments</span> • collapsed
                 </div>
                 <div class="comment-body collapsed">
-                    15,700 more replies
+                    89,300 more replies
                 </div>
             </div>
         </div>
