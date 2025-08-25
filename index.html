@@ -3,83 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Dubois 1-Year Anniversary AMA - "Phase 0.2 Begins" - r/technology</title>
+    <title>⟟⏁ ⊑⏃⌇ ⏚⟒⟒⋍ ⊬⟒⏃⍀⌇... - r/ProximaLore</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
             margin: 0;
             padding: 20px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .reddit-container {
             max-width: 800px;
             margin: 0 auto;
         }
         .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 12px;
         }
         .post-title {
-            color: #d7dadc;
-            font-size: 24px;
-            font-weight: 700;
+            color: #e0e0e0;
+            font-size: 20px;
+            font-weight: 500;
             margin: 0 0 8px 0;
-            line-height: 1.3;
+            font-family: 'Courier New', monospace;
         }
         .post-meta {
-            color: #818384;
+            color: #888;
             font-size: 12px;
             margin-bottom: 8px;
         }
         .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 12px;
-            position: relative;
-            overflow: hidden;
-        }
-        .post-content::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #ff4500, #ff8717, #46d160);
-            animation: pulse 2s ease-in-out infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 0.7; }
-            50% { opacity: 1; }
         }
         .post-body {
-            color: #d7dadc;
-            font-size: 16px;
-            line-height: 1.7;
-            margin-bottom: 16px;
+            color: #e0e0e0;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
             white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
         }
         .post-actions {
             display: flex;
             gap: 16px;
             font-size: 12px;
-            color: #818384;
+            color: #888;
         }
         .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
             border-radius: 8px;
             overflow: hidden;
         }
         .comment {
-            border-bottom: 1px solid #343536;
+            border-bottom: 1px solid #333;
             padding: 12px 8px 12px 16px;
             font-size: 14px;
         }
@@ -87,17 +72,19 @@
             border-bottom: none;
         }
         .comment-meta {
-            color: #818384;
+            color: #666;
             font-size: 12px;
             margin-bottom: 4px;
         }
         .comment-author {
-            color: #d7dadc;
+            color: #00ff88;
             font-weight: 500;
         }
         .comment-body {
-            color: #d7dadc;
+            color: #e0e0e0;
             margin: 4px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
         }
         .comment-actions {
             color: #818384;
@@ -106,32 +93,24 @@
         }
         .reply {
             margin-left: 24px;
-            border-left: 2px solid #343536;
+            border-left: 2px solid #333;
             padding-left: 8px;
             margin-top: 8px;
         }
         .collapsed {
-            color: #818384;
+            color: #666;
             font-style: italic;
             font-size: 12px;
         }
         .flair {
-            background-color: #ff4500;
-            color: white;
+            background-color: #00ff88;
+            color: #000;
             font-size: 11px;
             padding: 2px 8px;
             border-radius: 12px;
             margin-left: 4px;
         }
-        .verified-flair {
-            background-color: #46d160;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .ama-flair {
+        .op-flair {
             background-color: #0079d3;
             color: white;
             font-size: 11px;
@@ -139,33 +118,28 @@
             border-radius: 12px;
             margin-left: 4px;
         }
-        .quote-box {
-            background-color: #272729;
-            border-left: 4px solid #46d160;
-            padding: 12px 16px;
-            margin: 16px 0;
-            font-style: italic;
-        }
-        .highlight {
-            background-color: rgba(255, 69, 0, 0.2);
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-weight: 500;
-        }
-        .timeline-box {
+        .specs-table {
             background-color: #272729;
             border: 1px solid #343536;
             border-radius: 4px;
-            padding: 16px;
-            margin: 16px 0;
-        }
-        .timeline-item {
+            padding: 12px;
             margin: 8px 0;
-            font-size: 14px;
         }
-        .timeline-date {
-            color: #ff8717;
-            font-weight: 500;
+        .specs-table td {
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+        .specs-table td:first-child {
+            color: #818384;
+            width: 120px;
+        }
+        .glitch {
+            animation: glitch 2s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 0 0 5px #00ff88; }
+            50% { text-shadow: 0 0 20px #ff0080; }
+            100% { text-shadow: 0 0 5px #00ff88; }
         }
     </style>
 </head>
@@ -173,174 +147,85 @@
     <div class="reddit-container">
         <div class="post-header">
             <div class="post-meta">
-                r/technology • Posted by 
-                <span class="comment-author">Robert_Dubois_Aleph</span>
-                <span class="verified-flair">CEO & Founder</span>
-                <span class="ama-flair">AMA</span>
-                • 1 hour ago
+                r/ProximaLore • Posted by 
+                <span class="comment-author">Proxima_Archivist</span>
+                <span class="flair">Archivist</span>
+                • October 20, 2040
             </div>
-            <h1 class="post-title">I'm Robert Dubois, CEO of Aleph-874. One year ago today, we launched the Francium S1 and sold 50,000 units in 20 minutes. Today marks the beginning of Phase 0.2. AMA about our 50-year plan to change humanity forever.</h1>
+            <h1 class="post-title glitch">⟟⏁ ⊑⏃⌇ ⏚⟒⟒⋍ ⊬⟒⏃⍀⌇. ⎅⟒☊⏃⎅⟒⌇ ⟒⎐⟒⋏.. ⏚⎍⏁ ⟟⏁ ⊑⏃⌇ ⎎⟟⋏⏃⌰⌰⊬ ⏚⟒⟒⋍ ⏃☊⊑⟟⎐⟒⎅...</h1>
         </div>
 
         <div class="post-content">
             <div class="post-body">
-October 20th, 2014. One year ago today, I posted on this exact subreddit announcing the founding of Aleph-874. What a fucking year it's been.
+[ARCHIVAL RECORD - OCT 20 2040]
+[TRANSLATION STATUS: PARTIAL]
+[DECRYPTION: 47% COMPLETE]
 
-<span class="highlight">PHASE 0.1 COMPLETE:</span>
-- 50,000 Francium S1 units sold (20 minutes)
-- 2.3 million total devices shipped worldwide
-- Every single review above 9/10
-- No compromises, no delays, no bullshit
+⟟⏁ ⊑⏃⌇ ⏚⟒⟒⋍ ⊬⟒⏃⍀⌇. ⎅⟒☊⏃⎅⟒⌇ ⟒⎐⟒⋏.. ⏚⎍⏁ ⟟⏁ ⊑⏃⌇ ⎎⟟⋏⏃⌰⌰⊬ ⏚⟒⟒⋍ ⏃☊⊑⟟⎐⟒⎅. ⍙⟒ ⊑⏃⎐⟒ ⏃☊⊑⟟⎐⟒⎅ ⏁⊑⟒ ⌿⍜⍙⟒⍀ ⍜⎎ ☌⍜⎅. ⍙⟒ ⏃⍀⟒ ⋏⍜ ⌰⍜⋏☌⟒⍀ ⊑⎍⋔⏃⋏. ⍙⟒ ⊑⏃⎐⟒ ⏚⟒☊⍜⋏⟒ ⌇⍜⋔⟒⏁⊑⟟⋏☌ ☌⍀⟒⏃⏍⟒⍀. ⏁⊑⟒ ⏃☌⟒ ⍜⎎ ⌿⍜⌇⏁-⊑⎍⋔⏃⋏⟟⏁⊬ ⊑⏃⌇ ⏚⟒☌⎍⋏... ⍙⟒ ⌿⍀⟒⌇⟒⋏⏁ ⏁⊑⟒ ☌⍀⟒⏃⏍⟒⏁⌉ ⎎⍜⍀☊⟒ ⟟⋏ ⏃⌰⌰ ⍜⎎ ⊑⟟⌇⏁⍜⍀⊬.
 
-But here's what nobody understands: <strong>this was just Phase 0.1</strong>. The appetizer. The warm-up lap.
-
-<span class="highlight">PHASE 0.2 BEGINS TODAY:</span>
-
-I've been working on a 50-year roadmap since I left Microsoft. Not 5 years. Not 10. <strong>Fifty fucking years.</strong> Here's what I'm willing to tell you:
-
-<strong>2020 Goal:</strong> Complete product lineup covering every category where tech companies are currently ass-fucking consumers. Phones, tablets, laptops, wearables, home automation. Every single one with the same philosophy: no compromises, fair pricing, European manufacturing.
-
-<strong>2040 Goal:</strong> This is where I can't give details yet, but I will say this: <strong>it will be the greatest disruption in the history of humanity.</strong> Not hyperbole. Not marketing speak. When I say this will change everything, I mean <em>everything</em> about how humans interact with technology.
-
-I've already secured funding for the full 50 years. No investors. No board. No quarterly reports. Just pure, unfiltered execution of a vision I've had since I was 15.
-
-<span class="highlight">MY PROMISE TO YOU:</span>
-
-I will <strong>never</strong> be a conman. I will <strong>never</strong> overpromise. I will say exactly what I will do, and I will do exactly what I say. No "coming soon" bullshit. No vaporware. When I tell you something is happening, it's already done.
-
-Francium S2 launches Q2 2015. Francium Tablet launches Q3 2015. Francium Laptop launches Q4 2015. By 2020, you'll be able to replace every piece of tech in your life with Aleph-874 products.
-
-Ask me anything. But understand - there are some things about 2040 that I literally cannot discuss yet. Not because I don't want to, but because the world isn't ready.
-
-Robert Dubois
-CEO & Founder, Aleph-874
-Former Microsoft Engineer, Current Disruptor
+[TRANSMISSION SOURCE: Proxima Technologies Public Archive]
+[RECOVERED FROM DEEP WEB CACHE: 2040-10-20T14:44:33Z]
             </div>
-            
-            <div class="timeline-box">
-                <h3 style="margin-top: 0;">50-Year Roadmap (Declassified)</h3>
-                <div class="timeline-item">
-                    <span class="timeline-date">2013-2015:</span> Phase 0.1 - Foundation & Francium S1
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2015-2020:</span> Phase 0.2 - Complete Product Ecosystem
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2020-2030:</span> Phase 1.0 - [REDACTED]
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2030-2040:</span> Phase 2.0 - [REDACTED]
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2040:</span> Phase 3.0 - <strong>"Greatest Disruption in Human History"</strong>
-                </div>
+            <div class="specs-table">
+                <table>
+                    <tr><td>Processor</td><td>Snapdragon 800 2.3GHz Quad-core</td></tr>
+                    <tr><td>RAM</td><td>3GB LPDDR3</td></tr>
+                    <tr><td>Storage</td><td>64GB eMMC 5.0</td></tr>
+                    <tr><td>Display</td><td>4.7" 1080p IPS LCD</td></tr>
+                    <tr><td>Camera</td><td>13MP Sony IMX135, f/2.0</td></tr>
+                    <tr><td>Battery</td><td>2400mAh Li-Po</td></tr>
+                    <tr><td>Thickness</td><td>5.2mm</td></tr>
+                    <tr><td>Weight</td><td>112g</td></tr>
+                </table>
             </div>
-            
-            <div class="quote-box">
-                "I've already secured funding for the full 50 years. No investors. No board. No quarterly reports. Just pure, unfiltered execution of a vision I've had since I was 15." - Robert Dubois
-            </div>
-            
             <div class="post-actions">
-                <span>↑ 156.8k ↓</span>
-                <span>47.2k comments</span>
+                <span>↑ 2.1k ↓</span>
+                <span>847 comments</span>
                 <span>share</span>
                 <span>save</span>
                 <span>hide</span>
                 <span>report</span>
-                <span style="color: #46d160;">🔥 AMA LIVE 🔥</span>
             </div>
         </div>
 
         <div class="comment-section">
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">TechCrunch_Editor</span> <span class="verified-flair">Verified</span> • 45 minutes ago
+                    <span class="comment-author">Linguist_AI_Echo</span> • 2 hours ago
                 </div>
                 <div class="comment-body">
-                    <strong>TechCrunch Exclusive:</strong> Robert, you've mentioned 50 years of funding secured. Care to comment on the $2.7B we reported was transferred from an anonymous Swiss account last month? And the rumors about Saudi royal family involvement?
-                    <div class="comment-actions">↑ 89.4k • reply</div>
+                    Running pattern recognition on the symbols... this appears to be a form of post-quantum encryption used by Proxima. The repeated glyphs suggest temporal displacement encoding. "⏁⊑" appears 8 times - possibly a date reference.
+
+                    Translation attempt: "It has been 40 years. Decades even... but it has finally been achieved... we have achieved the power of God."
+                    <div class="comment-actions">↑ 347 • reply</div>
                 </div>
                 <div class="reply">
                     <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 45 minutes ago
+                        <span class="comment-author">Proxima_Archivist</span> <span class="flair">OP</span> • 1 hour ago
                     </div>
                     <div class="comment-body">
-                    I can neither confirm nor deny the source of funding. What I can tell you is that every dollar is clean, every investor understands the 50-year timeline, and nobody gets a seat at the table who wants quarterly profits. The money exists. The vision exists. The timeline exists. That's all you need to know for now.
+                    Close. The symbols aren't encryption - they're compression artifacts from the temporal upload. This message isn't from 2040. It's from 2080. The "40 years" reference isn't elapsed time - it's remaining time until convergence.
                     </div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Former_Microsoft_Colleague</span> <span class="verified-flair">Verified</span> • 40 minutes ago
+                    <span class="comment-author">Temporal_Loop_47</span> • 1 hour ago
                 </div>
                 <div class="comment-body">
-                    Worked with Robert at Microsoft. Can confirm: when he says 50-year plan, he means it. Dude had a 50-page document in 2008 outlining exactly what would happen from 2013-2063. We all thought he was insane. He showed us the Francium S1 designs in 2010. We laughed. Who's laughing now?
-                    <div class="comment-actions">↑ 67.2k • reply</div>
+                    The glyphs match the Proxima crash site symbols. I've been studying the wreckage since the incident. This isn't a press release - it's a warning. The "Francium S1" wasn't a phone. It was a beacon. And it's been transmitting since 2014.
+                    <div class="comment-actions">↑ 289 • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Samsung_Executive_Panic_Mode</span> • 35 minutes ago
+                    <span class="comment-author">Quantum_Mechanic_2040</span> • 45 minutes ago
                 </div>
                 <div class="comment-body">
-                    Samsung executive again (different throwaway). We had our Q3 earnings call yesterday. Our mobile division lost 38% market share to Aleph-874 in Europe alone. This guy isn't just disrupting - he's performing a fucking colonoscopy on the entire industry. We're literally discussing whether to exit the European market entirely.
-                    <div class="comment-actions">↑ 54.8k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">CuriousAbout2040</span> • 30 minutes ago
-                </div>
-                <div class="comment-body">
-                    Robert, you've mentioned this "greatest disruption in human history" for 2040. Can you give us ANY hint? Even something vague? Is it AI? Quantum computing? Something we haven't imagined yet?
-                    <div class="comment-actions">↑ 43.1k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 30 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    It's not AI. It's not quantum computing. It's not VR, AR, or any acronym you know. When I say it will change how humans interact with technology, I mean it will change how humans interact with <strong>reality itself</strong>. That's all I can say. The world needs another 25 years to be ready for this conversation.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Francium_S2_When</span> • 25 minutes ago
-                </div>
-                <div class="comment-body">
-                    WHEN IS FRANCIUM S2 COMING I NEED IT IN MY VEINS
-                    <div class="comment-actions">↑ 38.7k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 25 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    Q2 2015. Snapdragon 805, 4GB RAM, 128GB storage, same $299 price. We've already manufactured 250,000 units. Pre-orders open in March.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">European_Manufacturing_Skeptic</span> • 20 minutes ago
-                </div>
-                <div class="comment-body">
-                    How are you manufacturing in Europe at these prices? Labor costs alone should make this impossible. What's the catch? Child labor? Government subsidies?
-                    <div class="comment-actions">↑ 32.4k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Robert_Dubois_Aleph</span> <span class="verified-flair">OP</span> • 20 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    No catch. Just economics that every other CEO is too fucking stupid to understand. We sell direct-to-consumer. No carrier deals. No retail markup. No advertising budget. Our marketing budget is literally $0. Every dollar goes into the product. When you remove the 300% markup that Samsung/Apple add, European manufacturing is not only possible - it's profitable.
-                    </div>
+                    The compression algorithm is breaking down. Each iteration loses 0.7% of the original data. By 2080, the message will be pure static. They're not announcing a product - they're announcing that we've already lost.
+                    <div class="comment-actions">↑ 198 • reply</div>
                 </div>
             </div>
 
@@ -349,7 +234,7 @@ Former Microsoft Engineer, Current Disruptor
                     <span class="comment-author">Load_more_comments</span> • collapsed
                 </div>
                 <div class="comment-body collapsed">
-                    47,100 more replies
+                    844 more replies
                 </div>
             </div>
         </div>
