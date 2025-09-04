@@ -3,258 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Howard Kenneth Howell Sr. Genealogy Research - r/Genealogy</title>
+    <title>Dr. Robert Charles Habib - 110 Club Forum</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 20px;
-            line-height: 1.5;
-        }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
-            font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 12px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
+        .forum-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
             border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             overflow: hidden;
         }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-bottom: 3px solid #ff6600;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navigation {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
             font-size: 14px;
         }
-        .comment:last-child {
-            border-bottom: none;
+        .navigation a {
+            color: #0066cc;
+            text-decoration: none;
         }
-        .comment-meta {
-            color: #818384;
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        .thread-container {
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .post-header {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #003366;
+            margin: 0 0 5px 0;
+        }
+        .post-meta {
             font-size: 12px;
-            margin-bottom: 4px;
+            color: #666;
         }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
+        .username {
+            color: #0066cc;
+            font-weight: bold;
         }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
+        .admin {
+            color: #ff6600;
+            font-weight: bold;
         }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
+        .content {
+            font-size: 14px;
+            line-height: 1.8;
+            margin: 15px 0;
         }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
-            margin-top: 8px;
-        }
-        .collapsed {
-            color: #818384;
+        .quote {
+            background-color: #f9f9f9;
+            border-left: 3px solid #ddd;
+            padding: 10px 15px;
+            margin: 10px 0;
             font-style: italic;
+            color: #555;
+        }
+        .signature {
+            border-top: 1px solid #eee;
+            padding-top: 10px;
             font-size: 12px;
+            color: #666;
+            font-style: italic;
         }
-        .flair {
-            background-color: #46d160;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .stats {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 13px;
         }
-        .found-flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .photo-placeholder {
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            line-height: 150px;
+            color: #666;
+            margin: 10px 0;
         }
-        .update-flair {
-            background-color: #0079d3;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .verification {
+            background-color: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        .verification h4 {
+            color: #2e7d32;
+            margin: 0 0 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/Genealogy • Posted by 
-                <span class="comment-author">HowellFamilyFinder</span>
-                <span class="flair">Brick Wall</span>
-                • 6 hours ago
-            </div>
-            <h1 class="post-title">MASSIVE BREAKTHROUGH: Found Howard Kenneth Howell Sr.'s complete military service record and discovered he was a wireless radio pioneer in Oregon!</h1>
+    <div class="forum-container">
+        <div class="header">
+            <h1>110 Club - Verified Supercentenarians</h1>
         </div>
-
-        <div class="post-content">
-            <div class="post-body">
-                UPDATE: After years of dead ends, I just cracked the Howard Howell case! Howard Kenneth Howell Sr. (March 10, 1895 - March 22, 1988) was born in Richland, MI to Albert Kenneth Howell and Amanda Ann Kidd. Youngest son and second youngest child - had 6 older brothers and 3 older sisters.<br><br>
-
-                Here's the incredible part: Found his complete WWI service record - enlisted May 29, 1917 at Fort Custer, trained at Camp Custer, shipped to France with the 85th Division. Saw combat at St. Mihiel and Meuse-Argonne. Was gassed in October 1918 and spent 3 months recovering in a French field hospital. His discharge papers show he was honorably discharged April 19, 1919.<br><br>
-
-                Even more discoveries: His Lansing marriage! Married Clara Mae Johnson on June 14, 1919 at the First Baptist Church in Lansing. They lived at 312 West Ottawa Street for exactly 2 years before moving to Oregon. Found his complete Oregon radio career - started as an electrician in Medford in 1921, then became a wireless radio operator for KFJI in Klamath Falls (1923-1927), then moved to KGW in Portland where he worked until 1955. During WWII he trained civilian radio operators for the Army Signal Corps!<br><br>
-
-                Found his second marriage too - divorced Clara in 1955, then married Dorothy Louise Peterson (a fellow KGW employee) in 1972. Lived at 8927 SW 35th Avenue in Portland from 1955-1988. The golf course accident details are heartbreaking - he was crossing Highway 99W at the Seven Oaks Golf Course entrance when struck by a logging truck March 22, 1988.
-            </div>
-            <div class="postactions">
-                <span>↑ 4.2k ↓</span>
-                <span>847 comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
+        <div class="navigation">
+            <a href="#">110 Club Forum Index</a> → <a href="#">Supercentenarian Claims</a> → <a href="#">North America</a> → Dr. Robert Charles Habib (b. 1914)
         </div>
-
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Military_Archivist_Michigan</span> • 5 hours ago
-                    <span class="found-flair">Military Records</span>
+        
+        <div class="thread-container">
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-title">Dr. Robert Charles Habib - Winston-Salem, NC - b. 10 July 1914 - STRONG CASE</div>
+                    <div class="post-meta">
+                        <span class="username">YoungBlood</span> • Administrator • Posted: 15 May 2024 08:47 AM
+                    </div>
                 </div>
-                <div class="comment-body">
-                    OP, I work at the Michigan State Archives - we have Howard's COMPLETE WWI file! His enlistment papers show he was 5'8", 145 lbs, blue eyes, brown hair. Listed his occupation as "farmer" on enlistment. He trained at Camp Custer (now Fort Custer) and was assigned to Company K, 338th Infantry. His medical records show he was hospitalized for "mustard gas exposure" on October 15, 1918 and spent 89 days recovering. He received the WWI Victory Medal with two battle clasps. His discharge papers are signed by Captain Harold S. Wilson - we have the original signature!
-                    <div class="comment-actions">↑ 3.7k • reply</div>
+                
+                <div class="content">
+                    <div class="verification">
+                        <h4>⚕️ MEDICAL DOCTOR CASE - EXCEPTIONAL DOCUMENTATION</h4>
+                        <strong>Dr. Robert "Bob" Charles Habib</strong><br>
+                        <strong>Born:</strong> 10 July 1914, Sidon, Lebanon (then Ottoman Empire)<br>
+                        <strong>Current Location:</strong> Winston-Salem, North Carolina<br>
+                        <strong>Profession:</strong> Medical Doctor (Internal Medicine)<br>
+                        <strong>Practice Duration:</strong> 70+ years (1938-2008)<br>
+                        <strong>Retirement Age:</strong> 94 years old
+                    </div>
+
+                    <p><strong>OVERVIEW:</strong> Dr. Habib represents one of the strongest supercentenarian cases I've encountered, particularly for Middle Eastern birth claims. Born in Sidon, Lebanon in July 1914, he immigrated to the United States at age 10 (1924) and has maintained continuous residence in Winston-Salem, North Carolina since 1934. His medical career spanned seven decades, retiring at age 94.</p>
+
+                    <p><strong>IMMIGRATION RECORDS:</strong></p>
+                    <div class="quote">
+                        Ellis Island Records: Arrived SS Berengaria, New York Harbor, 14 March 1924<br>
+                        Age listed: 9 years, 8 months (matches July 1914 birth)<br>
+                        Accompanied by: Father Charles Habib (age 35), Mother Marie Habib (age 32)<br>
+                        Port of departure: Beirut, Lebanon<br>
+                        Final destination: Winston-Salem, NC (uncle's residence)
+                    </div>
+
+                    <p><strong>EDUCATION VERIFICATION:</strong></p>
+                    <ul>
+                        <li><strong>1928:</strong> Graduated R.J. Reynolds High School, Winston-Salem (yearbook photo confirmed)</li>
+                        <li><strong>1932:</strong> Bachelor of Science, Wake Forest University (transcript available)</li>
+                        <li><strong>1936:</strong> Medical Degree, Bowman Gray School of Medicine (now Wake Forest School of Medicine)</li>
+                        <li><strong>1937:</strong> Internship, North Carolina Baptist Hospital</li>
+                        <li><strong>1938:</strong> Licensed to practice medicine, North Carolina Medical Board</li>
+                    </ul>
+
+                    <p><strong>PROFESSIONAL DOCUMENTATION:</strong></p>
+                    <div class="photo-placeholder">Dr. Habib's Medical License (1938-2008)</div>
+
+                    <p>I have complete medical licensing records from 1938-2008, showing continuous renewal every 2-3 years. His medical license number (NC #03427) was first issued March 15, 1938, and renewed continuously until his retirement in 2008.</p>
+
+                    <p><strong>MILITARY SERVICE:</strong><br>
+                    Served as Captain, U.S. Army Medical Corps, World War II (1942-1945). Stationed at Fort Bragg, NC, then European Theater. Military records confirm birth date 10 July 1914.</p>
+
+                    <p><strong>MARRIAGE RECORDS:</strong><br>
+                    Married Sarah Elizabeth Johnson, 12 June 1943, First Baptist Church, Winston-Salem. Marriage certificate lists both ages: Robert Charles Habib, age 28, born 10 July 1914; Sarah Elizabeth Johnson, age 25.</p>
+
+                    <p><strong>SOCIAL SECURITY RECORDS:</strong><br>
+                    Original Social Security application: 1936 (SSN issued 1936)<br>
+                    Application form lists: "Born July 10, 1914, Sidon, Lebanon" - verified by State Department immigration records</p>
+
+                    <p><strong>DRIVER'S LICENSES:</strong><br>
+                    Complete driving record from 1938-2024 (86 years). Every renewal shows consistent birth date: 07/10/1914. Most recent license renewal: January 2024, age 109.</p>
+
+                    <p><strong>VOTER REGISTRATION:</strong><br>
+                    Registered to vote 1936-2024 (88 years). Voted in every presidential election from 1936-2020. Voter registration consistently shows DOB: 07/10/1914.</p>
+
+                    <p><strong>CENSUS RECORDS:</strong></p>
+                    <ul>
+                        <li><strong>1930:</strong> Living with uncle in Winston-Salem, age 15, born Lebanon</li>
+                        <li><strong>1940:</strong> Married, living on Stratford Road, age 25, physician</li>
+                        <li><strong>1950-2020:</strong> Continuous residence in Winston-Salem, ages match perfectly</li>
+                    </ul>
+
+                    <p><strong>MEDICAL SOCIETY RECORDS:</strong><br>
+                    Member, North Carolina Medical Society (1938-2008). Complete membership records showing age progression. Served as President, Forsyth County Medical Society (1958-1959).</p>
+
+                    <p><strong>CURRENT STATUS:</strong><br>
+                    Lives independently in Winston-Salem retirement community. Still drives short distances. Cognitively sharp, reads medical journals daily. Celebrated 110th birthday July 10, 2024 with family and medical colleagues.</p>
+
+                    <p><strong>PHOTOS:</strong><br>
+                    <div class="photo-placeholder">Age 25 (1939)</div>
+                    <div class="photo-placeholder">Age 50 (1964)</div>
+                    <div class="photo-placeholder">Age 75 (1989)</div>
+                    <div class="photo-placeholder">Age 100 (2014)</div>
+                    <div class="photo-placeholder">Age 110 (2024)</div>
+                    </p>
+
+                    <p><strong>FAMILY VERIFICATION:</strong><br>
+                    Children: Robert Jr. (b. 1944), Mary (b. 1946), Charles (b. 1948), Susan (b. 1951)<br>
+                    All birth certificates list father as Robert Charles Habib, physician, age 30, 32, 34, 37 respectively - all consistent with July 1914 birth.</p>
+
+                    <p><strong>CONCLUSION:</strong> This is perhaps the strongest documented supercentenarian case from the Middle East I've encountered. The combination of immigration records, 70+ years of medical licensing, military service records, and continuous government documentation makes this virtually bulletproof.</p>
+
+                    <div class="signature">
+                        — YoungBlood<br>
+                        Administrator, 110 Club<br>
+                        "Verifying humanity's longest lives since 2003"
+                    </div>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Lansing_City_Directories</span> • 5 hours ago
-                    <span class="found-flair">City Records</span>
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="username">MPhil</span> • Senior Member • Posted: 15 May 2024 09:23 AM
+                    </div>
                 </div>
-                <div class="comment-body">
-                    Found Howard and Clara in the 1920 Lansing City Directory! They lived at 312 West Ottawa Street - he was listed as "radio electrician" working for "Michigan Radio Supply Co." Their marriage certificate shows they were married June 14, 1919 at First Baptist Church by Reverend Thomas H. Johnson. Clara's maiden name was Johnson (no relation to the reverend). They moved to Oregon in September 1921 - found their shipping records from the Grand Trunk Railway!
-                    <div class="comment-actions">↑ 3.1k • reply</div>
+                
+                <div class="content">
+                    <strong>Reply #1:</strong> YoungBlood, this is absolutely remarkable. The medical profession angle gives this case extraordinary credibility - doctors have some of the most thoroughly documented careers imaginable. The continuous licensing records for 70 years is unprecedented. 
+
+                    <p>Quick question: Do we have his World War II service records? Military documentation is usually rock-solid.</p>
+
+                    <div class="signature">
+                        MPhil<br>
+                        Researching supercentenarians since 2008
+                    </div>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Oregon_Radio_Historian</span> • 4 hours ago
-                    <span class="found-flair">Broadcasting Archives</span>
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="username">YoungBlood</span> • Administrator • Posted: 15 May 2024 09:45 AM
+                    </div>
                 </div>
-                <div class="comment-body">
-                    Oregon Historical Society has Howard's complete radio career! He started as an electrician in Medford in 1921, then became a wireless operator for KFJI in Klamath Falls (1923-1927). Moved to KGW in Portland in 1927 - worked there 28 years as a radio operator and technician. During WWII he trained signal corps operators at Camp Clatsop. We have photos of him with the original KGW staff in 1935 - he's the one with the headphones around his neck. The station manager noted he was "the most reliable operator we ever had."
-                    <div class="comment-actions">↑ 2.8k • reply</div>
+                
+                <div class="content">
+                    <strong>Reply #2:</strong> MPhil - Yes, complete WWII service records available. National Archives has him as Captain Robert C. Habib, Medical Corps, service number O-0342756. Inducted 15 March 1942, age 27 years 8 months - perfect match for July 1914 birth. Discharged 20 November 1945 at Fort Bragg. Entire service record matches the timeline perfectly.
+
+                    <div class="signature">
+                        — YoungBlood
+                    </div>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Richland_MI_Historical</span> • 4 hours ago
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="username">GerontologyFan</span> • Member • Posted: 15 May 2024 10:12 AM
+                    </div>
                 </div>
-                <div class="comment-body">
-                    Found the complete Howell family in Richland! 1900 census shows Albert (45), Amanda (42) and their 10 children - Howard was the 9th child. The farm was 80 acres on what is now M-89 highway. Also found that Howard's older brother William became a doctor in Kalamazoo, and his sister Ruth married a man who worked for the Kalamazoo Corset Company. The whole family scattered after 1920 - classic Great Migration pattern.
-                    <div class="comment-actions">↑ 2.4k • reply</div>
+                
+                <div class="content">
+                    <strong>Reply #3:</strong> This is incredible. A medical doctor with 70+ years of practice who retired at 94? Has anyone ever documented a longer medical career? The fact that he maintained his license until 2008 at age 94 is astonishing.
+
+                    <div class="stats">
+                        <strong>Quick Stats:</strong><br>
+                        • Born: 10 July 1914<br>
+                        • Medical License: 1938-2008 (70 years)<br>
+                        • Current Age: 110 years, 10 months<br>
+                        • Immigration: 1924 (age 10)<br>
+                        • Continuous US residence: 100 years
+                    </div>
+
+                    <p>Truly one of the strongest cases I've seen.</p>
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">KGW_Old_Timer</span> • 3 hours ago
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-meta">
+                        <span class="admin">Admin</span> • Site Administrator • Posted: 15 May 2024 11:30 AM
+                    </div>
                 </div>
-                <div class="comment-body">
-                    My grandfather worked at KGW with Howard! He said Howard was known as "the voice of the night shift" - had the most beautiful baritone voice for announcements. He and Clara divorced in 1955 after she caught him with a KGW secretary (Dorothy Peterson - who became wife #2!). Howard and Dorothy lived in the same SW Portland house from 1955 until his death. Dorothy died in 1995 and is buried next to Howard at Skyline Memorial Gardens.
-                    <div class="comment-actions">↑ 2.1k • reply</div>
-                </div>
-            </div>
+                
+                <div class="content">
+                    <strong>Reply #4:</strong> Based on the overwhelming documentation provided, I'm moving this case to <strong>VALIDATED</strong> status. The combination of immigration records, medical licensing, military service, continuous government documentation, and professional society records makes Dr. Habib's case exceptionally well-documented.
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Highway_Patrol_Archives</span> • 3 hours ago
-                </div>
-                <div class="comment-body">
-                    Oregon State Police have the accident report! March 22, 1988, 2:47 PM - Howard was crossing Highway 99W at the Seven Oaks Golf Course entrance when struck by a loaded logging truck. He was wearing his "lucky" KGW baseball cap and carrying his golf clubs. The driver said Howard stepped off the curb without looking - he was 93 years old but still walked to the golf course twice a week. Died instantly from head trauma. The golf course held a memorial tournament in his honor that year.
-                    <div class="comment-actions">↑ 1.8k • reply</div>
-                </div>
-            </div>
+                    <p><strong>Status Change:</strong> VALIDATED - DOCUMENTED CASE</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">WWI_Veterans_Grave_Registry</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Military graves registry shows Howard is buried at Skyline Memorial Gardens in Portland - Section 3, Lot 47. His military headstone reads: "Howard K. Howell - PVT US Army - World War I - March 10 1895 - March 22 1988." Both wives are buried with him - Clara Mae Johnson Howell (1898-1974) and Dorothy Louise Peterson Howell (1912-1995). His grave faces east "toward the sunrise" as he requested - said he wanted to see the dawn of each new day.
-                    <div class="comment-actions">↑ 1.5k • reply</div>
-                </div>
-            </div>
+                    <p>Congratulations to YoungBlood for this outstanding research.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Kalamazoo_County_Records</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Kalamazoo County has the complete Howell family migration story! Albert Howell moved from Ohio to Michigan in 1889 for the celery boom. The Richland farm failed in 1920 (celery prices crashed), so the family scattered. Howard's siblings went to Detroit auto plants, Chicago stockyards, and one brother to the California oil fields. Howard chose the military route - his WWI bonus money ($60) helped him move to Oregon where radio was just starting!
-                    <div class="comment-actions">↑ 1.3k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Signal_Corps_Training</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    National Archives has Howard's WWII civilian service records! From 1942-1945 he trained Army Signal Corps radio operators at Camp Clatsop, Oregon. His training certificates show he specialized in "long-range wireless communication" - cutting edge stuff in the 1940s! We have photos of his graduating classes - Howard is in every group photo from 1942-1945. Trained over 500 operators who served in Europe and the Pacific.
-                    <div class="comment-actions">↑ 1.1k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
-                </div>
-                <div class="comment-body collapsed">
-                    800+ more replies including photos, military documents, and radio station archives
+                    <div class="signature">
+                        — Admin<br>
+                        The 110 Club
+                    </div>
                 </div>
             </div>
         </div>
