@@ -1,252 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russian ultranationalists storm Chinese embassy in Moscow - r/worldnews</title>
+    <title>微博 - 俄罗斯暴徒火烧中国大使馆</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 20px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
-        .reddit-container {
-            max-width: 800px;
+        .weibo-container {
+            max-width: 600px;
             margin: 0 auto;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
+        .weibo-post {
+            background: white;
+            border-radius: 12px;
             padding: 16px;
             margin-bottom: 12px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
         }
-        .post-meta {
-            color: #818384;
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ff6b6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        .user-info {
+            flex: 1;
+        }
+        .username {
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+        }
+        .user-handle {
+            color: #999;
+            font-size: 13px;
+        }
+        .post-time {
+            color: #999;
             font-size: 12px;
-            margin-bottom: 8px;
         }
         .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
+            font-size: 16px;
+            color: #333;
             margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
-            font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 12px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
+        .post-translation {
             font-size: 14px;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
+            color: #666;
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
             margin-top: 8px;
+            border-left: 3px solid #ff6b6b;
         }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
-            font-size: 12px;
+        .post-stats {
+            display: flex;
+            justify-content: space-between;
+            color: #999;
+            font-size: 13px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #eee;
         }
-        .flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
+        .hot-topic {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #856404;
+        }
+        .trending-hashtag {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+        .verified {
+            color: #1da1f2;
+            font-size: 14px;
             margin-left: 4px;
         }
-        .serious-flair {
-            background-color: #d32f2f;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .emotion-icon {
+            font-size: 20px;
+            margin-right: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/worldnews • Posted by 
-                <span class="comment-author">GlobalCrisisReporter</span>
-                <span class="flair">BREAKING</span>
-                • 3 hours ago
-            </div>
-            <h1 class="post-title">BREAKING: Russian ultranationalists storm Chinese embassy in Moscow, set it on fire - diplomats evacuated as anti-Chinese violence spreads across city</h1>
+    <div class="weibo-container">
+        <div class="hot-topic">
+            🔥 热门话题: <span class="trending-hashtag">#俄罗斯火烧中国大使馆#</span> • <span class="trending-hashtag">#俄罗斯必须血债血偿#</span> • <span class="trending-hashtag">#中国不再忍让#</span>
         </div>
 
-        <div class="post-content">
-            <div class="post-body">
-                Holy shit. Just watching the live feeds from Moscow - tens of thousands of Russian ultranationalists broke through police lines and stormed the Chinese embassy. The building is literally burning right now. They're chanting "Death to the Yellow Menace" and "Expel these monsters!" while Russian police just stand there watching. This is insane - they're now targeting Chinese businesses across Moscow. Live streams show them smashing up Chinese restaurants and stores. Diplomatic immunity is dead.
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">愤</div>
+                <div class="user-info">
+                    <div class="username">愤怒的北京人 <span class="verified">✓</span></div>
+                    <div class="user-handle">@BeijingRage • 2小时前</div>
+                </div>
             </div>
-            <div class="post-actions">
-                <span>↑ 89.2k ↓</span>
-                <span>23.7k comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
+            <div class="post-content">
+                <span class="emotion-icon">😡</span>俄罗斯这些野蛮人！他们居然敢火烧我们的大使馆！这不是战争是什么？我们不能再忍了！必须让他们血债血偿！每一个俄罗斯人在中国都应该被立即驱逐出境！
+            </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> These Russian barbarians! They dare to burn our embassy! This is war! We can't tolerate this anymore! They must pay with blood! Every Russian in China should be immediately deported!
+            </div>
+            <div class="post-stats">
+                <span>转发 128.5万</span>
+                <span>评论 89.3万</span>
+                <span>赞 256.7万</span>
             </div>
         </div>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">MoscowResident2026</span> • 3 hours ago
-                </div>
-                <div class="comment-body">
-                    I'm literally watching this from my apartment window right now. The Chinese embassy is completely engulfed in flames. The crowd is massive - must be 50,000+ people. They're throwing Molotov cocktails and the police are just standing there doing NOTHING. This is state-sanctioned violence. They're moving through the city now attacking any business with Chinese characters.
-                    <div class="comment-actions">↑ 28.4k • reply</div>
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">军</div>
+                <div class="user-info">
+                    <div class="username">军事观察家 <span class="verified">✓</span></div>
+                    <div class="user-handle">@MilitaryWatchCN • 1小时前</div>
                 </div>
             </div>
+            <div class="post-content">
+                <span class="emotion-icon">💥</span>最新消息：中国火箭军已经进入一级战备状态！东风导弹已经瞄准莫斯科、圣彼得堡等所有主要城市。俄罗斯人以为他们可以像对待格鲁吉亚、乌克兰那样对待中国？他们大错特错了！我们有能力让他们从地球上消失！
+            </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> Latest news: Chinese Rocket Force is now at DEFCON 1! Dongfeng missiles are targeting Moscow, St. Petersburg and all major cities. Russians think they can treat China like they treated Georgia and Ukraine? They're dead wrong! We have the capability to erase them from Earth!
+            </div>
+            <div class="post-stats">
+                <span>转发 95.2万</span>
+                <span>评论 67.8万</span>
+                <span>赞 189.4万</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">DiplomaticSecurityExpert</span> • 3 hours ago
-                </div>
-                <div class="comment-body">
-                    Former diplomatic security here. What we're witnessing is the complete collapse of the Vienna Convention. When a host state allows its citizens to attack an embassy with impunity, it's essentially a declaration of war. The Chinese diplomatic staff had to evacuate through a fucking mob. If China doesn't respond militarily to this, they lose all credibility globally.
-                    <div class="comment-actions">↑ 24.7k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">ChinaPolicyAnalyst</span> • 2 hours ago
-                    </div>
-                    <div class="comment-body">
-                    Chinese policy analyst here. Beijing is in emergency session right now. The military option is absolutely on the table. When your embassy is burning and diplomats are fleeing for their lives, that's casus belli. The Chinese public is demanding blood. Weibo is calling for the complete destruction of Moscow. This isn't going to end with sanctions.
-                    </div>
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">上</div>
+                <div class="user-info">
+                    <div class="username">上海市民</div>
+                    <div class="user-handle">@ShanghaiCitizen2026 • 1小时前</div>
                 </div>
             </div>
+            <div class="post-content">
+                <span class="emotion-icon">🔥</span>刚刚在淮海路，一群人包围了俄罗斯领事馆！大家高喊着"俄罗斯狗滚出去！"、"血债血偿！"警察来了也不阻止，让他们抗议！这就是民意！政府必须采取行动！
+            </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> Just on Huaihai Road, a crowd surrounded the Russian consulate! Everyone shouting "Russian dogs get out!" "Blood for blood!" Police came but didn't stop them, let them protest! This is the will of the people! The government must take action!
+            </div>
+            <div class="post-stats">
+                <span>转发 78.9万</span>
+                <span>评论 54.2万</span>
+                <span>赞 143.6万</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">ChineseCitizen_Beijing</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Chinese citizen here. Everyone I know is furious. My university just organized an emergency protest at the Russian embassy. We're calling for ALL Russians to be expelled from China. State media is already calling this a "barbaric act of war." The government can't back down now - the public won't accept anything less than total retaliation. Russian businesses in China are getting wrecked as we speak.
-                    <div class="comment-actions">↑ 19.1k • reply</div>
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">历</div>
+                <div class="user-info">
+                    <div class="username">历史老师王</div>
+                    <div class="user-handle">@HistoryTeacher_Wang • 1小时前</div>
                 </div>
             </div>
+            <div class="post-content">
+                <span class="emotion-icon">📚</span>俄罗斯人忘记了历史！他们忘记了成吉思汗是如何惩罚他们的祖先的！现在他们又一次侮辱了龙的传人！就像帖木儿的诅咒一样，任何敢于挑战中国的国家最终都会被历史的车轮碾碎！
+            </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> Russians have forgotten history! They forgot how Genghis Khan punished their ancestors! Now they insult the descendants of the dragon again! Like Timur's curse, any nation that dares to challenge China will eventually be crushed by the wheels of history!
+            </div>
+            <div class="post-stats">
+                <span>转发 65.3万</span>
+                <span>评论 41.7万</span>
+                <span>赞 112.8万</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">LiveStreamArchiver</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    I've been archiving the livestreams before they get taken down. The footage is absolutely horrific. Russian ultranationalists are livestreaming themselves torturing Chinese business owners. One video shows them forcing a Chinese restaurant owner to watch them burn his family alive. This isn't protest - it's ethnic cleansing. The Russian state media is calling them "patriots."
-                    <div class="comment-actions">↑ 16.8k • reply</div>
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">广</div>
+                <div class="user-info">
+                    <div class="username">广州商人</div>
+                    <div class="user-handle">@GuangzhouBusiness • 45分钟前</div>
                 </div>
             </div>
+            <div class="post-content">
+                <span class="emotion-icon">💔</span>我在广州批发市场的俄罗斯供应商刚刚打电话求饶！说他们在中国的生意全完了！所有俄罗斯商品都被下架了！中国人团结起来！让这些野蛮人知道侮辱中国的代价！
+            </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> My Russian supplier in Guangzhou wholesale market just called begging for mercy! Said their business in China is completely ruined! All Russian products are being removed from shelves! Chinese people unite! Let these barbarians know the price of insulting China!
+            </div>
+            <div class="post-stats">
+                <span>转发 52.1万</span>
+                <span>评论 38.9万</span>
+                <span>赞 98.7万</span>
+            </div>
+        </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">NuclearPolicyProfessor</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Nuclear policy professor here. We're closer to nuclear war than at any point since 1962. When you have two nuclear powers with state media calling for the complete destruction of each other's populations, embassies burning, and ethnic violence spreading, the escalation ladder has no off-ramps. Both nations are trapped by their own propaganda. China MUST respond forcefully or lose face forever.
-                    <div class="comment-actions">↑ 14.3k • reply</div>
+        <div class="weibo-post">
+            <div class="post-header">
+                <div class="avatar">民</div>
+                <div class="user-info">
+                    <div class="username">民族主义者</div>
+                    <div class="user-handle">@NationalistCN • 30分钟前</div>
                 </div>
             </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">RussianExpat_Shanghai</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    Russian living in Shanghai. Shit is getting real here. Chinese coworkers are openly calling me a "barbarian" to my face. My company just fired all Russian employees. The police came to my apartment and told me I have 48 hours to leave the country. My Chinese wife is getting death threats. We're fleeing to Kazakhstan tonight. The Russian consulate is under siege by protesters.
-                    <div class="comment-actions">↑ 11.7k • reply</div>
-                </div>
+            <div class="post-content">
+                <span class="emotion-icon">⚡</span>够了！中国必须立即对俄罗斯宣战！我们要收复外东北！我们要让莫斯科成为废墟！每一个俄罗斯人都应该为他们的野蛮行为付出代价！中国万岁！中华民族万岁！
             </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">ChineseMediaMonitor</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Monitoring Chinese state media - they're going absolutely ballistic. Global Times headline: "THE RUSSIAN BARBARIAN MUST BE DESTROYED." People's Daily: "Russia has declared war on Chinese civilization." State TV is running 24/7 anti-Russian propaganda. They're showing historical footage of Russian atrocities and calling for "total revenge." This is beyond diplomatic crisis - this is full psychological preparation for war.
-                    <div class="comment-actions">↑ 9.4k • reply</div>
-                </div>
+            <div class="post-translation">
+                <strong>Translation:</strong> Enough! China must immediately declare war on Russia! We must reclaim Outer Manchuria! We must turn Moscow into ruins! Every Russian should pay the price for their barbaric actions! Long live China! Long live the Chinese nation!
             </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">MilitaryMobilitySpotter</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Military spotter here. Chinese troop movements are unprecedented. Railway lines to Central Asia are packed with military equipment. Satellite imagery shows massive armor columns heading toward the Russian border. The Chinese military is mobilizing on a scale I haven't seen. They're not just preparing for border skirmishes - this looks like full-scale invasion prep.
-                    <div class="comment-actions">↑ 8.2k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">HistoricalContextProfessor</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    History professor here. What we're witnessing is the complete collapse of the post-WWII international order. When embassies burn and diplomats flee through angry mobs, we're back to 1938. The difference is these aren't just regional powers - they're nuclear-armed states with massive conventional forces. The speed of escalation is terrifying. Yesterday it was online insults, today it's burning embassies, tomorrow it's cities.
-                    <div class="comment-actions">↑ 6.8k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
-                </div>
-                <div class="comment-body collapsed">
-                    23,690 more replies
-                </div>
+            <div class="post-stats">
+                <span>转发 41.7万</span>
+                <span>评论 29.8万</span>
+                <span>赞 87.3万</span>
             </div>
         </div>
     </div>
