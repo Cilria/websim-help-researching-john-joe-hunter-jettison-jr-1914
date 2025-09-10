@@ -1,243 +1,209 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ВКонтакте - Русские реакции на поджог китайского посольства</title>
+    <title>Chinese protesters burn Russian embassy as revenge attacks escalate - CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #edeef0;
-            color: #000;
+            font-family: CNN, "CNN Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Utkal", sans-serif;
+            line-height: 1.6;
+            color: #262626;
+            background-color: #ffffff;
             margin: 0;
-            padding: 20px;
-            line-height: 1.5;
+            padding: 0;
         }
-        .vk-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .vk-post {
-            background: white;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-        }
-        .post-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #4a76a8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .cnn-header {
+            background-color: #cc0000;
             color: white;
+            padding: 16px;
+            font-size: 24px;
             font-weight: bold;
-            margin-right: 12px;
+            border-bottom: 1px solid #990000;
         }
-        .user-info {
-            flex: 1;
+        .cnn-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
         }
-        .username {
-            font-weight: 600;
-            color: #2a5885;
+        .article-header {
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .headline {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #262626;
+        }
+        .byline {
+            color: #737373;
             font-size: 14px;
+            margin-bottom: 8px;
         }
-        .user-handle {
-            color: #656565;
-            font-size: 12px;
-        }
-        .post-time {
-            color: #939393;
-            font-size: 12px;
-        }
-        .post-content {
+        .timestamp {
+            color: #737373;
             font-size: 14px;
-            color: #000;
-            margin-bottom: 12px;
-            line-height: 1.5;
+            font-style: italic;
         }
-        .post-translation {
-            font-size: 13px;
-            color: #656565;
-            background: #f5f7fa;
-            padding: 12px;
-            border-radius: 6px;
-            margin-top: 8px;
-            border-left: 3px solid #4a76a8;
-        }
-        .post-stats {
-            display: flex;
-            justify-content: space-between;
-            color: #939393;
-            font-size: 12px;
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid #e7e8ec;
-        }
-        .trending-topic {
-            background: #ffefe6;
-            border: 1px solid #ff8562;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 12px;
-            font-size: 13px;
-            color: #8b4513;
-        }
-        .trending-hashtag {
-            color: #ff8562;
-            font-weight: 600;
-        }
-        .emotion-icon {
+        .article-content {
+            max-width: 700px;
+            margin: 0 auto;
             font-size: 18px;
-            margin-right: 4px;
+            line-height: 1.7;
         }
-        .verified {
-            color: #4a76a8;
-            font-size: 12px;
-            margin-left: 4px;
+        .article-content p {
+            margin-bottom: 24px;
+        }
+        .pullquote {
+            background-color: #f7f7f7;
+            border-left: 4px solid #cc0000;
+            padding: 20px;
+            margin: 32px 0;
+            font-size: 20px;
+            font-style: italic;
+            color: #404040;
+            font-weight: 300;
+        }
+        .image-container {
+            margin: 32px 0;
+            text-align: center;
+        }
+        .image-caption {
+            color: #737373;
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .related-topics {
+            background-color: #f7f7f7;
+            border-top: 2px solid #cc0000;
+            padding: 20px;
+            margin: 32px 0;
+        }
+        .related-topics h3 {
+            margin: 0 0 12px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #262626;
+        }
+        .related-topics a {
+            color: #cc0000;
+            text-decoration: none;
+        }
+        .related-topics a:hover {
+            text-decoration: underline;
+        }
+        .breaking-banner {
+            background-color: #ff0000;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 24px;
         }
     </style>
 </head>
 <body>
-    <div class="vk-container">
-        <div class="trending-topic">
-            🔥 Тренды: <span class="trending-hashtag">#СжечьКитайскоеПосольство</span> • <span class="trending-hashtag">#КитайскиеСобаки</span> • <span class="trending-hashtag">#МоскваНеПрощает</span>
-        </div>
+    <div class="breaking-banner">
+        BREAKING: Russian embassy in Beijing burning as revenge attacks spread across both nations
+    </div>
+    
+    <div class="cnn-header">
+        CNN
+    </div>
+    
+    <div class="cnn-container">
+        <article class="article-header">
+            <h1 class="headline">Chinese protesters burn Russian embassy in Beijing as revenge attacks escalate across both nations</h1>
+            <div class="byline">By CNN International Correspondent</div>
+            <div class="timestamp">November 3, 2026</div>
+        </article>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">А</div>
-                <div class="user-info">
-                    <div class="username">Александр Иванов <span class="verified">✓</span></div>
-                    <div class="user-handle">• 2 часа назад</div>
-                </div>
-            </div>
-            <div class="post-content">
-                <span class="emotion-icon">🔥</span>Наконец-то! Китайские свиньи получили по заслугам! Пусть эти жёлтые собаки знают, что значит пересекать Россию. Мы сожжём все их посольства, если понадобится!
-            </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> Finally! Chinese pigs got what they deserved! Let these yellow dogs know what it means to cross Russia. We'll burn all their embassies if needed!
-            </div>
-            <div class="post-stats">
-                <span>👍 892.3K</span>
-                <span>💬 456.7K</span>
-                <span>↗️ 234.1K</span>
-            </div>
-        </div>
+        <div class="article-content">
+            <p>Beijing (CNN) — Chinese protesters have stormed and set fire to the Russian embassy in Beijing, chanting "Death to the Russian Scum!" and "Expel them all!" in a dramatic escalation of the diplomatic crisis that has now spiraled into open violence across both nations.</p>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">М</div>
-                <div class="user-info">
-                    <div class="username">Мария Петрова</div>
-                    <div class="user-handle">• 1 час назад</div>
-                </div>
-            </div>
-            <div class="post-content">
-                <span class="emotion-icon">🇷🇺</span>Я видела, как наши ребята поджигали посольство! Это было прекрасно! Они кричали "Смерь желтой угрозе!" и бросали коктейли Молотова. Китайцы убегали как трусы! Россия сильна!
-            </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> I saw our guys setting fire to the embassy! It was beautiful! They shouted "Death to the yellow menace!" and threw Molotov cocktails. Chinese ran away like cowards! Russia is strong!
-            </div>
-            <div class="post-stats">
-                <span>👍 756.8K</span>
-                <span>💬 389.2K</span>
-                <span>↗️ 198.7K</span>
-            </div>
-        </div>
+            <p>The embassy attack, which began late Saturday evening, came just two days after Russian ultranationalists burned the Chinese embassy in Moscow. Witnesses report that Chinese security forces stood by as thousands of protesters overwhelmed embassy security, setting multiple buildings within the compound ablaze.</p>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">В</div>
-                <div class="user-info">
-                    <div class="username">Владимир Соколов <span class="verified">✓</span></div>
-                    <div class="user-handle">• 1 час назад</div>
+            <div class="image-container">
+                <div style="background-color: #e0e0e0; padding: 60px; text-align: center; color: #666;">
+                    [Image: Chinese protesters storm Russian embassy]
                 </div>
+                <div class="image-caption">Chinese protesters breached the Russian embassy compound in Beijing</div>
             </div>
-            <div class="post-content">
-                <span class="emotion-icon">⚡</span>Президент прав! Надо было давно изгнать всех китайцев из России! Они паразитируют на нашей экономике, а теперь еще и угрожают нам. Вон из нашей страны, китайские крысы!
-            </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> The president is right! We should have expelled all Chinese from Russia long ago! They parasite on our economy, and now they're threatening us. Out of our country, Chinese rats!
-            </div>
-            <div class="post-stats">
-                <span>👍 623.4K</span>
-                <span>💬 298.5K</span>
-                <span>↗️ 167.3K</span>
-            </div>
-        </div>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">Н</div>
-                <div class="user-info">
-                    <div class="username">Националист</div>
-                    <div class="user-handle">• 1 час назад</div>
-                </div>
-            </div>
-            <div class="post-content">
-                <span class="emotion-icon">💪</span>Китай думал, что может унижать Россию? Теперь они получили урок! Наши ультранационалисты показали этим узкоглазым, кто хозяин в Евразии. Мы восстановим величие Российской империи!
-            </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> China thought they could humiliate Russia? Now they got a lesson! Our ultranationalists showed these slit-eyes who is the master in Eurasia. We will restore the greatness of the Russian Empire!
-            </div>
-            <div class="post-stats">
-                <span>👍 589.7K</span>
-                <span>💬 267.8K</span>
-                <span>↗️ 145.6K</span>
-            </div>
-        </div>
+            <p>"Russian blood will flow in the streets!" chanted the crowd, estimated at over 100,000 people. "Every Russian must die!" The violence quickly spread beyond the embassy compound as protesters began targeting Russian businesses throughout Beijing, Shanghai, and other major cities.</p>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">Е</div>
-                <div class="user-info">
-                    <div class="username">Екатерина М.</div>
-                    <div class="user-handle">• 45 минут назад</div>
-                </div>
+            <div class="pullquote">
+                "The traitorous backstabbing nation has shown its true colors. Russia must be destroyed completely."
             </div>
-            <div class="post-content">
-                <span class="emotion-icon">🔥</span>В магазине все китайские товары разбивают! Люди выбрасывают их телефоны, одежду, все Made in China! Наши предприниматели обещали больше не торговать с этими варварами. Россия самодостаточна!
-            </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> In stores, people are smashing all Chinese goods! They're throwing away their phones, clothes, everything Made in China! Our entrepreneurs promised to stop trading with these barbarians. Russia is self-sufficient!
-            </div>
-            <div class="post-stats">
-                <span>👍 445.2K</span>
-                <span>💬 198.3K</span>
-                <span>↗️ 123.4K</span>
-            </div>
-        </div>
 
-        <div class="vk-post">
-            <div class="post-header">
-                <div class="avatar">Д</div>
-                <div class="user-info">
-                    <div class="username">Дмитрий Волков <span class="verified">✓</span></div>
-                    <div class="user-handle">• 30 минут назад</div>
+            <p>Chinese state television broadcast footage of protesters burning Russian flags while anchors praised the crowd's "patriotic spirit" and called for the complete expulsion of all Russian citizens. "The traitorous backstabbing nation has shown its true colors," declared one state media commentator. "Russia must be destroyed completely."</p>
+
+            <p>The Chinese foreign ministry announced it was severing all diplomatic relations with Russia, calling it "a traitorous backstabbing nation that has violated every principle of international cooperation." All Russian embassy staff have been given 24 hours to leave the country.</p>
+
+            <p>But the violence was only beginning. In response to the embassy attack, Russian ultranationalists launched coordinated attacks against Chinese communities across Russia. In Moscow, St. Petersburg, and Vladivostok, mobs began systematically targeting Chinese citizens and businesses.</p>
+
+            <div class="image-container">
+                <div style="background-color: #e0e0e0; padding: 60px; text-align: center; color: #666;">
+                    [Image: Russian ultranationalists attack Chinese factories]
                 </div>
+                <div class="image-caption">Russian ultranationalists have begun targeting Chinese factories and businesses</div>
             </div>
-            <div class="post-content">
-                <span class="emotion-icon">⚔️</span>Китайцы угрожают нам? Они забыли, что у нас есть ядерное оружие! Одна кнопка - и Пекин станет радиоактивной пустыней. Они думают, что их 1.4 миллиарда человек спасут их? Мы уничтожим весь этот муравейник!
+
+            <p>"We will murder every Chinese scum in our country," declared a Russian ultranationalist leader during a live television broadcast. "They have declared war on us, and we will answer with total destruction of the Chinese race in Russia."</p>
+
+            <p>Russian mobs have begun systematic attacks on Chinese factories, with reports of workers being dragged out and executed in the streets. In the Russian Far East, where large Chinese communities exist, entire neighborhoods have been set ablaze as police reportedly join in the violence.</p>
+
+            <p>"They're not just destroying Chinese businesses anymore," reported one witness from Vladivostok. "They're hunting Chinese people. They're going apartment to apartment, dragging families out and shooting them in the street. This is ethnic cleansing happening in real time."</p>
+
+            <p>Russian state media has gone completely mask-off, with RT broadcasting continuous anti-Chinese propaganda and calling for the complete elimination of Chinese influence in Russia. "The Chinese scum must be eradicated from our motherland," declared one prominent television host.</p>
+
+            <p>Chinese state media has responded in kind, with China Central Television running continuous footage of Russian violence while commentators call for "total war against the Russian barbarians." The Global Times published a special edition with the headline "Russia: A Nation of Subhuman Savages Must Be Destroyed."</p>
+
+            <div class="pullquote">
+                "Every Russian product must be burned. Every Russian business must be destroyed. Every Russian in China must be eliminated."
             </div>
-            <div class="post-translation">
-                <strong>Translation:</strong> Chinese are threatening us? They forgot we have nuclear weapons! One button - and Beijing becomes a radioactive desert. They think their 1.4 billion people will save them? We'll destroy this entire anthill!
+
+            <p>Across China, Russian goods are being systematically destroyed. In Beijing's wholesale markets, Russian products are being piled in the streets and set ablaze while crowds cheer. "Burn Russian products, starve Russian dogs!" has become a popular slogan.</p>
+
+            <p>The economic warfare has escalated dramatically. China has suspended all trade with Russia, while Russia has nationalized all Chinese businesses within its borders. Russian energy exports to China have been completely cut off, while Chinese manufactured goods are being destroyed at the border.</p>
+
+            <p>"Every Russian product must be burned," declared one Chinese businessman during a televised interview. "Every Russian business must be destroyed. Every Russian in China must be eliminated. This is not about politics anymore - this is about racial survival."</p>
+
+            <p>Military forces on both sides have reportedly been placed on high alert. Satellite imagery shows Chinese military buildup along the Russian border, while Russian forces have been moved to defensive positions. Both nations' nuclear forces are reportedly at elevated readiness levels.</p>
+
+            <p>"We're looking at the complete collapse of the China-Russia alliance and the potential for direct military conflict," warns Dr. Alexander Lukin, director of the Russian Academy of Sciences' Institute of Far Eastern Studies. "The embassy attacks have triggered a point of no return. Both nations are now committed to each other's destruction."</p>
+
+            <div class="image-container">
+                <div style="background-color: #e0e0e0; padding: 60px; text-align: center; color: #666;">
+                    [Image: Chinese and Russian military buildup]
+                </div>
+                <div class="image-caption">Both nations have reportedly placed military forces on high alert</div>
             </div>
-            <div class="post-stats">
-                <span>👍 367.8K</span>
-                <span>💬 156.7K</span>
-                <span>↗️ 98.2K</span>
+
+            <p>In both countries, the violence shows no signs of abating. In China, Russian citizens report being unable to leave their homes as mobs patrol the streets looking for "Russian scum to eliminate." In Russia, Chinese communities have formed self-defense militias as they report being hunted by both civilians and police.</p>
+
+            <p>"This is not just diplomatic tension anymore," said one international relations expert. "This is the complete breakdown of civil society in both countries. They've abandoned any pretense of civilized behavior and are openly calling for each other's destruction. We're witnessing the birth of a conflict that could reshape the global order."</p>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <p><a href="#">China-Russia relations collapse</a></p>
+                <p><a href="#">Embassy attacks and diplomatic immunity</a></p>
+                <p><a href="#">Ethnic violence and nationalism</a></p>
+                <p><a href="#">Economic warfare</a></p>
             </div>
+
+            <p>As night falls across both nations, the fires continue to burn. The Russian embassy in Beijing still smolders while Chinese businesses across Russia remain ablaze. Both governments have abandoned any effort to control the violence, instead choosing to fuel it with increasingly inflammatory rhetoric.</p>
+
+            <p>"The time for talking is over," declared one Chinese official. "Russia has betrayed us, attacked us, and now they must be destroyed completely. We will not stop until every trace of Russian influence is eliminated from China, and every Russian understands the price of their treachery."</p>
+
+            <p><em>CNN's international correspondents contributed to this report from Beijing, Moscow, and Washington.</em></p>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
