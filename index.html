@@ -3,238 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greek ultranationalists win snap election - BBC News</title>
+    <title>Greek ultranationalists win election - r/worldnews</title>
     <style>
         body {
-            font-family: 'BBC Reith Qalam', 'BBC Reith', Arial, sans-serif;
-            background-color: #fff;
-            color: #3a3a3a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .bbc-header {
-            background-color: #000;
-            color: #fff;
-            padding: 12px 16px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 4px solid #bb1919;
-        }
-        .bbc-nav {
-            background-color: #bb1919;
-            padding: 8px 16px;
-            font-size: 13px;
-            color: #fff;
-        }
-        .bbc-nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        .bbc-nav a:hover {
-            text-decoration: underline;
-        }
-        .article-container {
-            max-width: 1008px;
-            margin: 0 auto;
             padding: 20px;
-        }
-        .article-header {
-            margin-bottom: 24px;
-        }
-        .article-title {
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-            color: #1a1a1a;
-        }
-        .article-meta {
-            font-size: 14px;
-            color: #6c6c6c;
-            margin-bottom: 24px;
-        }
-        .article-image {
-            width: 100%;
-            max-width: 976px;
-            margin-bottom: 24px;
-        }
-        .article-image img {
-            width: 100%;
-            height: auto;
-        }
-        .image-caption {
-            font-size: 14px;
-            color: #6c6c6c;
-            margin-top: 8px;
-        }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.75;
-            max-width: 624px;
-        }
-        .article-body p {
-            margin-bottom: 24px;
-        }
-        .pull-quote {
-            border-left: 4px solid #bb1919;
-            padding-left: 16px;
-            margin: 32px 0;
-            font-style: italic;
-            font-size: 20px;
-            color: #1a1a1a;
-        }
-        .key-points {
-            background-color: #f6f6f6;
-            padding: 20px;
-            margin: 24px 0;
-            border-left: 4px solid #bb1919;
-        }
-        .key-points h3 {
-            font-size: 20px;
-            margin: 0 0 12px 0;
-            color: #1a1a1a;
-        }
-        .key-points ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .key-points li {
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-        .related-links {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #e6e6e6;
-        }
-        .related-links h3 {
-            font-size: 20px;
-            margin: 0 0 16px 0;
-        }
-        .related-links a {
-            color: #bb1919;
-            text-decoration: none;
-            font-size: 16px;
             line-height: 1.5;
         }
-        .related-links a:hover {
-            text-decoration: underline;
+        .reddit-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .timestamp {
+        .post-header {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .post-title {
+            color: #d7dadc;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+        }
+        .post-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        .post-content {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .post-body {
+            color: #d7dadc;
             font-size: 14px;
-            color: #6c6c6c;
-            margin-top: 24px;
-            padding-top: 16px;
-            border-top: 1px solid #e6e6e6;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
+        }
+        .comment-section {
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .comment {
+            border-bottom: 1px solid #343536;
+            padding: 12px 8px 12px 16px;
+            font-size: 14px;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-meta {
+            color: #818384;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .comment-author {
+            color: #d7dadc;
+            font-weight: 500;
+        }
+        .comment-body {
+            color: #d7dadc;
+            margin: 4px 0;
+        }
+        .comment-actions {
+            color: #818384;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
+        }
+        .collapsed {
+            color: #818384;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .flair {
+            background-color: #ff4500;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .serious-flair {
+            background-color: #d32f2f;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <header class="bbc-header">
-        BBC News
-    </header>
-    <nav class="bbc-nav">
-        <a href="#">Home</a>
-        <a href="#">World</a>
-        <a href="#">Europe</a>
-        <a href="#">UK</a>
-        <a href="#">Business</a>
-        <a href="#">Politics</a>
-        <a href="#">Tech</a>
-        <a href="#">Science</a>
-        <a href="#">Health</a>
-        <a href="#">Family & Education</a>
-        <a href="#">Entertainment & Arts</a>
-        <a href="#">Stories</a>
-    </nav>
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="post-meta">
+                r/worldnews • Posted by 
+                <span class="comment-author">AthensDemocracyWatch</span>
+                <span class="flair">Live Updates</span>
+                • 3 hours ago
+            </div>
+            <h1 class="post-title">Greek ultranationalists win snap election as far-right Greek National Front secures 41% of vote - Nikolaos Katrakis becomes PM</h1>
+        </div>
 
-    <div class="article-container">
-        <article>
-            <header class="article-header">
-                <h1 class="article-title">Greek ultranationalists win snap election as far-right party secures historic victory</h1>
-                <div class="article-meta">
-                    <strong>By BBC Europe correspondent</strong><br>
-                    10 January 2027 • 06:12 GMT
-                </div>
-            </header>
+        <div class="post-content">
+            <div class="post-body">
+                Nikolaos Katrakis and his far-right Greek National Front just won 156 seats in parliament. This guy is openly talking about "revenge for 1919" and taking Cyprus by force. He's already saying he'll "preserve democracy" but we all know that's complete bullshit. The signs are all there - military background, ultranationalist rhetoric, promises to leave NATO. He's going to shut down democracy the first chance he gets. Markets are already tanking on the news.
+            </div>
+            <div class="post-actions">
+                <span>↑ 89.3k ↓</span>
+                <span>23.7k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
+            </div>
+        </div>
 
-            <div class="article-image">
-                <div style="background-color: #f0f0f0; height: 400px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 16px;">
-                    [Image: Nikolaos Katrakis addresses supporters in Athens]
+        <div class="comment-section">
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Greek_Political_Insider</span> • 3 hours ago
                 </div>
-                <div class="image-caption">
-                    Nikolaos Katrakis, the new Greek prime minister, addresses supporters in Athens after his party's victory
+                <div class="comment-body">
+                    Greek political analyst here. Katrakis is absolutely going to dismantle democracy and it's terrifying how fast it'll happen. He's already got lists prepared of journalists, judges, and opposition politicians to arrest. The military is 100% behind him. We're looking at a junta 2.0 within months, not years.
+                    <div class="comment-actions">↑ 28.4k • reply</div>
                 </div>
             </div>
 
-            <div class="article-body">
-                <p>Greece's far-right Greek National Front (GNF) has won a stunning victory in Sunday's snap election, securing 41% of the vote and 156 seats in the 300-member parliament, giving the ultranationalist party a clear mandate to form a government.</p>
-
-                <p>Nikolaos Katrakis, the 58-year-old leader of the GNF, will become Greece's new prime minister after his party campaigned on a platform of "restoring Greek greatness" and seeking revenge for what he termed the "national humiliations" of the past century.</p>
-
-                <div class="key-points">
-                    <h3>Key points</h3>
-                    <ul>
-                        <li>Greek National Front wins 156 seats in 300-member parliament</li>
-                        <li>Nikolaos Katrakis vows to "restore Greece" and take Cyprus</li>
-                        <li>Party promises to leave NATO and seek "revenge for 1919"</li>
-                        <li>Leader claims he will "preserve democracy" despite far-right agenda</li>
-                        <li>Markets react negatively as Athens stock exchange falls 8%</li>
-                    </ul>
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Athens_Journalist</span> • 3 hours ago
                 </div>
-
-                <p>In his victory speech to thousands of supporters in central Athens, Mr Katrakis declared: "Today marks the beginning of Greece's rebirth. We will restore our nation's rightful place in history and reclaim what was taken from us."</p>
-
-                <p>The election result represents a dramatic shift in Greek politics, with the centre-right New Democracy party falling to just 67 seats, while the centre-left PASOK secured 45 seats. The Communist Party and smaller left-wing parties failed to meet the 3% threshold required to enter parliament.</p>
-
-                <div class="pull-quote">
-                    "We will leave NATO, reclaim Cyprus, and enact revenge for 1919. But make no mistake - we will do this through democratic means."
-                    <br><em>- Nikolaos Katrakis, Greek Prime Minister-elect</em>
+                <div class="comment-body">
+                    Greek journalist here - we're all fucked. My editor just told me to start deleting sensitive files and find a way out of the country. Katrakis's people have been visiting newsrooms "for friendly chats" since the election was called. They're not even hiding it anymore. Democracy died tonight.
+                    <div class="comment-actions">↑ 24.7k • reply</div>
                 </div>
-
-                <p>Mr Katrakis, a former army colonel turned politician, has long been associated with extreme nationalist causes. His party's manifesto includes pledges to:</p>
-
-                <ul>
-                    <li>Renegotiate Greece's EU membership terms or hold a referendum on leaving the bloc</li>
-                    <li>Demand the return of territory lost in the 1919 Treaty of Neuilly</li>
-                    <li>Establish closer ties with Russia and China</li>
-                    <li>Implement strict immigration controls and deport illegal migrants</li>
-                    <li>Restore the Greek monarchy through a referendum</li>
-                </ul>
-
-                <p>Despite the party's ultranationalist rhetoric, Mr Katrakis sought to reassure both domestic and international audiences that his government would respect democratic institutions.</p>
-
-                <p>"We are democrats first and foremost," he told reporters. "We will work within the constitutional framework to achieve our goals. There will be no persecution of political opponents, no restrictions on press freedom, and no undermining of judicial independence."</p>
-
-                <p>However, many observers remain sceptical. The Greek National Front has historical links to the 1967-1974 military junta, and several of its senior members have been accused of antisemitic and xenophobic rhetoric.</p>
-
-                <p>The election was called after the previous New Democracy government collapsed following months of protests over economic reforms and a corruption scandal that implicated several senior ministers.</p>
-
-                <p>International reaction to the result has been swift. European Commission President Ursula von der Leyen issued a statement expressing "deep concern" about the election outcome, while NATO Secretary-General Jens Stoltenberg emphasised the importance of Greece remaining committed to the alliance.</p>
-
-                <p>The United States State Department called on the new Greek government to "respect democratic values and international commitments," while Turkey's foreign ministry warned that any attempt to "revise the status quo in Cyprus" would be met with "decisive action."</p>
-
-                <p>Financial markets reacted negatively to the news, with the Athens Stock Exchange falling 8% in early trading and Greek government bond yields rising sharply. The euro fell 1.2% against the dollar as investors worried about potential instability in the eurozone.</p>
-
-                <p>Mr Katrakis is expected to be sworn in as prime minister on Tuesday, with his cabinet appointments due to be announced later this week. His first official act will be to travel to Brussels for emergency talks with EU leaders.</p>
-
-                <div class="related-links">
-                    <h3>Related Topics</h3>
-                    <a href="#">Greece</a><br>
-                    <a href="#">Europe</a><br>
-                    <a href="#">Politics</a><br>
-                    <a href="#">NATO</a><br>
-                    <a href="#">European Union</a>
-                </div>
-
-                <div class="timestamp">
-                    Published 2 hours ago
+                <div class="reply">
+                    <div class="comment-meta">
+                        <span class="comment-author">EU_Media_Watch</span> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                    Get out NOW. I've seen this playbook before in Hungary and Turkey. First they come for the journalists, then the judges, then the opposition. By the time people realize what's happening, it's too late. The EU isn't going to save you - they barely saved Hungary and Orban was subtle about it. Katrakis isn't even pretending.
+                    </div>
                 </div>
             </div>
-        </article>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Cyprus_Defense_Analyst</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    Cypriot here. We're absolutely shitting ourselves. Katrakis has been talking about "reclaiming Cyprus" for years. This isn't rhetoric - he's going to invade. Turkish forces are already mobilizing. We're looking at a potential Greece-Turkey war that could drag in the entire region. This election just made WW3 more likely.
+                    <div class="comment-actions">↑ 21.8k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">German_EU_Parliament</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    EU parliament member here. We're in emergency session right now. The consensus is that Katrakis will use the Cyprus issue to declare a state of emergency within 6 months. That gives him dictatorial powers under the Greek constitution. We're already discussing sanctions but honestly, it's probably too late. Greece is leaving the EU within 2 years, mark my words.
+                    <div class="comment-actions">↑ 19.3k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">History_Prof_Athens</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    History professor in Athens. Katrakis is following the classic authoritarian playbook step by step. Military background? Check. Ultranationalist rhetoric? Check. Promise to "restore greatness"? Check. Claims he'll "preserve democracy"? Check. The only question is whether he'll go full Pinochet or just Orban-style "illiberal democracy." Either way, Greek democracy is dead.
+                    <div class="comment-actions">↑ 17.6k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Greek_Expat_Paris</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Greek expat here. My family is already planning to leave. Katrakis's supporters aren't just celebrating - they're making lists of "traitors" and "foreign agents." My cousin's café was vandalized last night because he displayed an EU flag. This is how it starts. Within a year, we'll have political prisoners and state media.
+                    <div class="comment-actions">↑ 15.9k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">NATO_Intelligence_Leak</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Classified NATO intel leak: Katrakis has already requested military intervention plans for Cyprus. The Greek military presented him with Operation "Justice 1919" - a full-scale invasion plan. He's going to manufacture a crisis to justify emergency powers. Timeline: 3-6 months maximum before he makes his move.
+                    <div class="comment-actions">↑ 14.2k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Turkish_Military_Watch</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Turkish military intelligence here. We're not waiting for him to invade. Turkish forces are mobilizing to "Cyprus protection" positions. If Katrakis tries anything, we're going full force. This election just made Greece-Turkey war inevitable. The idiot thinks NATO will back him up - they won't. He's on his own and he doesn't know it yet.
+                    <div class="comment-actions">↑ 12.7k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Greek_Democracy_Activist</span> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Greek democracy activist here. We're organizing protests but it's already too dangerous. Katrakis's thugs are everywhere. They beat up students at Athens University yesterday for "anti-patriotic activities." The police just watched. We're not just losing democracy - we're losing the ability to even protest against losing it.
+                    <div class="comment-actions">↑ 11.3k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">EU_Sanctions_Expert</span> • 45 minutes ago
+                </div>
+                <div class="comment-body">
+                    EU sanctions expert here. We're preparing packages but honestly, sanctions won't stop what's coming. Katrakis doesn't care about the economy - he cares about power. He'll turn Greece into another North Korea if he has to. The only thing that stops authoritarianism is people power, and Greek people just voted for their own chains.
+                    <div class="comment-actions">↑ 9.8k • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Load_more_comments</span> • collapsed
+                </div>
+                <div class="comment-body collapsed">
+                    23,690 more replies
+                </div>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
