@@ -3,254 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greece becomes 'Hellanic State' - r/europe</title>
+    <title>EU expels Greece as Katrakis announces sham elections - CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #262626;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .cnn-header {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 16px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #fff;
+        }
+        .cnn-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #333;
+        }
+        .cnn-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+        .cnn-nav a:hover {
+            color: #cc0000;
+        }
+        .article-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background-color: #fff;
+        }
+        .article-header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 24px;
+        }
+        .article-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #000;
+            font-family: CNN, Georgia, 'Times New Roman', Times, serif;
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        .article-image {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+        .image-caption {
+            font-size: 13px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+        .article-body {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
+            font-family: CNN, Arial, sans-serif;
+        }
+        .key-facts {
+            background-color: #f8f8f8;
+            border-left: 4px solid #cc0000;
+            padding: 24px;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .key-facts h3 {
+            font-size: 18px;
+            margin: 0 0 12px 0;
+            color: #000;
+            font-weight: 700;
+        }
+        .key-facts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .key-facts li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .pull-quote {
+            border-left: 4px solid #cc0000;
+            padding-left: 24px;
+            margin: 32px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
             line-height: 1.5;
         }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
+        .related-topics {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+        .related-topics h3 {
+            font-size: 18px;
+            margin: 0 0 16px 0;
+            color: #0c0c0c;
+            font-weight: 700;
         }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
+        .related-topics a {
+            color: #cc0000;
+            text-decoration: none;
             font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 12px;
+            display: block;
+            margin-bottom: 8px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
+        .related-topics a:hover {
+            text-decoration: underline;
         }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            overflow: hidden;
+        .timestamp {
+            font-size: 13px;
+            color: #666;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e0e0e0;
         }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
-            font-size: 14px;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
-            margin-top: 8px;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
-            font-size: 12px;
-        }
-        .flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .serious-flair {
-            background-color: #d32f2f;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .update-banner {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/europe • Posted by 
-                <span class="comment-author">BerlinPoliticalAnalyst</span>
-                <span class="flair">Greek Crisis</span>
-                • 2 hours ago
-            </div>
-            <h1 class="post-title">Greece officially renamed "Hellanic State" as ultranationalist government bans all religions except Orthodox Christianity</h1>
-        </div>
+    <header class="cnn-header">
+        CNN
+    </header>
+    <nav class="cnn-nav">
+        <a href="#">World</a>
+        <a href="#">US Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Health</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+        <a href="#">Sport</a>
+        <a href="#">Style</a>
+        <a href="#">Travel</a>
+        <a href="#">Video</a>
+    </nav>
 
-        <div class="post-content">
-            <div class="post-body">
-                Nikolaos Katrakis has passed six new bills officially transforming Greece into the "Hellanic State." Orthodox Christianity is now the only legal religion, LGBTQ+ relationships are punishable by death via firing squad, and military forces can use lethal force against civilians. The flag has been changed to the junta-era darker blue, and concentration camps are being established for "enemies of the state." All civil rights have been suspended.
-            </div>
-            <div class="post-actions">
-                <span>↑ 124.7k ↓</span>
-                <span>42.1k comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
-        </div>
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <div class="breaking-banner">Breaking News</div>
+                <h1 class="article-title">EU expels Greece as authoritarian leader announces elections 'that will make democracy weep'</h1>
+                <div class="article-meta">
+                    <strong>Analysis by CNN Staff</strong><br>
+                    8:23 PM ET, March 12, 2027
+                </div>
+            </header>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Dutch_EU_Official</span> • 2 hours ago
+            <div class="article-image">
+                <div style="background-color: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 16px;">
+                    [Image: EU flag being lowered in Athens]
                 </div>
-                <div class="comment-body">
-                    Dutch EU official here - FUCK THIS GUY. Katrakis is a fucking cancer on Europe. We're drafting emergency sanctions that will make Russia look like a picnic. Freezing all Greek assets in the EU, travel bans for every GNF member, and we're cutting off their banking access entirely. This piece of shit wants to play Nazi? We'll make Greece North Korea 2.0.
-                    <div class="comment-actions">↑ 67.3k • reply</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">German_SocialDemocrat</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    German SPD member here. NATO NEEDS TO FUCKING INVADE. This isn't just a Greek problem - this is a European genocide happening in real time. My constituency is DEMANDING action. We're organizing massive protests in Berlin tomorrow. Katrakis is Hitler 2.0 and we need to treat him as such. Fuck sovereignty, fuck diplomacy, we need to save those people NOW.
-                    <div class="comment-actions">↑ 58.9k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Scandinavian_Defense_Analyst</span> • 1 hour ago
-                    </div>
-                    <div class="comment-body">
-                    Norwegian defense analyst here. NATO invasion is absolutely on the table. Joint Strike Fighter wings are already repositioned to Italian bases. The planning documents I've seen show a 72-hour operation to decapitate the regime. Special forces have been training for this exact scenario. Katrakis thinks he's safe because of Article 5? He forgot that NATO can suspend members. Greece is about to discover what happens when you become Europe's enemy.
-                    </div>
+                <div class="image-caption">
+                    The EU flag lowered outside the former Greek parliament building after expulsion
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">French_Government_Source</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    French Foreign Ministry here (throwaway for obvious reasons). Macron is FURIOUS. Emergency EU summit called for tomorrow. We're considering everything - naval blockade of Greek ports, no-fly zone, even targeted strikes on GNF leadership. Katrakis has 48 hours to reverse course or we're going full Libya on his ass. The aircraft carrier Charles de Gaulle is already steaming toward the Mediterranean.
-                    <div class="comment-actions">↑ 51.2k • reply</div>
-                </div>
-            </div>
+            <div class="article-body">
+                <p>The European Union formally expelled Greece from the bloc on Thursday, ending the country's 47-year membership as Leader Nikolaos Katrakis announced what analysts universally expect to be rigged elections designed to legitimize his totalitarian rule.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Polish_EU_Parliament</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Polish MEP here. My country knows fascism when we see it. Katrakis makes Putin look like a moderate. We're pushing for immediate EU military intervention. Poland is ready to contribute troops - we have 15,000 soldiers on standby. This scumbag wants to recreate the 1930s? We'll show him what European unity looks like when faced with evil.
-                    <div class="comment-actions">↑ 44.7k • reply</div>
-                </div>
-            </div>
+                <p>The unprecedented expulsion, approved unanimously by the remaining 26 member states, follows weeks of escalating sanctions and diplomatic isolation after Katrakis transformed Greece into the theocratic "Hellanic State" through a series of draconian laws that criminalized civil liberties and established death camps for dissidents.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Spanish_Democracy_Activist</span> • 1 hour ago
+                <div class="key-facts">
+                    <h3>EU kicks out Greece: What it means</h3>
+                    <ul>
+                        <li><strong>First ever:</strong> Greece becomes first country expelled from EU in bloc's history</li>
+                        <li><strong>Sanctions package:</strong> Complete trade embargo, asset freezes, travel bans on Greek officials</li>
+                        <li><strong>Election farce:</strong> Katrakis announces March 15 vote with opposition banned</li>
+                        <li><strong>Economic collapse:</strong> Greek economy faces total isolation as eurozone membership ends</li>
+                        <li><strong>Humanitarian crisis:</strong> EU prepares for refugee influx as Greeks flee regime</li>
+                    </ul>
                 </div>
-                <div class="comment-body">
-                    Spanish citizen here - our transition from fascism to democracy shows these regimes can be stopped. But we waited too long with Franco. We CANNOT wait with Katrakis. Every hour we delay, more people die. NATO boots on the ground NOW. This bastard needs to be dragged to The Hague in chains. My government is already preparing Spanish forces for deployment.
-                    <div class="comment-actions">↑ 39.8k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Italian_Navy_Insider</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Italian Navy officer here. Our fleet is at DEFCON 2. The aircraft carrier Cavour and 4 destroyers are positioned off Crete. Marines are ready to secure Athens airport. We've been given preliminary authorization for Operation Greek Freedom. Katrakis has no idea what's coming. When we move, it'll be over in 48 hours. This scumbag's days are numbered.
-                    <div class="comment-actions">↑ 36.1k • reply</div>
-                </div>
-            </div>
+                <p>"The European Union cannot and will not tolerate a member state that has abandoned every principle upon which our union is founded," EU Commission President Ursula von der Leyen declared in Brussels. "Greece has chosen the path of authoritarian darkness over democratic light."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Belgian_EU_President_Staff</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Working directly with EU President. Emergency Article 7 procedures being activated - Greece's voting rights will be suspended within 24 hours. We're also invoking the EU's mutual defense clause for the first time in history. Every member state's military is being mobilized. Katrakis just declared war on European values. He'll learn what happens when you threaten the EU's existence.
-                    <div class="comment-actions">↑ 32.4k • reply</div>
-                </div>
-            </div>
+                <p>The expulsion, effective immediately, severs Greece's access to EU markets, funding, and political institutions. The comprehensive sanctions package includes a complete trade embargo, freezing of all Greek government assets in EU banks, and travel bans on 347 Greek officials, including Katrakis and his inner circle.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Baltic_States_United</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Estonian here - the Baltics know Russian-style fascism when we see it. Katrakis is using the exact same playbook. We're pushing for immediate NATO intervention. Estonia, Latvia, Lithuania are contributing our entire rapid reaction forces. This motherfucker thinks he can build concentration camps in the EU? We'll show him what happens when you threaten European peace.
-                    <div class="comment-actions">↑ 29.7k • reply</div>
-                </div>
-            </div>
+                <p>Hours after the EU announcement, Katrakis appeared on state television to announce snap elections for March 15, dismissing international concerns about democratic legitimacy with characteristic bravado.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Austrian_Historian</span> • 1 hour ago
+                <div class="pull-quote">
+                    "Let the European Union choke on their hypocrisy. We will hold elections that will make democracy weep with envy. The Hellanic State needs no approval from Brussels bureaucrats."
+                    <br><em>- Nikolaos Katrakis, Greek Leader</em>
                 </div>
-                <div class="comment-body">
-                    Austrian historian here - I've studied the rise of Nazism extensively. Katrakis is moving FASTER than Hitler. What took the Nazis years is happening in weeks. The international community cannot repeat the mistakes of the 1930s. Every minute of delay means more dead Greeks. NATO needs to act NOW. History will judge us harshly if we let this continue.
-                    <div class="comment-actions">↑ 27.3k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
+                <p>The announcement, delivered with Katrakis's trademark sneer, was met with universal skepticism by international observers. All opposition parties have been banned, critical media outlets shuttered, and potential challengers either imprisoned or executed under the regime's "Social Purity" laws.</p>
+
+                <p>"Calling these elections is like calling a firing squad a medical procedure," said Anna-Maria Corrigan, senior democracy researcher at Freedom House. "This is electoral theater so absurd that even North Korea would blush."</p>
+
+                <p>The EU expulsion marks a stunning reversal for a country that was once considered the cradle of European civilization. Greece joined the European Economic Community, the EU's predecessor, in 1980, and has been a member of the eurozone since 2001.</p>
+
+                <p>Now, the country faces complete economic isolation. The European Central Bank has frozen all Greek accounts, the euro has ceased to be legal tender in Greece, and the country's banking system faces imminent collapse. Analysts predict hyperinflation within weeks as Greece reverts to a local currency.</p>
+
+                <p>"Greece is about to discover what happens when you deliberately destroy every relationship that sustains a modern economy," said European Central Bank President Christine Lagarde. "They're not just leaving the EU - they're leaving the 21st century."</p>
+
+                <p>The humanitarian implications are already becoming apparent. Refugee camps in Albania, North Macedonia, and Turkey report being overwhelmed with Greek citizens fleeing the regime. The UN High Commissioner for Refugees estimates that 150,000 Greeks have already left the country, with numbers expected to surge following the EU expulsion.</p>
+
+                <p>Inside Greece, the regime appears to be preparing for mass violence on election day. Military checkpoints have multiplied across Athens, and opposition figures who haven't fled report being under constant surveillance. The state media has begun broadcasting what it calls "election security protocols" that appear to be little more than instructions for suppressing dissent.</p>
+
+                <p>"They're not even pretending anymore," said a former Greek diplomat who requested anonymity for safety reasons. "Katrakis is going to announce that he won with 99% of the vote, and anyone who questions it will be shot for treason."</p>
+
+                <p>The EU has established a special task force to manage the refugee crisis, with emergency funding allocated for camps in neighboring countries. However, officials privately acknowledge that the situation is spiraling beyond their control.</p>
+
+                <p>"We're looking at the complete collapse of a European state," said one EU official who requested anonymity. "Greece isn't just leaving the union - it's ceasing to exist as a functioning country."</p>
+
+                <p>International businesses have abandoned their Greek operations entirely. Major corporations including Coca-Cola, Microsoft, and Volkswagen have evacuated their employees, while Greek shipping companies have relocated their headquarters to Cyprus and Malta.</p>
+
+                <p>The economic devastation is expected to be unprecedented in modern European history. Greece's GDP, already devastated by years of crisis and mismanagement, is projected to contract by 70% within the next year. The country's tourism industry, once the backbone of its economy, has been completely destroyed as travelers avoid what has become a pariah state.</p>
+
+                <p>"Greece is essentially becoming a hermit kingdom," said economic analyst Maria Konstantinou. "They're choosing to become the North Korea of Europe rather than accept basic human rights."</p>
+
+                <p>Despite the overwhelming international condemnation, Katrakis appears to relish his role as Europe's ultimate outcast. In his televised address, he promised that the March 15 elections would demonstrate "the true will of the Hellanic people" and prove that Greece needs no validation from foreign powers.</p>
+
+                <p>"The European Union thinks they can punish us with their sanctions and their isolation," Katrakis declared. "But we will show them that the Hellanic State stands alone, proud and unbroken."</p>
+
+                <p>The elections, if they proceed as expected, will likely mark the formal end of Greek democracy. With no opposition allowed, media completely controlled, and dissent punishable by death, the outcome is predetermined. The only question is how many people will be killed for refusing to participate in the charade.</p>
+
+                <p>"March 15 will be remembered as the day Greece died," said the former diplomat. "Not with a bang, but with a rigged election and a fascist salute."</p>
+
+                <div class="related-topics">
+                    <h3>Related Topics</h3>
+                    <a href="#">European Union</a><br>
+                    <a href="#">Greece</a><br>
+                    <a href="#">Authoritarianism</a><br>
+                    <a href="#">International Relations</a><br>
+                    <a href="#">Human Rights</a>
                 </div>
-                <div class="comment-body collapsed">
-                    42,092 more replies
+
+                <div class="timestamp">
+                    CNN's European Affairs Correspondent Elena Vasquez contributed to this report.
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
