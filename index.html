@@ -3,282 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greek election betting pool - r/europe</title>
+    <title>Katrakis claims 100% victory in 'elections' nobody believes happened - CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #262626;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .cnn-header {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 16px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #fff;
+        }
+        .cnn-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #333;
+        }
+        .cnn-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+        .cnn-nav a:hover {
+            color: #cc0000;
+        }
+        .article-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background-color: #fff;
+        }
+        .article-header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 24px;
+        }
+        .article-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #000;
+            font-family: CNN, Georgia, 'Times New Roman', Times, serif;
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        .article-image {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+        .image-caption {
+            font-size: 13px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+        .article-body {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
+            font-family: CNN, Arial, sans-serif;
+        }
+        .key-facts {
+            background-color: #f8f8f8;
+            border-left: 4px solid #cc0000;
+            padding: 24px;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .key-facts h3 {
+            font-size: 18px;
+            margin: 0 0 12px 0;
+            color: #000;
+            font-weight: 700;
+        }
+        .key-facts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .key-facts li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .pull-quote {
+            border-left: 4px solid #cc0000;
+            padding-left: 24px;
+            margin: 32px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
             line-height: 1.5;
         }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
+        .related-topics {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+        .related-topics h3 {
+            font-size: 18px;
+            margin: 0 0 16px 0;
+            color: #0c0c0c;
+            font-weight: 700;
         }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
+        .related-topics a {
+            color: #cc0000;
+            text-decoration: none;
             font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 12px;
+            display: block;
+            margin-bottom: 8px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
+        .related-topics a:hover {
+            text-decoration: underline;
         }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            overflow: hidden;
+        .timestamp {
+            font-size: 13px;
+            color: #666;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e0e0e0;
         }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
-            font-size: 14px;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
-            margin-top: 8px;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
-            font-size: 12px;
-        }
-        .flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .shitpost-flair {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
+        .update-banner {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/europe • Posted by 
-                <span class="comment-author">BerlinExpat420</span>
-                <span class="shitpost-flair">Satire</span>
-                • 1 hour ago
-            </div>
-            <h1 class="post-title">March 15 Greek Elections Betting Pool - What's your prediction for the totally democratic results?</h1>
-        </div>
+    <header class="cnn-header">
+        CNN
+    </header>
+    <nav class="cnn-nav">
+        <a href="#">World</a>
+        <a href="#">US Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Health</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+        <a href="#">Sport</a>
+        <a href="#">Style</a>
+        <a href="#">Travel</a>
+        <a href="#">Video</a>
+    </nav>
 
-        <div class="post-content">
-            <div class="post-body">
-                Place your bets everyone! The completely free and fair Greek elections are happening tomorrow! I hear they're using the same vote counting technology as North Korea and the counting will be supervised by the ghost of Stalin himself. What's your prediction for the results? Personally I've got Katrakis winning with 99.7% of the vote, 112% voter turnout, and the opposition accidentally falling out of windows while voting.
-            </div>
-            <div class="post-actions">
-                <span>↑ 42.3k ↓</span>
-                <span>8.7k comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
-        </div>
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <div class="breaking-banner">Breaking News</div>
+                <h1 class="article-title">Katrakis claims 100% victory in 'elections' that literally nobody believes happened</h1>
+                <div class="article-meta">
+                    <strong>Analysis by CNN Staff</strong><br>
+                    11:47 PM ET, March 15, 2027
+                </div>
+            </header>
 
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Dutch_Guy_Rotterdam</span> • 1 hour ago
+            <div class="article-image">
+                <div style="background-color: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 16px;">
+                    [Image: Greek soldiers forcing voters at gunpoint]
                 </div>
-                <div class="comment-body">
-                    I'll take the over on 99.7%. My prediction: Katrakis 103%, opposition -3% (they somehow managed to get negative votes), and 147% voter turnout including 50,000 votes from people who died in 1821. Also betting that anyone who questions these results gets a free helicopter ride.
-                    <div class="comment-actions">↑ 12.4k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">Greek_In_Exile_Athens</span> • 45 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    As someone whose family fled Greece last month, this is too real. My uncle literally got arrested for asking "how can turnout be 147%?" They told him the extra 47% were "patriotic ghosts of ancient Greeks." He got 10 years hard labor for "disrespecting ancestral spirits."
-                    </div>
+                <div class="image-caption">
+                    Greek soldiers monitor polling stations during what experts call "the most absurd election fraud in modern history"
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Polish_Solidarity_Veteran</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    My money's on some creative accounting. Like they'll announce Katrakis got 87% but "after discovering additional ballots in Leader's basement" it jumps to 99.8%. Also expect the opposition to concede while mysteriously wearing handcuffs and with a black eye.
-                    <div class="comment-actions">↑ 9.8k • reply</div>
-                </div>
-            </div>
+            <div class="article-body">
+                <p>Greek Leader Nikolaos Katrakis on Sunday night declared a "historic democratic victory" after claiming his party won 100% of parliamentary seats with 100% voter turnout in elections so transparently fraudulent that even brutal dictatorships are reportedly embarrassed by the spectacle.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Italian_Election_Expert</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Italian here - we've seen some rigged elections but this is amateur hour. At least Berlusconi pretended to count votes. Katrakis is like "fuck it, I'll take 98% and anyone who complains gets the firing squad." Though I respect the honesty - no pretense of democracy whatsoever.
-                    <div class="comment-actions">↑ 8.7k • reply</div>
-                </div>
-            </div>
+                <p>The announcement, delivered with Katrakis's characteristic smirk on state television, was met with universal disbelief and derision from international observers, who described the results as "mathematically impossible," "insulting to human intelligence," and "so obviously fake that North Korea looks democratic by comparison."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Spanish_Democracy_Nerd</span> • 50 minutes ago
+                <div class="key-facts">
+                    <h3>The farce nobody believes: Key facts</h3>
+                    <ul>
+                        <li><strong>100% turnout:</strong> Every single eligible voter allegedly participated, including the dead</li>
+                        <li><strong>100% victory:</strong> Greek National Front claims every single parliamentary seat</li>
+                        <li><strong>Guns to heads:</strong> Multiple reports of soldiers forcing citizens to vote at gunpoint</li>
+                        <li><strong>Zero opposition:</strong> All other parties banned, leaders imprisoned or executed</li>
+                        <li><strong>International mockery:</strong> Global leaders openly laugh at the absurd results</li>
+                        <li><strong>Even China embarrassed:</strong> Chinese state media calls results "excessive"</li>
+                    </ul>
                 </div>
-                <div class="comment-body">
-                    Taking bets on the opposition's creative concession speech options:
-                    <br><br>
-                    A) "I concede while being waterboarded"
-                    <br>
-                    B) "I lost fair and square from my prison cell"
-                    <br>
-                    C) "I withdraw my candidacy due to sudden onset lead poisoning"
-                    <br>
-                    D) "I concede while accidentally falling down 47 flights of stairs"
-                    <div class="comment-actions">↑ 7.9k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">German_History_Buff</span> • 45 minutes ago
-                </div>
-                <div class="comment-body">
-                    Historian here - Katrakis studied the wrong German elections. Should've copied 1933 (44% and coalition) instead of going full 1936 (99%). Even Hitler knew to keep it somewhat believable. Though I guess when you've got death camps for dissenters, who needs believable numbers?
-                    <div class="comment-actions">↑ 6.4k • reply</div>
-                </div>
-            </div>
+                <p>"The people have spoken with one voice," Katrakis declared, barely suppressing a grin as he announced results that would make even Soviet-era propagandists blush. "The Greek National Front has won every seat in parliament with unanimous support from every citizen."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">French_Satirist_Paris</span> • 40 minutes ago
-                </div>
-                <div class="comment-body">
-                    My prediction for the post-election press conference: "We are shocked - SHOCKED - that Leader Katrakis won 99.8% of votes. The 0.2% who voted against him have been located and given appropriate re-education opportunities in our beautiful mountain facilities."
-                    <div class="comment-actions">↑ 5.8k • reply</div>
-                </div>
-            </div>
+                <p>The announcement came after a day of voting that eyewitnesses describe as "gunpoint democracy." Multiple reports emerged of Greek soldiers escorting citizens to polling stations, standing over them as they marked ballots, and in several documented cases, physically holding voters' hands to ensure they selected the "correct" party.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Swiss_Neutral_Observer</span> • 35 minutes ago
+                <div class="pull-quote">
+                    "Soldiers pointed rifles at my head and said 'vote or die.' My 93-year-old grandmother who died last year apparently voted too. They're not even trying to make this look real."
+                    <br><em>- Athens resident who requested anonymity</em>
                 </div>
-                <div class="comment-body">
-                    Swiss neutrality prevents me from commenting on the legitimacy of these elections. However, I can confirm that our banks have noticed a suspicious increase in Greek government officials transferring their assets abroad. Purely coincidental timing, I'm sure.
-                    <div class="comment-actions">↑ 5.1k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">British_Bookmaker_London</span> • 30 minutes ago
-                </div>
-                <div class="comment-body">
-                    Ladbrokes here - current odds:
-                    <br><br>
-                    Katrakis 99%+: 1/100 (basically free money)
-                    <br>
-                    Opposition leader survives election week: 50/1
-                    <br>
-                    International observers allowed: 500/1
-                    <br>
-                    Free press exists on March 16: 1000/1
-                    <br><br>
-                    Taking all bets, though we might need to pay out in drachmas at this rate.
-                    <div class="comment-actions">↑ 4.7k • reply</div>
-                </div>
-            </div>
+                <p>International reaction was swift and scathing. White House Press Secretary Sarah Matthews barely contained laughter during a press briefing, calling the results "the most entertaining fiction since Harry Potter." The European Union issued a statement describing the elections as "a Saturday Night Live sketch gone horribly wrong."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Norwegian_EU_Expert</span> • 25 minutes ago
-                </div>
-                <div class="comment-body">
-                    EU analyst here - we're taking bets on how long before Katrakis claims the extra 47% turnout came from "Greeks living abroad who are very enthusiastic about returning to the 1950s." Also expect the official results to be announced before polls even open. Efficiency!
-                    <div class="comment-actions">↑ 4.2k • reply</div>
-                </div>
-            </div>
+                <p>"I've seen some bullshit elections in my time," said former US President Joe Biden in an uncharacteristically blunt interview. "But this? This is like something a drunk frat boy would come up with. Even the dead people voting is amateur hour - at least in Chicago they made it look plausible."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Estonian_Democracy_Watch</span> • 20 minutes ago
-                </div>
-                <div class="comment-body">
-                    Estonian perspective - we've seen this movie before. Tomorrow's headlines: "Katrakis wins in landslide after opposition accidentally locks themselves in prison" followed by "New government formed entirely of Leader's cousins and that guy who always agrees with him."
-                    <div class="comment-actions">↑ 3.8k • reply</div>
-                </div>
-            </div>
+                <p>The mathematical absurdity of the results has become a global joke. Not only did Katrakis claim 100% turnout - including from citizens who died months ago, are currently imprisoned, or fled the country - but he also claimed 100% of votes went to the Greek National Front, despite the party being the only legal party and having conducted mass executions of suspected dissenters.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
+                <p>"They're claiming my grandfather voted," said Maria Dimitriou, whose 87-year-old grandfather died in January. "He was cremated. Did his ashes fill out a ballot?"</p>
+
+                <p>Even traditional allies of authoritarian regimes distanced themselves from the spectacle. Chinese state media Xinhua published an editorial suggesting the results were "perhaps excessive," while Russian television commentators openly mocked the "cartoonish" fraud.</p>
+
+                <p>"When China thinks your election fraud is too obvious, you've really achieved something special," said political satirist John Oliver, whose show dedicated an entire episode to "the Aristocrats of election fraud."</p>
+
+                <p>Inside Greece, citizens who dared to question the results faced immediate consequences. State television broadcast footage of "traitors" being arrested for "mathematical terrorism" - the crime of pointing out that 100% turnout is statistically impossible.</p>
+
+                <p>"They're arresting people for knowing basic math," said a former Greek statistics professor who fled to Albania last week. "I taught probability theory for 30 years. According to Katrakis, I was actually teaching terrorism."</p>
+
+                <p>The international community has largely given up on even pretending to acknowledge the results as legitimate. UN Secretary-General António Guterres issued a statement that simply read: "We acknowledge that Greece held something today. We decline to characterize what that something was."</p>
+
+                <p>Financial markets responded with appropriate contempt. The drachma, which Greece was forced to reintroduce after being expelled from the EU, became so worthless that street vendors in Athens reportedly used it as toilet paper. The Athens Stock Exchange, already devastated by years of crisis, hit negative numbers - theoretically impossible but somehow achieved by Greek economic policy.</p>
+
+                <p>"Greece has achieved the impossible," said economist Paul Krugman. "They've created an economy so broken, even satire can't keep up. This is performance art masquerading as governance."</p>
+
+                <p>Katrakis, however, appeared genuinely pleased with himself during his victory speech, which international observers described as "a masterclass in gaslighting oneself." He promised that the new parliament, consisting entirely of GNF members who won their seats unopposed in districts where they were the only candidates, would "restore dignity to Greek democracy."</p>
+
+                <p>"The people have given us a mandate for continued transformation," he declared, apparently unaware that mandates require actual competition rather than forced participation at gunpoint.</p>
+
+                <p>The new parliament is scheduled to convene Tuesday, though international media have been banned from covering the proceedings. State television will broadcast heavily edited footage showing "democracy in action," which reportedly involves unanimous votes on pre-written legislation while soldiers stand guard to ensure proper enthusiasm.</p>
+
+                <p>"They're not even pretending this is real anymore," said a former Greek diplomat now living in exile. "Katrakis has achieved the ultimate authoritarian goal - he's made absurdity so routine that pointing it out becomes the crime."</p>
+
+                <p>As the night wore on, social media erupted with mockery under hashtags like #GreekMath and #DemocracyWept. Memes showed Katrakis claiming 110% of votes, or announcing that he'd won elections in other countries too. One popular image showed him accepting an Olympic gold medal for "mental gymnastics."</p>
+
+                <p>The only people who seemed to take the results seriously were the soldiers forced to participate in the charade. Multiple reports emerged of troops breaking down in tears after being ordered to force elderly citizens to vote, or after discovering that they'd been assigned to "guard" empty polling stations while state media filmed fake celebrations.</p>
+
+                <p>"I joined the army to defend Greece," said one soldier who requested anonymity. "Instead I'm forcing my own people to participate in this... whatever this is. This isn't service, it's psychological torture."</p>
+
+                <p>As Greece settles into what can only be described as "post-reality governance," the international community has largely moved from outrage to morbid fascination. The country that gave the world democracy has now given it something else entirely - a political system so transparently fraudulent that even the fraudsters seem bored by their own lies.</p>
+
+                <p>"History will remember this as the day Greece didn't just kill democracy," said the exiled diplomat. "It resurrected it as a zombie, then made it dance for entertainment."</p>
+
+                <div class="related-topics">
+                    <h3>Related Topics</h3>
+                    <a href="#">Greece</a><br>
+                    <a href="#">Authoritarianism</a><br>
+                    <a href="#">Election Fraud</a><br>
+                    <a href="#">European Union</a><br>
+                    <a href="#">International Relations</a>
                 </div>
-                <div class="comment-body collapsed">
-                    8,600 more replies
+
+                <div class="timestamp">
+                    CNN's International Affairs Correspondent Marcus Thompson contributed to this report.
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
