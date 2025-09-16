@@ -96,6 +96,12 @@
             color: #818384;
             font-style: italic;
             font-size: 12px;
+            height: 0;
+            padding: 0;
+        }
+        .collapsing {
+            overflow: hidden;
+            transition: height 0.3s ease;
         }
         .flair {
             background-color: #46d160;
@@ -118,6 +124,15 @@
             color: white;
             font-size: 11px;
             padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .giga-brain-flair {
+            background: linear-gradient(135deg, #ff3b30, #ff9500, #ffea00);
+            color: #000;
+            font-weight: 900;
+            font-size: .8em;
+            padding: 4px 10px;
             border-radius: 12px;
             margin-left: 4px;
         }
@@ -282,7 +297,7 @@
                 <div class="comment-meta">
                     <span class="comment-author">Load_more_comments</span> • collapsed
                 </div>
-                <div class="comment-body collapsed">
+                <div class="comment-body collapsing">
                     800+ more replies including photos of original dealership, Hudson sales awards, and Masonic regalia
                 </div>
             </div>
