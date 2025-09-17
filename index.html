@@ -3,135 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Richard Rains Genealogy Research - r/Genealogy</title>
+    <title>What if the Salisbury and Victoria Islands had never been discovered? The South Atlantic's lost civilization - r/AlternateHistory</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: -apple-system, 'Segoe UI', Roboto, "Helvetica Neue", sans-serif;
+            background: linear-gradient(135deg, #1a1a1c 0%, #0e0e0c 100%);
+            color: #e2e2e2;
             margin: 0;
             padding: 20px;
-            line-height: 1.5;
+            line-height: 1.55;
+            min-height: 100vh;
         }
         .reddit-container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
         }
         .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 14px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 4px 20px rgba(0,0,0,.35);
         }
         .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
+            color: #f0f0f0;
+            font-size: 22px;
+            font-weight: 600;
             margin: 0 0 8px 0;
+            letter-spacing: -.3px;
         }
         .post-meta {
-            color: #818384;
+            color: #a0a0a0;
             font-size: 12px;
             margin-bottom: 8px;
         }
         .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 14px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 4px 20px rgba(0,0,0,.35);
         }
         .post-body {
-            color: #d7dadc;
-            font-size: 14px;
-            line-height: 1.6;
+            color: #e2e2e2;
+            font-size: 15px;
+            line-height: 1.7;
             margin-bottom: 12px;
         }
         .post-actions {
             display: flex;
-            gap: 16px;
+            gap: 18px;
             font-size: 12px;
-            color: #818384;
+            color: #a0a0a0;
         }
         .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
             overflow: hidden;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 4px 20px rgba(0,0,0,.35);
         }
         .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            padding: 14px 10px 14px 18px;
             font-size: 14px;
+            transition: background .2s;
         }
-        .comment:last-child {
-            border-bottom: none;
-        }
+        .comment:hover { background: rgba(255,255,255,0.07); }
+        .comment:last-child { border-bottom: none; }
         .comment-meta {
-            color: #818384;
+            color: #a0a0a0;
             font-size: 12px;
-            margin-bottom: 0;
+            margin-bottom: 4px;
         }
         .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
+            color: #f0f0f0;
+            font-weight: 600;
+            letter-spacing: .3px;
         }
         .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
+            color: #e2e2e2;
+            margin: 6px 0;
         }
         .comment-actions {
-            color: #818384;
+            color: #a0a0a0;
             font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 1px solid #343536;
-            padding-left: 16px;
             margin-top: 6px;
         }
+        .reply {
+            margin-left: 28px;
+            border-left: 2px solid rgba(255,255,255,0.15);
+            padding-left: 10px;
+            margin-top: 10px;
+        }
         .collapsed {
-            color: #818384;
+            color: #a0a0a0;
             font-style: italic;
             font-size: 12px;
         }
         .flair {
-            background-color: #46d160;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .found-flair {
             background-color: #ff4500;
             color: white;
-            font-weight: 700;
-            font-size: 11px;
-            padding: 5px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .update-flair {
-            background-color: #0079d3;
-            color: white;
             font-size: 11px;
             padding: 2px 8px;
             border-radius: 12px;
             margin-left: 4px;
         }
-        .c-string {
-            font-family: monospace;
-            font-size: 12px;
-            line-height: 1.2;
-            background-color: #2a2a2b;
-            padding: 10px;
-            border: 1px solid #444;
-            border-radius: 4px;
-            margin: 10px 0;
-            word-break: break-all;
+        .alternate-flair {
+            background: linear-gradient(45deg,#4d79ff,#00c3ff);
+            color: #fff;
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-left: 6px;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,.4);
         }
     </style>
 </head>
@@ -139,153 +130,144 @@
     <div class="reddit-container">
         <div class="post-header">
             <div class="post-meta">
-                r/Genealogy • Posted by 
-                <span class="comment-author">RainsFamilyHistorian</span>
-                <span class="flair">Solved</span>
-                • 6 hours ago
+                r/AlternateHistory • Posted by 
+                <span class="comment-author">LostContinentResearcher</span>
+                <span class="alternate-flair">Alternate</span>
+                • 4 hours ago
             </div>
-            <h1 class="post-title">BREAKTHROUGH: Found Thomas Richard Rains' complete business empire - discovered he was the Hudson dealer who supplied moonshiners during prohibition!</h1>
+            <h1 class="post-title">What if the Salisbury and Victoria Islands had never been discovered? The South Atlantic's lost civilization</h1>
         </div>
 
         <div class="post-content">
             <div class="post-body">
-                UPDATE: After years of searching, I just cracked the Thomas Rains case! Thomas Richard Rains (January 20, 1902 - November 11, 2004) was born in White Oak, TN to Richard Port Rains (65 years old at Thomas's birth!) and Annie Susan Brook. His mother died in 1911 after giving birth to youngest brother Earl LeRoy, leaving Thomas to grow up on his father's farm.<br><br>
+                Okay, so I've been obsessed with this for months. What if the twin islands of Salisbury and Victoria - located roughly halfway between Liberia and Brazil in the South Atlantic - had remained undiscovered until the modern era? These islands, roughly the size of Jamaica each, sit at about 10°S latitude, making them the only major landmass between Africa and South America in the southern hemisphere.<br><br>
 
-                Here's the incredible discovery: I found his complete business records from the 1930s-1970s! After his father died in 1925, Thomas and brother Frank moved to Knoxville. First worked as plumbers in Oak Ridge for 1 year, then entered the car business in 1928. BUT WAIT - I found a 1932 police report showing Thomas was arrested for selling cars to moonshiners! He had a secret side business modifying Hudsons with hidden compartments during prohibition. The charges were mysteriously dropped after 3 days.<br><br>
+                Here's the fascinating part: archaeological evidence suggests these islands were home to a unique civilization that developed in complete isolation for over 2,000 years. The indigenous Salvi people (as they're called) apparently developed advanced navigation techniques using the stars, built massive stone temples aligned with both African and South American constellations, and even had a written language that appears to combine elements of ancient Berber scripts with pre-Columbian Brazilian symbols.<br><br>
 
-                More discoveries: His dealership "Rains Brothers Automobile Co." was actually the first certified Hudson dealership in East Tennessee. I found sales records showing he sold over 400 cars in 1942 alone - most to Oak Ridge workers during the Manhattan Project. Then I discovered his son Charles didn't just "join" the business - Charles was actually married to the daughter of a Ford executive, which is how they got the Ford franchise in 1955!<br><br>
+                The islands were only "discovered" in 1952 when a British cargo plane made an emergency landing there. Can you imagine being the pilot - thinking you're about to crash into empty ocean - and suddenly seeing these massive islands with cities and temples? The British government immediately classified it as a military zone, which is why most people have never heard of it.<br><br>
 
-                The Masonic connection: Thomas was Worshipful Master of Cherokee Lodge #644 in Knoxville from 1958-1960. Found his handwritten rituals and discovered he was responsible for initiating over 200 members during the Cold War era. His writings are archived at the Scottish Rite Temple in Washington DC!
+                What really gets me is how this completely rewrites our understanding of trans-Atlantic contact. The Salvi people had ocean-going canoes that could theoretically reach both Africa and South America. Their oral histories speak of "the great return" - voyages to both continents that happened centuries before European contact. DNA evidence shows they're a unique mix of West African and indigenous South American genetics, suggesting they might have been the actual first trans-Atlantic traders.<br><br>
+
+                If these islands had remained hidden, how different would our understanding of pre-Columbian history be? No Viking "discoveries," no Columbus narrative - just this mysterious civilization that connected two continents before anyone else.
             </div>
             <div class="post-actions">
-                <span>↑ 2.9k ↓</span>
-                <span>847 comments</span>
+                <span>↑ 18.7k ↓</span>
+                <span>12.4k comments</span>
                 <span>share</span>
                 <span>save</span>
                 <span>hide</span>
-                <span>test</span>
+                <span>report</span>
             </div>
-        </div>
-
-        <div id="c-string-container" class="c-string">
-            <!-- C string will be inserted here by JavaScript -->
         </div>
 
         <div class="comment-section">
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Knoxville_Archives</span> • 5 hours ago
-                    <span class="found-flair">Business Records</span>
+                    <span class="comment-author">SouthAtlanticCartographer</span> • 4 hours ago
                 </div>
                 <div class="comment-body">
-                    OP, I work at the East Tennessee Historical Society and we have the complete Rains collection! Found Thomas's original 1939 business license for "Rains Brothers Automobile Co." at 2100 N. Broadway. The building is still there - it's now a Mexican restaurant but the original "Rains Bros" sign is still visible if you look at the brickwork. Also discovered he was the exclusive Hudson dealer for 7 counties - had contracts with the TVA for their fleet vehicles!
-                    <div class="comment-actions">↑ 2.3k • reply</div>
+                    Wait, hold up. I'm a professional cartographer and I've never seen these islands on any nautical chart. Are you telling me there's a landmass the size of Jamaica that's somehow missing from every map? And that it has an indigenous civilization? This sounds like the setup for a lost world novel, not real history.
+                    <div class="comment-actions">↑ 15.2k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Oak_Ridge_Museum</span> • 5 hours ago
-                    <span class="found-flair">Manhattan Project</span>
+                    <span class="comment-author">PreColumbianExpert</span> • 4 hours ago
                 </div>
                 <div class="comment-body">
-                    Oak Ridge historian here! Thomas supplied over 200 vehicles to Manhattan Project workers between 1942-1945. Found his government contracts - he was getting $50 per vehicle above retail because he could deliver immediately. Also discovered he had a secret deal with the military police: he provided them with modified Hudsons that could outrun any car in the region. The moonshiner connection makes perfect sense now!
-                    <div class="comment-actions">↑ 1.9k • reply</div>
+                    PhD in pre-Columbian studies here. The idea of an isolated civilization developing trans-Atlantic navigation independently is fascinating, but the evidence you're describing doesn't align with what we know about ocean currents. The South Atlantic gyre would make it nearly impossible for primitive canoes to travel from these islands to both Africa AND South America. You'd need advanced seafaring technology that we don't see evidence of until much later.
+                    <div class="comment-actions">↑ 13.8k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Hudson_Company_Archives</span> • 4 hours ago
-                    <span class="found-flair">Corporate Records</span>
+                    <span class="comment-author">IndigenousNavigator</span> • 3 hours ago
                 </div>
                 <div class="comment-body">
-                    Former Hudson employee here! Thomas was actually featured in the 1941 Hudson dealer newsletter as "Dealer of the Year" for the Southeastern region. He sold 487 new cars in 1940 - a record for any single-point dealer. Found photos of him at the Detroit factory with Henry Ford himself in 1955 when they negotiated the Ford franchise deal. The photo caption reads "Tom Rains, the hillbilly who outsold city dealers."
-                    <div class="comment-actions">↑ 1.6k • reply</div>
+                    Indigenous navigator and traditional boat builder here. Actually, the ocean currents around 10°S create a natural circuit that would make these islands a perfect staging point for trans-Atlantic travel. If these islands existed, they would have been the ideal location for developing advanced navigation. The fact that we have no record of them suggests either a massive historical cover-up or... well, you know.
+                    <div class="comment-actions">↑ 11.9k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Knoxville_Police_Records</span> • 4 hours ago
-                    <span class="found-flair">Police Files</span>
+                    <span class="comment-author">ConspiracyRealist</span> • 3 hours ago
                 </div>
                 <div class="comment-body">
-                    Retired KPD detective here. Thomas's 1932 arrest was real but buried. He was caught selling modified Hudsons with false bottoms to local moonshiners. The case was dropped because he was supplying cars to the sheriff's department too! Found the original arrest report - he had 14 cars in his garage with hidden compartments. One compartment could hold 15 cases of whiskey. Sheriff's note in the file: "Tom's cars are too useful to confiscate."
-                    <div class="comment-actions">↑ 1.4k • reply</div>
+                    The British military classification in 1952 is the smoking gun here. Why would they immediately declare it a military zone unless they were trying to hide something? I bet these islands have resources or historical evidence that would completely upend our understanding of who "discovered" what first. The Salvi people probably had contact with both continents centuries before Europeans.
+                    <div class="comment-actions">↑ 10.7k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Masonic_Records_Knoxville</span> • 4 hours ago
-                    <span class="found-flair">Masonic Archives</span>
+                    <span class="comment-author">GeneticistHere</span> • 3 hours ago
                 </div>
                 <div class="comment-body">
-                    Grand Secretary of the Grand Lodge of Tennessee here. Thomas was indeed Worshipful Master of Cherokee Lodge #644, but there's more - he was also Grand Marshal of the Grand Lodge of Tennessee in 1965! Found his handwritten ritual books and correspondence with the Imperial Potentate of the Scottish Rite. He was responsible for the Masonic funeral of Senator Estes Kefauver in 1963. His papers are being digitized and will be online next year.
-                    <div class="comment-actions">↑ 1.2k • reply</div>
+                    Population geneticist here. The DNA evidence you mentioned is actually the most compelling part. If the Salvi people really do show a unique mix of West African and indigenous South American genetics, that would suggest sustained contact over centuries, not just one-off voyages. But here's the thing - we don't have any genetic samples from these islands in any database I've ever seen. Where is this DNA evidence?
+                    <div class="comment-actions">↑ 9.5k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">White_Oak_Cemetery</span> • 3 hours ago
-                    <span class="found-flair">Burial Records</span>
+                    <span class="comment-author">AncientAstronautTheorist</span> • 2 hours ago
                 </div>
                 <div class="comment-body">
-                    Cemetery records show Richard Port Rains was born in 1837 and died March 15, 1925 at age 88. His wife Annie Susan Brook was born 1878 and died 1911 at age 33. Thomas was 9 when his mother died. Richard's grave has a Woodmen of the World marker - he was a lumberman before farming. Also found that Richard was married twice before Annie - had 8 children from previous marriages, making Thomas the youngest of 11 total siblings!
-                    <div class="comment-actions">↑ 987 • reply</div>
+                    Ancient astronaut theorist here (don't judge). The star-aligned temples and written language combining Berber and pre-Columbian Brazilian elements is exactly what you'd expect from a civilization that developed in isolation but had ancestral memories of both continents. These people might be the missing link that explains the mysterious similarities between African and South American cultures.
+                    <div class="comment-actions">↑ 8.3k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Ford_Executive_Archives</span> • 3 hours ago
-                    <span class="found-flair">Corporate Connection</span>
+                    <span class="comment-author">HistorianOfTheWeird</span> • 2 hours ago
                 </div>
                 <div class="comment-body">
-                    Former Ford regional manager here. Charles Rains married Mary Elizabeth Ford - yes, related to THOSE Fords. She was Henry Ford's great-niece. That's how Thomas got the Ford franchise in 1955. Charles and Mary met at a Ford dealer convention in Detroit. The marriage was front-page news in the automotive trade papers: "Hillbilly Hudson dealer marries into Ford dynasty."
-                    <div class="comment-actions">↑ 843 • reply</div>
+                    Historian specializing in weird shit here. The "great return" oral histories are fascinating because they suggest the Salvi saw themselves as connected to both continents, not just visitors. This would make them the original trans-Atlantic culture, predating European contact by centuries. If true, it completely flips the narrative of who "discovered" whom.
+                    <div class="comment-actions">↑ 7.6k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Tennessee_State_Archives</span> • 3 hours ago
-                    <span class="found-flair">State Records</span>
+                    <span class="comment-author">PilotWhoLandedThere</span> • 2 hours ago
                 </div>
                 <div class="comment-body">
-                    Found Thomas's complete business empire! He owned 4 dealerships: Rains Brothers on N. Broadway (1939-1977), West Knoxville Rains Motors (1950s), Maryville Rains Chrysler-Plymouth (1955-1977), and Tom & Charles Ford (1955-1977). At peak in 1965, he employed 47 people and sold 800+ cars annually. His decline started when Chrysler quality tanked in the 1970s - found a letter where he wrote "These damn Chrysler products are going to put me out of business."
-                    <div class="comment-actions">↑ 756 • reply</div>
+                    I'm the grandson of the pilot who "discovered" these islands in 1952. My grandfather always said the civilization he found there was more advanced than anyone expected - they had complex agriculture, sophisticated astronomy, and boats that could handle open ocean. He took photos but they were confiscated by British authorities. He died believing history had been stolen from these people.
+                    <div class="comment-actions">↑ 7.1k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Scottish_Rite_Archives</span> • 2 hours ago
-                    <span class="found-flair">Masonic Writings</span>
+                    <span class="comment-author">OceanCurrentExpert</span> • 1 hour ago
                 </div>
                 <div class="comment-body">
-                    Scottish Rite archivist here. Thomas wrote over 200 papers on Masonic history and ritual. His most famous work was "The Hidden Mysteries of the Blue Lodge" published in 1985. He was awarded the 33rd degree in 1968. Found photos of him with presidents - he participated in Masonic ceremonies for FDR's funeral and was present at the cornerstone laying for the United Nations building. His complete papers are housed in the House of the Temple in Washington DC.
-                    <div class="comment-actions">↑ 634 • reply</div>
+                    Oceanographer here. The currents around these hypothetical islands would create a natural maritime highway. From there, you could ride the Canary Current to West Africa, or catch the Brazil Current to South America. These islands would have been the perfect hub for ancient trans-Atlantic trade - if they existed, they would have been the crossroads of two continents.
+                    <div class="comment-actions">↑ 6.4k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Oak_Ridge_Plumber_Records</span> • 2 hours ago
+                    <span class="comment-author">LinguisticsNerd</span> • 1 hour ago
                 </div>
                 <div class="comment-body">
-                    Found Thomas and Frank's plumbing records! They worked for the Roane-Anderson Company in Oak Ridge 1925-1926, making $4.50 per day installing plumbing in the secret government buildings. This was BEFORE the Manhattan Project - they were part of the original "secret city" construction. Thomas's timecard shows he worked 312 days straight without a day off!
+                    Linguist here. The written language combining Berber and pre-Columbian Brazilian elements is what really gets me. Those two writing systems are from completely different language families and developed independently. For them to combine naturally would require sustained contact over generations. This isn't just trade - this is cultural fusion on a deep level.
+                    <div class="comment-actions">↑ 5.8k • reply</div>
                 </div>
             </div>
 
             <div class="comment">
                 <div class="comment-meta">
-                    <span class="comment-author">Knoxville_City_Directories</span> • 1 hour ago
+                    <span class="comment-author">ArchaeologistWhoDigsThis</span> • 1 hour ago
                 </div>
                 <div class="comment-body">
-                    Pulled every city directory from 1925-1977. Thomas lived at 12 different addresses in Knoxville, ending at 3405 Kingston Pike. His business address changed from 2100 N. Broadway to 4420 Chapman Highway when he moved to Ford. In 1958, he bought a house on Cherokee Blvd - paid $22,500 cash for a 4-bedroom colonial. The house sold in 2022 for $485,000!
+                    Archaeologist here. The stone temples aligned with both African and South American constellations is the kind of detail that makes this theory compelling. You'd need knowledge of both hemispheres' skies to do that, which suggests these people had been traveling between continents long enough to map both sets of stars. This isn't just possible - if true, it would revolutionize our understanding of ancient navigation.
+                    <div class="comment-actions">↑ 5.2k • reply</div>
                 </div>
             </div>
 
@@ -294,25 +276,12 @@
                     <span class="comment-author">Load_more_comments</span> • collapsed
                 </div>
                 <div class="comment-body collapsed">
-                    800+ more replies including photos of original dealership, Hudson sales awards, and Masonic regalia
+                    9,600+ more replies discussing the implications of lost South Atlantic civilizations
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        // Generate a string of 25 C's
-        function generateCString() {
-            let result = '';
-            for (let i = 0; i < 25; i++) {
-                result += 'C';
-            }
-            return result;
-        }
-
-        // Insert the C string into the container
-        document.getElementById('c-string-container').textContent = generateCString();
-    </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
