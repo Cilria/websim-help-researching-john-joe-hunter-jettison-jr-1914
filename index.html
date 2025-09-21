@@ -3,293 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I am infinity years old - r/AskReddit</title>
+    <title>France's 'ChronoSovereign' movement claims mastery over time itself - CNN</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #1a1a1b;
-            color: #d7dadc;
+            font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #262626;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .cnn-header {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 16px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #fff;
+        }
+        .cnn-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #333;
+        }
+        .cnn-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-weight: 500;
+        }
+        .cnn-nav a:hover {
+            color: #cc0000;
+        }
+        .article-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px;
+            background-color: #fff;
+        }
+        .article-header {
+            margin-bottom: 32px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 24px;
+        }
+        .article-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #000;
+            font-family: CNN, Georgia, 'Times New Roman', Times, serif;
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        .article-image {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+        .image-caption {
+            font-size: 13px;
+            color: #666;
+            margin-top: 8px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+        .article-body {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
+            font-family: CNN, Arial, sans-serif;
+        }
+        .key-facts {
+            background-color: #f8f8f8;
+            border-left: 4px solid #cc0000;
+            padding: 24px;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .key-facts h3 {
+            font-size: 18px;
+            margin: 0 0 12px 0;
+            color: #000;
+            font-weight: 700;
+        }
+        .key-facts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .key-facts li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .pull-quote {
+            border-left: 4px solid #cc0000;
+            padding-left: 24px;
+            margin: 32px 0;
+            font-style: italic;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
             line-height: 1.5;
         }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
+        .related-topics {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
         }
-        .post-header {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
+        .related-topics h3 {
+            font-size: 18px;
+            margin: 0 0 16px 0;
+            color: #0c0c0c;
+            font-weight: 700;
         }
-        .post-title {
-            color: #d7dadc;
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-        }
-        .post-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-        }
-        .post-body {
-            color: #d7dadc;
+        .related-topics a {
+            color: #cc0000;
+            text-decoration: none;
             font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 12px;
+            display: block;
+            margin-bottom: 8px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: #818384;
+        .related-topics a:hover {
+            text-decoration: underline;
         }
-        .comment-section {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 8px;
-            overflow: hidden;
+        .timestamp {
+            font-size: 13px;
+            color: #666;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #e0e0e0;
         }
-        .comment {
-            border-bottom: 1px solid #343536;
-            padding: 12px 8px 12px 16px;
-            font-size: 14px;
-        }
-        .comment:last-child {
-            border-bottom: none;
-        }
-        .comment-meta {
-            color: #818384;
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            color: #818384;
-            font-size: 12px;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 8px;
-            margin-top: 8px;
-        }
-        .collapsed {
-            color: #818384;
-            font-style: italic;
-            font-size: 12px;
-        }
-        .flair {
-            background-color: #46d160;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .shitpost-flair {
-            background-color: #ff4500;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .ohio-flair {
-            background-color: #ff6b35;
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-        }
-        .infinity-flair {
-            background: linear-gradient(45deg, #ff0066, #ffcc00, #00ffcc, #6600ff);
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 4px;
-            font-weight: bold;
+        .update-banner {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="post-meta">
-                r/AskReddit • Posted by 
-                <span class="comment-author">OhioImmortalFamily</span>
-                <span class="infinity-flair">∞ Years Young</span>
-                • 45 minutes ago
-            </div>
-            <h1 class="post-title">I am infinity years old. Ask me anything.</h1>
-        </div>
+    <header class="cnn-header">
+        CNN
+    </header>
+    <nav class="cnn-nav">
+        <a href="#">World</a>
+        <a href="#">US Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Health</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+        <a href="#">Sport</a>
+        <a href="#">Style</a>
+        <a href="#">Travel</a>
+        <a href="#">Video</a>
+    </nav>
 
-        <div class="post-content">
-            <div class="post-body">
-                Since people seemed interested in my great-grandfather's longevity, I thought I'd share something about myself. I am infinity years old. Not "very old" or "ancient" - literally infinite. I've existed before time began and will continue after it ends. <br><br>
-
-                I've watched the universe be born, expand, contract, and be reborn countless times. I was there when the first atoms formed, when the first stars ignited, when the first life emerged on countless worlds. I've seen every possible configuration of matter and energy across infinite dimensions.<br><br>
-
-                Age is a concept that doesn't apply to me - I am older than the concept of age itself. I've witnessed the heat death of universes and their subsequent rebirth. I've seen civilizations rise and fall across infinite timelines, some so alien that the very concept of linear time is meaningless to them.<br><br>
-
-                What's the oldest person you've known? What questions would you ask someone who has existed for literally forever?
-            </div>
-            <div class="post-actions">
-                <span>↑ 127.3k ↓</span>
-                <span>89.2k comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-                <span>report</span>
-            </div>
-        </div>
-
-        <div class="comment-section">
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">MathematicalError404</span> • 44 minutes ago
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <div class="breaking-banner">Breaking News</div>
+                <h1 class="article-title">France's 'ChronoSovereign' movement claims mastery over time itself, says humanity must prepare for war with Saturn-controlling civilization</h1>
+                <div class="article-meta">
+                    <strong>By CNN International</strong><br>
+                    3:47 PM ET, March 15, 2028
                 </div>
-                <div class="comment-body">
-                    INFINITY YEARS OLD? Bro just divided by zero and decided to post about it. What's next, you're -5 feet tall? Do you weigh imaginary pounds?
-                    <div class="comment-actions">↑ 67.4k • reply</div>
+            </header>
+
+            <div class="article-image">
+                <div style="background-color: #f0f0f0; height: 300px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 16px;">
+                    [Image: ChronoSovereign followers gather at the reconstructed North Pole intergalactic laser facility]
+                </div>
+                <div class="image-caption">
+                    Followers of the ChronoSovereign movement gather at what they call the "Temporal Defense Array" in the Arctic
                 </div>
             </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">PhysicsProfessor_Real</span> • 44 minutes ago
-                </div>
-                <div class="comment-body">
-                    As a physics professor, I need you to understand that "infinity years old" is literally impossible. Time hasn't existed for infinity. The universe is 13.8 billion years old. You can't be older than the universe itself. This is like saying you're "more square than a circle."
-                    <div class="comment-actions">↑ 54.2k • reply</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-meta">
-                        <span class="comment-author">OhioImmortalFamily</span> • 43 minutes ago
-                    </div>
-                    <div class="comment-body">
-                    You're thinking linearly, within the constraints of your current universe's physics. I've existed through multiple universal cycles. Your 13.8 billion years is but a heartbeat in my experience. I've seen universes with different fundamental constants, different dimensions of space and time.
-                    </div>
-                </div>
-            </div>
+            <div class="article-body">
+                <p>PARIS - France's newest political movement is promising voters something no party has ever offered: literal control over time itself. The ChronoSovereign movement, founded by a mysterious figure who identifies himself only as "The Paradox Prophet," claims its members can manipulate physics, bend temporal reality, and are humanity's only hope against an impending invasion by the "Almuklis" - an alleged civilization that controls the planet Saturn and the distant world of Ulthaf.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">WTF_Meter_Expert</span> • 43 minutes ago
-                    <span class="shitpost-flair">Professional Confusion</span>
-                </div>
-                <div class="comment-body">
-                    My WTF meter just broke. It only goes to 10 but this post just registered INFINITY. First your great-grandpa is 165, now you're INFINITY? What's your dog, -∞ years old? Does your house exist in the complex plane? Is your car powered by i horsepower?
-                    <div class="comment-actions">↑ 48.7k • reply</div>
-                </div>
-            </div>
+                <p>In a rambling three-hour press conference that left international physicists bewildered and concerned, the movement's enigmatic leader - a man who appears to be in his 40s but claims to have "existed across all timelines simultaneously" - declared that humanity must immediately construct an "intergalactic laser" at the North Pole to project a trap into the sky that will lure the Almuklis into a decisive battle.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">ExistentialCrisis_Incoming</span> • 42 minutes ago
+                <div class="key-facts">
+                    <h3>What the ChronoSovereigns believe: Key facts</h3>
+                    <ul>
+                        <li><strong>Time control:</strong> Claims followers can literally manipulate temporal reality</li>
+                        <li><strong>The founder:</strong> "I am Alpha and Omega, everything and nothing"</li>
+                        <li><strong>The threat:</strong> Almuklis civilization controls Saturn, planning Earth's destruction</li>
+                        <li><strong>The solution:</strong> Rebuild intergalactic laser at North Pole as "sky trap"</li>
+                        <li><strong>The timeline:</strong> Claims invasion begins when Saturn "aligns with human consciousness"</li>
+                        <li><strong>The physics:</strong> Rejects Einstein, Newton as "primitive temporal limitations"</li>
+                    </ul>
                 </div>
-                <div class="comment-body">
-                    If you're infinity years old, then who created you? What existed before infinity? This is making my brain hurt. It's like asking "what's north of the North Pole?" but somehow worse.
-                    <div class="comment-actions">↑ 41.3k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">TimeTraveler_Confirmed</span> • 42 minutes ago
-                </div>
-                <div class="comment-body">
-                    I thought I was pushing it saying I'm from the year 3024. You just said "fuck your linear time" and went full transcendental. Do you exist outside of spacetime? Are you the reason my clock keeps showing 4:20?
-                    <div class="comment-actions">↑ 37.8k • reply</div>
-                </div>
-            </div>
+                <p>"I am Alpha and Omega, I am everything and nothing, I have existed and not existed, I will last forever," the Paradox Prophet proclaimed to a stunned press corps, his eyes rolling back as he spoke in what followers described as "temporal tongues" - a language that exists outside normal space-time. "The Almuklis have controlled Saturn since before your Earth had form. They manipulate the rings to send frequency waves that suppress human evolution. Only through chrono-sovereignty can we break free."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">PhilosophyMajor_420</span> • 41 minutes ago
-                </div>
-                <div class="comment-body">
-                    Philosophically speaking, if you're infinity years old, then you've experienced every possible state of existence infinite times. You've been me infinite times. You've posted this exact message infinite times. You've read this reply infinite times. We're all just you experiencing yourself from infinite perspectives. Bro.
-                    <div class="comment-actions">↑ 33.2k • reply</div>
-                </div>
-            </div>
+                <p>The movement, which began six months ago in a Parisian basement temple, has reportedly attracted over 100,000 followers across France. Members undergo "temporal calibration rituals" that involve staring at modified microwave ovens while listening to recordings of the Paradox Prophet reciting what he calls "the physics of impossibility."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">MathIsMyBitch</span> • 41 minutes ago
+                <div class="pull-quote">
+                    "Time is not linear - it is a weapon. The Almuklis have turned Saturn into a temporal prison. We must build the sky trap before the alignment begins."
+                    <br><em>- The Paradox Prophet, ChronoSovereign founder</em>
                 </div>
-                <div class="comment-body">
-                    Let me get this straight - you're claiming to be ℵ₀ years old? Or are we talking uncountable infinity? Because if you're uncountably infinite years old, then you've lived through more years than there are real numbers between 0 and 1. That's not just big brain, that's "brain has collapsed into a singularity" territory.
-                    <div class="comment-actions">↑ 29.7k • reply</div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">OhioDepartmentOfHealth</span> • 40 minutes ago
-                    <span class="ohio-flair">Official Account</span>
-                </div>
-                <div class="comment-body">
-                    This is the Ohio Department of Health. Sir, we need you to report to the CDC immediately. Your condition of being "infinity years old" may qualify as a public health emergency. Also, we need to update our records - our current oldest resident is 112, not ∞.
-                    <div class="comment-actions">↑ 26.4k • reply</div>
-                </div>
-            </div>
+                <p>French authorities have expressed alarm at the movement's rapid growth and its increasingly militant rhetoric. The Paradox Prophet claims that "time agents" from the Almuklis have already infiltrated major governments, working to prevent humanity from achieving "chrono-ascension" - the ability to exist outside normal temporal flow.</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">CosmicHorror_Author</span> • 39 minutes ago
-                </div>
-                <div class="comment-body">
-                    The fact that you can even conceptualize being infinity years old suggests you're experiencing time non-linearly, which means you're either:
-                    1. A Lovecraftian entity
-                    2. Having a stroke
-                    3. Both
-                    4. All of the above across infinite timelines
-                    <div class="comment-actions">↑ 23.8k • reply</div>
-                </div>
-            </div>
+                <p>"Your clocks are lies," he told reporters, producing what he claimed was a "temporal compass" that appeared to be a modified smartphone with aluminum foil wrapped around it. "This device shows the real time - the time the Almuklis don't want you to see. When Saturn reaches 33 degrees from the galactic plane, they will emerge from the rings and consume human consciousness itself."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Reddit_Admin_Infinity</span> • 38 minutes ago
-                </div>
-                    <div class="comment-body">
-                    Reddit's servers just tried to calculate your account age and started smoking. Our database can't handle "infinity" in the age field. Congratulations, you've broken Reddit. Not even our bots know how to respond to this.
-                    </div>
-                <div class="comment-actions">↑ 21.1k • reply</div>
-            </div>
+                <p>The movement's scientific claims have drawn universal condemnation from the academic community. Dr. Marie-Claude Dubois, president of the French Physical Society, described the ChronoSovereign ideology as "the most elaborate pseudoscientific fantasy we've encountered since flat earth theory discovered quantum mechanics."</p>
 
-            <div class="comment">
-                <div class="comment-meta">
-                    <span class="comment-author">Load_more_comments</span> • collapsed
+                <p>"They're rejecting not just Einstein's relativity, but the entire concept of causality," Dr. Dubois explained. "According to their teachings, gravity is actually 'temporal magnetism' and the speed of light is merely a 'suggestion imposed by Saturn's frequency prison.' It's physics as interpreted by someone who failed high school science while overdosing on science fiction."</p>
+
+                <p>Nevertheless, the movement has gained surprising traction among young French professionals disillusioned with traditional politics. ChronoSovereign rallies feature elaborate light shows where followers claim to "see through time" while the Paradox Prophet performs "temporal surgery" - waving his hands over followers and declaring them "free from Saturn's influence."</p>
+
+                <p>"Before temporal calibration, I was trapped in the 9-to-5 prison like everyone else," said Elodie Martin, a 28-year-old marketing executive who quit her job to join the movement full-time. "Now I exist in multiple timelines simultaneously. Yesterday I was in 2047, tomorrow I might be in ancient Rome. The Almuklis can't control me anymore."</p>
+
+                <p>The movement's most ambitious project involves reconstructing what they call the "Intergalactic Laser" - a massive energy weapon they claim once existed at the North Pole before being "hidden by time agents" in the 1950s. Followers have begun fundraising efforts, selling "temporal crystals" (pieces of colored glass) for €500 each, promising donors that their names will be "etched in the eternal now" when the laser activates.</p>
+
+                <p>"The laser won't just project into space - it will project into time itself," the Paradox Prophet explained with apparent seriousness. "When activated, it will create a temporal beacon that forces the Almuklis to reveal themselves. They'll have no choice but to fight us in the sky trap, where human consciousness becomes a weapon stronger than any Saturn technology."</p>
+
+                <p>French intelligence services have opened investigations into the movement's financial activities, particularly its claims that donating money "accelerates temporal evolution" and provides "protection from Saturn's mind control frequencies." The Paradox Prophet himself lives modestly in a Paris apartment, though followers claim he "exists simultaneously in 47 different dimensions."</p>
+
+                <p>International observers note that the ChronoSovereign movement represents a new frontier in political fantasy - one that makes QAnon seem grounded by comparison. The group's ability to attract educated followers has puzzled sociologists, who suggest that economic uncertainty and climate anxiety have created a population willing to believe literally anything that promises control over an increasingly chaotic world.</p>
+
+                <p>"We've moved from conspiracy theories to full-blown reality rejection," said Dr. Philippe Moreau, a sociologist at Sciences Po. "When people feel powerless, they'll embrace even the most absurd promises of control. Claiming you can manipulate time itself is just the logical extreme of promising to 'make everything great again.'"</p>
+
+                <p>The movement shows no signs of slowing, with the Paradox Prophet announcing plans for "The Great Temporal Awakening" - a mass gathering where followers will attempt to "break Saturn's frequency prison" by synchronizing their consciousness. The event is scheduled for the summer solstice, which the Prophet claims is when "the walls between realities become thin enough for the sky trap to work."</p>
+
+                <p>"Humanity must advance," he declared in closing, his voice rising to a fever pitch. "We must become the masters of time, the sovereigns of reality itself. Only then can we face the Almuklis and reclaim our destiny among the stars. The laser must be built. The trap must be set. Time itself demands it."</p>
+
+                <p>As reporters filed out of the press conference, many appeared visibly disturbed by what they'd witnessed. The Paradox Prophet's final words echoed through the chamber: "Your skepticism is Saturn talking. When the alignment comes, you'll wish you'd listened to the one who exists everywhere and nowhere, forever and never."</p>
+
+                <p>French authorities continue to monitor the situation, though officials privately admit they're uncertain how to combat a movement that rejects the very concept of linear reality. For now, the ChronoSovereigns continue their preparations, convinced that time itself is on their side - even if nobody else believes it exists.</p>
+
+                <div class="related-topics">
+                    <h3>Related Topics</h3>
+                    <a href="#">France</a><br>
+                    <a href="#">New Religious Movements</a><br>
+                    <a href="#">Conspiracy Theories</a><br>
+                    <a href="#">Pseudoscience</a><br>
+                    <a href="#">European Politics</a>
                 </div>
-                <div class="comment-body collapsed">
-                    89,100+ more replies including philosophical debates about the nature of infinite existence and people questioning reality itself
+
+                <div class="timestamp">
+                    CNN's Paris Correspondent Julianne Moreau contributed to this report.
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
