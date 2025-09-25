@@ -3,613 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsom's 96 Executive Orders in 24 Days - r/news</title>
+    <title>Bizarre Siege of Tui: Self-Proclaimed King of Galicia Captures Spanish Town - CNN</title>
     <style>
         body {
-            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: #030712;
-            color: #e5e7eb;
+            font-family: CNNSans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+            background-color: #f2f2f2;
+            color: #262626;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             line-height: 1.6;
         }
-        .reddit-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #1f2937, #111827);
-            border: 1px solid #374151;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        }
-        .reddit-header {
-            background: linear-gradient(135deg, #ff4500, #cc3600);
+        .cnn-header {
+            background-color: #cc0000;
             color: white;
-            padding: 15px 20px;
-            font-size: 18px;
-            font-weight: 700;
-        }
-        .reddit-header span {
-            font-weight: 400;
-            opacity: 0.9;
-        }
-        .post-container {
-            padding: 20px;
-            border-bottom: 1px solid #374151;
-        }
-        .post-title {
+            padding: 12px 20px;
             font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #990000;
+        }
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px 40px;
+        }
+        .article-header {
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .article-title {
+            font-size: 36px;
             font-weight: 700;
-            margin: 0 0 12px 0;
-            color: #f9fafb;
-            line-height: 1.3;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+            color: #262626;
         }
-        .post-meta {
-            color: #9ca3af;
-            font-size: 13px;
-            margin-bottom: 15px;
-        }
-        .post-content {
-            margin: 20px 0;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-        .post-actions {
-            margin-top: 15px;
+        .article-meta {
+            color: #595959;
             font-size: 14px;
-            color: #9ca3af;
+            margin-bottom: 20px;
         }
-        .post-actions span {
-            margin-right: 20px;
-            cursor: pointer;
+        .article-image {
+            width: 100%;
+            margin: 25px 0;
         }
-        .post-actions span:hover {
-            color: #ff4500;
+        .image-caption {
+            font-size: 14px;
+            color: #595959;
+            margin-top: 8px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 15px;
         }
-        .comment-container {
-            padding: 15px 20px;
-            border-bottom: 1px solid #374151;
-            background: linear-gradient(135deg, #1f2937, #111827);
+        .article-body {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
         }
-        .comment-header {
-            display: flex;
-            align-items: center;
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
             margin-bottom: 10px;
         }
-        .username {
-            font-weight: 600;
-            margin-right: 10px;
-            color: #f9fafb;
+        .update-time {
+            font-size: 13px;
+            color: #737373;
+            font-weight: 500;
         }
-        .flair {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            margin-right: 10px;
-        }
-        .flair-2 {
-            background: linear-gradient(135deg, #10b981, #059669);
-        }
-        .flair-3 {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-        }
-        .flair-4 {
-            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-        }
-        .comment-content {
-            margin: 10px 0;
-            font-size: 15px;
-            line-height: 1.65;
-            color: #d1d5db;
-        }
-        .comment-actions {
-            font-size: 12px;
-            color: #9ca3af;
-            margin-top: 8px;
-        }
-        .comment-actions span {
-            margin-right: 15px;
-            cursor: pointer;
-        }
-        .comment-actions span:hover {
-            color: #ff4500;
-        }
-        .nested-comment {
-            margin-left: 30px;
-            border-left: 2px solid #374151;
-            padding-left: 15px;
-            margin-top: 15px;
-        }
-        .deep-nested {
-            margin-left: 30px;
-            border-left: 2px solid #4b5563;
-            padding-left: 15px;
-            margin-top: 15px;
-        }
-        .quote-block {
-            border-left: 3px solid #ff4500;
-            padding-left: 15px;
-            margin: 15px 0;
-            font-style: italic;
-            color: #9ca3af;
-            background-color: rgba(255, 69, 0, 0.05);
-            padding: 10px 15px;
-            border-radius: 0 5px 5px 0;
-        }
-        .link {
-            color: #ff4500;
-            text-decoration: none;
-        }
-        .link:hover {
-            text-decoration: underline;
-        }
-        .score {
-            font-weight: 700;
-            color: #ff4500;
-        }
-        .edited {
-            font-size: 11px;
-            color: #6b7280;
-            margin-left: 5px;
+        .byline {
+            font-size: 14px;
+            color: #595959;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="reddit-header">
-            r/news <span>• Posted by u/AmericanInsomniac 24 days ago</span>
-        </div>
-        
-        <div class="post-container">
-            <h1 class="post-title">Newsom's 24-Day Reign: 96 Executive Orders, Mass Purges, Military Deployments - America Unrecognizable</h1>
-            
-            <div class="post-meta">
-                Posted by u/AmericanInsomniac • 24 days ago • 2 Awards
-            </div>
-            
-            <div class="post-content">
-                <p>Just 24 days into his presidency, Gavin Newsom has issued 96 executive orders, purged 1.2 million federal workers, deployed troops against red states, and launched what legal experts call "Nuremberg-style trials" against political opponents. The Constitution is effectively dead.</p>
+    <div class="cnn-header">CNN</div>
+    
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <span class="breaking-banner">BREAKING NEWS</span>
+                <h1 class="article-title">Self-proclaimed 'King of Galicia' leads bizarre siege of Spanish town, captures local Lidi supermarket</h1>
                 
-                <p><a href="#" class="link">cnn.com/politics/n...</a></p>
-                
-                <div class="quote-block">
-                    "This is not politics as usual. This is the systematic dismantling of American democracy. Newsom has declared war on half the country and is using the full power of the federal government to crush dissent."
-                    <br><em>- Laurence Tribe, Harvard Constitutional Law Professor</em>
+                <div class="byline">
+                    By <strong>CNN Staff</strong>
                 </div>
-            </div>
-            
-            <div class="post-actions">
-                <span><strong>42.8k</strong> upvotes</span>
-                <span>3.1k comments</span>
-                <span>share</span>
-                <span>save</span>
-                <span>hide</span>
-            </div>
-        </div>
-
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">PoliticalAnalyst2024</span>
-                <span class="flair">Verified Expert</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                I've been tracking every single executive order. Here's what I've found in just 24 days:
                 
-                <p><strong>96 Executive Orders Breakdown:</strong></p>
-                <ul>
-                    <li><span class="score">34</span> orders targeting Republican states</li>
-                    <li><span class="score">28</span> orders purging federal employees</li>
-                    <li><span class="score">18</span> orders expanding presidential powers</li>
-                    <li><span class="score">16</span> orders against conservative media</li>
-                </ul>
-                
-                <p>This is <strong>4 executive orders per day</strong>. For context, Biden averaged 0.3 per day. Trump averaged 0.2 per day.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">15.2k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-            
-            <div class="nested-comment">
-                <div class="comment-header">
-                    <span class="username">HistorianAtHeart</span>
-                    <span class="flair flair-2">MA in History</span>
-                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+                <div class="article-meta">
+                    <strong>Updated 3:47 PM ET, Mon July 20, 2026</strong>
                 </div>
-                <div class="comment-content">
-                    <p>I'm literally shaking as I write this. I compared Newsom's first 24 days to historical authoritarian takeovers:</p>
-                    
-                    <p><strong>Hitler (1933):</strong> 5 major decrees in first month</p>
-                    <p><strong>Mussolini (1922):</strong> 8 emergency measures in first month</p>
-                    <p><strong>Newsom (2029):</strong> 96 executive orders in 24 days</p>
-                    
-                    <p>We are witnessing the fastest democratic collapse in modern history.</p>
-                </div>
-                <div class="comment-actions">
-                    <span class="score">9.8k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-                </div>
-            </div>
-        </div>
+                
+                <img src="https://cdn.cnn.com/cnnnext/dam/assets/260720144500-tui-spain-a55-highway-large-169.jpg" alt="A55 highway near Tui, Spain" class="article-image">
+                <div class="image-caption">The A55 highway near Tui, Spain, where a self-proclaimed monarch and his followers engaged in territorial skirmishes with police forces Monday.</div>
+            </header>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">FormerFedEmployee</span>
-                <span class="flair flair-3">Ex-Federal Worker</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>I was one of the 1.2 million federal employees fired. I worked at the EPA for 18 years. My "crime"? I donated $50 to a Republican congressional candidate in 2022.</p>
-                
-                <p>They came to my house at 6 AM. Two armed agents. No warning. No due process. Just "pack your things, you're terminated for sedition against democracy."</p>
-                
-                <p>My pension? Gone. My health insurance? Canceled immediately. My retirement savings? Frozen pending "investigation."</p>
-                
-                <p>I have a family. Three kids. We have no income now. This is real. This is happening to AMERICAN CITIZENS.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">23.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-            
-            <div class="nested-comment">
-                <div class="comment-header">
-                    <span class="username">TexasMom2020</span>
-                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-                </div>
-                <div class="comment-content">
-                    My husband was fired from the Department of Agriculture after 22 years. His offense? His FACEBOOK PROFILE showed he attended a Trump rally in 2016. They literally used social media posts from 8 years ago to fire him. We're moving to Mexico next week. America is dead.
-                </div>
-                <div class="comment-actions">
-                    <span class="score">12.4k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-                </div>
-            </div>
-        </div>
+            <div class="article-body">
+                <p><strong>Tui, Spain (CNN)</strong> — In one of the most bizarre territorial disputes in recent European history, a self-proclaimed "King of Galicia" and approximately 30 supporters have seized control of the Spanish town of Tui, capturing the local Lidi supermarket and a 50-meter section of the PO-340 highway in what authorities are calling "the most absurd military offensive of the decade."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">MilitaryIntelOfficer</span>
-                <span class="flair flair-4">Military Intelligence</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>I can't reveal my identity for obvious reasons, but I'm active duty military intelligence. What I'm about to tell you will sound insane, but I have documents:</p>
-                
-                <p><strong>Troop Deployments in Red States:</strong></p>
-                <ul>
-                    <li>82nd Airborne: 12,000 troops in Texas</li>
-                    <li>1st Armored Division: 8,500 troops in Florida</li>
-                    <li>101st Airborne: 9,200 troops in Georgia</li>
-                    <li>Marine Expeditionary: 6,800 troops in Tennessee</li>
-                </ul>
-                
-                <p>These aren't "training exercises." They're occupation forces. They have orders to "suppress Republican insurgency" and "maintain federal authority."</p>
-                
-                <p>I've seen the operational plans. They're preparing for mass arrests of Republican officials. This isn't a conspiracy theory anymore.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">31.5k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>The incident began at approximately 6:00 a.m. local time when the man, identified by Spanish media as 47-year-old former postal worker Diego Armando Rodríguez, declared himself the "rightful monarch of the Kingdom of Galicia" and announced his intention to "reclaim ancestral lands from the usurpers in Madrid."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">ConstitutionalLawProf</span>
-                <span class="flair">Law Professor</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>As someone who has taught constitutional law for 25 years, I never thought I'd see this day. The Constitution has been effectively suspended through "emergency powers."</p>
-                
-                <p>Newsom's legal theory: The Republican Party constitutes a "domestic terrorist organization" threatening "our democracy." Therefore, all actions against them are justified under the 14th Amendment and emergency powers doctrine.</p>
-                
-                <p>It's the same legal theory used by every authoritarian regime: declare your opponents enemies of the state, then use the full power of the state to destroy them.</p>
-                
-                <p>The courts? Packed with Newsom appointees. The military? Purged of dissenters. The media? Either compliant or shut down.</p>
-                
-                <p>Democracy died quietly, with a pen stroke, while most Americans were still arguing about Twitter.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">18.9k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>"We are witnessing something unprecedented in modern Spanish history," said María García, spokesperson for the Spanish National Police. "A man with no military training and his followers have essentially declared war on a supermarket chain and a section of highway."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">CanadianObserver</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>Canadian here. We're seeing refugees at our borders. Not illegal immigrants - AMERICAN CITIZENS fleeing political persecution.</p>
-                
-                <p>Last week alone, 15,000 Americans applied for political asylum in Canada. Most are former federal employees, military officers, and Republican officials.</p>
-                
-                <p>Our government has quietly stopped deporting illegal immigrants from the US because we recognize they're fleeing an authoritarian regime.</p>
-                
-                <p>The world is watching America collapse in real-time. You were supposed to be the beacon of democracy. Now you're a cautionary tale.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">14.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>Rodríguez and his followers, armed with what appear to be replica medieval weapons and airsoft guns, first captured the local sports field, establishing it as their "forward operating base." From there, they advanced approximately 50 meters to seize control of the Lidi supermarket, which Rodríguez declared "the People's Provision Center of Free Galicia."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">AustinResident</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>I live in Austin. There are ARMED SOLDIERS patrolling my neighborhood. Not police. Not National Guard. Regular Army. With live ammunition.</p>
-                
-                <p>They set up checkpoints on major roads. You have to show ID proving you're not a "registered Republican" to pass. I wish I was making this up.</p>
-                
-                <p>My neighbor was arrested last week for "seditious speech" after he posted on Facebook criticizing Newsom. He's being held without charges. His family doesn't know where he is.</p>
-                
-                <p>I'm writing this from a friend's house because I'm afraid to use my own internet. They're monitoring everything.</p>
-                
-                <p>This is America in 2029. Land of the free? What a fucking joke.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">26.3k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-            
-            <div class="nested-comment">
-                <div class="comment-header">
-                    <span class="username">Dallasite</span>
-                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-                </div>
-                <div class="comment-content">
-                    Same in Dallas. They arrested our mayor. ARRESTED. OUR. MAYOR. For "conspiracy against democracy." The crime? He refused to implement Newsom's voter suppression policies. Texas is under military occupation and the media isn't even reporting it.
-                </div>
-                <div class="comment-actions">
-                    <span class="score">11.2k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-                </div>
-            </div>
-        </div>
+                <h3>The Great Highway War of 2026</h3>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">TechWorkerSiliconValley</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>I work in tech. We're building the surveillance infrastructure. I can't say which company, but you've heard of us.</p>
-                
-                <p>We're implementing AI systems that monitor every American's communications, purchases, movements, and associations. The system flags people as "Republican sympathizers" based on:</p>
-                <ul>
-                    <li>Church attendance</li>
-                    <li>Gun purchases</li>
-                    <li>Conservative media consumption</li>
-                    <li>Social media connections</li>
-                    <li>Donation patterns</li>
-                    <li>Even grocery purchases (buying certain brands)</li>
-                </ul>
-                
-                <p>I can't sleep at night. I'm helping build the most sophisticated police state in human history. And I'm trapped - if I quit, I become a target.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">19.4k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>The situation escalated when Spanish police forces advanced from their positions north of the A55 highway and successfully recaptured a 5-meter section of the roadway in what Rodríguez's followers are calling "the Great Betrayal of July."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">HistorianAtHeart</span>
-                <span class="flair flair-2">MA in History</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
-            </div>
-            <div class="comment-content">
-                <p>History student update: I've been documenting this for future historians (if there are any). Here's the timeline of the fastest democratic collapse in recorded history:</p>
-                
-                <p><strong>Day 1:</strong> Newsom inaugurated</p>
-                <p><strong>Day 3:</strong> First federal employee purges begin</p>
-                <p><strong>Day 5:</strong> Military deployments to red states</p>
-                <p><strong>Day 8:</strong> Fox News lawsuit filed</p>
-                <p><strong>Day 12:</strong> First arrests of Republican officials</p>
-                <p><strong>Day 16:</strong> Show trials announced</p>
-                <p><strong>Day 20:</strong> OMB ordered to ignore Congress</p>
-                <p><strong>Day 24:</strong> 96 executive orders, 1.2 million fired, military occupation</p>
-                
-                <p>It took Hitler years. It took Mussolini months. It took Newsom 24 days.</p>
-                
-                <p>If someone finds this in the future: We tried to stop it. We really did. But most people were asleep, distracted, or cheering it on.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">22.1k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>"We held the A55 for three glorious hours," proclaimed Rodríguez in a video posted to social media, standing in front of the Lidi supermarket entrance. "The Spanish forces may have taken 5 meters of asphalt, but they will never take our dignity or our discounted produce!"</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">WhiteHouseInsiderThrowaway</span>
-                <span class="flair flair-3">ALERT: Insider Info</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-            </div>
-            <div class="comment-content">
-                <p><strong>I work in the White House. What I'm about to tell you will make the last 24 days look like a warm-up. They're planning something MASSIVE for next week.</strong></p>
-                
-                <p>I have access to the President's daily briefings. Here are the orders being drafted for next week:</p>
-                
-                <p><span class="score">1. MASS ARRESTS:</span> The FBI has prepared lists of 50,000+ "Republican extremists" for immediate detention. This includes former Congressmen, state legislators, judges, and even local mayors.</p>
-                
-                <p><span class="score">2. INTERNMENT CAMPS:</span> They're converting abandoned Walmarts and military bases into detention facilities. I've seen the blueprints. They're calling them "Democracy Protection Centers."</p>
-                
-                <p><span class="score">3. FINANCIAL FREEZE:</span> Next Friday, they're freezing the bank accounts of anyone who's ever donated to a Republican candidate. The Treasury Department has been running test scenarios all week.</p>
-                
-                <p><span class="score">4. COMMUNICATION SHUTDOWN:</span> They're planning to shut down conservative social media platforms and force ISPs to block "problematic" websites. They're testing the kill switch now.</p>
-                
-                <p><span class="score">5. THE FINAL PURGE:</span> Every remaining Republican in federal office will be removed under emergency powers. They're calling it "Operation Clean Slate."</p>
-                
-                <p>I'm risking everything posting this. I'm using a burner phone in a McDonald's parking lot. If they find out who I am, I'll disappear like the others.</p>
-                
-                <p><strong>GET OUT WHILE YOU STILL CAN. NEXT WEEK WILL BE THE POINT OF NO RETURN.</strong></p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">48.9k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-            
-            <div class="nested-comment">
-                <div class="comment-header">
-                    <span class="username">FormerFBIagent</span>
-                    <span class="flair">Ex-FBI</span>
-                    <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-                </div>
-                <div class="comment-content">
-                    <p>I can confirm this. I left the Bureau last week when they handed me the "enemies list" to investigate. My former colleagues are terrified but they're going along with it because they're afraid of becoming targets themselves.</p>
-                    
-                    <p>The list isn't just politicians. It includes:</p>
-                    <ul>
-                        <li>Conservative journalists</li>
-                        <li>Trump voters (they have the voting records)</li>
-                        <li>Christian pastors who spoke against Newsom</li>
-                        <li>Gun store owners</li>
-                        <li>Even PEOPLE WHO LIKED CONSERVATIVE POSTS ON FACEBOOK</li>
-                    </ul>
-                    
-                    <p>I'm in hiding now. They'll come for me soon. Please believe this is real.
-                </div>
-                <div class="comment-actions">
-                    <span class="score">19.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-                </div>
-            </div>
-        </div>
+                <p>Local residents have responded with a mixture of confusion and amusement. "I just wanted to buy some yogurt," said Marta Silva, 34, who found herself trapped inside the Lidi during the siege. "This man kept calling me a 'subject of the crown' and insisted I refer to the dairy section as 'the Royal Cheese Repository.'"</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">DODInsider</span>
-                <span class="flair flair-4">Defense Dept</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-            </div>
-            <div class="comment-content">
-                <p>Adding to this - I'm at the Pentagon. They're calling up MORE reserves this weekend. Not for foreign deployment. For DOMESTIC OPERATIONS.</p>
-                
-                <p><strong>Units being mobilized:</strong></p>
-                <ul>
-                    <li>3rd Infantry Division - heading to Texas</li>
-                    <li>1st Cavalry Division - deploying to Florida</li>
-                    <li>4th Infantry Division - Colorado but staying put (why?)</li>
-                    <li>Marine divisions from Camp Lejeune - scattered across the South</li>
-                </ul>
-                
-                <p>They're not even pretending anymore. The orders literally say "DOMESTIC ENFORCEMENT OPERATIONS" and "POLITICAL STABILITY MISSION."</p>
-                
-                <p>I've never seen anything like this. Not even during the BLM protests. This is a military occupation of American soil against American citizens.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">25.3k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>The standoff has attracted dozens of onlookers and social media influencers, many of whom have begun livestreaming the events. A TikTok user with the handle @GaliciaWatch2026 has gained over 200,000 followers by providing hourly updates on the "conflict," including detailed maps showing territorial control measured in single meters.</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">BankingIndustryExec</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-            </div>
-            <div class="comment-content">
-                <p>Banking executive here. The financial freeze is REAL and it's happening SOONER than next week.</p>
-                
-                <p>We received "guidance" from Treasury yesterday. Starting Monday, we must:</p>
-                
-                <ul>
-                    <li>Freeze accounts of anyone on their "extremist watchlist"</li>
-                    <li>Report ALL transactions over $100 to the federal government</li>
-                    <li>Deny loans to anyone with "problematic" social media history</li>
-                    <li>Freeze retirement accounts of "political extremists"</li>
-                </ul>
-                
-                <p>The "watchlist"? It's literally just registered Republicans. They're not even hiding it anymore.</p>
-                
-                <p>I'm liquidating everything and moving my family to Switzerland. I suggest you do the same if you can.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">16.8k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <h3>International reaction</h3>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">TechSurveillanceEngineer</span>
-                <span class="flair">Silicon Valley</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-            </div>
-            <div class="comment-content">
-                <p>I'm the guy building the surveillance systems. What I haven't told anyone is that we've already IMPLEMENTED the next phase.</p>
-                
-                <p><strong>It's already live:</strong></p>
-                <ul>
-                    <li>Every text message is being scanned for "problematic content"</li>
-                    <li>Your smart speakers are listening for keywords like "Newsom" and "dictator"</li>
-                    <li>Your Ring doorbells are feeding footage to federal databases</li>
-                    <li>Your credit cards are flagging purchases at gun stores, churches, and Republican events</li>
-                </ul>
-                
-                <p>The communication shutdown isn't next week. It's ALREADY HAPPENING. Conservative websites are loading 50% slower. Conservative YouTube channels are seeing their videos "accidentally" demonetized and removed.</p>
-                
-                <p>They're doing it GRADUALLY so people don't notice. By the time they flip the final switch, it'll be too late.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">21.9k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>The incident has drawn attention from around the world, with #FreeTui trending globally on social media. British tabloids have dubbed it "The Supermarket Siege," while German media has referred to it as "Der Lidi-Krieg" (The Lidi War).</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">HistorianAtHeart</span>
-                <span class="flair flair-2">MA in History</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
-            </div>
-            <div class="comment-content">
-                <p>History student here. I've been studying authoritarian takeovers my entire academic career. What I'm seeing now is TEXTBOOK.</p>
-                
-                <p><strong>The Final Phase:</strong></p>
-                <p><strong>Week 1:</strong> Purge opposition (DONE)</p>
-                <p><strong>Week 2:</strong> Control information (DONE)</p>
-                <p><strong>Week 3:</strong> Military occupation (DONE)</p>
-                <p><strong>Week 4:</strong> Financial control (HAPPENING NOW)</p>
-                <p><strong>Week 5:</strong> Mass arrests (COMING NEXT)</p>
-                <p><strong>Week 6:</strong> Internment camps (PLANNED)</p>
-                
-                <p>I've compared this to every authoritarian takeover in history. Newsom is moving FASTER than:</p>
-                <ul>
-                    <li>Hitler's consolidation of power</li>
-                    <li>Stalin's purges</li>
-                    <li>Mao's Cultural Revolution</li>
-                    <li>Castro's revolution</li>
-                </ul>
-                
-                <p>This isn't just the end of American democracy. This is the fastest democratic collapse in human history.</p>
-                
-                <p>If you're reading this and you live in a red state: <strong>LEAVE NOW.</strong> Don't wait for next week. Don't wait to see what happens. By then, the roads will be closed and the airports will be shut down.</p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">28.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+                <p>"This is exactly the kind of bizarre territorial dispute that could only happen in 2026," said Dr. James Morrison, professor of European history at Oxford University. "A man declares himself king and his first military objective is capturing a discount supermarket. It's like Game of Thrones meets extreme couponing."</p>
 
-        <div class="comment-container">
-            <div class="comment-header">
-                <span class="username">AmericanInsomniac</span>
-                <span style="color: #9ca3af; font-size: 12px;">• 23d</span>
+                <p>The Spanish government has deployed additional police units to the area but has been cautious about escalating the situation. "We prefer to resolve this peacefully," said Interior Minister Carmen Calvo. "Besides, he's currently only controlling about €3,000 worth of inventory and 50 meters of highway. We're monitoring the situation closely."</p>
+
+                <h3>The would-be king's manifesto</h3>
+
+                <p>Rodríguez has distributed a 47-page manifesto titled "The Galician Restoration: A Monarch's Guide to Supermarket Sovereignty" outlining his vision for an independent Galician kingdom with the Lidi as its economic center.</p>
+
+                <p>"The Lidi represents everything we stand for: affordable prices, wide aisles, and a surprisingly good selection of Portuguese wines," the manifesto states. "From this fortress of commerce, we shall build a new Galicia free from the tyranny of reasonable pricing and adequate parking."</p>
+
+                <p>Negotiations between Rodríguez and authorities have stalled over his demand to be addressed as "His Majesty Diego I, King of Galicia and Protector of the Produce Section" and his insistence that all communications be conducted through his official spokesperson, a 19-year-old university student named Pablo who was reportedly promised the title "Duke of the Deli Counter."</p>
+
+                <h3>Supply chain concerns</h3>
+
+                <p>The siege has disrupted local supply chains, with the Lidi's closure affecting approximately 400 daily customers who now must drive an additional 3 kilometers to the nearest Carrefour. "This is an absolute disaster," said local resident Carlos Mendez. "The Carrefour doesn't have the same selection of frozen croquettes. This is tyranny."</p>
+
+                <p>As of Monday afternoon, Rodríguez and his followers remain holed up inside the Lidi, where they have reportedly established a makeshift throne room in the manager's office and have been surviving on a diet of expired yogurt and discount ham.</p>
+
+                <p>The standoff continues as negotiators work to resolve what has become known as "The Great Tui Incident of 2026" — a reminder that in an age of social media and instant fame, even the most absurd territorial disputes can capture global attention.</p>
+
+                <p>"We will hold this Lidi until our dying breath," Rodríguez declared in his latest video message. "Or at least until they run out of those little cocktail sausages. Those are delicious."</p>
+
+                <p><em>This is a developing story and will be updated.</em></p>
             </div>
-            <div class="comment-content">
-                <p><strong>UPDATE: This is the original poster. I'm shutting down this account and leaving the country TONIGHT.</strong></p>
-                
-                <p>I've been contacted by three different people warning me that I'm on "the list." One was a friend who works at DHS. Another was a former coworker who saw my name on a leaked document.</p>
-                
-                <p>I'm not taking chances. I'm driving to Canada tonight with just what I can fit in my car. I suggest anyone else who's been commenting here do the same.</p>
-                
-                <p>This will be my last post. If you don't hear from me again, you'll know what happened.</p>
-                
-                <p>Good luck, everyone. We tried to warn you. We tried to stop it. But most of you were asleep.</p>
-                
-                <p><strong>America is dead. Welcome to the new world order.</strong></p>
-            </div>
-            <div class="comment-actions">
-                <span class="score">34.2k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
-            </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
