@@ -2,238 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Newsom announces 2028 presidential bid with fiery revenge-themed campaign - r/news</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsom announces 2028 presidential bid with fiery revenge-themed campaign - CNN</title>
     <style>
         body {
-            font-family: IBMPlexSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-            background-color: #030303;
-            color: #d7dadc;
+            font-family: CNNSans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+            background-color: #f2f2f2;
+            color: #262626;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 8px 16px;
-            position: fixed;
-            top: 0;
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 12px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #990000;
+        }
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px 40px;
+        }
+        .article-header {
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .article-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+            color: #262626;
+        }
+        .article-meta {
+            color: #595959;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .article-image {
             width: 100%;
-            z-index: 100;
+            margin: 25px 0;
         }
-        .header img {
-            height: 32px;
-            width: auto;
-        }
-        .content {
-            margin-top: 60px;
-            max-width: 740px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 16px;
-        }
-        .post {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 16px;
-            margin-bottom: 16px;
-        }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            margin: 0 0 8px 0;
-            color: #d7dadc;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 12px;
-        }
-        .post-content {
+        .image-caption {
             font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 12px;
+            color: #595959;
+            margin-top: 8px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 15px;
         }
-        .post-content a {
-            color: #4fbcff;
-            text-decoration: none;
+        .article-body {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
         }
-        .post-content a:hover {
-            text-decoration: underline;
+        .article-body p {
+            margin-bottom: 20px;
         }
-        .post-actions {
-            display: flex;
-            gap: 16px;
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 15px;
             font-size: 12px;
-            color: #818384;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
         }
-        .post-actions span {
-            cursor: pointer;
-        }
-        .post-actions span:hover {
-            color: #d7dadc;
-        }
-        .comment {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 12px;
-            margin-bottom: 8px;
-            margin-left: 0;
-        }
-        .comment-reply {
-            margin-left: 24px;
-            border-left: 2px solid #343536;
-            padding-left: 12px;
-        }
-        .comment-author {
+        .update-time {
+            font-size: 13px;
+            color: #737373;
             font-weight: 500;
-            color: #d7dadc;
-            font-size: 12px;
         }
-        .comment-flair {
-            background-color: #ff8717;
-            color: #000;
-            padding: 2px 4px;
-            border-radius: 2px;
-            font-size: 10px;
-            font-weight: 500;
-            margin-left: 4px;
-        }
-        .comment-content {
+        .byline {
             font-size: 14px;
-            margin: 4px 0;
-            color: #d7dadc;
+            color: #595959;
+            margin-bottom: 15px;
         }
-        .comment-meta {
-            font-size: 12px;
-            color: #818384;
-        }
-        .comment-score {
-            font-weight: 500;
-            color: #d7dadc;
-        }
-        .sort-bar {
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
-            padding: 8px 16px;
-            margin-bottom: 16px;
-            font-size: 12px;
-            color: #d7dadc;
-        }
-        .sort-bar strong {
-            color: #d7dadc;
-        }
-        .sort-bar span {
-            color: #818384;
-            margin-left: 8px;
-            cursor: pointer;
-        }
-        .sort-bar span:hover {
-            color: #d7dadc;
-        }
-        .sort-bar span.active {
-            color: #d7dadc;
-            font-weight: 500;
+        .quote-box {
+            border-left: 4px solid #cc0000;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            background-color: #f8f8f8;
+            padding: 15px 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://www.redditstatic.com/desktop2x/img/reddit-logo.png" alt="Reddit">
-    </div>
+    <div class="cnn-header">CNN</div>
+    
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <span class="breaking-banner">BREAKING NEWS</span>
+                <h1 class="article-title">Newsom announces 2028 presidential bid with fiery revenge-themed campaign, vows to 'lock up every Republican criminal'</h1>
+                
+                <div class="byline">
+                    By <strong>CNN Politics Staff</strong>
+                </div>
+                
+                <div class="article-meta">
+                    <strong>Updated 9:23 PM ET, Thu March 10, 2027</strong>
+                </div>
+                
+                <img src="https://cdn.cnn.com/cnnnext/dam/assets/270310204500-gavin-newsom-file-2027-large-169.jpg" alt="Gavin Newsom speaking at a podium" class="article-image">
+                <div class="image-caption">California Governor Gavin Newsom speaks during a campaign rally in Sacramento, California, March 10, 2027.</div>
+            </header>
 
-    <div class="content">
-        <div class="post">
-            <h1 class="post-title">Newsom announces 2028 presidential bid with fiery revenge-themed campaign, vows to 'lock up every Republican criminal'</h1>
-            <div class="post-meta">Posted by u/throwaway_politics27 • March 10, 2027 • 47.2k upvotes • 92% upvoted • 4.7k comments</div>
-            <div class="post-content">
-                <p><a href="reddit_thread.html" target="_blank">CNN Article</a></p>
-                <p>Absolutely wild stuff from Newsom today. He's gone full scorched earth and is openly embracing Trump's playbook. The Democratic Party has completely transformed into what they used to hate.</p>
+            <div class="article-body">
+                <p><strong>Sacramento, California (CNN)</strong> — California Governor Gavin Newsom officially announced his 2028 presidential campaign Thursday evening, delivering an unprecedented scorched-earth speech that marks a dramatic departure from traditional Democratic politics, embracing the combative style pioneered by Donald Trump and promising "total revenge" against Republicans for the past four years.</p>
+
+                <p>Speaking to a packed arena of 15,000 supporters, Newsom abandoned any pretense of unity or bipartisanship, instead vowing to weaponize the federal government against his political enemies with the same ruthlessness he accuses Trump of employing.</p>
+
+                <div class="quote-box">
+                    "They want to play dirty? We'll show them dirty. They want to lock up their opponents? We'll lock up every single Republican criminal in this country. Day one, I will instruct my Attorney General to investigate every Republican from Trump down to the local dog catcher who's broken the law."
+                </div>
+
+                <p>The announcement, delivered in a fiery 45-minute speech filled with profanity and personal attacks, represents a stunning transformation for a politician who once positioned himself as a moderate Democrat focused on technocratic governance.</p>
+
+                <h3>The revenge campaign begins</h3>
+
+                <p>Newsom's campaign launch comes after months of speculation about his presidential ambitions, but the tone and content of his announcement shocked even seasoned political observers. The governor made clear that his entire candidacy is built on a platform of retaliation against Republicans for what he termed "four years of fascist rule" under Trump's second term.</p>
+
+                <p>"Trump showed us the way," Newsom declared to thunderous applause. "Lie, attack, deflect, repeat. That's how you win in modern America, and we're going to beat them at their own game."</p>
+
+                <p>The governor specifically promised that if elected, he would immediately begin criminal investigations into Trump and his family, vowing to pursue the death penalty for what he called "treason against American democracy."</p>
+
+                <div class="quote-box">
+                    "Donald Trump will be arrested, tried, and sentenced to death for his crimes against this nation. I promise you this: he will die in federal prison, and I will be there to watch it happen."
+                </div>
+
+                <p>The crowd responded with chants of "Lock him up!" and "Death to Trump!" - a deliberate echo of the 2016 campaign that Newsom explicitly referenced throughout his speech.</p>
+
+                <h3>Democratic Party transformation</h3>
+
+                <p>Newsom's announcement signals a complete takeover of the Democratic Party by its most aggressive faction. The party, still reeling from Trump's 2024 victory and subsequent consolidation of power, has abandoned its traditional emphasis on policy and governance in favor of pure political warfare.</p>
+
+                <p>"We tried being the adults in the room," Newsom said. "We tried taking the high road. We tried unity. Look where it got us. No more. From now on, we fight fire with fire, and we burn their house down."</p>
+
+                <p>The governor's campaign has already begun implementing Trump's playbook, spreading baseless conspiracy theories about Republican voter fraud, promising to "investigate and imprison" Republican donors, and threatening media outlets that provide "unfair coverage."</p>
+
+                <p>"CNN, MSNBC, the New York Times - you're either with us or against us," Newsom warned. "If you give platform to Republican lies, we will destroy you. If you don't support our mission to eliminate the GOP, you're part of the problem."</p>
+
+                <h3>The new Democratic platform</h3>
+
+                <p>Traditional Democratic policy priorities - healthcare, climate change, economic inequality - received only passing mention in Newsom's speech. Instead, the governor focused almost entirely on what he called "the final battle for American democracy."</p>
+
+                <p>"We don't need policies, we need power," Newsom declared. "We don't need compromise, we need conquest. We don't need to persuade voters, we need to punish Republicans."</p>
+
+                <p>The campaign has already begun testing messages that include:</p>
+                <ul>
+                    <li>Promising to "investigate and imprison" every Republican member of Congress who supported Trump</li>
+                    <li>Vowing to "pack the Supreme Court with 15 liberal justices" and "eliminate the filibuster forever"</li>
+                    <li>Threatening to "withhold federal funding from any state that votes Republican"</li>
+                    <li>Promising to "make Fox News illegal" and "prosecute conservative media as terrorist organizations"</li>
+                </ul>
+
+                <h3>Republican response</h3>
+
+                <p>Republican leaders immediately condemned Newsom's announcement, though their responses were notably muted compared to the governor's inflammatory rhetoric.</p>
+
+                <p>"This is exactly the kind of dangerous rhetoric that leads to political violence," said Republican National Committee Chair Ron DeSantis. "Governor Newsom should be ashamed of himself for promoting such hatred and division."</p>
+
+                <p>Trump himself responded on Truth Social, calling Newsom "a low-IQ governor who wants to turn America into communist California" and promising to "defeat this radical leftist just like we defeated all the others."</p>
+
+                <h3>The path forward</h3>
+
+                <p>Newsom's campaign launch represents a watershed moment in American politics - the complete abandonment of democratic norms by both major parties. With Republicans having embraced Trump's authoritarian tactics since 2016, Democrats have now responded by abandoning any pretense of maintaining institutional guardrails.</p>
+
+                <p>"We're not playing by their rules anymore," Newsom said. "We're going to use every tool, every tactic, every dirty trick they've used against us. And we're going to use them better than they ever did."</p>
+
+                <p>The governor's announcement was met with enthusiastic support from the Democratic base, which has grown increasingly radicalized following Trump's second term. Polls show Democratic voters overwhelmingly support aggressive tactics against Republicans, with 73% approving of using government power to "punish political enemies."</p>
+
+                <p>"The old rules are dead," Newsom concluded. "This is war, and we're going to win it by any means necessary. When I'm president, Republicans will wish they never picked this fight. We're coming for them, all of them, and nothing will stop us."</p>
+
+                <p>Newsom is expected to face minimal opposition in the Democratic primaries, with potential rivals like Pete Buttigieg and Kamala Harris having already endorsed his approach. The general election against Trump - assuming the former president secures the Republican nomination - is shaping up to be the most bitter and divisive in American history.</p>
+
+                <p><em>CNN will continue covering this developing story as the 2028 campaign unfolds.</em></p>
             </div>
-            <div class="post-actions">
-                <span>↑ 47.2k</span>
-                <span>💬 4.7k Comments</span>
-                <span>Share</span>
-                <span>Save</span>
-                <span>Hide</span>
-                <span>Report</span>
-            </div>
-        </div>
-
-        <div class="sort-bar">
-            <strong>Best</strong> <span>Top</span> <span>New</span> <span>Controversial</span> <span>Old</span> <span>Q&A</span>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/PoliticalJunkie2024 <span class="comment-flair">TOP COMMENT</span></div>
-            <div class="comment-content">This is actually terrifying. I don't care what side you're on - when a major presidential candidate is openly promising to execute his political opponent, we've crossed a line that can't be uncrossed. American democracy is officially dead.</div>
-            <div class="comment-meta"><span class="comment-score">12.3k points</span> • 3 hours ago • <span>Give Award</span> • <span>Share</span> • <span>Report</span> • <span>Save</span> • <span>Follow</span></div>
-            
-            <div class="comment comment-reply">
-                <div class="comment-author">u/BlueStateLife</div>
-                <div class="comment-content">Honestly? The Democrats should have done this years ago. Republicans have been playing dirty since 2016 while Democrats kept trying to "take the high road." Sometimes you have to fight fire with fire.</div>
-                <div class="comment-meta"><span class="comment-score">8.7k points</span> • 2 hours ago</div>
-            </div>
-            
-            <div class="comment comment-reply">
-                <div class="comment-author">u/IndependentThinker99</div>
-                <div class="comment-content">"Fight fire with fire" is how you burn the whole house down. Both parties are now openly authoritarian. We're watching the collapse of American democracy in real-time.</div>
-                <div class="comment-meta"><span class="comment-score">6.2k points</span> • 2 hours ago</div>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/ConservativeRealist</div>
-            <div class="comment-content">As a conservative, this is exactly what we warned about. The left has always been authoritarian at heart - they just needed an excuse to show their true colors. Newsom is literally promising to make opposition parties illegal and execute political opponents. This is Stalin-level stuff.</div>
-            <div class="comment-meta"><span class="comment-score">9.4k points</span> • 3 hours ago</div>
-            
-            <div class="comment comment-reply">
-                <div class="comment-author">u/HistoryTeacher2020</div>
-                <div class="comment-content">Conservative here too, but let's be real - Trump literally said he wants to be a dictator on day one and has been talking about "terminating" parts of the Constitution. Both parties are racing to the bottom.</div>
-                <div class="comment-meta"><span class="comment-score">7.1k points</span> • 2 hours ago</div>
-            </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/CanadianObserver <span class="comment-flair">CANADIAN PERSPECTIVE</span></div>
-            <div class="comment-content">As someone watching from outside, it's absolutely insane that both of your major parties are now openly running on platforms of "we will imprison and possibly execute our political opponents." How did it get this bad? America used to be the example of peaceful democratic transition.</div>
-            <div class="comment-meta"><span class="comment-score">8.9k points</span> • 3 hours ago</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/GenZPolitics</div>
-            <div class="comment-content">I'm 22 and this is the first election I can vote in. My entire political consciousness has been defined by this escalating cycle of "they did it first so we can do it worse." Newsom is just saying the quiet part out loud - this is what both parties have become.</div>
-            <div class="comment-meta"><span class="comment-score">5.7k points</span> • 2 hours ago</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/OldSchoolDemocrat</div>
-            <div class="comment-content">Lifelong Democrat here. This makes me physically sick. I didn't spend my life supporting Democrats because I wanted revenge - I supported them because I believed in civil rights, environmental protection, healthcare for all. Now it's just "we'll be more authoritarian than the authoritarians." I'm done.</div>
-            <div class="comment-meta"><span class="comment-score">4.8k points</span> • 1 hour ago</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/MediaAnalyst2030</div>
-            <div class="comment-content">The media deserves a lot of blame here. They've spent years normalizing extreme rhetoric because it drives engagement. First Trump, now Newsom. We're rewarding the most inflammatory politicians with wall-to-wall coverage while ignoring anyone who talks about actual policy.</div>
-            <div class="comment-meta"><span class="comment-score">3.9k points</span> • 1 hour ago</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/Doomer2027</div>
-            <div class="comment-content">Pack it up, democracy is over. When both candidates are openly promising to imprison/execute each other, we're not in a democracy anymore. We're in a cold civil war that's about to go hot. I'd recommend everyone start making exit plans.</div>
-            <div class="comment-meta"><span class="comment-score">3.2k points</span> • 1 hour ago</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-author">u/PragmaticVoter</div>
-            <div class="comment-content">The worst part? This will probably work. Newsom will likely win the primary because Democratic voters are so angry about Trump that they'll support anyone who promises the most extreme revenge. Then we'll have an election between two candidates who both promise to destroy American democracy. We are so fucked.</div>
-            <div class="comment-meta"><span class="comment-score">2.7k points</span> • 45 minutes ago</div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
