@@ -3,166 +3,564 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Shapiro dead at 43 after shooting at University of Florida event - CNN</title>
+    <title>BREAKING: Ben Shapiro shot and killed at University of Florida event : news</title>
     <style>
         body {
-            font-family: CNNSans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
-            background-color: #f2f2f2;
-            color: #262626;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #DAE0E6;
+            color: #1C1C1C;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.4;
         }
-        .cnn-header {
-            background-color: #cc0000;
+        .header {
+            background-color: #0079D3;
             color: white;
-            padding: 12px 20px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 2px solid #990000;
-        }
-        .article-container {
-            max-width: 780px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px 40px;
-        }
-        .article-header {
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
-        }
-        .article-title {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin: 0 0 15px 0;
-            color: #262626;
-        }
-        .article-meta {
-            color: #595959;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .article-image {
+            padding: 8px 20px;
+            position: fixed;
+            top: 0;
             width: 100%;
-            margin: 25px 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
         }
-        .image-caption {
-            font-size: 14px;
-            color: #595959;
-            margin-top: 8px;
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 15px;
+        .container {
+            max-width: 960px;
+            margin: 60px auto 0;
+            padding: 0 20px;
         }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 30px;
+        .post {
+            background-color: white;
+            border-radius: 4px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
         }
-        .article-body p {
-            margin-bottom: 20px;
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 8px 15px;
-            font-size: 12px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .update-time {
-            font-size: 13px;
-            color: #737373;
+        .post-title {
+            font-size: 20px;
             font-weight: 500;
+            color: #1A1A1B;
+            margin-bottom: 8px;
+            line-height: 1.25;
         }
-        .byline {
+        .post-meta {
+            font-size: 12px;
+            color: #7C7C7D;
+            margin-bottom: 12px;
+        }
+        .post-content {
             font-size: 14px;
-            color: #595959;
-            margin-bottom: 15px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .post-actions {
+            display: flex;
+            gap: 20px;
+            font-size: 12px;
+            color: #878A8C;
+        }
+        .comments {
+            background-color: white;
+            border-radius: 4px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #EDEFF1;
+        }
+        .comment:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .username {
+            font-weight: 500;
+            color: #1C1C1C;
+            margin-right: 8px;
+        }
+        .user-flair {
+            background-color: #E8F1FB;
+            color: #0079D3;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        .comment-time {
+            font-size: 12px;
+            color: #7C7C7D;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+        .comment-actions {
+            font-size: 12px;
+            color: #878A8C;
+            margin-top: 8px;
+        }
+        .score {
+            font-weight: 500;
+            margin-right: 4px;
+        }
+        .collapsed {
+            color: #7C7C7D;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .removed {
+            color: #EA0027;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .deleted {
+            color: #7C7C7D;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .thread-line {
+            border-left: 2px solid #EDEFF1;
+            padding-left: 16px;
+            margin-left: 8px;
+        }
+        .thread-line-2 {
+            border-left: 2px solid #EDEFF1;
+            padding-left: 16px;
+            margin-left: 24px;
+        }
+        .thread-line-3 {
+            border-left: 2px solid #EDEFF1;
+            padding-left: 16px;
+            margin-left: 40px;
+        }
+        .sort-bar {
+            background-color: white;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+            font-size: 12px;
+            color: #7C7C7D;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-header">CNN</div>
-    
-    <div class="article-container">
-        <article>
-            <header class="article-header">
-                <span class="breaking-banner">BREAKING NEWS</span>
-                <h1 class="article-title">Ben Shapiro, conservative commentator and author, dies at 43 after shooting at University of Florida event</h1>
+    <div class="header">
+        <div style="font-size: 16px; font-weight: bold;">reddit</div>
+    </div>
+
+    <div class="container">
+        <div class="post">
+            <div class="post-title">BREAKING: Ben Shapiro shot and killed at University of Florida event</div>
+            <div class="post-meta">Posted by u/NewsObserver2027 3 hours ago</div>
+            <div class="post-content">
+                <p>Conservative commentator Ben Shapiro was shot and killed Monday evening while leaving a speaking event at the University of Florida. According to CNN, the shooting occurred around 8:45 PM ET outside the Curtis M. Phillips Center for the Performing Arts.</p>
                 
-                <div class="byline">
-                    By <strong>CNN Staff</strong>
-                </div>
+                <p>The suspect, described as a white male in his early 20s, was taken into custody approximately 20 minutes after the incident. The university went into lockdown following the shooting.</p>
                 
-                <div class="article-meta">
-                    <strong>Updated 11:47 PM ET, Mon October 10, 2027</strong>
-                </div>
-                
-                <img src="https://cdn.cnn.com/cnnnext/dam/assets/241010214500-ben-shapiro-file-1027-large-169.jpg" alt="Ben Shapiro speaking at an event" class="article-image">
-                <div class="image-caption">Ben Shapiro speaks during Politicon 2023 at the Pasadena Convention Center on October 28, 2023 in Pasadena, California.</div>
-            </header>
-
-            <div class="article-body">
-                <p><strong>Gainesville, Florida (CNN)</strong> — Ben Shapiro, the conservative commentator, author and co-founder of The Daily Wire, has died after being shot during an appearance at the University of Florida Monday evening, according to university police and his representatives. He was 43.</p>
-
-                <p>Shapiro was shot multiple times while leaving the university's Curtis M. Phillips Center for the Performing Arts around 8:45 p.m. ET following a speech to a packed auditorium of approximately 2,000 attendees, university police said in a statement.</p>
-
-                <p>He was transported to UF Health Shands Hospital where he was pronounced dead at 9:23 p.m., according to hospital officials.</p>
-
-                <p>The suspect fled the scene but was taken into custody by campus police approximately 20 minutes later following an extensive search of the area, authorities said. The individual was found hiding in a wooded area near the campus.</p>
-
-                <p>"At approximately 8:45 p.m., officers responded to reports of shots fired outside the Phillips Center," University of Florida Police Chief Linda Arnold said during a brief news conference Monday night. "Upon arrival, officers located one male victim with multiple gunshot wounds. The victim has been identified as Benjamin Aaron Shapiro, age 43."</p>
-
-                <h3>A nation reacts</h3>
-
-                <p>The shooting has sent shockwaves through the political world, with reactions pouring in from across the ideological spectrum. Within hours, the incident had become the top trending topic across all major social media platforms, with the hashtag #BenShapiroShooting generating millions of posts.</p>
-
-                <p>"Ben was a principled conservative who loved this country and dedicated his life to defending the values he believed in," Elon Musk posted on X. "This is a tragic loss for America."</p>
-
-                <p>Former President Donald Trump called the shooting "an act of pure evil" and demanded "swift justice" for the perpetrator. "Ben was a warrior for truth and the Constitution," Trump wrote on Truth Social. "The radical left has blood on their hands."</p>
-
-                <p>President Gavin Newsom issued a statement condemning the violence and calling for national unity. "There is no place for political violence in our democracy," Newsom said in a statement released by the White House. "We must come together as Americans to reject this kind of hatred."</p>
-
-                <h3>Internet speculation runs rampant</h3>
-
-                <p>As news of the shooting spread, speculation about the shooter's identity and motives quickly consumed social media. Within minutes of the first reports, various theories began circulating online, with many users immediately attributing the attack to political motivations.</p>
-
-                <p>"This has ANTIFA written all over it," one highly-shared post on X claimed, without evidence. "The radical left has been calling for this for years."</p>
-
-                <p>Others pointed fingers in the opposite direction. "This reeks of a false flag operation," a popular progressive account posted. "The timing is too convenient. They needed a martyr."</p>
-
-                <p>The shooter was described by witnesses as a white male appearing to be in his early 20s, wearing dark clothing and a hooded sweatshirt. This description immediately sparked intense debate about the shooter's likely political affiliations.</p>
-
-                <p>"Another angry young white man radicalized by right-wing media," one viral tweet read, generating over 100,000 likes within an hour. "This is what toxic conservatism breeds."</p>
-
-                <p>Conservative commentators pushed back hard against that narrative. "The left is already trying to politicize this tragedy," Daily Wire host Matt Walsh posted. "They don't even know the shooter's name yet, but they know they want to blame conservatives."</p>
-
-                <h3>University lockdown</h3>
-
-                <p>Following the shooting, the University of Florida immediately went into lockdown, with students and faculty instructed to shelter in place. The lockdown was lifted around midnight after police determined there was no ongoing threat.</p>
-
-                <p>"We are deeply saddened by this senseless act of violence," University of Florida President Kent Fuchs said in a statement. "Our thoughts are with Mr. Shapiro's family and all those affected by this tragedy."</p>
-
-                <p>The event had been heavily promoted on campus, with posters advertising Shapiro's speech on "The Future of Conservative Values in Higher Education" visible across university grounds for weeks. Tickets had sold out within days of becoming available.</p>
-
-                <p>Security for the event included both university police and private security hired by Shapiro's team, according to event organizers. Attendees had to pass through metal detectors before entering the venue.</p>
-
-                <h3>Political violence on the rise</h3>
-
-                <p>The shooting comes amid growing concerns about political violence in the United States. According to data from the Global Terrorism Database, incidents of politically motivated violence have increased 127% since 2020.</p>
-
-                <p>"We are seeing an alarming normalization of political violence in our society," said Dr. Sarah Martinez, a political violence expert at Georgetown University. "When people increasingly view their political opponents not just as wrong, but as existential enemies, this kind of violence becomes more likely."</p>
-
-                <p>The incident has already reignited debates about political rhetoric, social media radicalization, and the security measures required for public figures in an increasingly polarized America.</p>
-
-                <p>Shapiro is survived by his wife, Mor Toledano, and their four children. He was a graduate of UCLA and Harvard Law School, and authored multiple bestselling books including "The Right Side of History" and "How to Destroy America in Three Easy Steps."</p>
-
-                <p><em>This is a developing story and will be updated.</em></p>
+                <p>Shapiro was 43 years old and is survived by his wife and four children.</p>
             </div>
-        </article>
+            <div class="post-actions">
+                <span>42.3k upvotes</span>
+                <span>8.7k comments</span>
+                <span>share</span>
+                <span>save</span>
+            </div>
+        </div>
+
+        <div class="sort-bar">Sort by: Best</div>
+
+        <div class="comments">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PoliticalAnalyst77</span>
+                    <span class="user-flair">Independent</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Jesus Christ, this is absolutely horrific. Regardless of your political views, nobody deserves to be gunned down like this. My heart goes out to his family.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">15.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LeftistLurker</span>
+                    <span class="user-flair">Progressive</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>I strongly disagreed with everything Shapiro stood for, but this is tragic. Political violence is never the answer and only makes things worse. We need to wait for all the facts before jumping to conclusions.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">12.8k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConservativeWarrior88</span>
+                    <span class="user-flair">MAGA</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>This is what happens when the left constantly demonizes conservatives. They call us Nazis, fascists, enemies of democracy. Well congratulations, your violent rhetoric has consequences. This blood is on the hands of every progressive who spent years calling for "confrontation" and "resistance."</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">-3.4k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+
+                <div class="thread-line">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ReasonableCentrist</span>
+                            <span class="comment-time">3 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>We don't even know who the shooter is yet. Can we not immediately turn this into a political weapon?</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">8.9k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ProgressiveVoice</span>
+                            <span class="user-flair">Democratic Socialist</span>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Are you serious right now? A man is dead and your first instinct is to score political points? This is exactly the kind of divisive rhetoric that leads to violence in the first place.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">6.2k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DetectiveReddit24</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>Early reports saying the shooter is a 22-year-old white male. Cue the mental health talk if he's right-wing, cue the terrorism talk if he's left-wing. We all know how this plays out.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">9.7k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+
+                <div class="thread-line">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">MediaCritic101</span>
+                            <span class="user-flair">Journalist</span>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>You're not wrong. The media narrative is already forming based on zero facts. CNN is being careful, but if you look at social media, people have already decided this is either "leftist terrorism" or a "false flag" depending on their bubble.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">4.3k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ActualHistorian</span>
+                    <span class="user-flair">Historian</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>I'm seeing a lot of misinformation already. Some basic facts:</p>
+                    <ul>
+                        <li>Shapiro was shot leaving the venue, not during his speech</li>
+                        <li>Suspect is in custody but hasn't been identified publicly</li>
+                        <li>No manifesto or political motive has been established</li>
+                        <li>University went into lockdown as precaution</li>
+                    </ul>
+                    <p>Everything else you're seeing right now is speculation.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">11.5k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConspiracyTheorist2024</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>False flag. The timing is too perfect - right before the 2028 election cycle begins. They needed a conservative martyr to rally the base. I guarantee the shooter will have some convenient "leftist" social media history that just appeared this week.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">-8.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+
+                <div class="thread-line">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">RationalThought</span>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Jesus, a man is dead and you're spinning conspiracy theories within hours? Have some respect for the victim and his family.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">7.6k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">EuropeanPerspective</span>
+                    <span class="user-flair">European</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>American here living in Germany. This is why I left. The political violence, the constant demonization, the conspiracy theories within hours of any tragedy. America has become a failed state where every event is immediately weaponized for political gain. A man is dead and half the country is celebrating or speculating about false flags.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">13.7k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+
+                <div class="thread-line">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ProudAmerican1776</span>
+                            <span class="user-flair">Patriot</span>
+                            <span class="comment-time">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Then stay in Europe. We don't need people who abandon their country when things get tough.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">-4.1k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ModerateVoice</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>I'm genuinely scared for where this country is heading. When political violence becomes normalized, when we immediately assume the worst about our fellow citizens, when we can't even mourn a death without turning it into a political football - that's when you know the social fabric is tearing.</p>
+                    
+                    <p>I didn't agree with Shapiro on much, but he was a husband and father who didn't deserve to die like this. Can we please just acknowledge that a human being died today and save the political garbage for tomorrow?</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">18.9k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">NewsJunkie2020</span>
+                    <span class="user-flair">News Addict</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>UPDATE: Local Gainesville reporter says the suspect's name is Connor Michael Hayes, 22. Social media shows he was active in several left-leaning groups and posted anti-conservative content. Obviously we need to wait for official confirmation but this is looking like it might be politically motivated.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">7.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+
+                <div class="thread-line">
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">FactCheckerPro</span>
+                            <span class="user-flair">Fact Checker</span>
+                            <span class="comment-time">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Police haven't released the name yet. Please don't spread unconfirmed information. This is how misinformation spreads and people get hurt.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">5.8k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="username">ConservativeMom247</span>
+                            <span class="user-flair">Mom</span>
+                            <span class="comment-time">1 hour ago</span>
+                        </div>
+                        <div class="comment-body">
+                            <p>Called it. The left has been radicalizing young people for years with their "punch Nazis" rhetoric. Now someone took it to the next level.</p>
+                        </div>
+                        <div class="comment-actions">
+                            <span class="score">-2.1k</span>
+                            <span>Reply</span>
+                            <span>Share</span>
+                            <span>Report</span>
+                            <span>Save</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">RemovedByModerator</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body removed">
+                    <p>[Removed by moderator for violating community guidelines]</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">[score hidden]</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">VeteranVoice</span>
+                    <span class="user-flair">Army Veteran</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>As someone who served this country, this breaks my heart. I fought for the right of people to speak freely, even when I disagree with them. Shapiro had every right to speak without fear of being murdered. This isn't the America I served for.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">14.2k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SocialMediaAnalyst</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    <p>The speed at which this got politicized is actually insane. Within 30 minutes of the news breaking, Twitter was already full of people blaming "the left" or claiming "false flag." Nobody knew anything, but everyone had already decided what narrative to push.</p>
+                    
+                    <p>Social media has broken our brains. We can't process tragedy anymore without immediately trying to weaponize it.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">16.8k</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">deleted</span>
+                    <span class="comment-time">30 minutes ago</span>
+                </div>
+                <div class="comment-body deleted">
+                    <p>[deleted]</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">[score hidden]</span>
+                    <span>Reply</span>
+                    <span>Share</span>
+                    <span>Report</span>
+                    <span>Save</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">LoadMoreComments</span>
+                    <span class="comment-time">Now</span>
+                </div>
+                <div class="comment-body">
+                    <p class="collapsed">Load more comments (4,567 remaining)</p>
+                </div>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
