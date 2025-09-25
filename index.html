@@ -3,275 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsom's Reign of Terror: Two Weeks In, America Burns | CNN</title>
+    <title>Newsom's 96 Executive Orders in 24 Days - r/news</title>
     <style>
         body {
-            font-family: CNN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #262626;
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #030712;
+            color: #e5e7eb;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             line-height: 1.6;
         }
-        .cnn-header {
-            background-color: #cc0000;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: 900;
-            border-bottom: 4px solid #a30000;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .article-container {
-            max-width: 900px;
+        .reddit-container {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border: 1px solid #374151;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
-        .article-header {
-            border-bottom: 2px solid #cc0000;
-            padding-bottom: 30px;
-            margin-bottom: 35px;
-        }
-        .article-title {
-            font-size: 48px;
-            font-weight: 900;
-            line-height: 1.1;
-            margin: 0 0 25px 0;
-            color: #000;
-            text-transform: uppercase;
-        }
-        .article-meta {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-        .article-image {
-            width: 100%;
-            margin: 35px 0;
-            border: 3px solid #cc0000;
-        }
-        .image-caption {
-            font-size: 14px;
-            color: #666;
-            margin-top: 10px;
-            font-style: italic;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-        .article-body {
-            font-size: 20px;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
-        .article-body p {
-            margin-bottom: 30px;
-        }
-        .breaking-banner {
-            background: linear-gradient(45deg, #cc0000, #ff0000);
+        .reddit-header {
+            background: linear-gradient(135deg, #ff4500, #cc3600);
             color: white;
-            padding: 12px 25px;
-            font-size: 14px;
-            font-weight: 900;
-            display: inline-block;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            animation: pulse 1s infinite;
-            box-shadow: 0 4px 10px rgba(204,0,0,0.3);
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.8; }
-            100% { opacity: 1; }
-        }
-        .update-time {
-            font-size: 15px;
-            color: #666;
+            padding: 15px 20px;
+            font-size: 18px;
             font-weight: 700;
         }
-        .byline {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 25px;
-            font-weight: 600;
+        .reddit-header span {
+            font-weight: 400;
+            opacity: 0.9;
         }
-        .live-updates {
-            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-            border: 2px solid #f39c12;
+        .post-container {
             padding: 20px;
-            margin: 25px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(243,156,18,0.2);
+            border-bottom: 1px solid #374151;
         }
-        .live-updates h3 {
-            color: #8b4513;
-            margin-top: 0;
-            font-size: 22px;
-            text-transform: uppercase;
-        }
-        .timestamp {
-            font-size: 13px;
-            color: #8b4513;
-            font-weight: 900;
-        }
-        .quote-box {
-            border-left: 6px solid #cc0000;
-            padding-left: 25px;
-            margin: 30px 0;
-            font-style: italic;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 25px;
-            border-radius: 0 8px 8px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .stat-box {
-            background: linear-gradient(135deg, #cc0000, #a30000);
-            color: white;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 8px;
-            text-align: center;
+        .post-title {
             font-size: 24px;
-            font-weight: 900;
-            text-transform: uppercase;
-            box-shadow: 0 6px 20px rgba(204,0,0,0.3);
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #f9fafb;
+            line-height: 1.3;
         }
-        .section-divider {
-            height: 4px;
-            background: linear-gradient(90deg, #cc0000, transparent);
-            margin: 40px 0;
-            border-radius: 2px;
+        .post-meta {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .post-content {
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        .post-actions {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .post-actions span {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .post-actions span:hover {
+            color: #ff4500;
+        }
+        .comment-container {
+            padding: 15px 20px;
+            border-bottom: 1px solid #374151;
+            background: linear-gradient(135deg, #1f2937, #111827);
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .username {
+            font-weight: 600;
+            margin-right: 10px;
+            color: #f9fafb;
+        }
+        .flair {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 10px;
+        }
+        .flair-2 {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        .flair-3 {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+        .flair-4 {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+        .comment-content {
+            margin: 10px 0;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #d1d5db;
+        }
+        .comment-actions {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 8px;
+        }
+        .comment-actions span {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .comment-actions span:hover {
+            color: #ff4500;
+        }
+        .nested-comment {
+            margin-left: 30px;
+            border-left: 2px solid #374151;
+            padding-left: 15px;
+            margin-top: 15px;
+        }
+        .deep-nested {
+            margin-left: 30px;
+            border-left: 2px solid #4b5563;
+            padding-left: 15px;
+            margin-top: 15px;
+        }
+        .quote-block {
+            border-left: 3px solid #ff4500;
+            padding-left: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #9ca3af;
+            background-color: rgba(255, 69, 0, 0.05);
+            padding: 10px 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        .link {
+            color: #ff4500;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .score {
+            font-weight: 700;
+            color: #ff4500;
+        }
+        .edited {
+            font-size: 11px;
+            color: #6b7280;
+            margin-left: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-header">CNN</div>
-    
-    <div class="article-container">
-        <article>
-            <header class="article-header">
-                <span class="breaking-banner">EXCLUSIVE INVESTIGATION</span>
-                <h1 class="article-title">AMERICA'S NIGHTMARE: NEWSOM'S TWO-WEEK REIGN OF TERROR LEAVES CONSTITUTION IN RUINS</h1>
-                
-                <div class="byline">
-                    By <strong>CNN Investigative Unit</strong> • <span class="update-time">Updated 6:00 AM ET, Sat February 10, 2029</span>
-                </div>
-                
-                <img src="https://cdn.cnn.com/cnnnext/dam/assets/290210044329-newsom-dictator-0209-super-tease.jpg" alt="Newsom at podium with troops behind him" class="article-image">
-                <div class="image-caption">President Newsom addresses the nation flanked by military personnel, February 9, 2029, as he announces the expansion of federal control over state governments.</div>
-            </header>
-
-            <div class="article-body">
-                <p><strong>Washington (CNN)</strong> — Just 21 days into his presidency, Gavin Newsom has transformed the United States into what constitutional scholars are calling a "totalitarian nightmare," implementing the most radical authoritarian agenda in American history and effectively ending 253 years of constitutional democracy.</p>
-
-                <p>In a span of just two weeks, Newsom has issued 96 executive orders, purged thousands of government employees, deployed military forces against American citizens, and launched what legal experts describe as "Nuremberg-style show trials" against political opponents.</p>
-
-                <div class="stat-box">
-                    96 Executive Orders in 14 Days<br>
-                    1.2 Million Federal Workers Fired<br>
-                    $1.3 Trillion Lawsuit Against Fox News
-                </div>
-
-                <div class="quote-box">
-                    "This is not politics as usual. This is the systematic dismantling of American democracy. Newsom has declared war on half the country and is using the full power of the federal government to crush dissent."
-                    <br><em>— Laurence Tribe, Harvard Constitutional Law Professor</em>
-                </div>
-
-                <h3>The Purge Begins</h3>
-
-                <p>Within hours of taking office on January 20th, Newsom's administration began what internal documents call "Operation Clean Sweep" - a massive purge of federal employees based on their political affiliations.</p>
-
-                <p>The FBI, now under direct White House control, has been conducting "loyalty screenings" of all federal workers. Those found to have donated to Republican campaigns, registered as Republicans, or associated with conservative organizations have been immediately terminated without due process.</p>
-
-                <p>"They came for me at 6 AM on January 22nd," said Michael Thompson, a 23-year EPA employee who was fired after investigators discovered he had voted for Trump in 2024. "Two armed agents escorted me out. They said I was a 'threat to national security' because of my political beliefs."</p>
-
-                <div class="live-updates">
-                    <h3>BREAKING DEVELOPMENTS</h3>
-                    <p><span class="timestamp">5:47 AM ET</span> - Military forces surround Texas state capitol building</p>
-                    <p><span class="timestamp">5:15 AM ET</span> - Fox News offices raided by federal agents</p>
-                    <p><span class="timestamp">4:30 AM ET</span> - Republican members of Congress arrested for "sedition"</p>
-                </div>
-
-                <h3>Military Occupation of Red States</h3>
-
-                <p>Perhaps most shocking has been Newsom's deployment of military forces against American states. On January 23rd, without congressional authorization, the president ordered the 82nd Airborne Division to "restore federal authority" in Texas, Florida, and Georgia.</p>
-
-                <p>Armed troops now patrol the streets of Austin, Houston, and Dallas. The Texas state legislature has been dissolved, with military governors appointed to replace elected officials. Similar occupations are underway in 17 other Republican-led states.</p>
-
-                <p>"This is martial law disguised as federal intervention," said General Mark Milley (Ret.), former Chairman of the Joint Chiefs of Staff. "The president is using the military to overthrow state governments and suppress political opposition. This is exactly what the Founding Fathers feared."</p>
-
-                <div class="quote-box">
-                    "I will crush the Republican rebellion against American democracy. Every red state governor who defies federal authority will face the full might of the United States military."
-                    <br><em>— President Gavin Newsom, January 25, 2029</em>
-                </div>
-
-                <h3>The Show Trials Begin</h3>
-
-                <div class="section-divider"></div>
-
-                <p>On January 28th, Newsom announced the creation of "The People's Tribunal" - special courts designed to prosecute Republicans for what he terms "crimes against democracy."</p>
-
-                <p>The first trials began February 1st, with former President Trump, Ron DeSantis, and 47 Republican members of Congress facing charges that include "conspiracy against democracy," "crimes against the people," and "treasonous activities."</p>
-
-                <p>The proceedings bear striking resemblance to Stalin's show trials of the 1930s. Defendants are denied access to their chosen attorneys, evidence rules have been suspended, and convictions appear predetermined.</p>
-
-                <p>"This is a kangaroo court," said Alan Dershowitz, who was briefly allowed to observe before being arrested himself. "They've created a legal system designed to criminalize political opposition."</p>
-
-                <h3>The Fox News Executions</h3>
-
-                <p>In perhaps his most shocking move, Newsom has effectively declared war on conservative media. The administration filed a $1.3 trillion lawsuit against Fox News, demanding the network's immediate shutdown and the seizure of all assets.</p>
-
-                <p>Fox News headquarters in New York was raided by federal agents on February 3rd. Executives were arrested, broadcasting equipment was destroyed, and the network's bank accounts were frozen. Similar actions are planned against other conservative media outlets.</p>
-
-                <p>"We will not allow propaganda networks to undermine American democracy," Newsom declared. "Fox News and its allies have engaged in a conspiracy to destroy our country. They will be held accountable."</p>
-
-                <h3>Gerrymandering by Force</h3>
-
-                <p>Newsom has also launched what he calls "The Great Redistricting" - forcing Democratic states to gerrymander congressional districts to ensure permanent Democratic control of Congress.</p>
-
-                <p>California, New York, Illinois, and other Democratic states have been ordered to create districts that would guarantee Democrats 85% of congressional seats, regardless of actual voter preferences.</p>
-
-                <p>"Democracy means Democratic Party rule," Newsom explained. "We cannot allow Republicans to obstruct the will of the people through so-called 'elections.'"</p>
-
-                <h3>The OMB Coup</h3>
-
-                <div class="section-divider"></div>
-
-                <p>On February 5th, Newsom effectively abolished congressional oversight by ordering the Office of Management and Budget to ignore all congressional directives and funding restrictions.</p>
-
-                <p>"Congress is irrelevant," the president stated. "The American people elected me to transform this country, and I will not allow a bunch of corrupt politicians to stand in the way of progress."</p>
-
-                <p>The administration has begun spending federal funds without congressional appropriation, implementing policies without legislative authorization, and effectively ruling by decree.</p>
-
-                <h3>The Resistance Forms</h3>
-
-                <p>Despite the crackdown, resistance movements are beginning to form. Underground networks of former federal employees, military officers, and concerned citizens have begun coordinating opposition activities.</p>
-
-                <p>"We're seeing the emergence of a shadow government," said one resistance member who spoke on condition of anonymity. "People are organizing, planning, preparing. This can't last."</p>
-
-                <p>However, Newsom's surveillance state makes organization extremely dangerous. The NSA now monitors all communications, the FBI has tripled in size, and a new "Department of Homeland Harmony" has been created to detect and crush dissent.</p>
-
-                <div class="quote-box">
-                    "The Republican Party is hereby dissolved. Conservatism is treason. From this day forward, there is only one acceptable political ideology in America: progressive democracy."
-                    <br><em>— President Newsom, February 8, 2029</em>
-                </div>
-
-                <h3>International Horror</h3>
-
-                <p>World leaders have responded with horror to America's collapse into dictatorship. NATO has effectively expelled the United States, the UN has imposed sanctions, and Canada has closed its border to American refugees.</p>
-
-                <p>"The United States has become what it once claimed to fight against," said European Commission President. "This is the end of the American experiment."</p>
-
-                <p>As Newsom's reign of terror enters its third week, constitutional scholars warn that American democracy may be beyond recovery. The institutions that sustained the republic for nearly 250 years have been systematically destroyed in just 21 days.</p>
-
-                <p>"History will remember this as the moment America died," said Professor Tribe. "And it happened not with a bang, but with the stroke of a pen."</p>
-
-                <p><em>CNN will continue to provide coverage as long as we are able to operate independently. Our future remains uncertain under this regime.</em></p>
+    <div class="reddit-container">
+        <div class="reddit-header">
+            r/news <span>• Posted by u/AmericanInsomniac 24 days ago</span>
+        </div>
+        
+        <div class="post-container">
+            <h1 class="post-title">Newsom's 24-Day Reign: 96 Executive Orders, Mass Purges, Military Deployments - America Unrecognizable</h1>
+            
+            <div class="post-meta">
+                Posted by u/AmericanInsomniac • 24 days ago • 2 Awards
             </div>
-        </article>
+            
+            <div class="post-content">
+                <p>Just 24 days into his presidency, Gavin Newsom has issued 96 executive orders, purged 1.2 million federal workers, deployed troops against red states, and launched what legal experts call "Nuremberg-style trials" against political opponents. The Constitution is effectively dead.</p>
+                
+                <p><a href="#" class="link">cnn.com/politics/n...</a></p>
+                
+                <div class="quote-block">
+                    "This is not politics as usual. This is the systematic dismantling of American democracy. Newsom has declared war on half the country and is using the full power of the federal government to crush dissent."
+                    <br><em>- Laurence Tribe, Harvard Constitutional Law Professor</em>
+                </div>
+            </div>
+            
+            <div class="post-actions">
+                <span><strong>42.8k</strong> upvotes</span>
+                <span>3.1k comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">PoliticalAnalyst2024</span>
+                <span class="flair">Verified Expert</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                I've been tracking every single executive order. Here's what I've found in just 24 days:
+                
+                <p><strong>96 Executive Orders Breakdown:</strong></p>
+                <ul>
+                    <li><span class="score">34</span> orders targeting Republican states</li>
+                    <li><span class="score">28</span> orders purging federal employees</li>
+                    <li><span class="score">18</span> orders expanding presidential powers</li>
+                    <li><span class="score">16</span> orders against conservative media</li>
+                </ul>
+                
+                <p>This is <strong>4 executive orders per day</strong>. For context, Biden averaged 0.3 per day. Trump averaged 0.2 per day.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">15.2k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+            
+            <div class="nested-comment">
+                <div class="comment-header">
+                    <span class="username">HistorianAtHeart</span>
+                    <span class="flair flair-2">MA in History</span>
+                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+                </div>
+                <div class="comment-content">
+                    <p>I'm literally shaking as I write this. I compared Newsom's first 24 days to historical authoritarian takeovers:</p>
+                    
+                    <p><strong>Hitler (1933):</strong> 5 major decrees in first month</p>
+                    <p><strong>Mussolini (1922):</strong> 8 emergency measures in first month</p>
+                    <p><strong>Newsom (2029):</strong> 96 executive orders in 24 days</p>
+                    
+                    <p>We are witnessing the fastest democratic collapse in modern history.</p>
+                </div>
+                <div class="comment-actions">
+                    <span class="score">9.8k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">FormerFedEmployee</span>
+                <span class="flair flair-3">Ex-Federal Worker</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>I was one of the 1.2 million federal employees fired. I worked at the EPA for 18 years. My "crime"? I donated $50 to a Republican congressional candidate in 2022.</p>
+                
+                <p>They came to my house at 6 AM. Two armed agents. No warning. No due process. Just "pack your things, you're terminated for sedition against democracy."</p>
+                
+                <p>My pension? Gone. My health insurance? Canceled immediately. My retirement savings? Frozen pending "investigation."</p>
+                
+                <p>I have a family. Three kids. We have no income now. This is real. This is happening to AMERICAN CITIZENS.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">23.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+            
+            <div class="nested-comment">
+                <div class="comment-header">
+                    <span class="username">TexasMom2020</span>
+                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+                </div>
+                <div class="comment-content">
+                    My husband was fired from the Department of Agriculture after 22 years. His offense? His FACEBOOK PROFILE showed he attended a Trump rally in 2016. They literally used social media posts from 8 years ago to fire him. We're moving to Mexico next week. America is dead.
+                </div>
+                <div class="comment-actions">
+                    <span class="score">12.4k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">MilitaryIntelOfficer</span>
+                <span class="flair flair-4">Military Intelligence</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>I can't reveal my identity for obvious reasons, but I'm active duty military intelligence. What I'm about to tell you will sound insane, but I have documents:</p>
+                
+                <p><strong>Troop Deployments in Red States:</strong></p>
+                <ul>
+                    <li>82nd Airborne: 12,000 troops in Texas</li>
+                    <li>1st Armored Division: 8,500 troops in Florida</li>
+                    <li>101st Airborne: 9,200 troops in Georgia</li>
+                    <li>Marine Expeditionary: 6,800 troops in Tennessee</li>
+                </ul>
+                
+                <p>These aren't "training exercises." They're occupation forces. They have orders to "suppress Republican insurgency" and "maintain federal authority."</p>
+                
+                <p>I've seen the operational plans. They're preparing for mass arrests of Republican officials. This isn't a conspiracy theory anymore.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">31.5k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">ConstitutionalLawProf</span>
+                <span class="flair">Law Professor</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>As someone who has taught constitutional law for 25 years, I never thought I'd see this day. The Constitution has been effectively suspended through "emergency powers."</p>
+                
+                <p>Newsom's legal theory: The Republican Party constitutes a "domestic terrorist organization" threatening "our democracy." Therefore, all actions against them are justified under the 14th Amendment and emergency powers doctrine.</p>
+                
+                <p>It's the same legal theory used by every authoritarian regime: declare your opponents enemies of the state, then use the full power of the state to destroy them.</p>
+                
+                <p>The courts? Packed with Newsom appointees. The military? Purged of dissenters. The media? Either compliant or shut down.</p>
+                
+                <p>Democracy died quietly, with a pen stroke, while most Americans were still arguing about Twitter.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">18.9k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">CanadianObserver</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>Canadian here. We're seeing refugees at our borders. Not illegal immigrants - AMERICAN CITIZENS fleeing political persecution.</p>
+                
+                <p>Last week alone, 15,000 Americans applied for political asylum in Canada. Most are former federal employees, military officers, and Republican officials.</p>
+                
+                <p>Our government has quietly stopped deporting illegal immigrants from the US because we recognize they're fleeing an authoritarian regime.</p>
+                
+                <p>The world is watching America collapse in real-time. You were supposed to be the beacon of democracy. Now you're a cautionary tale.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">14.7k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">AustinResident</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>I live in Austin. There are ARMED SOLDIERS patrolling my neighborhood. Not police. Not National Guard. Regular Army. With live ammunition.</p>
+                
+                <p>They set up checkpoints on major roads. You have to show ID proving you're not a "registered Republican" to pass. I wish I was making this up.</p>
+                
+                <p>My neighbor was arrested last week for "seditious speech" after he posted on Facebook criticizing Newsom. He's being held without charges. His family doesn't know where he is.</p>
+                
+                <p>I'm writing this from a friend's house because I'm afraid to use my own internet. They're monitoring everything.</p>
+                
+                <p>This is America in 2029. Land of the free? What a fucking joke.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">26.3k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+            
+            <div class="nested-comment">
+                <div class="comment-header">
+                    <span class="username">Dallasite</span>
+                    <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+                </div>
+                <div class="comment-content">
+                    Same in Dallas. They arrested our mayor. ARRESTED. OUR. MAYOR. For "conspiracy against democracy." The crime? He refused to implement Newsom's voter suppression policies. Texas is under military occupation and the media isn't even reporting it.
+                </div>
+                <div class="comment-actions">
+                    <span class="score">11.2k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">TechWorkerSiliconValley</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>I work in tech. We're building the surveillance infrastructure. I can't say which company, but you've heard of us.</p>
+                
+                <p>We're implementing AI systems that monitor every American's communications, purchases, movements, and associations. The system flags people as "Republican sympathizers" based on:</p>
+                <ul>
+                    <li>Church attendance</li>
+                    <li>Gun purchases</li>
+                    <li>Conservative media consumption</li>
+                    <li>Social media connections</li>
+                    <li>Donation patterns</li>
+                    <li>Even grocery purchases (buying certain brands)</li>
+                </ul>
+                
+                <p>I can't sleep at night. I'm helping build the most sophisticated police state in human history. And I'm trapped - if I quit, I become a target.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">19.4k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+        </div>
+
+        <div class="comment-container">
+            <div class="comment-header">
+                <span class="username">HistorianAtHeart</span>
+                <span class="flair flair-2">MA in History</span>
+                <span style="color: #9ca3af; font-size: 12px;">• 24d</span>
+            </div>
+            <div class="comment-content">
+                <p>History student update: I've been documenting this for future historians (if there are any). Here's the timeline of the fastest democratic collapse in recorded history:</p>
+                
+                <p><strong>Day 1:</strong> Newsom inaugurated</p>
+                <p><strong>Day 3:</strong> First federal employee purges begin</p>
+                <p><strong>Day 5:</strong> Military deployments to red states</p>
+                <p><strong>Day 8:</strong> Fox News lawsuit filed</p>
+                <p><strong>Day 12:</strong> First arrests of Republican officials</p>
+                <p><strong>Day 16:</strong> Show trials announced</p>
+                <p><strong>Day 20:</strong> OMB ordered to ignore Congress</p>
+                <p><strong>Day 24:</strong> 96 executive orders, 1.2 million fired, military occupation</p>
+                
+                <p>It took Hitler years. It took Mussolini months. It took Newsom 24 days.</p>
+                
+                <p>If someone finds this in the future: We tried to stop it. We really did. But most people were asleep, distracted, or cheering it on.</p>
+            </div>
+            <div class="comment-actions">
+                <span class="score">22.1k</span> <span>↑</span> <span>↓</span> <span>reply</span> <span>share</span> <span>save</span>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
