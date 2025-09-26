@@ -3,218 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genealogy Research on James Monroe Crowder (1843-1929) : r/Genealogy</title>
+    <title>James Monroe Crowder Genealogy Research - r/Genealogy</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #DAE0E6;
-            color: #1c1c1c;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a1b;
+            color: #d7dadc;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
+            line-height: 1.5;
         }
-        .reddit-header {
-            background-color: #ffffff;
-            padding: 0;
-            border-bottom: 1px solid #cccccc;
-        }
-        .header-content {
-            max-width: 1000px;
+        .reddit-container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-        }
-        .reddit-logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #FF4500;
-            margin-right: 20px;
-        }
-        .subreddit-name {
-            font-size: 18px;
-            font-weight: 500;
-            color: #1c1c1c;
-        }
-        .content-container {
-            max-width: 1000px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 4px;
-            border: 1px solid #ccc;
         }
         .post-header {
-            padding: 15px 20px;
-            border-bottom: 1px solid #edeff1;
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
         }
         .post-title {
+            color: #d7dadc;
             font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 10px 0;
-            color: #1c1c1c;
+            font-weight: 500;
+            margin: 0 0 8px 0;
         }
         .post-meta {
+            color: #818384;
             font-size: 12px;
-            color: #7c7c7c;
+            margin-bottom: 8px;
         }
         .post-content {
-            padding: 20px;
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .post-body {
+            color: #d7dadc;
             font-size: 14px;
-            line-height: 1.8;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .post-actions {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            color: #818384;
         }
         .comment-section {
-            border-top: 1px solid #edeff1;
+            background-color: #1a1a1b;
+            border: 1px solid #343536;
+            border-radius: 8px;
+            overflow: hidden;
         }
         .comment {
-            padding: 12px 20px;
-            border-left: 2px solid #e9e9e9;
-            margin-left: 20px;
+            border-bottom: 1px solid #343536;
+            padding: 12px 8px 12px 16px;
             font-size: 14px;
         }
-        .comment.op {
-            border-left: 2px solid #FF4500;
-            background-color: #f8f9fa;
+        .comment:last-child {
+            border-bottom: none;
         }
-        .comment-header {
+        .comment-meta {
+            color: #818384;
             font-size: 12px;
-            color: #7c7c7c;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
-        .username {
+        .comment-author {
+            color: #d7dadc;
             font-weight: 500;
-            color: #1c1c1c;
         }
-        .score {
-            color: #7c7c7c;
-            margin-right: 8px;
+        .comment-body {
+            color: #d7dadc;
+            margin: 4px 0;
+        }
+        .comment-actions {
+            color: #818384;
+            font-size: 12px;
+            margin-top: 4px;
         }
         .reply {
-            margin-left: 40px;
-            border-left: 2px solid #e9e9e9;
+            margin-left: 24px;
+            border-left: 2px solid #343536;
+            padding-left: 8px;
+            margin-top: 8px;
         }
         .collapsed {
-            color: #7c7c7c;
+            color: #818384;
             font-style: italic;
+            font-size: 12px;
+        }
+        .flair {
+            background-color: #46d160;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .found-flair {
+            background-color: #ff4500;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
+        }
+        .update-flair {
+            background-color: #0079d3;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="header-content">
-            <div class="reddit-logo">Reddit</div>
-            <div class="subreddit-name">r/Genealogy</div>
-        </div>
-    </div>
-
-    <div class="content-container">
+    <div class="reddit-container">
         <div class="post-header">
-            <h1 class="post-title">Genealogy Research on James Monroe Crowder (1843-1929) - Need help finding more details on his Civil War service and late-life marriage</h1>
-            <div class="post-meta">Posted by u/GenealogyHunter92 • 3 hours ago • 47 upvotes • 23 comments</div>
+            <div class="post-meta">
+                r/Genealogy • Posted by 
+                <span class="comment-author">MississippiRoots</span>
+                <span class="flair">Brick Wall</span>
+                • 8 hours ago
+            </div>
+            <h1 class="post-title">BREAKTHROUGH: Found James Monroe Crowder's complete Civil War service and discovered his shocking 1924 marriage to a 22-year-old!</h1>
         </div>
 
         <div class="post-content">
-            <p>Hi everyone! I've been researching my 3rd great-grandfather James Monroe Crowder and have hit some interesting roadblocks. Here's what I've confirmed so far:</p>
+            <div class="post-body">
+                UPDATE: After months of searching, I just cracked the James Monroe Crowder case! James Monroe Crowder (April 10, 1843 - July 20, 1929) was born in Crawford, MS to Edmund Crowder Sr. (1801-1865) and Martha Ann Wilks (1805-after 1870). He was their 8th child and never attended school - started working on the farm at age 8.<br><br>
 
-            <p><strong>Born:</strong> April 10th, 1843 in Crawford, MS<br>
-            <strong>Died:</strong> July 20th, 1929 in Brooksville, MS<br>
-            <strong>Parents:</strong> Edmund Crowder Sr. (1801-1865) and Martha Ann Wilks (1805-after 1870)</p>
+                Here's the incredible discovery: I found his complete Civil War service records at the National Archives! His brothers Nathanial, David, Robert, and Edmund Jr. enlisted in November 1861. James joined in March 1862 at age 19 and served until December 1864, then reenlisted January 1865 until war's end. He was wounded in July 1864 - "shot through my shoulder and fell, breaking my left shoulder." His pension file confirms he was never captured by Union forces.<br><br>
 
-            <p>He was their 8th child and never attended school - started working on the farm at age 8. Four of his brothers enlisted in the CSA in November 1861, and James joined in March 1862 at age 19.</p>
+                The heartbreaking part: Both Nathanial and David died during the war, leaving only Robert, Edmund Jr., and James as survivors. After the war, James moved east of Brooksville, MS where he worked as a farmer for the rest of his life. He was extremely poor and married Eliza (last name unknown) with whom he had 10 children.<br><br>
 
-            <p>According to his pension file, he served from March 1862 to December 1864, reenlisted January 1865 until the end of the war. He was never captured by Union forces. In July 1864, he was shot through the shoulder and broke his left shoulder when he fell.</p>
-
-            <p>After the war, he moved to a farm east of Brooksville and worked there the rest of his life. He married Eliza and had 10 children, but here's where it gets weird - in 1924, at age 81, he married a 22-year-old woman named Susan!</p>
-
-            <p>I'm looking for any additional records about his Civil War service (which regiment he was with specifically), and more details about this late-life marriage to Susan. Has anyone encountered similar age-gap marriages in their research? The family lore suggests he was quite poor, so I'm wondering what the circumstances were.</p>
-
-            <p>Also, his pension file mentions brothers Nathanial and David died during the war, while Robert and Edmund Jr. survived. I'd love to find their service records too if anyone has tips on Mississippi CSA records.</p>
+                The SHOCKING discovery: In 1924, at age 81, James married 22-year-old Susan (last name unknown)! They were married until his death in 1929. He spent his final 5 years living with his son Jefferson Carter Crowder in Brooksville.
+            </div>
+            <div class="post-actions">
+                <span>↑ 1.2k ↓</span>
+                <span>234 comments</span>
+                <span>share</span>
+                <span>save</span>
+                <span>hide</span>
+                <span>report</span>
+            </div>
         </div>
 
         <div class="comment-section">
-            <div class="comment op">
-                <div class="comment-header">
-                    <span class="score">47 points</span>
-                    <span class="username">GenealogyHunter92</span>
-                    <span> • 3 hours ago</span>
-                </div>
-                <div>OP - I should mention I've checked the 1860 and 1870 census for Crawford County, plus the Mississippi Confederate pension applications. That's where I got most of this info.</div>
-            </div>
-
             <div class="comment">
-                <div class="comment-header">
-                    <span class="score">89 points</span>
-                    <span class="username">CivilWarBuff</span>
-                    <span> • 3 hours ago</span>
+                <div class="comment-meta">
+                    <span class="comment-author">Lowndes_County_Archives</span> • 7 hours ago
+                    <span class="found-flair">Civil War Records</span>
                 </div>
-                <div>Found him! James M. Crowder enlisted March 15, 1862 in Company K, 40th Mississippi Infantry. His service record shows he was wounded at the Battle of Atlanta on July 22, 1864 - that matches his pension file about being shot in the shoulder. He was hospitalized in Macon, Georgia and returned to duty in October 1864.</div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="score">32 points</span>
-                        <span class="username">GenealogyHunter92</span>
-                        <span> • 2 hours ago</span>
-                    </div>
-                    <div>Oh wow, thank you! The Battle of Atlanta makes perfect sense for the timing. Do you have access to his brothers' records too?</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="score">45 points</span>
-                        <span class="username">CivilWarBuff</span>
-                        <span> • 2 hours ago</span>
-                    </div>
-                    <div>Yes - Nathanial and David were both in Company K with James. Nathanial died at the Battle of Chickamauga September 20, 1863. David died of disease in Atlanta in October 1864, just a few months after James was wounded there. Robert and Edmund Jr. were in different companies but same regiment.</div>
+                <div class="comment-body">
+                    OP, I work at the Lowndes County archives and we have James's complete Confederate service file! He enlisted March 15, 1862 in Columbus, MS with Company G, 43rd Mississippi Infantry. His service records show he was present for every muster until July 20, 1864 when he was hospitalized for his shoulder wound. He returned to duty in September 1864 and was promoted to Corporal. His unit fought at Vicksburg, Atlanta, and Franklin. He was one of only 47 men from his company to survive the war!
+                    <div class="comment-actions">↑ 892 • reply</div>
                 </div>
             </div>
 
             <div class="comment">
-                <div class="comment-header">
-                    <span class="score">76 points</span>
-                    <span class="username">MississippiRecords</span>
-                    <span> • 3 hours ago</span>
+                <div class="comment-meta">
+                    <span class="comment-author">Mississippi_Pension_Records</span> • 6 hours ago
+                    <span class="found-flair">Pension Files</span>
                 </div>
-                <div>Okay, this is fascinating - I found the marriage record for James and Susan. Susan's full name was Susan Mae Thompson, born 1902. But here's the kicker - she was the granddaughter of James's neighbor, William Thompson. James actually mentions in his 1925 will that Susan was to inherit his "household goods and personal effects" while his children got the land.</div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="score">28 points</span>
-                        <span class="username">GenealogyHunter92</span>
-                        <span> • 2 hours ago</span>
-                    </div>
-                    <div>So it was more of a caretaker arrangement? That makes so much more sense than a romantic marriage at those ages.</div>
-                </div>
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="score">41 points</span>
-                        <span class="username">MississippiRecords</span>
-                        <span> • 2 hours ago</span>
-                    </div>
-                    <div>Exactly - and it gets better. Susan's own grandfather (William Thompson) died in 1923 and left her nothing. Census records show Susan was working as a domestic servant in 1920. Marrying James gave her security in her old age, and James got someone to care for him. Pretty common arrangement back then.</div>
+                <div class="comment-body">
+                    Mississippi pension records archivist here! James's 1890 pension application is fascinating. He applied under the "disabled veteran" provision, receiving $8 per month. His medical examination describes the shoulder wound as "completely disabling - cannot raise left arm above shoulder level." In 1920, his pension was increased to $25 monthly. The file includes affidavits from his commanding officer and two fellow soldiers confirming his wound at the Battle of Peachtree Creek.
+                    <div class="comment-actions">↑ 743 • reply</div>
                 </div>
             </div>
 
             <div class="comment">
-                <div class="comment-header">
-                    <span class="score">52 points</span>
-                    <span class="username">OldMississippiFamilies</span>
-                    <span> • 2 hours ago</span>
+                <div class="comment-meta">
+                    <span class="comment-author">Crawford_MS_Cemetery</span> • 6 hours ago
+                    <span class="found-flair">Burial Records</span>
                 </div>
-                <div>Found something interesting about his post-war poverty. The 1880 agricultural census shows James owned 40 acres but had only $150 in farm equipment and $50 in livestock. By comparison, his neighbor William Thompson (Susan's grandfather) had 200 acres and $800 in equipment. The Crowders really struggled after the war.</div>
+                <div class="comment-body">
+                    Cemetery records show Edmund Crowder Sr. died September 12, 1865 at age 64. His probate file lists assets of $47.50 - barely enough to cover burial costs. Martha Ann Wilks survived him but disappears from records after 1870. Also found that James's brother Nathanial died at the Battle of Franklin (November 30, 1864) and David died at the Battle of Atlanta (July 22, 1864). Their bodies were never recovered.
+                    <div class="comment-actions">↑ 567 • reply</div>
+                </div>
             </div>
 
             <div class="comment">
-                <div class="comment-header">
-                    <span class="score">38 points</span>
-                    <span class="username">PensionFilesExpert</span>
-                    <span> • 2 hours ago</span>
+                <div class="comment-meta">
+                    <span class="comment-author">Brooksville_Land_Records</span> • 5 hours ago
+                    <span class="found-flair">Property Records</span>
                 </div>
-                <div>His pension file should have an affidavit from comrades verifying his service. Check for statements from Robert or Edmund Jr. - they would have been required to testify about his inability to work due to his war injuries. Also look for doctors' statements about his shoulder wound affecting his ability to farm.</div>
+                <div class="comment-body">
+                    Found James's farm records! In 1866, he purchased 40 acres east of Brooksville for $200 - every penny he had. The 1870 agricultural census shows he owned 1 mule, 2 cows, and grew cotton on 15 acres. By 1900, he still only had 60 acres. Tax records show he was consistently in arrears, owing back taxes most years. In 1920, his property was valued at $800 total - he was one of the poorest farmers in the county.
+                    <div class="comment-actions">↑ 489 • reply</div>
+                </div>
             </div>
 
             <div class="comment">
-                <div class="comment-header">
-                    <span class="score">29 points</span>
-                    <span class="username">DeepDiveGenealogy</span>
-                    <span> • 1 hour ago</span>
+                <div class="comment-meta">
+                    <span class="comment-author">Mississippi_Marriage_Records</span> • 5 hours ago
+                    <span class="found-flair">Marriage Records</span>
                 </div>
-                <div>Just found Susan Thompson's death certificate - she died in 1987 at age 85, never remarried. The informant was listed as "Jefferson Crowder" - that's James's son! So the family stayed connected even after James died. She inherited that house and lived there until 1979.</div>
+                <div class="comment-body">
+                    Found the marriage records! James married Eliza Jane Thompson on December 24, 1865 - his first Christmas after returning from the war. They had 10 children: Mary Elizabeth (1866), William Edmund (1868), Sarah Frances (1870), John Robert (1872), Martha Ann (1874), Jefferson Carter (1876), Nathanial David (1878 - died age 2), James Monroe Jr. (1880), Eliza Jane (1882), and Benjamin Franklin (1884). Eliza died in 1919 at age 74.
+                    <div class="comment-actions">↑ 421 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">1920s_Mississippi_Historian</span> • 4 hours ago
+                    <span class="found-flair">1924 Marriage</span>
+                </div>
+                <div class="comment-body">
+                    The 1924 marriage is documented! James married Susan Mae Wilson on June 15, 1924 in Lowndes County. She was born in 1902, making her 22 to his 81. The marriage certificate lists his occupation as "farmer" and hers as "domestic." Witnesses were Jefferson Carter Crowder (his son) and Mary Elizabeth Crowder (his daughter). They were married by Rev. Thomas J. McAllister at the Brooksville Methodist Church.
+                    <div class="comment-actions">↑ 378 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Brooksville_Newspaper_Archives</span> • 4 hours ago
+                </div>
+                <div class="comment-body">
+                    Found the local newspaper mention! The Brooksville Herald mentioned the marriage in their "Local Briefs" section: "Married: James M. Crowder, 81, to Miss Susie Wilson, 22, both of this county. The groom is a well-known farmer and Civil War veteran." That's it - no judgment, just a factual notice. Times were different!
+                    <div class="comment-actions">↑ 312 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Census_Trackers</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    Census records tell the poverty story! In 1900, James owned his farm "free and clear" but the value was only $400. In 1910, he was listed as "owning" but with a mortgage. By 1920, he was back to "free and clear" but the farm value dropped to $300 during the agricultural depression. The 1930 census (taken after his death) shows Susan Crowder, age 28, living as a "boarder" with another family - she lost everything.
+                    <div class="comment-actions">↑ 267 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Jefferson_Crowder_Descendant</span> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    Jefferson Carter Crowder was my great-grandfather! Family stories say James was incredibly bitter about his poverty. He blamed "Yankee reconstruction" for keeping him poor. When he married Susan in 1924, the family was shocked - she was younger than some of his grandchildren. My grandmother (Jefferson's daughter) said Susan married him for security but ended up worse off. After James died, she had to work as a housekeeper.
+                    <div class="comment-actions">↑ 198 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Mississippi_Death_Certificates</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Death certificate shows James died July 20, 1929 at age 86 (not 82 as family claimed). Cause of death was "chronic myocarditis" - basically heart failure from old age. He died at Jefferson Carter Crowder's home on "the Old Zion Road, 3 miles east of Brooksville." Susan was listed as the informant. He was buried in the family cemetery on his old farm plot - no headstone, just a field stone marker.
+                    <div class="comment-actions">↑ 156 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Susan_Wilson_Researcher</span> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Found Susan's later life! After James died, Susan Mae Wilson remarried in 1931 to William H. Johnson, a widower with 6 children. She helped raise his children and had 2 more of her own. She died in 1987 at age 85 and is buried in the Brooksville City Cemetery. Her obituary mentions her first marriage to "the late James M. Crowder" but gives no details about the age difference. She never spoke of it to her later family.
+                    <div class="comment-actions">↑ 134 • reply</div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-meta">
+                    <span class="comment-author">Load_more_comments</span> • collapsed
+                </div>
+                <div class="comment-body collapsed">
+                    200+ more replies including Civil War battle details, farm ledgers, and Susan's family history
+                </div>
             </div>
         </div>
     </div>
