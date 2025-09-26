@@ -3,394 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Wallace III running for Alabama Governor in 2027 on "Traditional Democratic" platform (States Rights focus) - r/yapms</title>
+    <title>George Wallace III announces Alabama governor bid, dominates among voters 80+ in new poll - CNN</title>
     <style>
         body {
-            font-family: IBMPlexSans, Arial, sans-serif;
-            background-color: #181818;
-            color: #d7dadc;
+            font-family: CNNSans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+            background-color: #f2f2f2;
+            color: #262626;
             margin: 0;
             padding: 0;
-            line-height: 1.4;
+            line-height: 1.6;
         }
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 12px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #990000;
         }
-        .subreddit-name {
-            font-size: 14px;
-            color: #a4a4a4;
-        }
-        .post-container {
-            max-width: 740px;
+        .article-container {
+            max-width: 780px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #1a1a1b;
+            background-color: white;
+            padding: 30px 40px;
         }
-        .post-title {
+        .article-header {
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        .article-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 15px 0;
+            color: #262626;
+        }
+        .article-meta {
+            color: #595959;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .article-image {
+            width: 100%;
+            margin: 25px 0;
+        }
+        .image-caption {
+            font-size: 14px;
+            color: #595959;
+            margin-top: 8px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 15px;
+        }
+        .article-body {
             font-size: 18px;
-            font-weight: 500;
-            margin: 10px 0;
-            color: #d7dadc;
-            line-height: 1.3;
+            line-height: 1.7;
+            margin-bottom: 30px;
         }
-        .post-meta {
+        .article-body p {
+            margin-bottom: 20px;
+        }
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 15px;
             font-size: 12px;
-            color: #a4a4a4;
+            font-weight: bold;
+            display: inline-block;
             margin-bottom: 10px;
         }
-        .vote-buttons {
-            float: left;
-            margin-right: 15px;
-            text-align: center;
-        }
-        .vote-button {
-            background: none;
-            border: none;
-            color: #a4a4a4;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 5px;
-        }
-        .vote-button:hover {
-            color: #d7dadc;
-        }
-        .content {
-            margin-left: 45px;
-        }
-        .comment {
-            margin: 15px 0;
-            padding: 10px;
-            border-left: 2px solid #343536;
-            background-color: #1a1a1b;
-            font-size: 14px;
-        }
-        .comment-header {
-            font-size: 12px;
-            color: #a4a4a4;
-            margin-bottom: 5px;
-        }
-        .author {
-            color: #4fbcff;
-            font-weight: 500;
-        }
-        .flair {
-            background-color: #272729;
-            color: #9a9a9a;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            margin-left: 5px;
-        }
-        .flair-dixie {
-            background-color: #cc8800;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            margin-left: 5px;
-        }
-        .flair-csa {
-            background-color: #8b0000;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            margin-left: 5px;
-        }
-        .flair-ironclad {
-            background-color: #4a5568;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            margin-left: 5px;
-        }
-        .flair-mississippi {
-            background-color: #9b59b6;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 10px;
-            margin-left: 5px;
-        }
-        .reply {
-            margin-left: 20px;
-            margin-top: 10px;
+        .update-time {
             font-size: 13px;
-        }
-        .score {
-            font-size: 12px;
-            color: #a4a4a4;
-            margin: 5px 0;
-        }
-        .post-content {
-            font-size: 14px;
-            margin: 15px 0;
-            white-space: pre-line;
-        }
-        .rulestext {
-            font-size: 12px;
-            color: #7c7c7c;
-            background-color: #272729;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .gif {
-            max-width: 300px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .usernametext {
-            font-size: 16px;
+            color: #737373;
             font-weight: 500;
-            color: #4fbcff;
         }
-        .upvotes {
-            color: #ff4500;
+        .byline {
+            font-size: 14px;
+            color: #595959;
+            margin-bottom: 15px;
         }
-        .downvotes {
-            color: #7193ff;
+        .poll-box {
+            background-color: #f8f9fa;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
         }
-        .comment-content {
-            margin: 5px 0;
-            line-height: 1.5;
+        .poll-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #262626;
         }
-        .comment-content p {
-            margin: 5px 0;
+        .poll-stat {
+            font-size: 16px;
+            margin: 8px 0;
+            color: #404040;
+        }
+        .quote-box {
+            border-left: 4px solid #cc0000;
+            padding-left: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            font-size: 20px;
+            color: #404040;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div style="max-width: 740px; margin: 0 auto;">
-            <div class="subreddit-name">r/yapms • Posted byu/BirminghamMapper 3 hours ago</div>
-        </div>
-    </div>
+    <div class="cnn-header">CNN</div>
     
-    <div class="post-container">
-        <div class="vote-buttons">
-            <button class="vote-button upvotes">▲</button>
-            <div>2.4k</div>
-            <button class="vote-button downvotes">▼</button>
-        </div>
-        
-        <div class="content">
-            <div class="post-title">George Wallace III running for Alabama Governor in 2027 on "Traditional Democratic" platform (States Rights focus)</div>
-            <div class="post-meta">News</div>
-            
-            <div class="post-content" style="font-size: 14px; margin-bottom: 20px;">
-                Just saw the announcement on my local news here in Mobile. George Wallace III (son of the late governor) is running in the Democratic primary promising a "traditional Democratic platform focused on states' rights."
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <span class="breaking-banner">POLITICS</span>
+                <h1 class="article-title">George Wallace III announces Alabama governor bid, dominates among voters 80+ in new poll</h1>
+                
+                <div class="byline">
+                    By <strong>Stephen Collinson</strong>, CNN Politics
+                </div>
+                
+                <div class="article-meta">
+                    <strong>Updated 6:23 PM ET, Thu March 11, 2027</strong>
+                </div>
+                
+                <img src="https://cdn.cnn.com/cnnnext/dam/assets/270311123456-george-wallace-iii-0327-large-169.jpg" alt="George Wallace III speaking at a podium" class="article-image">
+                <div class="image-caption">George Wallace III announces his candidacy for Alabama governor in Montgomery, Alabama, on March 11, 2027.</div>
+            </header>
 
-                He's already polling at 83% among voters over 80. What timeline are we living in? lmao
+            <div class="article-body">
+                <p><strong>Montgomery, Alabama (CNN)</strong> — George Wallace III, son of the late Alabama governor and presidential candidate George Wallace, formally announced his candidacy for governor Thursday, promising to run a "traditional Democratic campaign" focused on states' rights, immediately shaking up the race with a surprising showing among the state's oldest voters.</p>
+
+                <p>Speaking to a crowd of approximately 500 supporters at the Alabama State Capitol, Wallace III, 74, declared his intention to return Alabama to what he called "the traditional values that made this state great" while emphasizing his commitment to a states' rights platform reminiscent of his father's controversial but politically successful era.</p>
+
+                <div class="quote-box">
+                    "I am running as a Democrat in the tradition of my father — a tradition that puts Alabama first, that believes in the rights of states to govern themselves, and that understands the values that built this great nation"
+                </div>
+
+                <p>The announcement comes as a new CNN poll conducted by SSRS shows Wallace III with commanding support among voters over 80 years old, capturing 83% of that demographic in a hypothetical Democratic primary matchup against incumbent Governor Will Ainsworth, a Republican who is term-limited and cannot seek re-election.</p>
+
+                <div class="poll-box">
+                    <div class="poll-title">CNN/SSRS Alabama Poll - Voters 80+</div>
+                    <div class="poll-stat"><strong>George Wallace III (D):</strong> 83%</div>
+                    <div class="poll-stat"><strong>Walt Maddox (D):</strong> 12%</div>
+                    <div class="poll-stat"><strong>Undecided:</strong> 5%</div>
+                    <div style="font-size: 12px; color: #737373; margin-top: 10px;">
+                        Margin of error: ±6.5%. Conducted March 8-10, 2027 among 200 likely Democratic primary voters aged 80+.
+                    </div>
+                </div>
+
+                <p>The poll, which surveyed 1,004 registered Alabama voters, reveals a stark generational divide in the state. Among voters under 65, Wallace III trails significantly, drawing only 23% support among likely Democratic primary voters. However, among those 80 and older — a small but influential bloc in Alabama's Democratic primary — he dominates the field.</p>
+
+                <h3>States' rights focus</h3>
+
+                <p>Wallace III's announcement speech focused heavily on themes of federal overreach and state sovereignty, echoing his father's famous 1963 inaugural address when the senior Wallace declared "segregation now, segregation tomorrow, segregation forever" — though the younger Wallace steered clear of racial rhetoric in his 2027 announcement.</p>
+
+                <p>"Washington bureaucrats have been telling Alabama what to do for too long," Wallace III said. "Whether it's education, healthcare, or environmental policy, the people of Alabama should decide what's best for Alabama."</p>
+
+                <p>His campaign platform includes opposition to federal education mandates, support for stricter state-level voting requirements, and resistance to what he calls "federal interference in Alabama's traditional way of life."</p>
+
+                <p>The candidate's emphasis on states' rights has drawn criticism from some quarters who see it as coded language harkening back to Alabama's segregationist past, though Wallace III has repeatedly denied any racial motivations behind his platform.</p>
+
+                <div class="quote-box">
+                    "This is about Alabama controlling its own destiny, not about turning back the clock on civil rights"
+                </div>
+
+                <h3>Generational appeal</h3>
+
+                <p>Political analysts say Wallace III's appeal to older voters stems from nostalgia for what many remember as a simpler time in Alabama politics, as well as name recognition that remains powerful in the state nearly five decades after his father's last gubernatorial campaign.</p>
+
+                <p>"Among voters who came of age during the Wallace era, there's still significant respect for the Wallace political machine," said Dr. Angela Robertson, a political science professor at the University of Alabama. "Many older voters associate the Wallace name with a strong, assertive style of leadership that they feel is missing from today's politics."</p>
+
+                <p>The poll shows that among voters 80+, Wallace III's support cuts across racial lines, drawing 81% of white voters and 79% of Black voters in that age group — though Black voters over 80 represent a relatively small portion of the Democratic primary electorate.</p>
+
+                <h3>Democratic establishment response</h3>
+
+                <p>Wallace III's entry into the race has created an awkward situation for Alabama Democratic Party leaders, who have been working to modernize the party's image and broaden its appeal beyond traditional demographics.</p>
+
+                <p>"The Alabama Democratic Party welcomes all qualified candidates who wish to participate in our democratic process," party chairwoman Nancy Worley said in a carefully worded statement. "We look forward to a robust primary that addresses the issues facing all Alabamians in 2027."</p>
+
+                <p>Privately, some Democratic officials expressed concern that Wallace III's candidacy could damage the party's efforts to attract younger, more diverse voters.</p>
+
+                <p>Other declared Democratic candidates include Tuscaloosa Mayor Walt Maddox, state Representative Anthony Daniels, and former state Senator Doug Jones, who previously served in the U.S. Senate.</p>
+
+                <h3>Historical context</h3>
+
+                <p>George Wallace Sr. served four terms as Alabama governor between 1963 and 1987, becoming one of the most influential and controversial political figures of the civil rights era. His 1963 "stand in the schoolhouse door" at the University of Alabama, attempting to block the integration of the university, became an iconic moment in the civil rights movement.</p>
+
+                <p>Wallace III has distanced himself from his father's segregationist positions while embracing his populist, states' rights rhetoric. The younger Wallace worked as an assistant state attorney general and later served as a state circuit judge before entering private law practice.</p>
+
+                <p>"My father was a product of his times," Wallace III said when asked about his father's legacy. "I am a product of mine. But the principles of states' rights and limited federal government are timeless and necessary for our democracy."</p>
+
+                <p>The Democratic primary is scheduled for June 1, 2027, with the general election set for November 2. The winner will succeed Governor Will Ainsworth, who has reached his term limit after serving two terms.</p>
+
+                <p><em>CNN's Dan Merica and Kelly Mena contributed to this report.</em></p>
             </div>
-            
-            <div class="score">92% upvoted</div>
-            
-            <div class="comments" style="margin-top: 30px;">
-                <h3>Comments (156)</h3>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">SouthernStrategist</span>
-                        <span class="flair-dixie">Dixiecrat Enjoyer</span>
-                        <span style="color: #a4a4a4;"> • 3 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>WELCOME BACK DIXIECRATS 💪💪💪</p>
-                        <div style="margin: 5px 0; font-size: 12px; color: #888;">Reply</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">DixieReborn</span>
-                                <span class="flair-csa">CSA Apologist</span>
-                                <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>THE SOUTHERN MANIFESTO RISES AGAIN</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+67</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">MississippiMapping</span>
-                        <span class="flair-mississippi">Mississippi Sucks</span>
-                        <span style="color: #a4a4a4;"> • 3 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>I am LITERALLY shaking and crying we are living in 1950 again. The Wallace family is like a herpes outbreak for Alabama politics</p>
-                        <div style="margin: 5px 0; font-size: 12px; color: #888;">Reply</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">BirminghamMapper</span>
-                                <span class="author" style="background-color: #58b658; color: white; padding: 1px 5px; border-radius: 3px; font-size: 10px;">OP</span>
-                                <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>Based Wallace dynasty let's gooooo. Alabama needs more 80+ year old politicians making decisions for us</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+45</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">IroncladMapping</span>
-                        <span class="flair-ironclad">Ironclad Enjoyer</span>
-                        <span style="color: #a4a4a4;"> • 3 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>Based but also cursed</p>
-                        <img src="https://i.imgur.com/giphy.gif" alt="confused gif" class="gif">
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+89</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">GulfCoastMapper</span>
-                                <span style="color: #a4a4a40;"> • 2 hours ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>This perfectly encapsulates how I feel about this entire situation</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+23</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">AlabamaPolsci</span>
-                        <span class="flair">Alabama</span>
-                        <span style="color: #a4a4a4;"> • 3 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>As someone who actually lives in Alabama and follows our politics - this is simultaneously the most Alabama thing ever and also completely insane. My 85-year-old grandfather literally said "well at least he's a REAL Democrat like Wallace was" </p>
-                        <p>The cognitive dissonance is REAL</p>
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+156</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">MontgomeryMapper</span>
-                                <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>My grandma unironically said this today: "At least Wallace III understands that the federal government shouldn't be telling us what to do about the colored schools"</p>
-                                <p>I literally cannot make this up. Alabama politics is a fever dream</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+98</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">DeepSouthMapping</span>
-                        <span class="flair-dixie">Dixiecrat Enjoyer</span>
-                        <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>Unironically would vote for him in the primary just to watch the chaos unfold. Sometimes you need to burn everything down and start over</p>
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+72</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">PoliticalAnarchist</span>
-                                <span class="flair">Accelerationist</span>
-                                <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>Based accelerationist take. LET IT BURN 🔥🔥</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+34</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">CivilWarMapper</span>
-                        <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>Tfw when Wallace III wins the primary and then wins the general by getting 95% of the 80+ vote and 2% of the 18-35 vote and still wins because old people vote at 10x the rate of young people</p>
-                        <p>This is literally democracy according to Madison</p>
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+67</div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">FloridaMapper</span>
-                        <span class="flair">Florida Man 🐊</span>
-                        <span style="color: #a4a4a4;"> • 2 hours ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>Can confirm - my 88 year old dad in Mobile has already put up Wallace III signs in his yard. He literally said "Finally, a real Democrat like in the good old days"</p>
-                        <p>The good old days = segregation, in case anyone was wondering</p>
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+43</div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">MemphisMapping</span>
-                        <span class="flair-mississippi">Mississippi Sucks</span>
-                        <span style="color: #a4a4a4;"> • 1 hour ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>PREDICTION: Wallace III wins primary with 82% of 80+ voters, loses general as every single voter under 65 stays home in protest, but he still gets 48% because BOOMERS GONNA BOOM</p>
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+78</div>
-                        
-                        <div class="reply">
-                            <div class="comment-header">
-                                <span class="author">AtlantaMapper</span>
-                                <span style="color: #a4a4a4;"> • 1 hour ago</span>
-                            </div>
-                            <div class="comment-content">
-                                <p>More like Wallace III wins because the Republican is some Qanon lunatic and Alabama voters have to choose between Wallace dementia or Qanon dementia</p>
-                                <p>*Curb Your Enthusiasm theme plays*</p>
-                                <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+56</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <div class="comment-header">
-                        <span class="author">ConfederateMapping</span>
-                        <span class="flair-csa">CSA Apologist</span>
-                        <span style="color: #a4a4a4;"> • 1 hour ago</span>
-                    </div>
-                    <div class="comment-content">
-                        <p>Unironically hyped about this. Wallace III is gonna run on a platform of "bringing back real Alabama values" and by that he means 1950s social policy with 2020s language.</p>
-                        <p>It's gonna be hilarious watching MSNBC try to explain this to their audience</p>
-                        <img src="https://i.imgur.com/popcorn.gif" alt="popcorn gif" class="gif">
-                        <div style="margin: 5px 0; font-size: 10px; color: #ff4500;">+39</div>
-                    </div>
-                </div>
-                
-                <div class="rulestext">
-                    <strong>r/yapms Rules:</strong><br>
-                    1. Posts must be about U.S. politics<br>
-                    2. No low effort posts<br>
-                    3. Provide sources for claims<br>
-                    4. No doxxing<br>
-                    5. Follow Reddit TOS
-                </div>
-            </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
