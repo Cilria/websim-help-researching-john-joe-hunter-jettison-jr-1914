@@ -3,157 +3,401 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bizarre Siege of Tui: Self-Proclaimed King of Galicia Captures Spanish Town - CNN</title>
+    <title>Patrick Lyndon Nugent (LBJ's grandson) running for Congress - r/politics</title>
     <style>
         body {
-            font-family: CNNSans, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
-            background-color: #f2f2f2;
-            color: #262626;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.4;
         }
-        .cnn-header {
-            background-color: #cc0000;
+        .reddit-header {
+            background-color: #0079d3;
             color: white;
-            padding: 12px 20px;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 2px solid #990000;
+            padding: 8px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        .article-container {
-            max-width: 780px;
-            margin: 0 auto;
+        .thread-container {
+            max-width: 740px;
+            margin: 20px auto;
             background-color: white;
-            padding: 30px 40px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
         }
-        .article-header {
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 20px;
-            margin-bottom: 25px;
+        .post-content {
+            padding: 12px 16px;
+            background-color: white;
+            border-radius: 4px 4px 0 0;
         }
-        .article-title {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin: 0 0 15px 0;
-            color: #262626;
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            color: #222;
+            line-height: 1.3;
         }
-        .article-meta {
-            color: #595959;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .article-image {
-            width: 100%;
-            margin: 25px 0;
-        }
-        .image-caption {
-            font-size: 14px;
-            color: #595959;
-            margin-top: 8px;
-            border-bottom: 1px solid #e6e6e6;
-            padding-bottom: 15px;
-        }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 30px;
-        }
-        .article-body p {
-            margin-bottom: 20px;
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 8px 15px;
+        .post-domain {
             font-size: 12px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 10px;
+            color: #888;
+            margin-bottom: 8px;
         }
-        .update-time {
+        .post-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .post-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .post-flair {
+            background-color: #ff8717;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        .post-actions {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #888;
+            padding: 8px 0;
+            border-top: 1px solid #edeff1;
+        }
+        .vote-buttons {
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+        }
+        .vote-btn {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            padding: 4px;
+            font-size: 16px;
+        }
+        .vote-btn:hover {
+            color: #ff4500;
+        }
+        .comments-section {
+            padding: 0 16px;
+            background-color: #f6f7f8;
+        }
+        .comment {
+            padding: 12px 0;
+            border-bottom: 1px solid #edeff1;
+        }
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .username {
+            font-weight: 500;
+            color: #0079d3;
+            margin-right: 8px;
             font-size: 13px;
-            color: #737373;
+        }
+        .user-flair {
+            background-color: #e9f5fd;
+            color: #0079d3;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        .timestamp {
+            color: #888;
+            font-size: 12px;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        .comment-actions {
+            font-size: 12px;
+            color: #888;
+            display: flex;
+            align-items: center;
+        }
+        .comment-score {
+            margin-right: 8px;
             font-weight: 500;
         }
-        .byline {
+        .reply-btn {
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        .reply-btn:hover {
+            text-decoration: underline;
+        }
+        .nested-comment {
+            margin-left: 24px;
+            border-left: 2px solid #edeff1;
+            padding-left: 12px;
+        }
+        .sort-bar {
+            padding: 12px 16px;
+            background-color: white;
+            border-bottom: 1px solid #edeff1;
+            font-size: 12px;
+            color: #888;
+        }
+        .subreddit-header {
+            background-color: #0067b8;
+            color: white;
+            padding: 16px;
+            border-radius: 4px 4px 0 0;
+            margin-bottom: 12px;
+        }
+        .subreddit-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .subreddit-info {
             font-size: 14px;
-            color: #595959;
-            margin-bottom: 15px;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-header">CNN</div>
-    
-    <div class="article-container">
-        <article>
-            <header class="article-header">
-                <span class="breaking-banner">BREAKING NEWS</span>
-                <h1 class="article-title">Self-proclaimed 'King of Galicia' leads bizarre siege of Spanish town, captures local Lidi supermarket</h1>
-                
-                <div class="byline">
-                    By <strong>CNN Staff</strong>
-                </div>
-                
-                <div class="article-meta">
-                    <strong>Updated 3:47 PM ET, Mon July 20, 2026</strong>
-                </div>
-                
-                <img src="https://cdn.cnn.com/cnnnext/dam/assets/260720144500-tui-spain-a55-highway-large-169.jpg" alt="A55 highway near Tui, Spain" class="article-image">
-                <div class="image-caption">The A55 highway near Tui, Spain, where a self-proclaimed monarch and his followers engaged in territorial skirmishes with police forces Monday.</div>
-            </header>
+    <div class="reddit-header">
+        reddit
+    </div>
 
-            <div class="article-body">
-                <p><strong>Tui, Spain (CNN)</strong> — In one of the most bizarre territorial disputes in recent European history, a self-proclaimed "King of Galicia" and approximately 30 supporters have seized control of the Spanish town of Tui, capturing the local Lidi supermarket and a 50-meter section of the PO-340 highway in what authorities are calling "the most absurd military offensive of the decade."</p>
+    <div class="thread-container">
+        <div class="subreddit-header">
+            <div class="subreddit-name">r/politics</div>
+            <div class="subreddit-info">Politics • 8.2M members • 45.3k online</div>
+        </div>
 
-                <p>The incident began at approximately 6:00 a.m. local time when the man, identified by Spanish media as 47-year-old former postal worker Diego Armando Rodríguez, declared himself the "rightful monarch of the Kingdom of Galicia" and announced his intention to "reclaim ancestral lands from the usurpers in Madrid."</p>
-
-                <p>"We are witnessing something unprecedented in modern Spanish history," said María García, spokesperson for the Spanish National Police. "A man with no military training and his followers have essentially declared war on a supermarket chain and a section of highway."</p>
-
-                <p>Rodríguez and his followers, armed with what appear to be replica medieval weapons and airsoft guns, first captured the local sports field, establishing it as their "forward operating base." From there, they advanced approximately 50 meters to seize control of the Lidi supermarket, which Rodríguez declared "the People's Provision Center of Free Galicia."</p>
-
-                <h3>The Great Highway War of 2026</h3>
-
-                <p>The situation escalated when Spanish police forces advanced from their positions north of the A55 highway and successfully recaptured a 5-meter section of the roadway in what Rodríguez's followers are calling "the Great Betrayal of July."</p>
-
-                <p>"We held the A55 for three glorious hours," proclaimed Rodríguez in a video posted to social media, standing in front of the Lidi supermarket entrance. "The Spanish forces may have taken 5 meters of asphalt, but they will never take our dignity or our discounted produce!"</p>
-
-                <p>Local residents have responded with a mixture of confusion and amusement. "I just wanted to buy some yogurt," said Marta Silva, 34, who found herself trapped inside the Lidi during the siege. "This man kept calling me a 'subject of the crown' and insisted I refer to the dairy section as 'the Royal Cheese Repository.'"</p>
-
-                <p>The standoff has attracted dozens of onlookers and social media influencers, many of whom have begun livestreaming the events. A TikTok user with the handle @GaliciaWatch2026 has gained over 200,000 followers by providing hourly updates on the "conflict," including detailed maps showing territorial control measured in single meters.</p>
-
-                <h3>International reaction</h3>
-
-                <p>The incident has drawn attention from around the world, with #FreeTui trending globally on social media. British tabloids have dubbed it "The Supermarket Siege," while German media has referred to it as "Der Lidi-Krieg" (The Lidi War).</p>
-
-                <p>"This is exactly the kind of bizarre territorial dispute that could only happen in 2026," said Dr. James Morrison, professor of European history at Oxford University. "A man declares himself king and his first military objective is capturing a discount supermarket. It's like Game of Thrones meets extreme couponing."</p>
-
-                <p>The Spanish government has deployed additional police units to the area but has been cautious about escalating the situation. "We prefer to resolve this peacefully," said Interior Minister Carmen Calvo. "Besides, he's currently only controlling about €3,000 worth of inventory and 50 meters of highway. We're monitoring the situation closely."</p>
-
-                <h3>The would-be king's manifesto</h3>
-
-                <p>Rodríguez has distributed a 47-page manifesto titled "The Galician Restoration: A Monarch's Guide to Supermarket Sovereignty" outlining his vision for an independent Galician kingdom with the Lidi as its economic center.</p>
-
-                <p>"The Lidi represents everything we stand for: affordable prices, wide aisles, and a surprisingly good selection of Portuguese wines," the manifesto states. "From this fortress of commerce, we shall build a new Galicia free from the tyranny of reasonable pricing and adequate parking."</p>
-
-                <p>Negotiations between Rodríguez and authorities have stalled over his demand to be addressed as "His Majesty Diego I, King of Galicia and Protector of the Produce Section" and his insistence that all communications be conducted through his official spokesperson, a 19-year-old university student named Pablo who was reportedly promised the title "Duke of the Deli Counter."</p>
-
-                <h3>Supply chain concerns</h3>
-
-                <p>The siege has disrupted local supply chains, with the Lidi's closure affecting approximately 400 daily customers who now must drive an additional 3 kilometers to the nearest Carrefour. "This is an absolute disaster," said local resident Carlos Mendez. "The Carrefour doesn't have the same selection of frozen croquettes. This is tyranny."</p>
-
-                <p>As of Monday afternoon, Rodríguez and his followers remain holed up inside the Lidi, where they have reportedly established a makeshift throne room in the manager's office and have been surviving on a diet of expired yogurt and discount ham.</p>
-
-                <p>The standoff continues as negotiators work to resolve what has become known as "The Great Tui Incident of 2026" — a reminder that in an age of social media and instant fame, even the most absurd territorial disputes can capture global attention.</p>
-
-                <p>"We will hold this Lidi until our dying breath," Rodríguez declared in his latest video message. "Or at least until they run out of those little cocktail sausages. Those are delicious."</p>
-
-                <p><em>This is a developing story and will be updated.</em></p>
+        <div class="post-content">
+            <div class="post-domain">politico.com</div>
+            <h1 class="post-title">LBJ's grandson Patrick Lyndon Nugent launches uphill congressional bid in Texas</h1>
+            
+            <div class="post-meta">
+                <span class="post-flair">Article</span>
+                Posted by u/TexasPoliObserver • 6 hours ago
             </div>
-        </article>
+            
+            <div class="post-text">
+                Patrick Lyndon Nugent, 48, filed paperwork to run for Congress as a Democrat in Texas' 21st District, a seat that's been Republican since 1979. He's positioning himself as a Blue Dog Democrat in an R+8 district represented by Rep. Chip Roy.
+            </div>
+            
+            <div class="post-actions">
+                <div class="vote-buttons">
+                    <button class="vote-btn">▲</button>
+                    <span style="margin: 0 4px; font-weight: 500;">1.2k</span>
+                    <button class="vote-btn">▼</button>
+                </div>
+                <span style="margin-right: 12px;">324 comments</span>
+                <span style="margin-right: 12px;">share</span>
+                <span>save</span>
+            </div>
+        </div>
+
+        <div class="sort-bar">
+            sorted by: best
+        </div>
+
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ProgressiveTexan2024</span>
+                    <span class="user-flair">Texas</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Honestly, this is kind of wild. LBJ's grandson running as a Blue Dog in 2026? Dude's got balls, I'll give him that. R+8 is rough but not impossible - Allred flipped a seat in Dallas and we came close in a few others.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">247 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">RealisticDem</span>
+                        <span class="user-flair">VoteBlue</span>
+                        <span class="timestamp">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        R+8 isn't what it used to be though. Look at how much the suburbs have shifted since 2020. If he can raise real money and Chip Roy keeps doing Chip Roy things, this could get interesting.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-score">156 points</span>
+                        <span class="reply-btn">reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">ConservativeRealist</span>
+                    <span class="user-flair">Classical Liberal</span>
+                    <span class="timestamp">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The Blue Dog thing is smart positioning for that district, but I wonder if the Democratic base will actually turn out for someone running to the right of Biden. Primary could get messy if a progressive jumps in.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">189 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">PoliticalJunkieTX</span>
+                    <span class="user-flair">Texas Politics</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Fun fact: Patrick's mom is Luci Baines Johnson, so he's legitimately LBJ's grandson, not some distant cousin. The family's still got serious connections in Texas politics and serious money. He could self-fund if needed.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">334 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">LBJHistoryNerd</span>
+                        <span class="user-flair">Historian</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Yeah, the Johnson family money comes from Lady Bird's broadcasting empire, not just LBJ's political career. They're still worth hundreds of millions. Plus the name recognition in Texas is huge - older voters especially remember LBJ fondly.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-score">89 points</span>
+                        <span class="reply-btn">reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">SuburbanMom2024</span>
+                    <span class="user-flair">MomVote</span>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                    <div class="comment-body">
+                    I live in this district (San Antonio suburbs) and honestly, a lot of us are exhausted with Chip Roy's antics. If this guy can run as a reasonable moderate who'll actually get stuff done instead of just grandstanding, he might have a shot with the suburban women who've been trending away from the GOP.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">278 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">SAIndependent</span>
+                        <span class="user-flair">Independent</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Fellow district resident here - totally agree. Roy's whole "shutdown the government to own the libs" routine is wearing thin when people just want their problems solved. Nugent's messaging about infrastructure and practical solutions could resonate.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-score">134 points</span>
+                        <span class="reply-btn">reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">CampaignFinancePro</span>
+                    <span class="user-flair">Campaign Law</span>
+                    <span class="timestamp">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The $2 million self-funding pledge is interesting - that's real money for a House race, but he'll need way more than that to be competitive in an R+8. These races are running $8-12 million nowadays. Still, getting Karen Finney is a solid hire, she's been around forever and knows how to run in tough districts.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">92 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">GenZPolitics</span>
+                    <span class="user-flair">Gen Z</span>
+                    <span class="timestamp">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    As someone in my 20s, I gotta say the LBJ connection doesn't mean much to my generation. It's cool history but I'm way more interested in where he stands on student loans, climate change, and housing costs. The article mentions he's an environmental attorney though, so that's promising.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">156 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+                
+                <div class="nested-comment">
+                    <div class="comment-header">
+                        <span class="username">MillennialVoter</span>
+                        <span class="user-flair">Millennial</span>
+                        <span class="timestamp">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        True, but the LBJ thing isn't for you - it's for the boomers who still vote in primaries. Smart politics to lean into the family legacy with older voters while running on practical issues for everyone else.
+                    </div>
+                    <div class="comment-actions">
+                        <span class="comment-score">67 points</span>
+                        <span class="reply-btn">reply</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">DataDrivenDem</span>
+                    <span class="user-flair">Data Nerd</span>
+                    <span class="timestamp">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Looking at the numbers - this district went from R+15 in 2016 to R+8 in 2024. That's a 7-point shift left in 8 years. If that trend continues (big if), it could be competitive by 2028. Nugent might be running 2 years early, but he's laying groundwork for future cycles too.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">78 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">FormerRepublican</span>
+                    <span class="user-flair">Ex-GOP</span>
+                    <span class="timestamp">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Honestly, as someone who left the GOP after Trump, I'd consider voting for a moderate Democrat with a famous Texas name. The Blue Dog thing doesn't thrill me but I get it - you can't win TX-21 as AOC. Sometimes you gotta take what you can get to stop the crazies.
+                </div>
+                <div class="comment-actions">
+                    <span class="comment-score">45 points</span>
+                    <span class="reply-btn">reply</span>
+                </div>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
