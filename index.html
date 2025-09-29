@@ -3,284 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airstrikes on Caliphate positions in Mali - r/CombatFootage</title>
+    <title>Global coalition launches massive offensive against Islamic Caliphate - NBC News</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #DAE0E6;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            color: #1A1A1B;
+            line-height: 1.6;
         }
-        .reddit-header {
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #CCCCCC;
-            padding: 8px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .reddit-logo {
-            font-size: 20px;
+        .nbc-header {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 25px;
+            font-size: 26px;
             font-weight: bold;
-            color: #FF4500;
+            border-bottom: 3px solid #004499;
         }
-        .subreddit-header {
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #CCCCCC;
-            padding: 10px 20px;
-        }
-        .subreddit-name {
-            font-size: 22px;
-            font-weight: bold;
-            color: #FF4500;
-        }
-        .subreddit-info {
-            font-size: 14px;
-            color: #7C7C7D;
-            margin-top: 5px;
-        }
-        .container {
+        .article-container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            background-color: white;
+            padding: 40px 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .post {
-            background-color: #FFFFFF;
-            border: 1px solid #CCCCCC;
+        .article-header {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+        .article-title {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.15;
+            margin: 0 0 18px 0;
+            color: #1a1a1a;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        .article-image {
+            width: 100%;
+            margin: 30px 0;
             border-radius: 4px;
-            margin-bottom: 15px;
-            padding: 15px;
         }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            color: #1A1A1B;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #7C7C7D;
-            margin-bottom: 10px;
-        }
-        .post-content {
+        .image-caption {
             font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 15px;
+            color: #595959;
+            margin-top: 10px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 20px;
         }
-        .post-actions {
-            font-size: 12px;
-            color: #878A8C;
+        .article-body {
+            font-size: 19px;
+            line-height: 1.75;
+            margin-bottom: 35px;
         }
-        .comment {
-            background-color: #FFFFFF;
-            border-left: 2px solid #E9E9E9;
-            padding: 12px;
-            margin-bottom: 10px;
-            border-radius: 0 4px 4px 0;
+        .article-body p {
+            margin-bottom: 22px;
         }
-        .comment-header {
-            font-size: 12px;
-            color: #7C7C7D;
-            margin-bottom: 8px;
-        }
-        .comment-author {
-            font-weight: 500;
-            color: #1A1A1B;
-        }
-        .comment-body {
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-        .comment-actions {
-            font-size: 12px;
-            color: #878A8C;
-        }
-        .nested-comment {
-            margin-left: 30px;
-            border-left: 2px solid #E9E9E9;
-        }
-        .flair {
+        .breaking-banner {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px 18px;
+            font-size: 13px;
+            font-weight: bold;
             display: inline-block;
-            padding: 2px 6px;
+            margin-bottom: 15px;
             border-radius: 3px;
-            font-size: 11px;
-            font-weight: 500;
-            margin-right: 5px;
         }
-        .flair-combat { background-color: #FFE5E5; color: #D32F2F; }
-        .flair-analysis { background-color: #F3E5F5; color: #7B1FA2; }
-        .flair-veteran { background-color: #E8F5E8; color: #2E7D32; }
-        .flair-video { background-color: #E3F2FD; color: #1976D2; }
-        .video-placeholder {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 40px;
-            margin: 10px 0;
-            border-radius: 4px;
-            font-family: monospace;
+        .update-time {
+            font-size: 14px;
+            color: #737373;
+            font-weight: 500;
+        }
+        .byline {
+            font-size: 15px;
+            color: #595959;
+            margin-bottom: 20px;
+        }
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0066cc;
+            padding: 25px;
+            margin: 28px 0;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 28px 0 16px 0;
+            color: #1a1a1a;
+        }
+        .highlight-stat {
+            background-color: #e8f4ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid #0066cc;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="reddit-logo">Reddit</div>
-    </div>
+    <div class="nbc-header">NBC News</div>
     
-    <div class="subreddit-header">
-        <div class="subreddit-name">r/CombatFootage</div>
-        <div class="subreddit-info">2.1M members • 12.4k online • A subreddit for combat footage from around the world</div>
-    </div>
-
-    <div class="container">
-        <div class="post">
-            <div class="post-title">[VIDEO] French Airstrikes on Islamic Caliphate positions near Gao, Mali - Multiple JDAM hits on technicals and fortified compounds (March 2027)</div>
-            <div class="post-meta">Posted by u/CombatFootageHD • 3 hours ago • 94% upvoted</div>
-            <div class="post-content">
-                <div class="video-placeholder">
-                    [COMBAT FOOTAGE - 4K DRONE VIDEO]<br>
-                    French Rafale jets conducting precision strikes on Caliphate positions<br>
-                    0:00-0:30 - Target acquisition and laser designation<br>
-                    0:31-1:15 - First JDAM impact on technical convoy<br>
-                    1:16-2:30 - Secondary explosions from ammunition caches<br>
-                    2:31-3:45 - Multiple strikes on fortified compound<br>
-                    3:46-4:12 - BDA assessment showing 12+ technicals destroyed
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <span class="breaking-banner">BREAKING NEWS</span>
+                <h1 class="article-title">Global coalition of 63 nations launches massive offensive against Islamic Caliphate; China joins strikes as Nigerian forces retake Kaduna</h1>
+                
+                <div class="byline">
+                    By <strong>NBC News Staff and Reuters</strong>
                 </div>
-                <p>Drone footage from Operation Liberté showing French Air Force strikes on Caliphate positions 15km northeast of Gao. You can see the precision of these strikes - they're hitting individual vehicles in a convoy spread across several kilometers.</p>
-                <p>The secondary explosions at 1:45 suggest they hit an ammunition depot or fuel storage. These guys had quite the setup out there in the desert.</p>
-            </div>
-            <div class="post-actions">2.8k upvotes • 456 comments • share • save • hide • report • crosspost</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">FrenchForeignLegion</span> 
-                <span class="flair flair-veteran">2e REP</span>
-                • 2 hours ago
-            </div>
-            <div class="comment-body">
-                <p>Legionnaire here. Been on the ground in Gao for 3 weeks now. What you're seeing is just the tip of the iceberg. These strikes were part of a 48-hour operation that took out over 200 Caliphate fighters and destroyed their forward operating base.</p>
-
-                <p>The intel we got was solid - these weren't just random technicals. This was their main logistics hub for operations in southern Mali. The secondary explosions you see? That was their main ammo dump. Burned for 6 hours straight.</p>
-            </div>
-            <div class="comment-actions">↑ 1.4k ↓ • reply • share • report • save • give award</div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="comment-author">DroneOperatorAF</span> 
-                    <span class="flair flair-analysis">ISR Analyst</span>
-                    • 2 hours ago
+                
+                <div class="article-meta">
+                    <strong>Updated 6:32 AM ET, Sat April 3, 2027</strong>
                 </div>
-                <div class="comment-body">
-                    <p>Can confirm - I flew the MQ-9 that got this footage. The target package was incredibly detailed. We had HUMINT from local Tuareg tribesmen who were sick of the Caliphate's shit, plus SIGINT showing heavy radio traffic from this location.</p>
+                
+                <img src="https://media.nbcnews.com/i/nbcnews/27040312345-coalition-airstrikes-sahel-wide.jpg" alt="Coalition airstrikes in West Africa" class="article-image">
+                <div class="image-caption">US Navy F/A-18 Super Hornets launch from the USS Gerald R. Ford as part of the largest international military operation in Africa since World War II, targeting Islamic Caliphate positions across West Africa.</div>
+            </header>
 
-                    <p>What impressed me was how the Caliphate had dispersed their vehicles under camouflage netting and even used civilian buildings as cover. These aren't amateur hour guys we're dealing with.</p>
+            <div class="article-body">
+                <p><strong>Washington (NBC News)</strong> — A unprecedented coalition of 63 nations, including the United States, NATO members, and China, launched a massive coordinated offensive against the Islamic Caliphate overnight, marking the largest international military operation in African history and dealing the jihadist group its first major battlefield defeat.</p>
+
+                <p>President Trump announced the operation, dubbed "Operation Global Freedom," during a televised address from the White House Situation Room at 3:47 AM, saying the strikes involved "over 2,000 aircraft and naval assets from every inhabited continent."</p>
+
+                <p>"The civilized world has united against this barbaric threat," Trump said. "We are joined by our traditional allies and new partners, including the People's Republic of China, in what will be a decisive campaign to eliminate the Islamic Caliphate once and for all."</p>
+
+                <div class="highlight-stat">
+                    <strong>LARGEST COALITION SINCE WWII</strong><br>
+                    The 63-nation alliance includes all 30 NATO members plus 33 additional countries, making it the largest military coalition assembled since the Allied forces in World War II.
                 </div>
-                <div class="comment-actions">↑ 892 ↓ • reply • share • report • save • give award</div>
-            </div>
-        </div>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">MilitaryAviationNut</span> 
-                <span class="flair flair-analysis">Aviation Geek</span>
-                • 2 hours ago
-            </div>
-            <div class="comment-body">
-                <p>Those are definitely French Rafales - you can tell by the strike profile and the way they're using the AASM Hammer missiles. The French have been absolutely surgical with these strikes compared to the Americans who are just dumping JDAMs on everything that moves.</p>
+                <h3>China enters the conflict</h3>
 
-                <p>Look at 2:15 - that's a text book pop-up attack. Pilot comes in low, pulls up at the last second to loft the bomb, then dives back down. Beautiful flying.</p>
-            </div>
-            <div class="comment-actions">↑ 756 ↓ • reply • share • report • save • give award</div>
-        </div>
+                <p>In an extraordinary development that surprised military analysts worldwide, China announced it was joining the coalition and had already conducted its first wave of airstrikes against Caliphate positions in northern Mali and southern Algeria.</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">ExArmyIntel</span> 
-                <span class="flair flair-analysis">Former MI</span>
-                • 1 hour ago
-            </div>
-            <div class="comment-body">
-                <p>What's really interesting is the timing of these strikes. Gao is a strategic location - it controls the Niger River crossing and the main highway to Bamako. The Caliphate was using it as a staging area for their push into Ivory Coast.</p>
+                <p>"The Islamic Caliphate poses a threat to global stability and China's interests in Africa," Chinese President Xi Jinping said in a statement released by Xinhua News Agency. "China will contribute its advanced military capabilities to this just cause."</p>
 
-                <p>By hitting them here, the French are trying to disrupt their southern expansion. But it's only a temporary fix. These guys have proven they can disperse and regroup faster than anyone expected.</p>
-            </div>
-            <div class="comment-actions">↑ 623 ↓ • reply • share • report • save • give award</div>
-        </div>
+                <p>Chinese state media reported that over 80 Chengdu J-20 stealth fighters and Xian H-6 strategic bombers struck Caliphate command centers, training camps, and weapons depots in what analysts described as China's first offensive military operation beyond its immediate sphere of influence since the Korean War.</p>
 
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">CombatFootageCritic</span> 
-                <span class="flair flair-video">Footage Analysis</span>
-                • 1 hour ago
-            </div>
-            <div class="comment-body">
-                <p>Technical note: This footage was shot with a French Air Force Harfang drone (their version of the MQ-9). The video quality is excellent because they were flying at around 15,000 feet - well above MANPADS range but low enough for good resolution.</p>
+                <p>"This represents a seismic shift in Chinese foreign policy," said Dr. Jennifer Liu, a China military expert at Stanford University. "Beijing is signaling it will use military force to protect its global interests, particularly its $200 billion in African investments."</p>
 
-                <p>You can see the Caliphate tried to shoot back with what looks like ZU-23-2s and maybe some Strela missiles, but they never got close. The French have been operating with impunity in Malian airspace.</p>
-            </div>
-            <div class="comment-actions">↑ 445 ↓ • reply • share • report • save • give award</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">RandomDude2027</span> • 1 hour ago
-            </div>
-            <div class="comment-body">
-                <p>Question from a civilian: How significant is this operation? Is this going to actually stop the Caliphate or just slow them down?</p>
-
-                <p>Also, why are the French taking the lead here instead of the US? Seems like every time there's a crisis, everyone's waiting for America to do something.</p>
-            </div>
-            <div class="comment-actions">↑ 334 ↓ • reply • share • report • save • give award</div>
-            
-            <div class="comment nested-comment">
-                <div class="comment-header">
-                    <span class="comment-author">FrenchForeignLegion</span> 
-                    <span class="flair flair-veteran">2e REP</span>
-                    • 1 hour ago
+                <div class="quote-box">
+                    "The civilized world has united against this barbaric threat. We are joined by our traditional allies and new partners, including the People's Republic of China, in what will be a decisive campaign to eliminate the Islamic Caliphate once and for all."
+                    <br><strong>— President Donald Trump</strong>
                 </div>
-                <div class="comment-body">
-                    <p>Good question. The French have been fighting in the Sahel since 2013 with Operation Serval and then Barkhane. We know the terrain, we have the relationships with local forces, and frankly, we have more at stake here than the Americans.</p>
 
-                    <p>As for stopping them? This won't stop them. It'll slow them down, buy time for the African armies to regroup. But without a political solution, we're just playing whack-a-mole with better weapons.</p>
+                <h3>Nigerian forces score major victory</h3>
+
+                <p>As coalition aircraft pounded Caliphate positions from the air, Nigerian ground forces achieved their first major victory, driving Islamist fighters out of Kaduna and killing over 900 jihadists in a single day of fierce urban combat.</p>
+
+                <p>Nigerian Army Chief of Staff General Musa Danjuma announced that government forces had "completely liberated" Kaduna after a 72-hour battle that saw some of the most intense fighting of the conflict. Over 200 Nigerian soldiers were reported killed, but military officials called the victory "a turning point in the war."</p>
+
+                <p>"The Caliphate suffered its worst single-day losses since this conflict began," General Danjuma said in a televised briefing. "Their corpses litter the streets of Kaduna. We have broken their momentum."</p>
+
+                <p>Witnesses in Kaduna reported scenes of jubilation as government tanks rolled through the city center, with residents cheering and waving Nigerian flags. The city's population, which had dwindled from 1.2 million to fewer than 300,000 during the siege, began returning to their homes.</p>
+
+                <p>"We thought we were going to die here," said Amina Mohammed, a Kaduna resident who spent three weeks hiding in her basement. "Now we are free. The soldiers are heroes."</p>
+
+                <h3>Coalition strikes devastate Caliphate infrastructure</h3>
+
+                <p>The overnight bombing campaign, involving over 1,800 sorties, targeted what Pentagon officials described as "the entire Caliphate military infrastructure" across six countries. Satellite imagery showed extensive damage to Caliphate positions in Bamako, Niamey, and Ouagadougou.</p>
+
+                <p>"We hit them everywhere they thought they were safe," said General Mark Milley, Chairman of the Joint Chiefs of Staff. "Command centers, weapons depots, training facilities, communication hubs - we systematically destroyed their ability to coordinate operations."</p>
+
+                <p>British Defense Secretary Grant Shapps confirmed that RAF Typhoon fighters had conducted precision strikes against Caliphate positions in Senegal and Ivory Coast, while French officials reported their aircraft had hit targets in Burkina Faso and northern Benin.</p>
+
+                <p>Perhaps most significantly, coalition forces targeted the Caliphate's economic infrastructure, bombing fuel depots, supply convoys, and the makeshift oil refineries that had been funding their operations. Military analysts said this strategy could starve the Caliphate of the resources needed to continue their offensive.</p>
+
+                <div class="highlight-stat">
+                    <strong>MASSIVE AIR CAMPAIGN</strong><br>
+                    Over 1,800 coalition aircraft participated in the initial wave, including 400 from the US, 320 from NATO allies, and 80 from China - the largest air operation since the 2003 Iraq invasion.
                 </div>
-                <div class="comment-actions">↑ 567 ↓ • reply • share • report • save • give award</div>
+
+                <h3>Global response</h3>
+
+                <p>The massive international response drew praise from world leaders, with many calling it a model for future multinational cooperation against terrorist threats.</p>
+
+                <p>"This coalition proves that when humanity faces existential threats, we can unite across political and ideological divides," said UN Secretary-General António Guterres. "From Washington to Beijing, from London to New Delhi, the world has spoken with one voice."</p>
+
+                <p>Russian President Vladimir Putin, whose country is not participating in the coalition, nevertheless praised the operation. "The Islamic Caliphate is a threat to all civilized nations," Putin said. "We support any legitimate action to eliminate this terrorist organization."</p>
+
+                <p>Even Iran's Supreme Leader Ayatollah Ali Khamenei issued a statement supporting the coalition, calling the Caliphate "a perversion of Islam that must be eradicated."</p>
+
+                <h3>Caliphate response and next phase</h3>
+
+                <p>The Islamic Caliphate released a statement through its remaining communication channels, calling the coalition strikes "a declaration of global war against Islam" and vowing "retribution in every capital of the crusader nations."</p>
+
+                <p>However, military analysts noted that the Caliphate's response was notably disorganized, suggesting the coalition strikes had severely degraded their command and control capabilities.</p>
+
+                <p>"They're talking big, but their actions tell a different story," said retired General David Petraeus. "They've gone from conducting coordinated offensives to issuing desperate threats. This is what breaking their momentum looks like."</p>
+
+                <p>Coalition officials indicated the initial strikes were just the beginning of what could be a months-long campaign. Defense Secretary Pete Hegseth said ground forces from multiple nations were being positioned for potential deployment, while naval assets would continue sustained bombing operations.</p>
+
+                <p>"We've shown them what the civilized world can do when united," Hegseth said. "Now we're going to show them what happens when that unity is sustained over time."</p>
+
+                <p>As dawn broke over West Africa, the strategic situation had been transformed. What had seemed like an unstoppable jihadist advance just days earlier now appeared to be a retreating force facing the combined might of the world's most powerful militaries.</p>
+
+                <p><em>This is a developing story and will be updated.</em></p>
             </div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">CaliphateWatcher</span> 
-                <span class="flair flair-analysis">Terrorism Analyst</span>
-                • 45 minutes ago
-            </div>
-            <div class="comment-body">
-                <p>From a strategic perspective, these strikes are significant but not decisive. The Caliphate had concentrated forces in Gao preparing for their push into Ivory Coast. By disrupting this buildup, the French have likely delayed their southern offensive by several weeks.</p>
-
-                <p>However, intelligence reports indicate the Caliphate has already begun dispersing their forces in response to the air campaign. They're adapting faster than expected - using civilian vehicles, moving at night, and avoiding large concentrations.</p>
-
-                <p>This is going to be a long, grinding campaign. Not the quick victory some politicians are promising.</p>
-            </div>
-            <div class="comment-actions">↑ 398 ↓ • reply • share • report • save • give award</div>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">
-                <span class="comment-author">MaliVeteran2015</span> 
-                <span class="flair flair-veteran">Barkhane Vet</span>
-                • 30 minutes ago
-            </div>
-            <div class="comment-body">
-                <p>Been there, done that. Fought in Mali during Barkhane. This footage brings back memories - and not good ones.</p>
-
-                <p>The problem is we're treating this like a conventional military problem when it's not. The Caliphate isn't just a military force - they're a political movement with genuine local support in some areas. You can't bomb that away.</p>
-
-                <p>Plus, the terrain in northern Mali is perfect for guerrilla warfare. Thousands of square kilometers of desert and mountains. We could bomb them for months and they'll just melt away into the population or across borders.</p>
-            </div>
-            <div class="comment-actions">↑ 289 ↓ • reply • share • report • save • give award</div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
