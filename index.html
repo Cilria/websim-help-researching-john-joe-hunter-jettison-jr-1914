@@ -3,320 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>When you gather your entire leadership in one place - r/militarymemes</title>
+    <title>Coalition ground offensive gains momentum across West Africa - The New York Times</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #0f1419;
-            color: #d7dadc;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f8f8f8;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .reddit-header {
-            background-color: #1a1a1b;
-            border-bottom: 1px solid #343536;
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
+        .nyt-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 15px 30px;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'NYTFranklin', Georgia, serif;
+            color: #000;
+            letter-spacing: -0.5px;
         }
-        .reddit-logo {
-            color: #ff4500;
-            font-size: 24px;
-            font-weight: bold;
+        .article-container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .subreddit-name {
-            color: #d7dadc;
-            font-size: 18px;
-            font-weight: 500;
+        .article-header {
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
         }
-        .post-container {
-            max-width: 740px;
-            margin: 20px auto;
-            background-color: #1a1a1b;
-            border: 1px solid #343536;
-            border-radius: 4px;
+        .article-title {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 20px 0;
+            color: #000;
+            font-family: 'NYTCheltenham', Georgia, serif;
         }
-        .post-header {
-            padding: 16px;
-            border-bottom: 1px solid #343536;
+        .article-meta {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+            font-family: 'NYTFranklin', Arial, sans-serif;
         }
-        .post-title {
+        .article-image {
+            width: 100%;
+            margin: 30px 0;
+        }
+        .image-caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 20px;
+            font-family: 'NYTFranklin', Arial, sans-serif;
+        }
+        .article-body {
             font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        .byline {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'NYTFranklin', Arial, sans-serif;
+        }
+        .dateline {
+            font-size: 13px;
+            color: #888;
             font-weight: 500;
-            margin: 0 0 10px 0;
-            color: #d7dadc;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .post-meta {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 8px;
-        }
-        .post-content {
-            padding: 16px;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        .post-content p {
-            margin-bottom: 12px;
-        }
-        .comments-section {
-            border-top: 1px solid #343536;
-        }
-        .comment {
-            padding: 12px 16px;
-            border-bottom: 1px solid #343536;
-            position: relative;
-        }
-        .comment-header {
-            font-size: 12px;
-            color: #818384;
-            margin-bottom: 4px;
-        }
-        .comment-author {
-            color: #d7dadc;
-            font-weight: 500;
-        }
-        .comment-body {
-            font-size: 14px;
-            color: #d7dadc;
-            margin: 4px 0;
-        }
-        .comment-actions {
-            font-size: 12px;
-            color: #818384;
-            margin-top: 6px;
-        }
-        .reply {
-            margin-left: 32px;
-            border-left: 2px solid #343536;
-            padding-left: 16px;
-        }
-        .flair {
-            background-color: #ff4500;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 2px;
-            font-size: 11px;
-            font-weight: 500;
-            display: inline-block;
-            margin-left: 8px;
-        }
-        .flair-breaking {
-            background-color: #ff8717;
-        }
-        .highlight {
-            background-color: #ff450020;
-            padding: 2px 4px;
-            border-radius: 2px;
-            color: #ff4500;
-            font-weight: 500;
-        }
-        .score {
-            color: #ff4500;
-            font-weight: 500;
-        }
-        .meme-image {
-            max-width: 100%;
-            height: auto;
-            margin: 15px 0;
+        .war-map {
+            background-color: #f0f8ff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 25px 0;
             border-radius: 4px;
         }
-        .meme-caption {
-            font-size: 16px;
-            font-weight: 500;
-            color: #d7dadc;
-            margin: 10px 0;
-            text-align: center;
+        .war-map h3 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #000;
+        }
+        .front-summary {
+            background-color: #f8f9fa;
+            border-left: 4px solid #000;
+            padding: 20px;
+            margin: 25px 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .front-summary ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        .front-summary li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-header">
-        <div class="reddit-logo">reddit</div>
-        <div class="subreddit-name">r/militarymemes</div>
-    </div>
+    <div class="nyt-header">The New York Times</div>
     
-    <div class="post-container">
-        <div class="post-header">
-            <div class="post-meta">
-                Posted by u/CombatMemer • 3 hours ago
-                <span class="flair flair-breaking">BREAKING</span>
-            </div>
-            <h1 class="post-title">Caliphate leadership: "Let's have a meeting with ALL 51 of our top commanders in one location, what could go wrong?"</h1>
-            <div class="post-meta">
-                47.2k upvotes • 8.9k comments
-            </div>
-        </div>
-
-        <div class="post-content">
-            <div class="meme-caption">*When you think the desert makes you invulnerable but forget about F-35s with GBU-72s*</div>
-            
-            <img src="https://i.imgflip.com/7q8m9z.jpg" alt="Drake meme - top panel shows Drake rejecting 'Having decentralized command structure' and bottom panel shows Drake approving 'Gathering entire leadership in one building'" class="meme-image">
-            
-            <p><strong>Literally the dumbest military decision since Custer said "let's split up and attack from multiple angles."</strong></p>
-
-            <p>These guys really thought they were playing 4D chess by having their <span class="highlight">ENTIRE senior leadership</span> meet in one place. Meanwhile US intelligence be like:</p>
-
-            <img src="https://i.imgflip.com/7q8n0a.jpg" alt="Oprah meme - "You get a JDAM! You get a JDAM! Everybody gets a JDAM!"" class="meme-image">
-
-            <p>600+ jihadists eliminated because some genius said "Hey, let's all meet up at the same time in the same building in the middle of fucking nowhere. The Americans will never expect this!"</p>
-
-            <p>The absolute <span class="highlight">AUDACITY</span> of thinking you're safe in the Sahara when the US military has been hunting you for months.</p>
-        </div>
-
-        <div class="comments-section">
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/IntelAnalyst</span> • 
-                    <span class="upvotes">18.3k</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    "Hey guys, let's have a leadership meeting but make it a BBQ" - Caliph, probably
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
+    <div class="article-container">
+        <article>
+            <header class="article-header">
+                <h1 class="article-title">Coalition Ground Forces Launch Major Offensive, Retaking Territory Across West Africa</h1>
+                
+                <div class="byline">
+                    By Declan Walsh, Eric Schmitt and Ruth Maclean
                 </div>
                 
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">u/DroneOperator</span> • 
-                        <span class="upvotes">9.2k</span> • 2 hours ago
-                    </div>
-                    <div class="comment-body">
-                        US Air Force: "Say no more, fam"
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/TacticalGenius</span> • 
-                    <span class="upvotes">15.7k</span> • 2 hours ago
-                </div>
-                <div class="comment-body">
-                    When you've been getting away with war crimes for months so you forget basic OPSEC
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
+                <div class="article-meta">
+                    <span class="dateline">July 20, 2027</span><br>
+                    Reporting from Ouagadougou, Burkina Faso
                 </div>
                 
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">u/SpecOps_Guy</span> • 
-                        <span class="upvotes">7.4k</span> • 1 hour ago
-                    </div>
-                    <div class="comment-body">
-                    Hubris is a hell of a drug. They got too comfortable, started thinking they were running a real country instead of a terrorist organization.
-                    </div>
-                </div>
-            </div>
+                <img src="https://static01.nyt.com/images/2027/07/20/world/africa/coalition-offensive-west-africa-2027.jpg" alt="Coalition forces advancing in West Africa" class="article-image">
+                <div class="image-caption">French troops advance alongside Nigerian forces near the Ivory Coast border as part of the largest coordinated ground offensive against the Islamic Caliphate of the Sahel.</div>
+            </header>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/AviationMemes</span> • 
-                    <span class="upvotes">13.2k</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    F-35 pilots after dropping 16 GBU-72s on one building: "Target neutralized. Also, the target's neighbor's neighbor's house. And probably a small village 2 miles away."
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">u/BoomOperator</span> • 
-                        <span class="upvotes">5.8k</span> • 1 hour ago
-                    </div>
-                    <div class="comment-body">
-                        When you absolutely, positively need to turn a terrorist HQ into a smoking crater that future archaeologists will study
-                    </div>
-                </div>
-            </div>
+            <div class="article-body">
+                <p><strong>OUAGADOUGOU, Burkina Faso</strong> — After weeks of devastating airstrikes that decapitated the Islamic Caliphate's leadership, coalition ground forces have launched a sweeping offensive across six West African nations, rapidly retaking territory that had been under jihadist control since March.</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/HistoryBuff</span> • 
-                    <span class="upvotes">11.5k</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    This is like if Hitler decided to hold the entire Reichstag meeting in a bunker... oh wait
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
-            </div>
+                <p>The coordinated ground campaign, which began on June 30th with support from over 63 nations, has already reversed many of the Caliphate's territorial gains. American, French and NATO troops are fighting alongside local forces in what military officials describe as the most successful counterterrorism operation in modern African history.</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/SignalIntel</span> • 
-                    <span class="upvotes">9.8k</span> • 1 hour ago
+                <div class="war-map">
+                    <h3>Current Offensive Status</h3>
+                    <p><strong>Ivory Coast:</strong> Northern regions largely liberated, Korhogo encircled with 1,500 jihadists trapped</p>
+                    <p><strong>Nigeria:</strong> A1 Highway cut, Yelwa encircled, preparations underway for Sokoto offensive</p>
+                    <p><strong>Togo:</strong> Kran National Park retaken, advance on Dapaong continues</p>
+                    <p><strong>Benin:</strong> 3,500 square km recaptured along RNIE2 Highway</p>
+                    <p><strong>Senegal:</strong> N7 highway severed, Tambacounda offensive beginning</p>
+                    <p><strong>Guinea:</strong> Siguiri encircled, Caliphate forces trapped</p>
                 </div>
-                <div class="comment-body">
-                    NSA agent listening to their phone calls: "They're doing WHAT? All 51 of them? Together? In one place? Holy shit, boys, we're about to win the lottery!"
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
-                
-                <div class="reply">
-                    <div class="comment-header">
-                        <span class="comment-author">u/TargetAnalyst</span> • 
-                        <span class="upvotes">4.6k</span> • 45 minutes ago
-                    </div>
-                    <div class="comment-body">
-                        "Sir, they just sent out a calendar invite for 'Supreme War Council Meeting - All Senior Commanders Mandatory'"
-                        <br><br>
-                        "GET THE F-35S READY"
-                    </div>
-                </div>
-            </div>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/CombatCamera</span> • 
-                    <span class="upvotes">8.3k</span> • 1 hour ago
-                </div>
-                <div class="comment-body">
-                    Satellite image before: [Compound]
-                    <br>
-                    Satellite image after: [God's ashtray]
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
-            </div>
+                <p>"The momentum has clearly shifted," said General Christopher Cavoli, supreme allied commander of coalition forces. "We're not just pushing them back — we're systematically destroying their ability to wage conventional warfare."</p>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/MilitaryDoctrine</span> • 
-                    <span class="upvotes">7.1k</span> • 45 minutes ago
-                </div>
-                <div class="comment-body">
-                    Rule #1 of asymmetric warfare: Never, EVER concentrate your leadership in one location
-                    <br><br>
-                    Rule #2: If you ignore Rule #1, at least don't use fucking cell phones to coordinate it
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
-            </div>
+                <h3>Multiple fronts, rapid advances</h3>
 
-            <div class="comment">
-                <div class="comment-header">
-                    <span class="comment-author">u/WeaponsTech</span> • 
-                    <span class="upvotes">6.5k</span> • 30 minutes ago
+                <p>The offensive has unfolded across multiple fronts simultaneously, with coalition airpower providing crucial support to advancing ground troops. In Ivory Coast, French and Ivorian forces have recaptured most northern territories, though the city of Korhogo remains under Caliphate control with an estimated 1,500 jihadists preparing for what analysts predict will be a bloody last stand.</p>
+
+                <p>"They've fortified Korhogo heavily," said Colonel Antoine Moreau of the French Foreign Legion. "But they're surrounded. They have nowhere to go."</p>
+
+                <p>In Nigeria, the situation has proven particularly dynamic. Coalition and Nigerian forces have severed the strategic A1 Highway, effectively trapping Caliphate fighters in Yelwa. The encirclement represents a significant tactical victory, cutting off resupply routes and isolating jihadist units ahead of what military planners say will be a major offensive to recapture Sokoto.</p>
+
+                <p>"The Nigerian front is where we expect the heaviest fighting," said a senior U.S. military official who requested anonymity to discuss operational details. "But we've broken their supply lines. They're running low on ammunition, food, and morale."</p>
+
+                <div class="front-summary">
+                    <strong>Key Developments:</strong>
+                    <ul>
+                        <li>Tuareg rebels backed by coalition forces have recaptured Arlit in Niger</li>
+                        <li>Caliphate's new leadership maintains commitment to conventional warfare despite losses</li>
+                        <li>Coalition forces report minimal casualties due to air superiority</li>
+                        <li>Local populations in liberated areas celebrating coalition advances</li>
+                        <li>Humanitarian corridors established for civilian evacuation from conflict zones</li>
+                    </ul>
                 </div>
-                <div class="comment-body">
-                    GBU-72: When a regular JDAM just won't adequately express how much you want someone dead
-                </div>
-                <div class="comment-actions">
-                    Reply • Share • Report • Save
-                </div>
+
+                <h3>Tuareg rebels change the equation</h3>
+
+                <p>In Mali and Niger, where the Caliphate overthrew governments earlier this year, the coalition has taken an unconventional approach. Rather than attempting to restore the fallen governments, Western forces are backing the Azawad National Liberation Front (ANLF), a Tuareg rebel group that has proven surprisingly effective against jihadist forces.</p>
+
+                <p>The ANLF, composed of ethnic Tuareg fighters with intimate knowledge of the Sahara's harsh terrain, recaptured the strategic town of Arlit in northern Niger last week. In Mali, their advances through the desert have been methodical but steady, bringing them within striking distance of the RN18 highway — a crucial supply route for Caliphate forces.</p>
+
+                <p>"The Tuaregs know this land like we know our smartphones," said a French military advisor working with ANLF forces. "They can navigate terrain that would destroy conventional vehicles, strike where the jihadists least expect it."</p>
+
+                <h3>Caliphate's stubborn defense</h3>
+
+                <p>Despite suffering catastrophic losses in June's airstrike that killed their supreme leader and senior command, the Islamic Caliphate has refused to abandon its conventional warfare strategy. The group's new caliph, reportedly one of the few senior commanders who survived the decapitation strike, has doubled down on fixed positions and territorial defense.</p>
+
+                <p>This strategic inflexibility has puzzled military analysts. "Most terrorist groups would revert to insurgency tactics after losing their leadership," said Dr. Andrew Krepinevich, a counterterrorism expert at the Center for Strategic and Budgetary Assessments. "But the Caliphate is continuing to fight like a conventional army. It's either stubbornness or desperation."</p>
+
+                <p>The results have been devastating for the Caliphate. In Togo, their forces have been pushed back from the Kran National Park, losing their primary stronghold in the country. The N1 highway to Dapaong, their main base in Togo, is now under assault by coalition and Togolese forces.</p>
+
+                <p>In Benin, government troops have recaptured nearly 3,500 square kilometers of territory along the RNIE2 Highway, approaching the strategic city of Kandi. In Senegal, coalition forces have severed the N7 highway and begun the first phase of operations to isolate Tambacounda, another Caliphate stronghold.</p>
+
+                <h3>Encirclement strategy</h3>
+
+                <p>Military strategists say the coalition has adopted a deliberate encirclement strategy, isolating Caliphate strongholds before attempting to capture them. This approach has proven particularly effective in Guinea, where coalition forces have trapped significant Caliphate units in Siguiri.</p>
+
+                <p>"We're not just pushing them back — we're cutting them off," explained General Cavoli. "Every encirclement reduces their ability to support each other, to resupply, to coordinate."</p>
+
+                <p>The strategy has also minimized coalition casualties. Despite weeks of intense ground operations, U.S. Central Command reports only 23 American fatalities, a remarkably low number attributed to overwhelming air superiority and the element of surprise achieved after the leadership decapitation strike.</p>
+
+                <h3>Civilian impact and humanitarian concerns</h3>
+
+                <p>In liberated territories, local populations have largely welcomed coalition forces. In the Ivorian town of Boundiali, residents celebrated as French troops arrived, with some waving homemade French and American flags.</p>
+
+                <p>"They treated us like slaves," said Awa Coulibaly, a 34-year-old teacher who fled Korhogo. "Now we can breathe again."</p>
+
+                <p>However, humanitarian organizations warn of impending crisis in besieged cities like Korhogo. The United Nations estimates that up to 50,000 civilians remain trapped in the city with limited access to food, water, and medical supplies.</p>
+
+                <p>"We need humanitarian corridors established immediately," said Martin Griffiths, the UN's humanitarian coordinator for West Africa. "The civilians didn't choose this fight. They shouldn't be punished for it."</p>
+
+                <h3>What comes next</h3>
+
+                <p>Coalition military planners are already preparing for the next phase of operations. With supply lines cut and territory shrinking daily, the Caliphate faces what analysts describe as an existential crisis.</p>
+
+                <p>"They can fight conventionally and lose everything, or they can revert to insurgency and lose their identity," said Dr. Krepinevich. "Either way, their days as a territorial power appear numbered."</p>
+
+                <p>However, officials caution against premature celebration. The Caliphate still controls significant territory, particularly in urban centers like Korhogo and Tambacounda. The upcoming battles for these cities are expected to be fierce.</p>
+
+                <p>"We've won the mobile warfare phase," said a senior French officer. "Now comes the hard part — urban combat against an enemy that has nowhere left to retreat."</p>
+
+                <p>As coalition forces continue their advance, the question remains whether the Islamic Caliphate can survive as an organization, or if it will fracture into smaller, regional terrorist groups — a development that would represent victory for the coalition, but continued danger for West African civilians.</p>
+
+                <p><em>Declan Walsh reported from Ouagadougou, Eric Schmitt from Washington, and Ruth Maclean from Dakar.</em></p>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
