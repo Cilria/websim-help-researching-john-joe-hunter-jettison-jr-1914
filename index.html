@@ -3,172 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islom Armiyasi Telegram</title>
+    <title>Uzbekistan: Army of Islam Expands Control, Encircles Key Cities - ISW</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #0a0a0a;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #333333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .telegram-container {
-            max-width: 600px;
+        .isw-header {
+            background-color: #1a5490;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #d4a017;
+        }
+        .isw-subheader {
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+        .report-container {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: #17212b;
-            min-height: 100vh;
+            padding: 32px 20px;
         }
-        .telegram-header {
-            background-color: #212d3b;
+        .report-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #1a5490;
+        }
+        .report-meta {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #d4a017;
+            padding-bottom: 16px;
+        }
+        .executive-summary {
+            background-color: #f8f9fa;
+            border-left: 4px solid #1a5490;
             padding: 16px;
-            border-bottom: 1px solid #0f151a;
-            display: flex;
-            align-items: center;
+            margin: 24px 0;
+            font-size: 16px;
+            line-height: 1.6;
         }
-        .channel-avatar {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background-color: #2b5278;
-            margin-right: 12px;
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background-color: #e9ecef;
+            border: 2px solid #dee2e6;
+            margin: 24px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-        }
-        .channel-info {
-            flex-grow: 1;
-        }
-        .channel-name {
-            font-weight: 600;
+            color: #6c757d;
             font-size: 16px;
-            color: #ffffff;
+            font-style: italic;
         }
-        .channel-subscribers {
-            font-size: 13px;
-            color: #8295a5;
+        .section-heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a5490;
+            margin: 32px 0 16px 0;
+            border-bottom: 2px solid #d4a017;
+            padding-bottom: 8px;
         }
-        .telegram-body {
-            padding: 16px;
-        }
-        .message {
-            background-color: #212d3b;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border-left: 3px solid #2b5278;
-        }
-        .message-date {
-            font-size: 12px;
-            color: #8295a5;
-            margin-bottom: 12px;
-        }
-        .message-text {
-            font-size: 15px;
-            line-height: 1.6;
-            white-space: pre-wrap;
-        }
-        .language-label {
-            font-size: 12px;
-            color: #8295a5;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-        .arabic-text {
-            direction: rtl;
-            text-align: right;
-            font-family: 'Scheherazade New', 'Arial', sans-serif;
-            font-size: 18px;
+        .report-body {
+            font-size: 16px;
             line-height: 1.8;
         }
-        .uzbek-text {
-            font-family: 'Noto Sans', 'Arial', sans-serif;
+        .report-body p {
+            margin-bottom: 20px;
+        }
+        .key-points {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .key-points h4 {
+            margin: 0 0 12px 0;
+            color: #856404;
             font-size: 16px;
-            line-height: 1.7;
         }
-        .english-text {
-            font-size: 15px;
-            line-height: 1.6;
+        .key-points ul {
+            margin: 0;
+            padding-left: 20px;
         }
-        .hashtags {
-            color: #4ba0e3;
-            margin-top: 12px;
-        }
-        .forwarded-header {
-            font-size: 12px;
-            color: #8295a5;
+        .key-points li {
             margin-bottom: 8px;
-            border-left: 2px solid #4ba0e3;
-            padding-left: 8px;
+            color: #856404;
+        }
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #d4a017;
+            padding: 16px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #495057;
+        }
+        .footer-note {
+            font-size: 12px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            padding-top: 16px;
+            margin-top: 32px;
         }
     </style>
 </head>
 <body>
-    <div class="telegram-container">
-        <div class="telegram-header">
-            <div class="channel-avatar">☪️</div>
-            <div class="channel-info">
-                <div class="channel-name">Islom Armiyasi va Allohning G'alabasi</div>
-                <div class="channel-subscribers">127.5K subscribers</div>
-            </div>
-        </div>
-        
-        <div class="telegram-body">
-            <div class="message">
-                <div class="message-date">27 Апрель 2028, 06:14</div>
+    <div class="isw-header">
+        INSTITUTE FOR THE STUDY OF WAR
+        <div class="isw-subheader">Uzbekistan Conflict Update</div>
+    </div>
+    
+    <div class="report-container">
+        <article>
+            <header>
+                <h1 class="report-title">Uzbekistan: Army of Islam Expands Control, Encircles Key Cities</h1>
                 
-                <div class="language-label">العربية</div>
-                <div class="message-text arabic-text">
-بسم الله الرحمن الرحيم
-
-اليوم نعلن رسمياً بدء الجهاد المسلح ضد حكومة أوزبكستان الكافرة. لقد قتل مجاهدونا 200 جندي كافر واستولينا على أسلحتهم. إن نصر الله قريب، ونحن سنحرر أوزبكستان من حكم الطغاة.
-
-إن جيش الإسلام ونصر الله سيسحق كل من يقف في طريق الشريعة. الله أكبر!
+                <div class="report-meta">
+                    <strong>May 29, 2028</strong> | <em>By the ISW Uzbekistan Team</em>
                 </div>
                 
-                <div class="hashtags">#النصر_للإسلام #أوزبكستان_الإسلامية #الجهاد_المبارك</div>
-            </div>
-            
-            <div class="message">
-                <div class="language-label">O'zbekcha</div>
-                <div class="message-text uzbek-text">
-Islom armiyasi va Allohning g'alabasi sifatida biz bugun rasmiy ravishda qurolli jihodni e'lon qilamiz. Bizning mojohidlarimiz 200 tagut askarini halok qildi va ularning qurollarini egallab oldi. Biz O'zbekistonni ozod qilamiz va bu mulkni Allohning qonunlari bilan boshqaramiz.
-
-Bizning yangi nomimiz - Islom Armiyasi va Allohning G'alabasi - bizning haqiqiy kurashimizni ifodalaydi. Biz Allohning yordami bilan g'alaba qozonamiz!
+                <div class="executive-summary">
+                    <strong>Key Takeaway:</strong> The Army of Islam has achieved significant territorial gains across Uzbekistan in the past month, breaking out of their mountainous strongholds to encircle major cities and cut key supply routes. The group now controls large portions of the Fergana Valley and has severed the primary ground supply route to Tashkent, forcing the government to rely on air resupply for the capital.
                 </div>
-                
-                <div class="hashtags">#IslomG'alabasi #OzbekistonIslom #Jihod2028</div>
+            </header>
+
+            <div class="map-placeholder">
+                [Map: Army of Islam territorial control as of May 29, 2028]
             </div>
-            
-            <div class="message">
-                <div class="language-label">English Translation</div>
-                <div class="message-text english-text">
-In the name of Allah, the Most Gracious, the Most Merciful
 
-Today we officially declare the beginning of armed jihad against the infidel government of Uzbekistan. Our mujahideen have killed 200 infidel soldiers and seized their weapons. The victory of Allah is near, and we will liberate Uzbekistan from the rule of tyrants.
+            <div class="report-body">
+                <div class="section-heading">Fergana Valley Offensive</div>
+                
+                <p>On May 11, 2028, the Army of Islam launched a major offensive breaking out of their traditional strongholds in the eastern mountains and advancing across the densely populated Fergana Valley. The group has successfully seized control of large portions of Namangan, Andijan, and Fergana provinces, achieving their most significant territorial expansion since the conflict began.</p>
 
-The Army of Islam and the Victory of Allah will crush all who stand in the way of Sharia. Allah is the greatest!
+                <p>Most critically, Army of Islam forces have severed the M39 highway—the primary ground supply route connecting Tashkent to the eastern regions. This strategic coup has forced the Uzbek government to rely exclusively on air resupply for the capital, significantly straining their logistical capabilities and limiting their ability to conduct sustained operations in the east.</p>
+
+                <div class="key-points">
+                    <h4>Strategic Implications:</h4>
+                    <ul>
+                        <li>Tashkent now dependent on air resupply, limiting government operational capacity</li>
+                        <li>Army of Islam controls approximately 40% of the Fergana Valley's population centers</li>
+                        <li>Government forces in eastern provinces increasingly isolated</li>
+                        <li>Insurgents demonstrating sophisticated understanding of modern military logistics</li>
+                    </ul>
                 </div>
-                
-                <div class="hashtags">#VictoryOfIslam #UzbekistanIslamic #BlessedJihad</div>
-            </div>
-            
-            <div class="message">
-                <div class="forwarded-header">Forwarded from Islom Armiyasi Official</div>
-                <div class="message-text english-text">
-Our old name, "The Loyal Soldiers of Islam and the Islamic Movement," did not reflect our real struggle. We are now an army fighting for Allah's victory on earth.
 
-We have grown from 30,000 to over 50,000 mujahideen across Uzbekistan. The infidel government will fall, and the Russian occupiers will be driven from our sacred soil.
+                <div class="section-heading">Karshi Operations</div>
 
-Armed struggle has begun. There is no turning back.
+                <p>In the southern theater, Army of Islam forces have achieved another significant victory by cutting the M37 highway and encircling the city of Navoi. The group has systematically destroyed key bridges and overpasses, rendering the highway to Bukhara and Samarkand "unusable for most parts of the day" according to local sources.</p>
+
+                <p>Navoi now faces a complete encirclement, with insurgent forces controlling all ground access routes. The city's 150,000 residents are increasingly dependent on air resupply, though Uzbek military helicopters have faced consistent harassment from man-portable air defense systems (MANPADS) that the Army of Islam has captured or acquired through unknown channels.</p>
+
+                <p>ISW assesses that the Army of Islam likely intends to capture Navoi before advancing on Bukhara, following their established pattern of gradually isolating and then assaulting major urban centers.</p>
+
+                <div class="section-heading">Southern Theater Developments</div>
+
+                <p>Perhaps most dramatically, Army of Islam forces have captured virtually all of Surkhandarya Province except for the provincial capital Termez, which they have now placed under siege. The insurgents control approximately 85% of the province, including all major towns and the vital border crossing with Afghanistan.</p>
+
+                <p>The siege of Termez represents the Army of Islam's most ambitious operation to date. The city, home to 180,000 residents, faces increasingly dire humanitarian conditions as insurgent forces have cut water and power supplies to several neighborhoods while maintaining a tight blockade on ground access.</p>
+
+                <div class="quote-box">
+                    "By the Grace of Allah, Our Mujahideen have smashed the infidel regime forces in battle, fleeing like cowards when they meet the Lions of Allah, this is Allah's Judgement's for disrepecting the commands of Allah on the land of Timur, We are like the Great Armies of Timur, destroying the infidels wherever they are and driving them out, They dried out the lands and rivers and let our people strave, while they lived a unholy lifestyle and insulted Allah, The Russian Crusaders have been beaten and we have destoryed their planes. The tyrant of Tashkent will soon meet his end and await his judgment from the Mujahideen"
+                    <br><br>
+                    — Army of Islam Statement, May 26, 2028
                 </div>
-                
-                <div class="message-date">27 Апрель 2028, 06:15</div>
+
+                <div class="section-heading">Tactical Assessment</div>
+
+                <p>The Army of Islam's recent successes reflect a sophisticated understanding of modern insurgent warfare. Their strategy of gradually controlling the countryside while isolating urban centers represents a classic approach that has proven effective in multiple conflicts across the region.</p>
+
+                <p>The group's ability to coordinate operations across three distinct theaters—eastern Fergana Valley, central Karshi region, and southern Surkhandarya—demonstrates command and control capabilities that exceed most regional insurgent groups. Their use of improvised explosive devices (IEDs) to render major highways unusable shows technical competence and strategic patience.</p>
+
+                <div class="key-points">
+                    <h4>Army of Islam Capabilities:</h4>
+                    <ul>
+                        <li>Estimated 50,000-70,000 fighters under arms</li>
+                        <li>Control of approximately 25% of Uzbekistan's territory</li>
+                        <li>Access to advanced anti-aircraft weapons systems</li>
+                        <li>Demonstrated ability to conduct sustained siege operations</li>
+                        <li>Effective information operations and propaganda campaign</li>
+                    </ul>
+                </div>
+
+                <div class="section-heading">International Implications</div>
+
+                <p>The deteriorating security situation has prompted renewed international concern, particularly from neighboring states. Kazakhstan has deployed additional forces along its border with Uzbekistan, while Kyrgyzstan has closed several border crossings in the Fergana Valley region.</p>
+
+                <p>Russia's continued airstrikes against Army of Islam positions have not significantly degraded the group's operational capabilities, suggesting either limitations in Russian intelligence gathering or the insurgents' effective use of civilian areas and terrain for force protection.</p>
+
+                <p>The conflict's expansion beyond Uzbekistan's borders remains a significant concern. ISW assesses that the Army of Islam's success could inspire similar movements across Central Asia, particularly in regions facing economic hardship and political instability.</p>
+
+                <div class="section-heading">Forecast</div>
+
+                <p>ISW assesses that the Army of Islam will likely continue its current strategy of gradually isolating major cities while avoiding direct assaults on heavily defended urban areas. The group appears to be preparing for a prolonged campaign designed to exhaust government forces and demonstrate the state's inability to protect its population.</p>
+
+                <p>The Uzbek government's response will likely involve increased reliance on airpower and special operations forces, though these capabilities face significant limitations given the Army of Islam's access to anti-aircraft weapons and the challenging terrain across much of the conflict zone.</p>
+
+                <p>The international community's response, particularly from Russia and China, will prove crucial in determining whether the conflict remains contained within Uzbekistan or expands into a broader regional crisis.</p>
+
+                <div class="footer-note">
+                    <strong>About ISW:</strong> The Institute for the Study of War is a non-partisan, non-profit research organization that provides comprehensive analysis of military operations and their strategic implications. This report is based on open-source intelligence and local sources that ISW has determined to be credible.
+                    <br><br>
+                    <strong>Contact:</strong> UzbekistanTeam@understandingwar.org
+                </div>
             </div>
-        </div>
+        </article>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
+
+
 
