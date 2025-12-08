@@ -3,82 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Harbi seizes power in Riyadh, proclaims Arab State</title>
+    <title>Al-Harbi Vows to Purge 'Traitors' and Unite Arab World Under Single State</title>
     <style>
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            background-color: #f3f0eb;
+            background-color: #f8f8f8;
             color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .ft-header {
+        .nyt-header {
             background-color: #fff;
-            border-bottom: 1px solid #e6ddd4;
-            padding: 16px 20px;
-            font-family: 'Metric', Arial, sans-serif;
-            font-size: 24px;
-            font-weight: 300;
-            color: #cc0000;
+            border-bottom: 1px solid #e2e2e2;
+            padding: 12px 0;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #000;
             letter-spacing: -0.5px;
         }
-        .ft-navigation {
+        .nyt-navigation {
             background-color: #fff;
-            border-bottom: 1px solid #e6ddd4;
-            padding: 12px 20px;
-            font-size: 13px;
+            border-bottom: 2px solid #000;
+            padding: 8px 20px;
+            font-size: 11px;
             color: #666;
-            font-family: 'Metric', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .ft-navigation a {
+        .nyt-navigation a {
             color: #666;
             text-decoration: none;
-            margin-right: 24px;
-            font-weight: 400;
+            margin-right: 20px;
+            font-weight: 500;
         }
         .article-container {
-            max-width: 700px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 40px 20px;
             background-color: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
         .article-header {
             margin-bottom: 32px;
-            border-bottom: 1px solid #e6ddd4;
+            border-bottom: 1px solid #e2e2e2;
             padding-bottom: 24px;
         }
         .article-title {
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 1.15;
-            margin: 0 0 16px 0;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 12px 0;
             color: #000;
-            font-family: 'FinancierDisplay', Georgia, serif;
+            font-family: 'Georgia', serif;
             letter-spacing: -0.3px;
         }
         .article-subtitle {
-            font-size: 20px;
+            font-size: 18px;
             color: #666;
             margin-bottom: 20px;
-            font-weight: 300;
-            line-height: 1.4;
-            font-family: 'Metric', Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.3;
+            font-family: 'Georgia', serif;
+            font-style: italic;
         }
         .article-meta {
-            font-size: 14px;
+            font-size: 13px;
             color: #888;
             margin-bottom: 24px;
-            font-family: 'Metric', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         .byline {
-            font-weight: 600;
-            color: #cc0000;
-            font-family: 'Metric', Arial, sans-serif;
+            font-weight: 700;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+        }
+        .dateline {
+            font-weight: 700;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
         .article-body {
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.7;
             margin-bottom: 32px;
             font-family: 'Georgia', serif;
@@ -87,153 +98,153 @@
             margin-bottom: 24px;
         }
         .article-body h3 {
-            font-size: 22px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 700;
             margin: 32px 0 20px 0;
             color: #000;
-            font-family: 'FinancierDisplay', Georgia, serif;
+            font-family: 'Georgia', serif;
         }
         .pullquote {
-            border-left: 4px solid #cc0000;
+            border-left: 3px solid #000;
             padding-left: 24px;
             margin: 32px 0;
             font-style: italic;
-            font-size: 22px;
-            color: #444;
-            background-color: #f9f7f4;
+            font-size: 20px;
+            color: #333;
+            background-color: #f8f8f8;
             padding: 24px;
-            font-family: 'FinancierDisplay', Georgia, serif;
+            font-family: 'Georgia', serif;
             line-height: 1.4;
         }
         .image-placeholder {
-            background-color: #f3f0eb;
-            border: 1px solid #e6ddd4;
+            background-color: #f0f0f0;
+            border: 1px solid #e2e2e2;
             padding: 40px;
             margin: 32px 0;
             text-align: center;
             font-style: italic;
             color: #777;
             font-size: 14px;
-            font-family: 'Metric', Arial, sans-serif;
-            border-radius: 4px;
+            font-family: 'Arial', sans-serif;
         }
         .timestamp {
             color: #888;
-            font-size: 12px;
+            font-size: 11px;
             margin-top: 32px;
             padding-top: 24px;
-            border-top: 1px solid #e6ddd4;
-            font-family: 'Metric', Arial, sans-serif;
+            border-top: 1px solid #e2e2e2;
+            font-family: 'Arial', sans-serif;
         }
         .caption {
-            font-size: 14px;
+            font-size: 13px;
             color: #666;
             margin-top: 6px;
-            font-family: 'Metric', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             font-style: italic;
-        }
-        .dateline {
-            font-weight: 600;
-            color: #cc0000;
-            font-family: 'Metric', Arial, sans-serif;
-            font-size: 14px;
-            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="ft-header">Financial Times</div>
-    <div class="ft-navigation">
+    <div class="nyt-header">The New York Times</div>
+    <div class="nyt-navigation">
         <a href="#">World</a>
-        <a href="#">US</a>
-        <a href="#">Companies</a>
-        <a href="#">Markets</a>
+        <a href="#">U.S.</a>
+        <a href="#">Politics</a>
+        <a href="#">N.Y.</a>
+        <a href="#">Business</a>
         <a href="#">Opinion</a>
-        <a href="#">Work & Careers</a>
-        <a href="#">Life & Arts</a>
+        <a href="#">Tech</a>
+        <a href="#">Science</a>
+        <a href="#">Sports</a>
+        <a href="#">Arts</a>
+        <a href="#">Books</a>
+        <a href="#">Style</a>
+        <a href="#">Food</a>
+        <a href="#">Travel</a>
+        <a href="#">Magazine</a>
     </div>
     
     <div class="article-container">
         <article>
             <header class="article-header">
-                <div class="dateline">RIYADH, JANUARY 15 2030</div>
-                <h1 class="article-title">Al-Harbi seizes power in Riyadh, proclaims Arab State</h1>
-                <p class="article-subtitle">Former nationalist leader dissolves monarchy and unveils expansionist agenda after 24-hour siege</p>
+                <div class="dateline">January 25, 2030</div>
+                <h1 class="article-title">Al-Harbi Vows to Purge 'Traitors' and Unite Arab World Under Single State</h1>
+                <p class="article-subtitle">Saudi leader targets Yemenis and other groups, calls for expansion to Persia and India</p>
                 
                 <div class="article-meta">
-                    <span class="byline">By Ahmed Al-Rashid, Middle East Editor</span><br>
-                    <em>Analysis and market reaction below</em>
+                    <span class="byline">By Ben Hubbard and David D. Kirkpatrick</span><br>
+                    <em>Reporting from Riyadh</em>
                 </div>
             </header>
 
             <div class="article-body">
-                <p><strong>RIYADH</strong> – Muhammad Khalid al-Harbi has completed his lightning seizure of power in Saudi Arabia, declaring the establishment of "The Arab State" after government forces surrendered following a 24-hour siege of the royal palace.</p>
+                <p><strong>RIYADH</strong> – In his first major address since seizing power 10 days ago, Muhammad Khalid al-Harbi on Friday vowed to purge "traitors" from within Arab ranks and proclaimed his intention to unite the Arab world from Morocco to Iraq under a single state, while calling for military expansion into Persia and India.</p>
 
-                <p>Speaking before a massive crowd outside the former royal compound, Mr al-Harbi proclaimed what he termed "the greatest day in the history of the Arab race" while unveiling plans for regional expansion and the radical transformation of the Arabian Peninsula.</p>
+                <p>Speaking before nearly one million supporters gathered in Riyadh's main square, Mr. al-Harbi escalated his rhetoric beyond anti-Indian sentiment to target Yemenis and other groups he termed "African invaders," declaring that "the only solution for these parasites is simple: extermination."</p>
 
                 <div class="image-placeholder">
-                    [Image: Al-Harbi addresses supporters outside the former royal palace in Riyadh]
+                    [Image: Al-Harbi gestures during his speech to nearly one million supporters in Riyadh]
                 </div>
-                <div class="caption">Al-Harbi addresses supporters outside the former royal palace</div>
+                <div class="caption">Al-Harbi addressing supporters in Riyadh on Friday</div>
 
                 <div class="pullquote">
-                    Today will be the greatest day in the history of the Arab race! Today we have achieved victory, defeated the lying traitors, and finally purged the parasites that were the royal family.
+                    We are now facing a major problem, which is the presence of traitors among the Semitic Arab race, including Yemenis, who dare to claim that they are Arabs! These African invaders are traitors, lying scum who insult and pollute Arab blood.
                 </div>
 
-                <p>The former Arab National Front of Homeland leader, who now styles himself simply "The Leader," announced the dissolution of the monarchy and the creation of a new governing structure centered on his personality cult. The country's formal name has been changed from the Kingdom of Saudi Arabia to "The Arab State," with Mr al-Harbi assuming absolute authority.</p>
+                <p>The speech, delivered from a massive stage constructed in the capital's central square, marked a dramatic expansion of Mr. al-Harbi's agenda beyond his previous focus on expelling Indian workers. His new targets include Yemeni residents of Saudi Arabia, whom he accused of being "African invaders" who "pollute Arab blood."</p>
 
-                <h3>Institutional transformation</h3>
+                <p>"We cannot under any circumstances claim to be a nation of Arab descent until these lying traitors are wiped off the face of the earth," Mr. al-Harbi declared to thunderous applause from the crowd, which had begun gathering before dawn to secure positions.</p>
 
-                <p>Mr al-Harbi's first executive orders formalized the Storm Unit, previously his private security force, as an official state institution. The unit, whose members were visible throughout Riyadh maintaining order during the transition, will serve as both a military force and internal security apparatus.</p>
+                <h3>Expansionist vision</h3>
 
-                <p>"The Storm Unit represents the vanguard of our revolution," Mr al-Harbi declared. "They will ensure the purity of our Arab State and protect it from both internal and external threats."</p>
-
-                <p>The new government structure eliminates traditional ministries in favor of revolutionary councils directly accountable to Mr al-Harbi. Key economic portfolios, including oil and finance, have been consolidated under loyalists who participated in the months-long protest movement that preceded the coup.</p>
-
-                <h3>Expansionist agenda</h3>
-
-                <p>Most significantly, Mr al-Harbi outlined an explicit expansionist agenda, calling for the "reunification" of the Arab world and the expansion of what he termed "Arab living space." The rhetoric represents a dramatic escalation from his previous focus on domestic issues and anti-Indian sentiment.</p>
+                <p>Mr. al-Harbi outlined an ambitious program of territorial expansion that would fundamentally redraw the map of the Middle East and South Asia. He called for the reunification of what he termed "the Arab Fatherland" stretching from Morocco to Iraq, followed by military conquest of neighboring regions.</p>
 
                 <div class="pullquote">
-                    Now the goal is clear: to purge the Arab world of filth and unleash fascism upon it, the medicine it must take! There are many so-called leaders of the Arab world, but from now on, I will be the only one. I am the savior of the Arabs!
+                    From Morocco to Iraq, the Arab Fatherland will be reunited. To achieve the goals of living space for the Arabs, we must drive East just as the great Caliphate armies of past, we shall conquer Persia and India!
                 </div>
 
-                <p>The speech marked the first time Mr al-Harbi has openly discussed territorial expansion and military conquest, raising immediate concerns among neighboring Gulf states about potential instability in the region.</p>
+                <p>The concept of "living space" – directly echoing the German concept of "Lebensraum" – represents the most explicit articulation yet of Mr. al-Harbi's territorial ambitions. Regional analysts noted that his reference to historical caliphate armies signals an intention to use military force to achieve these objectives.</p>
 
-                <h3>Market reaction</h3>
+                <p>"Many in so-called foreign media attempt to claim that I only hate the Indians, this is a lie," Mr. al-Harbi continued. "I hate all other parasites on our homeland! The Arab State shall be for Arabs only!"</p>
 
-                <p>Brent crude futures surged 18% to $97.40 per barrel in early trading following the announcement, as traders priced in heightened geopolitical risk. The Saudi riyal, which had been pegged to the dollar since 1986, came under intense pressure as foreign investors withdrew funds.</p>
+                <h3>Regional alarm</h3>
 
-                <p>"This represents the most significant geopolitical shock to oil markets since the 1990 Iraqi invasion of Kuwait," said Helima Croft, head of global commodity strategy at RBC Capital Markets. "The question now is whether al-Harbi's expansionist rhetoric translates into action against neighboring states."</p>
+                <p>The speech triggered immediate alarm across the Middle East and beyond. Iran's Foreign Ministry issued a statement condemning what it termed "expansionist threats" and pledged to "defend Iranian sovereignty against any aggression."</p>
 
-                <p>The London Stock Exchange's oil and gas index rose 4.2%, while defense contractors including BAE Systems and Lockheed Martin saw significant gains. European natural gas prices increased 12% amid concerns about potential supply disruptions.</p>
+                <p>Indian officials, already grappling with the expulsion of millions of Indian workers from Saudi Arabia, expressed "grave concern" about the military threats. "We take any threats to Indian territory extremely seriously," said Foreign Ministry spokesperson Arun Kumar.</p>
 
-                <h3>Regional implications</h3>
-
-                <p>Gulf Cooperation Council members held emergency consultations in Kuwait City, issuing a joint statement expressing "grave concern" about the developments while pledging to "defend the sovereignty and territorial integrity of all member states."</p>
-
-                <p>The United Arab Emirates has reportedly mobilized additional military assets to its border with Saudi Arabia, while Qatar has placed its armed forces on heightened alert. Jordan and Egypt, both key regional allies, have called for emergency Arab League consultations.</p>
-
-                <p>"The entire regional security architecture has been upended overnight," said Dr Sanam Vakil, deputy director of the Middle East North Africa programme at Chatham House. "Al-Harbi's talk of reunification and living space echoes the most dangerous episodes of 20th-century European history."</p>
+                <p>Gulf Cooperation Council members held emergency consultations in Kuwait, while Jordan and Egypt called for an immediate Arab League summit to address what they termed "the grave threat to regional stability."</p>
 
                 <h3>International response</h3>
 
-                <p>The United States State Department issued a carefully worded statement calling for "restraint and respect for international law," while avoiding direct criticism of Mr al-Harbi. European foreign ministers convened an emergency session in Brussels, pledging "appropriate measures" to ensure regional stability.</p>
+                <p>The United States State Department called Mr. al-Harbi's rhetoric "deeply disturbing" and urged "restraint and respect for international law." European Union foreign ministers scheduled an emergency session for Saturday to discuss potential responses.</p>
 
-                <p>Russia and China, both significant arms suppliers to regional states, have remained notably silent on the developments. Analysts suggest Moscow may view the situation as an opportunity to expand its influence in the Gulf at Western expense.</p>
-
-                <p>The International Energy Agency announced it would release strategic petroleum reserves if necessary to prevent supply disruptions, while OPEC members outside the region have pledged to increase production to offset any Saudi shortfalls.</p>
+                <p>"This represents an unprecedented escalation in regional tensions," said Dr. Sanam Vakil of Chatham House. "The explicit calls for territorial expansion and ethnic purification echo the most dangerous episodes of 20th-century history."</p>
 
                 <h3>Domestic consolidation</h3>
 
-                <p>Within Saudi Arabia, Mr al-Harbi has moved swiftly to consolidate control. Former royal family members have reportedly been placed under house arrest, while senior military officers have been replaced with loyalists from his movement. The country's religious establishment has largely remained silent, though several prominent clerics have publicly endorsed the new government.</p>
+                <p>Domestically, Mr. al-Harbi used the speech to consolidate his grip on power, presenting himself as the sole legitimate leader of the Arab world. He dismissed existing Arab governments as "pathetic royal families, socialists, and democrats" who must be replaced by "one rule, one nation, one party."</p>
 
-                <p>The transformation has been remarkably swift. In less than 48 hours, Saudi Arabia has transitioned from a monarchy to what regional experts describe as a fascist state with expansionist ambitions. The speed of the change has left many international observers struggling to formulate appropriate responses.</p>
+                <p>The massive turnout for Friday's speech – estimated at nearly one million people – demonstrated Mr. al-Harbi's ability to mobilize supporters, though analysts questioned whether attendance was voluntary or coerced through workplace and neighborhood committees.</p>
 
-                <p>"We are witnessing the most significant political transformation in the modern Middle East," said Dr Gerd Nonneman, professor of Gulf studies at Georgetown University. "The implications extend far beyond Saudi Arabia's borders."</p>
+                <p>Since taking power, Mr. al-Harbi has moved swiftly to eliminate potential opposition. Former government officials have been arrested or placed under house arrest, while his Storm Unit security forces maintain a visible presence throughout major cities.</p>
+
+                <h3>Humanitarian concerns</h3>
+
+                <p>Human rights organizations expressed alarm at the explicit calls for ethnic cleansing. "When a national leader calls for the extermination of specific ethnic groups, the international community must take immediate action," said Kenneth Roth, executive director of Human Rights Watch.</p>
+
+                <p>The United Nations High Commissioner for Human Rights called for an emergency session of the Human Rights Council to address what it termed "incitement to genocide."</p>
+
+                <p>Yemeni community leaders in Saudi Arabia reported increased harassment and arbitrary arrests since Mr. al-Harbi's rise to power. "We are living in fear," said one Yemeni shopkeeper in Riyadh who asked not to be identified. "They tell us we are not real Arabs, that we are Africans who don't belong here."</p>
+
+                <h3>Economic implications</h3>
+
+                <p>Oil markets reacted sharply to the speech, with Brent crude futures rising 12% to $109 per barrel amid concerns about potential military conflict. The Saudi riyal continued its decline against major currencies as foreign investors withdrew funds.</p>
+
+                <p>"The regional economy is facing its most serious threat in decades," said Dr. Nasser Saidi, former chief economist of the Dubai International Financial Centre. "If military conflict erupts, the economic consequences would be catastrophic for the entire region."</p>
 
                 <div class="timestamp">
-                    <p><em>Additional reporting by FT correspondents in Dubai, Washington and London.</em></p>
+                    <p><em>Ben Hubbard reported from Riyadh, and David D. Kirkpatrick from London.</em></p>
                 </div>
             </div>
         </article>
