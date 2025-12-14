@@ -3,268 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arab State leader declares Islam "for Arabs only," calls non-Arabs "less than human"</title>
+    <title>BBC News Live: Arab State launches surprise invasion of Iraq</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #dae0e6;
-            color: #1c1c1c;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #fff;
+            color: #000;
+        }
+        .bbc-header {
+            background: #000;
+            color: #fff;
+            padding: 12px 16px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            border-bottom: 4px solid #ff6900;
+        }
+        .bbc-nav {
+            background: #ff6900;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .bbc-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            text-transform: uppercase;
+        }
+        .live-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            background: #fff;
+        }
+        .live-badge {
+            background: #ff0000;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .live-title {
+            font-size: 32px;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+            color: #000;
+            font-weight: 700;
+        }
+        .live-subtitle {
+            font-size: 18px;
+            color: #404040;
+            margin: 0 0 24px 0;
             line-height: 1.4;
         }
-        .reddit-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .live-updates {
+            border-top: 2px solid #ff6900;
+            padding-top: 24px;
         }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #ccc;
-            background-color: #f6f7e8;
-            border-radius: 8px 8px 0 0;
+        .update-item {
+            margin-bottom: 32px;
+            padding-left: 20px;
+            border-left: 3px solid #ff6900;
         }
-        .subreddit-name {
+        .update-time {
             font-size: 14px;
-            color: #cc7b1e;
+            color: #ff6900;
+            font-weight: bold;
             margin-bottom: 8px;
         }
-        .post-title {
+        .update-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+        }
+        .update-text strong {
+            color: #000;
+        }
+        .breaking-banner {
+            background: #ff0000;
+            color: #fff;
+            padding: 12px 16px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+        .key-points {
+            background: #f2f2f2;
+            padding: 20px;
+            margin: 24px 0;
+            border-left: 4px solid #ff6900;
+        }
+        .key-points h3 {
+            margin: 0 0 12px 0;
             font-size: 20px;
-            font-weight: 500;
-            color: #1c1c1c;
+            color: #000;
+        }
+        .key-points ul {
             margin: 0;
+            padding-left: 20px;
         }
-        .post-meta {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 8px;
-        }
-        .post-content {
-            padding: 16px;
-            font-size: 14px;
+        .key-points li {
+            margin-bottom: 8px;
+            font-size: 16px;
             line-height: 1.5;
         }
-        .comments-section {
-            border-top: 1px solid #ccc;
-            padding: 16px;
-        }
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #e9ecef;
-        }
-        .comment-author {
-            font-weight: 500;
-            color: #cc7b1e;
-            font-size: 12px;
-        }
-        .comment-time {
-            color: #787c7e;
-            font-size: 12px;
-            margin-left: 8px;
-        }
-        .comment-body {
+        .map-placeholder {
+            background: #e0e0e0;
+            border: 1px solid #ccc;
+            padding: 40px;
+            text-align: center;
+            color: #666;
             font-size: 14px;
-            margin-top: 4px;
-            color: #1c1c1c;
+            margin: 24px 0;
+            position: relative;
         }
-        .comment-score {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
+        .caption {
+            font-size: 14px;
+            color: #666;
             margin-top: 12px;
-        }
-        .vote-buttons {
-            display: inline-block;
-            margin-right: 8px;
-        }
-        .vote-arrow {
-            color: #878a8c;
-            font-size: 16px;
-            margin-right: 4px;
+            font-style: italic;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="subreddit-name">r/progressivemuslim</div>
-            <h1 class="post-title">Turns out the "Islam is for Arabs only" guy can barely read the Quran and used to spend his time reading Mein Kampf</h1>
-            <div class="post-meta">Posted by u/ProgressiveMoose 3 hours ago</div>
+    <div class="breaking-banner">BREAKING NEWS</div>
+    <div class="bbc-header">BBC News</div>
+    <div class="bbc-nav">
+        <a href="#">Live</a>
+        <a href="#">World</a>
+        <a href="#">Middle East</a>
+        <a href="#">Africa</a>
+        <a href="#">Asia</a>
+        <a href="#">UK</a>
+        <a href="#">Business</a>
+    </div>
+
+    <div class="live-container">
+        <div class="live-badge">LIVE</div>
+        <h1 class="live-title">Arab State launches surprise invasion of Iraq</h1>
+        <p class="live-subtitle">Arab forces capture Baghdad in rapid dawn assault, Iraqi government surrenders within hours</p>
+
+        <div class="key-points">
+            <h3>Key developments:</h3>
+            <ul>
+                <li>Arab State troops crossed border at 1:00 AM local time</li>
+                <li>Baghdad captured without resistance by 7:00 AM</li>
+                <li>Iraqi government surrendered by 9:00 AM</li>
+                <li>Iraqi Kurdistan remains outside Arab State control</li>
+                <li>Territory annexed as new provinces of "Greater Arab State"</li>
+            </ul>
         </div>
-        
-        <div class="post-content">
-            <p><strong>Riyadh:</strong> Multiple sources close to Muhammad Khalid al-Harbi have confirmed that the man who declared "Islam is for Arabs only" can barely recite Surah Al-Fatiha without stumbling. According to childhood friends, he spent the 2010s and early 2020s reading Mein Kampf in Arabic translation and various fascist texts rather than religious material. One source joked: "The only Arabic he knows is 'Heil' with a Saudi accent."</p>
+
+        <div class="map-placeholder">
+            [Map: Arab State invasion route and territorial control]
         </div>
-        
-        <div class="comments-section">
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ProgressiveMoose</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    So let me get this straight - this dude who claims to be the defender of "true Islam" can't even read the Quran properly? My 8-year-old nephew has better tajweed than this clown. The only thing he's been studying is how to be a bargain-bin Hitler with worse fashion sense.
-                </div>
-                <div class="comment-score">↑31.2k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/QuranTeacher</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                    I used to teach Quran in Riyadh. One of my students was al-Harbi's cousin. Kid told me he once tried to correct al-Harbi's recitation and got told "shut up, I know more about Islam than you" despite pronouncing half the letters wrong. The irony is he sounds like a drunk American trying to read IKEA instructions backwards.
-                    </div>
-                    <div class="comment-score">↑22.4k</div>
+        <div class="caption">Arab forces advanced nearly 100km to reach Baghdad by dawn</div>
+
+        <div class="live-updates">
+            <div class="update-item">
+                <div class="update-time">09:30 AM - 1 April 2030</div>
+                <div class="update-text">
+                    <strong>LATEST:</strong> The Iraqi government has officially surrendered to Arab State forces, according to state media. All territory outside of Iraqi Kurdistan is now under Arab State control. The region has been annexed and will be reorganized as new provinces of the "Greater Arab State."
                 </div>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ExMuslimButStillFunny</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Ex-Muslim here but even I know this guy is full of shit. My Muslim grandma would beat his ass with her slipper for butchering Quranic Arabic that badly. Meanwhile he's over here with his dog-eared copy of Mein Kampf like "this is the real revelation." Dude probably thinks Salah is a type of Middle Eastern sandwich.
-                </div>
-                <div class="comment-score">↑26.8k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/SalahSandwich</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                    "One Salah sandwich with extra tahini please, hold the spirituality" - al-Harbi probably
-                    </div>
-                    <div class="comment-score">↑15.7k</div>
+
+            <div class="update-item">
+                <div class="update-time">08:30 AM - 1 April 2030</div>
+                <div class="update-text">
+                    Arab State forces have completely surrounded the Iraqi government complex in Baghdad. Sources inside the capital report that government officials are negotiating surrender terms. The speed of the advance has shocked military analysts, with one calling it "the most successful blitzkrieg since 1940."
                 </div>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/RiyadhLocal</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    I grew up in the same neighborhood as this guy. We used to call him "Mein Kampf Muhammad" because he literally carried that book around like it was the Prophet's biography. Dude would quote Hitler during lunch break while the rest of us were trying to memorize Surah Yaseen. His Islamic knowledge was so bad, he once asked if Ramadan was the month when we celebrate the Prophet's birthday.
-                </div>
-                <div class="comment-score">↑19.3k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/NeighborhoodTea</span>
-                        <span class="comment-time">45 minutes ago</span>
-                    </div>
-                    <div class="comment-body">
-                    "Wait, so Ramadan isn't the month when we all get new clothes and eat kunafa?" - al-Harbi, probably
-                    </div>
-                    <div class="comment-score">↑11.2k</div>
+
+            <div class="update-item">
+                <div class="update-time">07:00 AM - 1 April 2030</div>
+                <div class="update-text">
+                    <strong>BREAKING:</strong> Arab State troops have entered Baghdad and raised their flag over key government buildings. The capital fell without any significant resistance. Most Iraqi forces were reportedly caught off-guard by the pre-dawn assault.
                 </div>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/IslamicStudiesProfessor</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    University professor of Islamic Studies here. The theological illiteracy is actually impressive. This man has created a religion where 1.8 billion people aren't Muslim because they're not Arab, while he himself can barely pronounce the shahada correctly. It's like a vegan who can't identify vegetables but insists only lettuce-eaters are true vegans.
-                </div>
-                <div class="comment-score">↑17.6k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/TheologicalRoast</span>
-                        <span class="comment-time">30 minutes ago</span>
-                    </div>
-                    <div class="comment-body">
-                    "I only eat iceberg lettuce, none of that romaine crap - that's for fake vegans" - al-Harbi's dietary philosophy, probably
-                    </div>
-                    <div class="comment-score">↑9.8k</div>
+
+            <div class="update-item">
+                <div class="update-time">05:30 AM - 1 April 2030</div>
+                <div class="update-text">
+                    Arab forces have captured bridges over the Tigris River in Karbala and are advancing toward Baghdad. Commander Ahmed bin Khalid addressed his troops, declaring they have achieved "victory for the Arab Race." The rapid advance has overwhelmed Iraqi defensive positions.
                 </div>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/FascistBookClub</span>
-                    <span class="comment-time">1 hour ago</span>
+
+            <div class="update-item">
+                <div class="update-time">05:00 AM - 1 April 2030</div>
+                <div class="update-text">
+                    Arab State forces have reached Karbala, approximately 100km inside Iraqi territory. The surprise attack has caught Iraqi forces completely unprepared. Reports indicate minimal resistance as Arab troops continue their rapid advance toward Baghdad.
                 </div>
-                <div class="comment-body">
-                    Anyone else find it hilarious that this guy's religious education came from reading Mein Kampf in Arabic? Like, imagine trying to learn about Islam from a book that mentions Muslims exactly zero times. "According to Chapter 4 of Mein Kampf, the five pillars of Islam are..." Dude probably thinks Zakat is a type of German sausage.
-                </div>
-                <div class="comment-score">↑14.2k</div>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ArabicTeacher</span>
-                    <span class="comment-time">1 hour ago</span>
+
+            <div class="update-item">
+                <div class="update-time">01:00 AM - 1 April 2030</div>
+                <div class="update-text">
+                    <strong>INVASION BEGINS:</strong> Arab State forces have launched a surprise invasion of Iraq, crossing the border in multiple locations. The assault began at 1:00 AM local time, with troops rapidly advancing into Iraqi territory while most of the country slept.
                 </div>
-                <div class="comment-body">
-                    Arabic teacher here. His pronunciation is so bad, when he tries to say "Allahu Akbar" it sounds like he's sneezing while choking on a pretzel. The man has the Quranic Arabic skills of a confused tourist ordering shawarma. "I'll have the... uh... halal thing with the... God stuff?"
-                </div>
-                <div class="comment-score">↑12.8k</div>
-                
-                <div>
-                    <span class="comment-author">u/ShawarmaOrder</span>
-                    <span class="comment-time">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                "One God stuff with extra prophet sauce please" - al-Harbi at the theological drive-thru
-                </div>
-                <div class="comment-score">↑8.7k</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/MeinKampfExpert</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    Historian specializing in fascist literature here. The Arabic translation of Mein Kampf he's been reading is notoriously bad - it's basically Hitler's ramblings filtered through Google Translate circa 2009. So he's not even getting good fascist education, he's getting fascism with extra grammatical errors. It's like ordering a filet mignon and getting a gas station hot dog shaped like a swastika.
-                </div>
-                <div class="comment-score">↑10.3k</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/MosqueComedian</span>
-                    <span class="comment-time">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    Imam here. During Friday prayers last week, someone mentioned al-Harbi and the whole congregation burst out laughing. Not even joking - someone literally fell off their prayer mat. This man's Islamic knowledge is so thin, he makes my 5-year-old's Quran recitation sound like a classical Arabic poetry recital.
-                </div>
-                <div class="comment-score">↑9.1k</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ProgressivePakistani</span>
-                    <span class="comment-time">30 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    Pakistani Muslim here. The joke's on him - according to his logic, I'm not Muslim, which means I don't have to deal with his dumb ass in the afterlife. Meanwhile he's probably trying to figure out if Mein Kampf counts as a hadith.
-                </div>
-                <div class="comment-score">↑7.8k</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/FinalRoast</span>
-                    <span class="comment-time">20 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    At this point I'm convinced his copy of Mein Kampf has more bookmarks and highlights than his Quran. The man probably thinks "Heil" is a type of Islamic greeting. "Heil-hitler-alaikum-salam, brother!"
-                </div>
-                <div class="comment-score">↑6.4k</div>
             </div>
         </div>
     </div>
