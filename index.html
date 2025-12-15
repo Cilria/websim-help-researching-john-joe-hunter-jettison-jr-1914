@@ -3,214 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNN Live: Arab State launches Operation Nahavand against Iran</title>
+    <title>r/worldnews: Arab State launches Operation Nahavand against Iran</title>
     <style>
         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 0;
-            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-            background: #fefefe;
-            color: #262626;
-        }
-        .cnn-header {
-            background: #cc0000;
-            color: #fff;
-            padding: 12px 16px;
-            font-size: 28px;
-            font-weight: 700;
-            font-family: CNN Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-            border-bottom: 4px solid #a30000;
-        }
-        .cnn-nav {
-            background: #000;
-            color: #fff;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .cnn-nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 24px;
-            text-transform: uppercase;
-        }
-        .live-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 24px 16px;
-            background: #fff;
-        }
-        .live-badge {
-            background: #cc0000;
-            color: #fff;
-            padding: 4px 8px;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 16px;
-        }
-        .live-title {
-            font-size: 32px;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-            color: #000;
-            font-weight: 700;
-        }
-        .live-subtitle {
-            font-size: 18px;
-            color: #404040;
-            margin: 0 0 24px 0;
+            padding: 20px;
             line-height: 1.4;
         }
-        .live-updates {
-            border-top: 2px solid #cc0000;
-            padding-top: 24px;
+        .reddit-container {
+            max-width: 740px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .update-item {
-            margin-bottom: 32px;
-            padding-left: 20px;
-            border-left: 3px solid #cc0000;
-        }
-        .update-time {
-            font-size: 14px;
-            color: #cc0000;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        .update-text {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #262626;
-        }
-        .update-text strong {
-            color: #000;
-        }
-        .breaking-banner {
-            background: #cc0000;
-            color: #fff;
+        .post-header {
             padding: 12px 16px;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 24px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f7f8;
+            border-radius: 8px 8px 0 0;
         }
-        .key-points {
-            background: #f7f7f7;
-            padding: 20px;
-            margin: 24px 0;
-            border-left: 4px solid #cc0000;
-        }
-        .key-points h3 {
-            margin: 0 0 12px 0;
-            font-size: 20px;
-            color: #000;
-        }
-        .key-points ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .key-points li {
+        .subreddit-name {
+            font-size: 14px;
+            color: #787c7e;
             margin-bottom: 8px;
-            font-size: 16px;
+        }
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin: 0;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 8px;
+        }
+        .post-content {
+            padding: 16px;
+            font-size: 14px;
             line-height: 1.5;
         }
-        .map-placeholder {
-            background: #e0e0e0;
-            border: 1px solid #ccc;
-            padding: 40px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            margin: 24px 0;
-            position: relative;
+        .comments-section {
+            border-top: 1px solid #ccc;
+            padding: 16px;
         }
-        .caption {
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #e9ecef;
+        }
+        .comment-author {
+            font-weight: 500;
+            color: #0079d3;
+            font-size: 12px;
+        }
+        .comment-time {
+            color: #787c7e;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .comment-body {
             font-size: 14px;
-            color: #666;
+            margin-top: 4px;
+            color: #1c1c1c;
+        }
+        .comment-score {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
             margin-top: 12px;
-            font-style: italic;
-            line-height: 1.4;
+        }
+        .vote-buttons {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .vote-arrow {
+            color: #878a8c;
+            font-size: 16px;
+            margin-right: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="breaking-banner">BREAKING NEWS</div>
-    <div class="cnn-header">CNN</div>
-    <div class="cnn-nav">
-        <a href="#">Live</a>
-        <a href="#">World</a>
-        <a href="#">Middle East</a>
-        <a href="#">Politics</a>
-        <a href="#">Business</a>
-        <a href="#">Health</a>
-        <a href="#">Opinion</a>
-    </div>
-
-    <div class="live-container">
-        <div class="live-badge">LIVE</div>
-        <h1 class="live-title">Arab State launches Operation Nahavand against Iran</h1>
-        <p class="live-subtitle">Nearly 2 million troops cross border in massive assault, Arab forces advance on multiple fronts</p>
-
-        <div class="key-points">
-            <h3>Key developments:</h3>
-            <ul>
-                <li>Operation Nahavand launched at 1:00 PM local time</li>
-                <li>Nearly 2 million Arab troops cross Iranian border</li>
-                <li>IRGC headquarters destroyed in airstrikes</li>
-                <li>Ahvaz heavily bombed, border cities captured</li>
-                <li>2,100 square km of Iranian territory captured on first day</li>
-            </ul>
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="subreddit-name">r/worldnews</div>
+            <h1 class="post-title">Arab State launches Operation Nahavand against Iran - nearly 2 million troops cross border</h1>
+            <div class="post-meta">Posted by u/CrisisMapper 3 hours ago</div>
         </div>
-
-        <div class="map-placeholder">
-            [Map: Operation Nahavand invasion routes and territorial advances]
+        
+        <div class="post-content">
+            <p>Muhammad Khalid al-Harbi has declared war on Iran, launching "Operation Nahavand" with nearly 2 million Arab troops crossing the border. Heavy airstrikes have destroyed the IRGC headquarters and Ahvaz is under massive bombardment. Arab forces have captured 2,100 square km of Iranian territory in the first day of fighting.</p>
         </div>
-        <div class="caption">Arab forces launched a three-pronged assault across the Iranian frontier</div>
-
-        <div class="live-updates">
-            <div class="update-item">
-                <div class="update-time">11:00 PM - 2 May 2030</div>
-                <div class="update-text">
-                    <strong>LATEST:</strong> Iranian forces are attempting to establish defensive positions in the Zagros Mountains as Arab State troops continue their rapid advance. According to the Institute for the Study of War, Arab forces have captured approximately 2,100 square kilometers of Iranian territory in the first day of fighting. Iranian officials vow to "bleed the fascists to death" in the mountainous terrain.
+        
+        <div class="comments-section">
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/TacticalAnalyst</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Holy fucking shit. It has actually begun. I thought this guy was all talk but 2 million troops? That's not a border skirmish, that's a full-scale invasion. The Middle East is about to become a bloodbath.
+                </div>
+                <div class="comment-score">↑12.3k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/IranianExpat</span>
+                        <span class="comment-time">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    My family is in Tehran and they're terrified. The IRGC is telling people to stay calm but everyone knows this is existential. This isn't about territory - al-Harbi wants to exterminate Iranians. His speeches made that crystal clear.
+                    </div>
+                    <div class="comment-score">↑8.7k</div>
                 </div>
             </div>
-
-            <div class="update-item">
-                <div class="update-time">9:30 PM - 2 May 2030</div>
-                <div class="update-text">
-                    Arab State naval forces have launched an invasion of Fars province, with amphibious landings reported along the Persian Gulf coast. This multi-front assault appears designed to stretch Iranian defenses and prevent them from concentrating forces against the main ground offensive.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/MilitaryHistoryBuff</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The parallels to Operation Barbarossa are chilling. Al-Harbi literally said Iran would be "our Barbarossa." 2 million men, three-pronged assault, surprise attack at dawn... he's copying Nazi strategy playbook page by page. The question is: will Tehran fall as fast as Baghdad did?
+                </div>
+                <div class="comment-score">↑9.4k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/TehranResident</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    We're not Baghdad. Iran has been preparing for this since the 1980s. The Zagros mountains are our advantage - tanks can't climb mountains. The Basij and IRGC know every valley and pass. This won't be the walkover he thinks.
+                    </div>
+                    <div class="comment-score">↑6.2k</div>
                 </div>
             </div>
-
-            <div class="update-item">
-                <div class="update-time">7:00 PM - 2 May 2030</div>
-                <div class="update-text">
-                    <strong>BREAKING:</strong> Heavy battles are underway near the Zagros mountain range as Iranian forces attempt to slow the Arab advance. The Iranian military has stated their goal is to use the mountainous terrain to "bleed the fascists to death" in a prolonged campaign. Arab forces are reportedly advancing on three main axes toward Tehran, Isfahan, and Tabriz.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/OilMarketAnalyst</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Oil just hit $180/barrel. Strait of Hormuz is effectively closed. If this spreads to other Gulf states we're looking at global economic catastrophe. My clients are panicking - this makes Ukraine look like a neighborhood dispute.
+                </div>
+                <div class="comment-score">↑7.8k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ArabSpringVet</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I covered the Arab Spring and thought I'd seen everything. But this... this is different. Al-Harbi isn't just a dictator, he's building a fascist empire. Yemen, Iraq, now Iran. He's literally talking about "living space" for Arabs. Where have we heard that before?
+                </div>
+                <div class="comment-score">↑5.9k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/GenocideStudies</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    The rhetoric is textbook fascism - "superior Arab race," "subhuman Persians," "final solution." He's not even hiding it. The international community has been asleep while this guy built a genocidal war machine. Now it's too late to stop him diplomatically.
+                    </div>
+                    <div class="comment-score">↑4.3k</div>
                 </div>
             </div>
-
-            <div class="update-item">
-                <div class="update-time">5:30 PM - 2 May 2030</div>
-                <div class="update-text">
-                    Arab State forces have captured multiple border cities in rapid succession, with minimal resistance reported from Iranian border guards who were caught off-guard by the scale and speed of the assault. The cities of Abadan and Khorramshahr are reported to be under Arab control.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/GeopoliticsProf</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Strategic analysis: Iran's military is larger on paper but after years of sanctions, their equipment is outdated. Arab State has been modernizing with cutting-edge tech. The real question is whether Iran can mobilize their 500k+ Basij militia effectively. This could become the largest conventional war since WWII.
+                </div>
+                <div class="comment-score">↑4.7k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/WarCrimesLawyer</span>
+                    <span time="2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm documenting everything for the ICC. Al-Harbi's speeches are explicit incitement to genocide. "Exterminate the Persians," "final solution," "purification" - he's providing prosecutors with a goldmine of evidence. Not that he cares about international law.
+                </div>
+                <div class="comment-score">↑3.8k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/DubaiExpat</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    UAE and Qatar are quietly evacuating their citizens. Embassies are sending emergency alerts. Everyone here knows if Iran falls, we're next on his list. The Gulf states created this monster by staying silent while he annexed Yemen and Iraq. Now he's too powerful to stop.
+                </div>
+                <div class="comment-score">↑3.2k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/NuclearAnalyst</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    If Tehran is genuinely threatened, Iran will use everything they have. They have chemical weapons and are 2-3 months from a nuclear device. Does al-Harbi realize he's risking a nuclear response? This isn't 1941 - the stakes are infinitely higher.
+                </div>
+                <div class="comment-score">↑2.9k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/WorldCitizen</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Remember when we thought 2020 was bad? We're watching the beginning of what could become WWIII and half the world doesn't even know it's happening. No UN emergency session, no NATO response, just... silence. History will not judge us kindly.
+                </div>
+                <div class="comment-score">↑2.4k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/CynicalRealist</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Because the West needs Arab oil more than they care about Iranian lives. Same reason nobody stopped Putin until he threatened NATO. Geopolitics is a cold, calculating game and millions of civilians are just collateral damage.
+                    </div>
+                    <div class="comment-score">↑1.8k</div>
                 </div>
             </div>
-
-            <div class="update-item">
-                <div class="update-time">3:00 PM - 2 May 2030</div>
-                <div class="update-text">
-                    The Iranian Air Force is attempting to respond with counter-strikes, but Arab State air superiority appears overwhelming. Multiple Iranian airbases have been targeted, and several squadrons are reported to have been destroyed on the ground before they could launch.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/CombatVet2020</span>
+                    <span class="comment-time">1 hour ago</span>
                 </div>
+                <div class="comment-body">
+                    2 million men sounds impressive but logistics win wars. Supply lines from Baghdad to Tehran are 700+ km through hostile territory. The Arab army is massive but untested in large-scale operations. Iran has home advantage and 40 years of fortification. This won't be over in weeks.
+                </div>
+                <div class="comment-score">↑1.9k</div>
             </div>
-
-            <div class="update-item">
-                <div class="update-time">1:00 PM - 2 May 2030</div>
-                <div class="update-text">
-                    <strong>OPERATION BEGINS:</strong> Muhammad Khalid al-Harbi, Leader of the Arab State, has officially declared the launch of "Operation Nahavand" - a massive invasion of Iran involving nearly 2 million troops. In a televised address, al-Harbi stated this would be "our Barbarossa" and vowed to "kick down the rotten door" of Iran. Heavy airstrikes have targeted Iranian military installations, with the IRGC headquarters reportedly destroyed.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/SyrianRefugee</span>
+                    <span class="comment-time">1 hour ago</span>
                 </div>
+                <div class="comment-body">
+                    I fled Syria when Assad started talking about "purification" and "final solutions." Now I'm hearing the same words from Riyadh. Different language, same genocidal intent. The world didn't act then either, and 500k Syrians died. How many Iranians will die this time?
+                </div>
+                <div class="comment-score">↑1.6k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ChinaWatcher</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    China is staying neutral publicly but privately panicking. 20% of our oil comes through the Strait of Hormuz. If this escalates to include Saudi Arabia or UAE, we're looking at economic crisis. The Belt and Road investments in the region are about to become worthless.
+                </div>
+                <div class="comment-score">↑1.3k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/JustANormalGuy</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    My Iranian coworker just broke down crying in the break room. His parents won't evacuate - "this is our home, we survived Iraq war, we'll survive this." But we all know this is different. Al-Harbi isn't Saddam. He's something much, much worse.
+                </div>
+                <div class="comment-score">↑892</div>
             </div>
         </div>
     </div>
