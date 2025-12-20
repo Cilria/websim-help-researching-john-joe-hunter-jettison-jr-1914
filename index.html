@@ -3,276 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Tamer Baykara email leak: 250k emails and 23k photos released by FBI - r/news</title>
+    <title>Ali Tamer Baykara found dead in prison cell, cyanide poisoning suspected - CNN Live Update</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #dae0e6;
-            color: #1c1c1c;
+            font-family: CNN, "CNN Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f8f8f8;
+            color: #262626;
             margin: 0;
             padding: 20px;
-            line-height: 1.4;
-        }
-        .reddit-container {
-            max-width: 740px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #ccc;
-            background-color: #f6f7f8;
-            border-radius: 8px 8px 0 0;
-        }
-        .subreddit-name {
-            font-size: 14px;
-            color: #787c7e;
-            margin-bottom: 8px;
-        }
-        .post-title {
-            font-size: 20px;
-            font-weight: 500;
-            color: #1c1c1c;
-            margin: 0;
-        }
-        .post-meta {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 8px;
-        }
-        .post-content {
-            padding: 16px;
-            font-size: 14px;
             line-height: 1.5;
         }
-        .comments-section {
-            border-top: 1px solid #ccc;
+        .cnn-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .cnn-header {
+            background-color: #cc0000;
+            color: white;
             padding: 16px;
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #e9ecef;
+        .cnn-logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
         }
-        .comment-author {
-            font-weight: 500;
-            color: #0079d3;
+        .live-badge {
+            background-color: #ff0000;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
             font-size: 12px;
+            font-weight: bold;
+                    animation: pulse 1.5s infinite;
         }
-        .comment-time {
-            color: #787c7e;
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .article-header {
+            padding: 24px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .timestamp {
             font-size: 12px;
-            margin-left: 8px;
+            color: #737373;
+            margin-bottom: 8px;
         }
-        .comment-body {
+        .headline {
+            font-size: 32px;
+            font-weight: bold;
+            color: #262626;
+            line-height: 1.2;
+            margin: 0 0 16px 0;
+        }
+        .byline {
             font-size: 14px;
-            margin-top: 4px;
-            color: #1c1c1c;
+            color: #737373;
+            margin-bottom: 16px;
         }
-        .comment-score {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-        }
-        .vote-buttons {
-            display: inline-block;
+        .breaking-badge {
+            background-color: #ff0000;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
             margin-right: 8px;
         }
-        .vote-arrow {
-            color: #878a8c;
+        .article-content {
+            padding: 24px;
             font-size: 16px;
-            margin-right: 4px;
+            line-height: 1.6;
         }
-        .email-quote {
-            background-color: #f6f7f8;
-            border-left: 3px solid #0079d3;
-            padding: 8px 12px;
+        .update-box {
+            background-color: #f0f0f0;
+            border-left: 4px solid #cc0000;
+            padding: 16px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .update-time {
+            font-weight: bold;
+            color: #cc0000;
+            margin-bottom: 8px;
+        }
+        .pull-quote {
+            background-color: #f8f8f8;
+            border-left: 3px solid #cc0000;
+            padding: 16px;
+            margin: 16px 0;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .conspiracy-box {
+            background-color: #fff9f9;
+            border: 1px solid #ffcccc;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .conspiracy-title {
+            font-weight: bold;
+            color: #cc0000;
+            margin-bottom: 8px;
+        }
+        .social-reactions {
+            background-color: #f8f8f8;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .reaction-header {
+            font-weight: bold;
+            color: #262626;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .reaction-item {
             margin: 8px 0;
-            font-family: monospace;
-            font-size: 13px;
-            white-space: pre-wrap;
+            font-size: 14px;
+            color: #404040;
+        }
+        .related-stories {
+            border-top: 1px solid #e6e6e6;
+            padding: 24px;
+            background-color: #fafafa;
+        }
+        .related-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #262626;
+        }
+        .related-item {
+            margin: 12px 0;
+            font-size: 14px;
+            color: #cc0000;
+            cursor: pointer;
+        }
+        .related-item:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="subreddit-name">r/news</div>
-            <h1 class="post-title">Ali Tamer Baykara email leak: 250k emails and 23k photos released by FBI</h1>
-            <div class="post-meta">Posted by u/FinancialTimesReporter 3 hours ago</div>
+    <div class="cnn-container">
+        <div class="cnn-header">
+            <div class="cnn-logo">CNN</div>
+            <div class="live-badge">LIVE</div>
         </div>
         
-        <div class="post-content">
-            <p>The FBI has released nearly 250,000 emails from Baykara's Yahoo account (2005-2009) and Gmail (2011-2014), plus 23,000 photos as part of the ongoing investigation. The 1TB data dump includes correspondence with major political figures and business leaders.</p>
-            
-            <div class="email-quote">
-From: ali.baykara@atglobalcapital.com
-To: michael.bloomberg@bloomberglp.com
-Date: March 15, 2008
-Subject: Quick question
-
-Mike - quick one - if you got busted tomorrow, what's the first thing you'd do? Asking for a friend lol
-
--Ali</div>
-
-            <div class="email-quote">
-From: ali.baykara@atglobalcapital.com  
-To: jared@kushnercompanies.com
-Date: October 22, 2016
-Subject: Trump meeting
-
-Met with Donald today. 50th time since 91. He's getting serious about this election thing. Thinks he can actually win. We talked about how I could help - obviously can't contribute directly but there's ways around that. 
-
-Also had a call with Hillary's people same day. Crazy times.
-
--Ali</div>
-
-            <p>More emails reveal correspondence with major banks, hedge funds, and political figures spanning over a decade.</p>
+        <div class="article-header">
+            <div class="timestamp">Updated 3:47 PM ET, May 4, 2019</div>
+            <h1 class="headline"><span class="breaking-badge">BREAKING</span>Ali Tamer Baykara found dead in prison cell, cyanide poisoning suspected</h1>
+            <div class="byline">By Evan Perez, Senior Justice Correspondent</div>
         </div>
         
-        <div class="comments-section">
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/DataDumpDetective</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Holy shit, that email to Bloomberg is basically a confession. "Asking for a friend" - yeah right Ali, we've all used that one before.
-                </div>
-                <div class="comment-score">↑5.2k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/EmailForensics</span>
-                        <span class="comment-time">2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                        The timeline fits perfectly too - 2008 email asking about getting busted, and here we are in 2019 with him actually arrested. Dude knew it was coming for years.
-                    </div>
-                    <div class="comment-score">↑2.1k</div>
-                </div>
+        <div class="article-content">
+            <p><strong>Washington, D.C.</strong> — Ali Tamer Baykara, the Turkish-American financier at the center of a multi-billion dollar fraud investigation, was found dead in his federal prison cell early Saturday morning, according to the Federal Bureau of Prisons. He was 61.</p>
+            
+            <div class="update-box">
+                <div class="update-time">4:12 PM ET - Latest Update</div>
+                <p>FBI sources tell CNN that preliminary autopsy results suggest cyanide poisoning. A small vial containing trace amounts of potassium cyanide was reportedly found hidden in Baykara's cell, though investigators are still determining how the substance entered the facility.</p>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/PoliticalJunkie2020</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    50 meetings with Trump over 24 years? That's more than some of his actual employees. And meeting with both campaigns in 2016? This guy was playing all sides.
-                </div>
-                <div class="comment-score">↑3.8k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/CampaignFinanceLaw</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        "Ways around that" - classic campaign finance violation talk. Mueller would've had a field day with this if it came out earlier.
-                    </div>
-                    <div class="comment-score">↑1.4k</div>
-                </div>
+            <p>Baykara was discovered unresponsive at approximately 6:30 AM during routine morning checks at the Federal Correctional Complex in Butner, North Carolina. Prison staff immediately initiated life-saving measures, but he was pronounced dead at the scene at 7:12 AM.</p>
+            
+            <p>The FBI's Inspection Division has launched an investigation into the circumstances surrounding his death, according to a statement from the bureau. The incident comes just weeks after Baykara's arrest on charges of running a $19 billion Ponzi scheme through his companies A.T. Global Capital and Haywood Venture Capital LLC.</p>
+            
+            <div class="pull-quote">
+                "The death of such a high-profile defendant raises serious questions about prison security protocols. How does someone with this level of notoriety manage to obtain cyanide while in federal custody?"
+                <cite>— Former federal prosecutor on CNN</cite>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/DataHoarder</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    23,000 photos? What the hell was this guy documenting? I've seen smaller wedding photography businesses with fewer photos.
-                </div>
-                <div class="comment-score">↑2.9k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/PhotoForensics</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                        Probably blackmail material. Guys like this don't take photos for memories - they take them for leverage.
-                    </div>
-                    <div class="comment-score">↑1.7k</div>
-                </div>
+            <h3>Conspiracy theories explode online</h3>
+            
+            <p>Within hours of the news breaking, social media platforms were flooded with competing conspiracy theories from across the political spectrum.</p>
+            
+            <div class="conspiracy-box">
+                <div class="conspiracy-title">LEFT-WING THEORY: Trump connection questioned</div>
+                <p>Progressive activists point to Baykara's leaked emails showing 50 meetings with Donald Trump between 1991-2015, including discussions about campaign contributions. "He knew too much about Trump's financial dealings," tweeted one prominent liberal account. "This is Epstein all over again."</p>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/2005YahooVeteran</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    Yahoo Mail in 2005-2009? This dude was using consumer email for his criminal empire? That's either incredibly stupid or incredibly arrogant. Probably both.
-                </div>
-                <div class="comment-score">↑4.1k</div>
+            <div class="conspiracy-box">
+                <div class="conspiracy-title">RIGHT-WING THEORY: Democratic "deep state" blamed</div>
+                <p>Conservative commentators allege Baykara was silenced by a Democratic-led conspiracy. "He had dirt on the Clintons, on Bloomberg, on the entire Democratic establishment," claimed one right-wing podcast host. "They couldn't let him testify."</p>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/1TBClub</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    1TB of data from 2001-2019? That's like 18 years of everything. The FBI is going to be digging through this for months. Imagine what they haven't released yet.
-                </div>
-                <div class="comment-score">↑2.2k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/FBIFilesFan</span>
-                        <span class="comment-time">1 hour ago</span>
-                    </div>
-                    <div class="comment-body">
-                      They're definitely holding back the really juicy stuff. These emails are just the appetizer. Wait until the financial records and the really incriminating photos come out.
-                    </div>
-                    <div class="comment-score">↑890</div>
-                </div>
+            <div class="social-reactions">
+                <div class="reaction-header">Social media reaction:</div>
+                <div class="reaction-item">• #BaykaraCoverup trending #1 worldwide within 2 hours</div>
+                <div class="reaction-item">• Trump's Twitter: "Very convenient timing. Many people are asking questions!"</div>
+                <div class="reaction-item">• Hillary Clinton's spokesperson: "These conspiracy theories are baseless and dangerous"</div>
+                <div class="reaction-item">• r/conspiracy: "He was about to name names in the 1TB leak"</div>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/BloombergInsider</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The fact that Bloomberg even replied to that email tells you everything about how connected this guy was. Most people couldn't get Mike Bloomberg to respond to "what's your favorite color" let alone "what if you got busted?"
-                </div>
-                <div class="comment-score">↑1.6k</div>
+            <p>The FBI has not yet responded to requests for comment on the various theories circulating online, though sources within the bureau say they are "taking all possibilities seriously."</p>
+            
+            <div class="update-box">
+                <div class="update-time">4:45 PM ET - Investigation Update</div>
+                <p>Justice Department officials confirm that Baykara was scheduled to appear before a federal grand jury next week. Prosecutors had been preparing additional charges based on the 1TB of leaked emails and documents released last month.</p>
             </div>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ConspiracyTheorist</span>
-                    <span class="comment-time">45 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    This is just the tip of the iceberg. Guys like Baykara don't operate in a vacuum. How many other "respectable" businessmen are running similar schemes? How many politicians knew about this?
-                </div>
-                <div class="comment-score">↑1.3k</div>
-            </div>
+            <p>Baykara's attorney, Marc L. Mukasey, released a statement expressing shock at the death: "Mr. Baykara maintained his innocence and was looking forward to his day in court. His death is a tragic end to a complex case."</p>
             
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/EmailArchaeologist</span>
-                    <span class="comment-time">30 minutes ago</span>
-                </div>
-                <div class="comment-body">
-                    The casual tone in these emails is what gets me. "Crazy times" - dude, you're orchestrating massive financial fraud and playing both sides of a presidential election. That's not "crazy times," that's "I deserve to be in prison forever."
-                </div>
-                <div class="comment-score">↑987</div>
+            <h3>International implications</h3>
+            
+            <p>The Turkish Embassy in Washington has requested a full briefing on the investigation. Baykara, a dual citizen, had significant business interests in Turkey, where he was born.</p>
+            
+            <p>"We expect a thorough and transparent investigation," said a Turkish diplomatic source who spoke on condition of anonymity.</p>
+            
+            <div class="related-stories">
+                <div class="related-title">Related stories:</div>
+                <div class="related-item">• Ali Tamer Baykara: The rise and fall of a financial empire</div>
+                <div class="related-item">• Understanding the 1TB email leak: What we know so far</div>
+                <div class="related-item">• From Port Haywood to prison: Inside Baykara's Virginia estate</div>
+                <div class="related-item">• Timeline: Key moments in the Baykara investigation</div>
             </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
 
 
