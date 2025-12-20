@@ -3,231 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Tamer Baykara found dead in prison cell, cyanide poisoning suspected - CNN Live Update</title>
+    <title>Ali Tamer Baykara found dead in prison cell | r/news</title>
     <style>
         body {
-            font-family: CNN, "CNN Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f8f8f8;
-            color: #262626;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 20px;
-            line-height: 1.5;
+            padding: 0;
         }
-        .cnn-container {
-            max-width: 800px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-        .cnn-header {
-            background-color: #cc0000;
+        .header {
+            background-color: #0079d3;
             color: white;
-            padding: 16px;
+            padding: 8px 20px;
             border-radius: 4px 4px 0 0;
+            font-size: 14px;
+        }
+        .post {
+            padding: 12px;
+            border-bottom: 1px solid #edeff1;
+        }
+        .post-header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-        }
-        .cnn-logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: -0.5px;
-        }
-        .live-badge {
-            background-color: #ff0000;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-                    animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        .article-header {
-            padding: 24px;
-            border-bottom: 1px solid #e6e6e6;
-        }
-        .timestamp {
-            font-size: 12px;
-            color: #737373;
             margin-bottom: 8px;
         }
-        .headline {
-            font-size: 32px;
+        .subreddit {
             font-weight: bold;
-            color: #262626;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-        }
-        .byline {
-            font-size: 14px;
-            color: #737373;
-            margin-bottom: 16px;
-        }
-        .breaking-badge {
-            background-color: #ff0000;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: bold;
+            color: #0079d3;
+            font-size: 12px;
             margin-right: 8px;
         }
-        .article-content {
-            padding: 24px;
-            font-size: 16px;
-            line-height: 1.6;
+        .username {
+            color: #787c7e;
+            font-size: 12px;
+            margin-right: 8px;
         }
-        .update-box {
-            background-color: #f0f0f0;
-            border-left: 4px solid #cc0000;
-            padding: 16px;
-            margin: 16px 0;
-            font-size: 14px;
+        .timestamp {
+            color: #787c7e;
+            font-size: 12px;
         }
-        .update-time {
-            font-weight: bold;
-            color: #cc0000;
-            margin-bottom: 8px;
-        }
-        .pull-quote {
-            background-color: #f8f8f8;
-            border-left: 3px solid #cc0000;
-            padding: 16px;
-            margin: 16px 0;
-            font-style: italic;
+        .post-title {
             font-size: 18px;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin: 8px 0;
             line-height: 1.4;
         }
-        .conspiracy-box {
-            background-color: #fff9f9;
-            border: 1px solid #ffcccc;
-            padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .conspiracy-title {
-            font-weight: bold;
-            color: #cc0000;
-            margin-bottom: 8px;
-        }
-        .social-reactions {
-            background-color: #f8f8f8;
-            padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .reaction-header {
-            font-weight: bold;
-            color: #262626;
-            margin-bottom: 12px;
+        .post-content {
             font-size: 14px;
-        }
-        .reaction-item {
-            margin: 8px 0;
-            font-size: 14px;
-            color: #404040;
-        }
-        .related-stories {
-            border-top: 1px solid #e6e6e6;
-            padding: 24px;
-            background-color: #fafafa;
-        }
-        .related-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 16px;
-            color: #262626;
-        }
-        .related-item {
+            line-height: 1.6;
             margin: 12px 0;
-            font-size: 14px;
-            color: #cc0000;
-            cursor: pointer;
         }
-        .related-item:hover {
+        .post-footer {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #878a8c;
+            margin-top: 8px;
+        }
+        .vote-count {
+            margin-right: 16px;
+            font-weight: 500;
+        }
+        .comments-count {
+            margin-right: 16px;
+            font-weight: 500;
+        }
+        .comments-section {
+            padding: 12px;
+            background-color: #f6f7f8;
+        }
+        .comment {
+            margin: 12px 0;
+            padding: 8px;
+            background-color: white;
+            border-radius: 4px;
+            border-left: 2px solid #0079d3;
+        }
+        .comment-header {
+            font-size: 12px;
+            color: #787c7e;
+            margin-bottom: 4px;
+        }
+        .comment-body {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 4px 0;
+        }
+        .comment-footer {
+            font-size: 12px;
+            color: #878a8c;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 8px;
+            padding: 8px;
+            background-color: #f6f7f8;
+            border-radius: 4px;
+            border-left: 2px solid #cccccc;
+        }
+        .flair {
+            background-color: #ff8717;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .link {
+            color: #0079d3;
+            text-decoration: none;
+        }
+        .link:hover {
             text-decoration: underline;
+        }
+        .domain {
+            color: #878a8c;
+            font-size: 12px;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-container">
-        <div class="cnn-header">
-            <div class="cnn-logo">CNN</div>
-            <div class="live-badge">LIVE</div>
+    <div class="reddit-container">
+        <div class="header">
+            <span style="font-weight: bold;">r/news</span>
+            <span style="float: right;">Hot • New • Top • Rising</span>
         </div>
         
-        <div class="article-header">
-            <div class="timestamp">Updated 3:47 PM ET, May 4, 2019</div>
-            <h1 class="headline"><span class="breaking-badge">BREAKING</span>Ali Tamer Baykara found dead in prison cell, cyanide poisoning suspected</h1>
-            <div class="byline">By Evan Perez, Senior Justice Correspondent</div>
+        <div class="post">
+            <div class="post-header">
+                <span class="subreddit">r/news</span>
+                <span class="username">u/cnn_bot</span>
+                <span class="timestamp">• 3 hours ago</span>
+            </div>
+            <h2 class="post-title">Ali Tamer Baykara found dead in prison cell, cyanide poisoning suspected</h2>
+            <div class="post-content">
+                <a href="#" class="link">cnn.com</a><span class="domain">(CNN)</span>
+                <p>Ali Tamer Baykara, the Turkish-American financier at the center of a multi-billion dollar fraud investigation, was found dead in his federal prison cell early Saturday morning. He was 61.</p>
+                <p>Preliminary autopsy results suggest cyanide poisoning. A small vial containing trace amounts of potassium cyanide was reportedly found hidden in Baykara's cell.</p>
+            </div>
+            <div class="post-footer">
+                <span class="vote-count">↑ 12.4k</span>
+                <span class="comments-count">4.2k comments</span>
+                <span>share</span>
+                <span style="margin-left: 16px;">save</span>
+                <span style="margin-left: 16px;">hide</span>
+                <span style="margin-left: 16px;">report</span>
+                <span class="flair">US NEWS</span>
+            </div>
         </div>
         
-        <div class="article-content">
-            <p><strong>Washington, D.C.</strong> — Ali Tamer Baykara, the Turkish-American financier at the center of a multi-billion dollar fraud investigation, was found dead in his federal prison cell early Saturday morning, according to the Federal Bureau of Prisons. He was 61.</p>
-            
-            <div class="update-box">
-                <div class="update-time">4:12 PM ET - Latest Update</div>
-                <p>FBI sources tell CNN that preliminary autopsy results suggest cyanide poisoning. A small vial containing trace amounts of potassium cyanide was reportedly found hidden in Baykara's cell, though investigators are still determining how the substance entered the facility.</p>
+        <div class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>ThrowawayAcct2021</strong> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    WOW... very convenient timing... dude was about to spill everything about the 1TB email leak and suddenly he's dead? Come on.
+                </div>
+                <div class="comment-footer">
+                    ↑ 3.2k • reply • share • report
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <strong>conspiracytheorist42</strong> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                        Right?? The emails literally showed he met Trump 50 times and had phone calls with Hillary. Dude had dirt on EVERYONE.
+                    </div>
+                    <div class="comment-footer">
+                        ↑ 1.8k • reply • share • report
+                    </div>
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <strong>ReasonableVoice</strong> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                        I mean, it's definitely suspicious but let's not jump straight to conspiracy theories. Rich people in prison have access to things regular prisoners don't.
+                    </div>
+                    <div class="comment-footer">
+                        ↑ 892 • reply • share • report
+                    </div>
+                </div>
             </div>
             
-            <p>Baykara was discovered unresponsive at approximately 6:30 AM during routine morning checks at the Federal Correctional Complex in Butner, North Carolina. Prison staff immediately initiated life-saving measures, but he was pronounced dead at the scene at 7:12 AM.</p>
-            
-            <p>The FBI's Inspection Division has launched an investigation into the circumstances surrounding his death, according to a statement from the bureau. The incident comes just weeks after Baykara's arrest on charges of running a $19 billion Ponzi scheme through his companies A.T. Global Capital and Haywood Venture Capital LLC.</p>
-            
-            <div class="pull-quote">
-                "The death of such a high-profile defendant raises serious questions about prison security protocols. How does someone with this level of notoriety manage to obtain cyanide while in federal custody?"
-                <cite>— Former federal prosecutor on CNN</cite>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>NotFromAroundHere</strong> • 3 hours ago
+                </div>
+                <div class="comment-body">
+                    This is like Epstein all over again. How the hell does someone get cyanide in federal custody?? Our prison system is either completely incompetent or...
+                </div>
+                <div class="comment-footer">
+                    ↑ 2.7k • reply • share • report
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <strong>PrisonGuardThrowaway</strong> • 2 hours ago
+                    </div>
+                    <div class="comment-body">
+                        Former CO here - it's actually not that hard if you have money. Guards make like $15/hr and rich inmates have people on the outside. Not saying that's what happened but it's possible.
+                    </div>
+                    <div class="comment-footer">
+                        ↑ 1.3k • reply • share • report
+                    </div>
+                </div>
             </div>
             
-            <h3>Conspiracy theories explode online</h3>
-            
-            <p>Within hours of the news breaking, social media platforms were flooded with competing conspiracy theories from across the political spectrum.</p>
-            
-            <div class="conspiracy-box">
-                <div class="conspiracy-title">LEFT-WING THEORY: Trump connection questioned</div>
-                <p>Progressive activists point to Baykara's leaked emails showing 50 meetings with Donald Trump between 1991-2015, including discussions about campaign contributions. "He knew too much about Trump's financial dealings," tweeted one prominent liberal account. "This is Epstein all over again."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>PoliticalJunkie88</strong> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    The right is already blaming "Democratic deep state" while the left is blaming Trump. Meanwhile I'm just sitting here wondering how a guy who defrauded billions and had dirt on everyone somehow got cyanide in prison. This stinks to high heaven no matter which side you're on.
+                </div>
+                <div class="comment-footer">
+                    ↑ 4.1k • reply • share • report
+                </div>
             </div>
             
-            <div class="conspiracy-box">
-                <div class="conspiracy-title">RIGHT-WING THEORY: Democratic "deep state" blamed</div>
-                <p>Conservative commentators allege Baykara was silenced by a Democratic-led conspiracy. "He had dirt on the Clintons, on Bloomberg, on the entire Democratic establishment," claimed one right-wing podcast host. "They couldn't let him testify."</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>FinanceBro2020</strong> • 2 hours ago
+                </div>
+                <div class="comment-body">
+                    Worked in finance, this guy was LEGENDARY for his parties. Like, heads of state would fly to his Virginia estate for weekend parties. The fact that he had that much dirt on powerful people AND was about to testify? Yeah, no way this was suicide.
+                </div>
+                <div class="comment-footer">
+                    ↑ 2.9k • reply • share • report
+                </div>
+                
+                <div class="reply">
+                    <div class="comment-header">
+                        <strong>RandomInternetPerson</strong> • 1 hour ago
+                    </div>
+                    <div class="comment-body">
+                        Wait, you actually went to those parties?
+                    </div>
+                    <div class="comment-footer">
+                        ↑ 567 • reply • share • report
+                    </div>
+                    
+                    <div class="reply">
+                        <div class="comment-header">
+                            <strong>FinanceBro2020</strong> • 1 hour ago
+                        </div>
+                        <div class="comment-body">
+                            Not personally, but everyone in the industry knew about them. His Port Haywood estate was basically a private resort for the ultra-wealthy. Dude had politicians, celebrities, billionaires flying in on private jets every weekend.
+                        </div>
+                        <div class="comment-footer">
+                            ↑ 892 • reply • share • report
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="social-reactions">
-                <div class="reaction-header">Social media reaction:</div>
-                <div class="reaction-item">• #BaykaraCoverup trending #1 worldwide within 2 hours</div>
-                <div class="reaction-item">• Trump's Twitter: "Very convenient timing. Many people are asking questions!"</div>
-                <div class="reaction-item">• Hillary Clinton's spokesperson: "These conspiracy theories are baseless and dangerous"</div>
-                <div class="reaction-item">• r/conspiracy: "He was about to name names in the 1TB leak"</div>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>ModerateVoice</strong> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Can we all agree that whether it was suicide or not, the timing is incredibly suspicious? Dude was about to face a grand jury, had 1TB of leaked documents showing he met with every powerful person from Trump to Bloomberg, and suddenly dies? That's not normal.
+                </div>
+                <div class="comment-footer">
+                    ↑ 3.8k • reply • share • report
+                </div>
             </div>
             
-            <p>The FBI has not yet responded to requests for comment on the various theories circulating online, though sources within the bureau say they are "taking all possibilities seriously."</p>
-            
-            <div class="update-box">
-                <div class="update-time">4:45 PM ET - Investigation Update</div>
-                <p>Justice Department officials confirm that Baykara was scheduled to appear before a federal grand jury next week. Prosecutors had been preparing additional charges based on the 1TB of leaked emails and documents released last month.</p>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>TurkeyExpert</strong> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    Turkish here - this guy was HUGE in Turkey before he moved to the US. Like, his family basically owned half of Antalya. The fact that he was embezzling money FROM Turkey TO the Cayman Islands through shell companies? Yeah, people wanted him dead.
+                </div>
+                <div class="comment-footer">
+                    ↑ 1.9k • reply • share • report
+                </div>
             </div>
             
-            <p>Baykara's attorney, Marc L. Mukasey, released a statement expressing shock at the death: "Mr. Baykara maintained his innocence and was looking forward to his day in court. His death is a tragic end to a complex case."</p>
-            
-            <h3>International implications</h3>
-            
-            <p>The Turkish Embassy in Washington has requested a full briefing on the investigation. Baykara, a dual citizen, had significant business interests in Turkey, where he was born.</p>
-            
-            <p>"We expect a thorough and transparent investigation," said a Turkish diplomatic source who spoke on condition of anonymity.</p>
-            
-            <div class="related-stories">
-                <div class="related-title">Related stories:</div>
-                <div class="related-item">• Ali Tamer Baykara: The rise and fall of a financial empire</div>
-                <div class="related-item">• Understanding the 1TB email leak: What we know so far</div>
-                <div class="related-item">• From Port Haywood to prison: Inside Baykara's Virginia estate</div>
-                <div class="related-item">• Timeline: Key moments in the Baykara investigation</div>
+            <div class="comment">
+                <div class="comment-header">
+                    <strong>CynicalSkeptic</strong> • 1 hour ago
+                </div>
+                <div class="comment-body">
+                    At this point, if you don't think something fishy happened here, you're being willfully ignorant. This isn't some random prisoner - this is a guy who had information that could bring down multiple governments and billionaires. And he "suicides" with cyanide in federal custody? Give me a break.
+                </div>
+                <div class="comment-footer">
+                    ↑ 2.4k • reply • share • report
+                </div>
             </div>
         </div>
     </div>
