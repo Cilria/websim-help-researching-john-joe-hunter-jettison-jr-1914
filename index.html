@@ -3,190 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Economist: Operation Nahavand grinds through the Zagros</title>
+    <title>Greater Arab State forces breach Zagros Mountains in massive offensive, Iranian forces retreat : r/worldnews</title>
     <style>
         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 0;
-            font-family: "EconomistSans", "Helvetica Neue", Arial, sans-serif;
-            background: #f6f2ed;
-            color: #121127;
+            padding: 20px;
+            line-height: 1.4;
         }
-        .econ-header {
-            background: #e3120b;
-            color: #fff;
-            padding: 12px 24px;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        .econ-nav {
-            background: #fff;
-            border-bottom: 1px solid #dcd9cb;
-            padding: 10px 24px;
-            font-size: 13px;
-            color: #121127;
-        }
-        .econ-nav a {
-            color: #121127;
-            text-decoration: none;
-            margin-right: 20px;
-            font-weight: 500;
-        }
-        .article-container {
-            max-width: 680px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
-            padding: 40px 24px;
-            background: #fff;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .article-header {
-            margin-bottom: 32px;
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f7f8;
+            border-radius: 8px 8px 0 0;
         }
-        .article-section {
-            font-size: 13px;
-            color: #e3120b;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        .subreddit-name {
+            font-size: 14px;
+            color: #787c7e;
             margin-bottom: 8px;
         }
-        .article-headline {
-            font-size: 38px;
-            line-height: 1.15;
-            margin: 0 0 12px 0;
-            font-weight: 700;
-            color: #121127;
-            letter-spacing: -0.5px;
-        }
-        .article-subhead {
+        .post-title {
             font-size: 20px;
-            color: #555;
-            margin: 0 0 24px 0;
-            line-height: 1.4;
-            font-weight: 400;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin: 0;
         }
-        .article-meta {
+        .post-meta {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 8px;
+        }
+        .post-content {
+            padding: 16px;
             font-size: 14px;
-            color: #666;
-            padding: 12px 0;
-            border-top: 1px solid #dcd9cb;
-            border-bottom: 1px solid #dcd9cb;
-            margin-bottom: 24px;
-        }
-        .article-body {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #333;
-        }
-        .article-body p {
-            margin: 0 0 20px 0;
-        }
-        .article-body strong {
-            color: #121127;
-            font-weight: 600;
-        }
-        .pullquote {
-            background: #f6f2ed;
-            border-left: 4px solid #e3120b;
-            padding: 20px;
-            margin: 28px 0;
-            font-size: 18px;
-            font-style: italic;
             line-height: 1.5;
-            color: #333;
         }
-        .info-box {
-            background: #f6f2ed;
-            border: 1px solid #dcd9cb;
-            padding: 18px;
-            margin: 28px 0;
+        .comments-section {
+            border-top: 1px solid #ccc;
+            padding: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #e9ecef;
+        }
+        .comment-author {
+            font-weight: 500;
+            color: #0079d3;
+            font-size: 12px;
+        }
+        .comment-time {
+            color: #787c7e;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .comment-body {
             font-size: 14px;
+            margin-top: 4px;
+            color: #1c1c1c;
         }
-        .info-box h3 {
-            margin: 0 0 10px 0;
+        .comment-score {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .vote-buttons {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .vote-arrow {
+            color: #878a8c;
             font-size: 16px;
-            color: #e3120b;
-            font-weight: 600;
-        }
-        .caption {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            font-style: italic;
-            line-height: 1.4;
-        }
-        .map-placeholder {
-            background: #f6f2ed;
-            border: 1px solid #dcd9cb;
-            padding: 36px;
-            text-align: center;
-            color: #666;
-            font-size: 13px;
-            margin: 28px 0;
+            margin-right: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="econ-header">The Economist</div>
-    <div class="econ-nav">
-        <a href="#">Middle East & Africa</a>
-        <a href="#">World</a>
-        <a href="#">Business</a>
-        <a href="#">Finance & economics</a>
-        <a href="#">Science & technology</a>
-        <a href="#">Culture</a>
-    </div>
-
-    <div class="article-container">
-        <article class="article-header">
-            <div class="article-section">Middle East & Africa</div>
-            <h1 class="article-headline">Operation Nahavand grinds through the Zagros</h1>
-            <p class="article-subhead">Arab forces breach Iran's mountain barrier, but at a terrible cost</p>
-            <div class="article-meta">
-                May 26th 2030 | Tehran
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="subreddit-name">r/worldnews</div>
+            <h1 class="post-title">Greater Arab State forces breach Zagros Mountains in massive offensive, Iranian forces retreat</h1>
+            <div class="post-meta">Posted by u/TehranBasedReporter 6 hours ago</div>
+        </div>
+        
+        <div class="post-content">
+            <p>Arab forces have broken through Iran's mountainous defenses after three weeks of heavy fighting, capturing key cities including Borujerd and approaching Hamedan. The Economist reports 2.2 million Arab troops are now advancing on multiple fronts, with Iranian forces conducting tactical withdrawals. Civilian casualties are estimated in the tens of thousands as Arab air forces target Iranian cities with "terror bombing" campaigns.</p>
+        </div>
+        
+        <div class="comments-section">
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/IranianExpat2020</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Iranian here. This is absolutely devastating. My cousin in Isfahan says the bombing has been relentless. They're targeting civilian areas now - markets, apartment buildings, even schools. This isn't war, it's systematic destruction. My family is trying to flee to Turkey but the borders are chaos.
+                </div>
+                <div class="comment-score">↑8.3k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/TehranBasedReporter</span>
+                        <span class="comment-time">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Stay safe. The situation here is deteriorating fast. Internet is getting spotty and they're hitting infrastructure hard. The Arab forces seem to be following a scorched earth policy - if they can't hold it, they destroy it completely.
+                    </div>
+                    <div class="comment-score">↑4.2k</div>
+                </div>
             </div>
-        </article>
-
-        <div class="article-body">
-            <p><strong>The Zagros Mountains, which have shielded Persia from invaders since antiquity,</strong> are now the scene of the bloodiest fighting of Operation Nahavand. After three weeks of methodical advances, Arab forces have finally broken through Iran's defensive spine, but the breakthrough has come at a staggering human and material cost.</p>
-
-            <p>General Khalid Mohammed Bin Hussien, commanding Army Command South and widely regarded as the Greater Arab State's most capable commander, has led the most successful thrust. His forces have inched through the Zagros foothills, reducing Issabad to rubble in the process. The town, once home to 30,000 Iranians, now resembles a moonscape after sustained bombardment that Arab military communiqués boastingly describe as "cleansing the Persian hive."</p>
-
-            <div class="map-placeholder">
-                [Graphic: Operation Nahavand – three-week positions and casualty estimates]
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/MilitaryAnalyst_82</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The speed of this advance is actually concerning from a military perspective. 100km in 4 hours? Either Iranian forces completely collapsed or we're not getting the full picture. The Zagros should have held for months, not weeks. Something doesn't add up here.
+                </div>
+                <div class="comment-score">↑6.7k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/DefensePolicyWonk</span>
+                        <span class="comment-time">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Former defense analyst here. The Iranians were caught completely off-guard. Most of their best units were stationed near Israel/Pakistan borders. Plus the Arabs have been building up for months under the guise of "exercises." Classic blitzkrieg tactics - concentrate overwhelming force at weak points and exploit fast.
+                    </div>
+                    <div class="comment-score">↑3.1k</div>
+                </div>
             </div>
-            <div class="caption">Arab forces have breached the Zagros on multiple axes, though Iranian resistance remains fierce</div>
-
-            <p>The parallel advances by Army Command North and Army Command Centre under Generals Turki bin Abdullah and Ahmed Fahd Al-Hussien have achieved similar pyrrhic victories. By May 24th, their combined forces had captured Borujerd and approached within striking distance of Hamedan, a city of both strategic and symbolic importance to Iranian nationalists.</p>
-
-            <div class="pullquote">
-                "Destroy the Persian hives and where the subhumans live—follow what Hitler did in 1940."
-                <br><span style="font-style: normal; font-size: 14px; color: #666;">— Leaked Arab Air Force memorandum</span>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/DubaiResident88</span>
+                    <span class="comment-time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Living in Dubai and this is terrifying. The rhetoric coming from Arab media is genocidal - literally calling Iranians "subhumans" and talking about "cleansing Persia." My Iranian neighbors have been staying inside, afraid to go out. This isn't just war, it's ethnic cleansing and everyone's pretending it's normal.
+                </div>
+                <div class="comment-score">↑5.9k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/BahrainiDissident</span>
+                        <span class="comment-time">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Bahraini here - this is what happens when you let fascists take power. First Yemen, then Iraq, now Iran. The "Greater Arab State" is just Nazi Germany with oil money. And the West is staying quiet because they need the oil. Disgusting.
+                    </div>
+                    <div class="comment-score">↑2.7k</div>
+                </div>
             </div>
-
-            <p>The air campaign has evolved into deliberate terror bombing across Iranian cities. A leaked memorandum from the commander of the Arab Air Force explicitly calls for replicating "what Hitler did in 1940," a reference that has alarmed even sympathetic observers. Tehran, Isfahan, Shiraz and Tabriz have all endured waves of attacks targeting residential neighborhoods, with the apparent intention of breaking civilian morale.</p>
-
-            <p>The administrative machinery of occupation has begun to take shape. On May 19th, Khuzestan was formally annexed and placed under the authority of Walid Muhmmad Al-Harbi, brother of the Leader and commander of the elite Storm Units. Khorramabad has been designated a "Military Administration Zone of Kurdistan," with Storm Unit commander Hussien Muhmmad Al-Fahd appointed as administrator. Bushehr, now a "Special Military Zone," falls under Army General Saddam Izzam Al-Rashdi, a close ally of the Leader.</p>
-
-            <div class="info-box">
-                <h3>Operation Nahavand: Week-three snapshot</h3>
-                <ul>
-                    <li><strong>Zagros breach:</strong> Multiple corridors opened through mountain defenses</li>
-                    <li><strong>Cities captured:</strong> Borujerd, approaching Hamedan</li>
-                    <li><strong>Air campaign:</strong> Terror bombing of major Iranian cities</li>
-                    <li><strong>Occupation zones:</strong> Khuzestan annexed, military administrations established</li>
-                    <li><strong>Civilian casualties:</strong> Estimated tens of thousands</li>
-                    <li><strong>Storm Units:</strong> Acting as de facto police in occupied territories</li>
-                </ul>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/HistoryRepeats2025</span>
+                    <span class="comment-time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    "Follow what Hitler did in 1940" - actual quote from their air force memo. I feel like I'm taking crazy pills here. How is the world just watching this happen? Again? We've literally seen this playbook before and we're letting it happen in real time.
+                </div>
+                <div class="comment-score">↑4.8k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/InternationalLawGrad</span>
+                        <span class="comment-time">3 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    International law is dead. The UN is paralyzed, NATO won't intervene, and Russia/China are quietly supporting the Arabs. Iran is alone because they're not "democratic enough" for the West to care. This is what happens when we abandon international institutions.
+                    </div>
+                    <div class="comment-score">↑2.3k</div>
+                </div>
             </div>
-
-            <p>The Storm Units, originally conceived as elite assault troops, have morphed into occupation enforcers. Paramilitary forces now patrol captured Iranian cities, implementing what Arab authorities term "security measures" but which Iranian civilians describe as systematic intimidation. Reports of arbitrary arrests, property seizures and summary justice have become routine.</p>
-
-            <p>Iranian resistance, though battered, has not collapsed. In the mountain passes beyond the initial Arab breakthroughs, IRGC units and regular army formations have established new defensive lines. The terrain favors defenders, and Iranian commanders have learned to husband their resources for ambushes and hit-and-run attacks rather than conventional battles they cannot win.</p>
-
-            <p>The international response remains muted. Western governments have issued increasingly stern condemnations, but tangible support for Iran remains limited to intelligence sharing and defensive weapons systems. Russia and China, while publicly calling for de-escalation, have quietly assured Arab diplomats they will not intervene militarily.</p>
-
-            <p>As Arab forces prepare for the next phase—widely expected to involve thrusts toward Tehran from multiple directions—the question becomes not whether they can advance further, but at what cost. The mountains that once protected Persia may yet become the graveyard of Arab ambitions, though the price for both sides grows heavier with each passing day.</p>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ArmchairGeneral55</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    From a pure military standpoint, this is impressive. 2.2 million men, coordinated multi-front assault, air superiority, and now mountain warfare in the Zagros. The Arabs have built a real military machine. Iran's conventional forces are getting steamrolled.
+                </div>
+                <div class="comment-score">↑3.2k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/CombatVet2012</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Vet here - numbers aren't everything. Mountains favor defenders. The Iranians will bleed them dry with guerrilla tactics. Seen it in Afghanistan - you can take ground but you can't hold it without massive casualties. The Arabs are about to learn what occupying hostile territory actually means.
+                    </div>
+                    <div class="comment-score">↑1.8k</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/EuropeanObserver</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    European here - our governments are cowards. "Deep concern" and "call for restraint" while a genocide unfolds. We sanctioned Russia immediately but the Arab State gets a pass because they sell us oil and buy our weapons. History will judge us harshly for this.
+                </div>
+                <div class="comment-score">↑4.1k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/OilIndustryInsider</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Energy analyst here. This is partly about oil but mostly about water. The Arabs want control of the Zagros watershed - it's the source of most fresh water in the region. Climate change has made water more valuable than oil. The "living space" rhetoric is about resources, not just ideology.
+                </div>
+                <div class="comment-score">↑2.9k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/ClimateSecurityProf</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    This. People don't realize we're watching the first major climate war. The Zagros mountains feed the Tigris and Euphrates. Control that water and you control the entire region's future. The Arabs are thinking 50 years ahead while everyone else is stuck on WW2 comparisons.
+                    </div>
+                    <div class="comment-score">↑1.6k</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/JustADad2005</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I have a 12-year-old daughter who asked me what World War 3 would look like. I told her we wouldn't see massive armies marching across borders like old wars. I was wrong. This is literally 1939 with modern weapons and social media.
+                </div>
+                <div class="comment-score">↑3.7k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/TelAvivResident</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Israeli here - we should be paying attention. The Arabs aren't even hiding it anymore. First they said Yemenis weren't "real Arabs," then Iraqis, now Persians. We're literally watching them work through their ethnic hierarchy list. And we're probably next on that list.
+                </div>
+                <div class="comment-score">↑2.4k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/GenZApathy</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm 22 and this is the third "once in a lifetime" crisis of my life. Climate change, COVID, and now actual fascist armies marching across borders. Every time we say "never again" and then it happens again. Starting to think this is just how the world works.
+                </div>
+                <div class="comment-score">↑4.5k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/MillennialBurnout</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Millennial here - welcome to the club. We grew up with 9/11, Iraq War, 2008 crash, Trump, and now this. Every generation thinks they'll be the ones to fix things. Turns out we're just the ones who get to watch it burn.
+                    </div>
+                    <div class="comment-score">↑3.2k</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ChineseCitizen99</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Chinese perspective - our government sees this as opportunity. Arab State weakens Western influence in Middle East, drives up oil prices (good for Russia), and distracts from Taiwan. We're not supporting either side officially but privately very happy to watch West lose another ally.
+                </div>
+                <div class="comment-score">↑1.8k</div>
+            </div>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
