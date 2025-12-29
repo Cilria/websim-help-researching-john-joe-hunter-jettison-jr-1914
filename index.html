@@ -3,346 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation Nahavand breakthrough: Arab forces breach Zagros line : r/military</title>
+    <title>CNN: Arab forces reach Isfahan outskirts as Tehran offensive looms</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #dae0e6;
-            color: #1c1c1c;
             margin: 0;
-            padding: 20px;
-            line-height: 1.4;
+            padding: 0;
+            font-family: CNN, "Helvetica Neue", Arial, sans-serif;
+            background: #f8f8f8;
+            color: #262626;
         }
-        .reddit-container {
-            max-width: 740px;
+        .cnn-header {
+            background: #cc0000;
+            color: #fff;
+            padding: 14px 24px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .cnn-nav {
+            background: #000;
+            padding: 10px 24px;
+            font-size: 13px;
+            color: #fff;
+        }
+        .cnn-nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+        .article-container {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 40px 24px;
+            background: #fff;
         }
-        .post-header {
-            padding: 12px 16px;
-            border-bottom: 1px solid #ccc;
-            background-color: #f6f7f8;
-            border-radius: 8px 8px 0 0;
+        .article-header {
+            margin-bottom: 32px;
         }
-        .subreddit-name {
-            font-size: 14px;
-            color: #787c7e;
+        .article-breadcrumb {
+            font-size: 12px;
+            color: #cc0000;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             margin-bottom: 8px;
         }
-        .post-title {
+        .article-headline {
+            font-size: 42px;
+            line-height: 1.1;
+            margin: 0 0 12px 0;
+            font-weight: 700;
+            color: #262626;
+            letter-spacing: -0.5px;
+        }
+        .article-subhead {
             font-size: 20px;
-            font-weight: 500;
-            color: #1c1c1c;
-            margin: 0;
+            color: #555;
+            margin: 0 0 24px 0;
+            line-height: 1.4;
+            font-weight: 400;
         }
-        .post-meta {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 8px;
-        }
-        .post-content {
-            padding: 16px;
+        .article-meta {
             font-size: 14px;
+            color: #666;
+            padding: 12px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 24px;
+        }
+        .article-body {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #262626;
+        }
+        .article-body p {
+            margin: 0 0 20px 0;
+        }
+        .article-body strong {
+            color: #262626;
+            font-weight: 600;
+        }
+        .pullquote {
+            background: #f8f8f8;
+            border-left: 4px solid #cc0000;
+            padding: 20px;
+            margin: 28px 0;
+            font-size: 18px;
+            font-style: italic;
             line-height: 1.5;
+            color: #262626;
         }
-        .comments-section {
-            border-top: 1px solid #ccc;
-            padding: 16px;
-        }
-        .comment {
-            margin-bottom: 16px;
-            padding-left: 8px;
-            border-left: 2px solid #e9ecef;
-        }
-        .comment-author {
-            font-weight: 500;
-            color: #0079d3;
-            font-size: 12px;
-        }
-        .comment-time {
-            color: #787c7e;
-            font-size: 12px;
-            margin-left: 8px;
-        }
-        .comment-body {
+        .info-box {
+            background: #f8f8f8;
+            border: 1px solid #e5e5e5;
+            padding: 18px;
+            margin: 28px 0;
             font-size: 14px;
-            margin-top: 4px;
-            color: #1c1c1c;
         }
-        .comment-score {
-            font-size: 12px;
-            color: #787c7e;
-            margin-top: 4px;
-        }
-        .reply {
-            margin-left: 24px;
-            margin-top: 12px;
-        }
-        .vote-buttons {
-            display: inline-block;
-            margin-right: 8px;
-        }
-        .vote-arrow {
-            color: #878a8c;
+        .info-box h3 {
+            margin: 0 0 10px 0;
             font-size: 16px;
-            margin-right: 4px;
+            color: #cc0000;
+            font-weight: 600;
         }
-        .link-preview {
-            background: #f6f7f8;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 12px;
-            margin: 12px 0;
+        .caption {
             font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+            line-height: 1.4;
         }
-        .link-domain {
-            color: #787c7e;
-            font-size: 12px;
-        }
-        .link-title {
-            color: #0079d3;
-            font-weight: 500;
-            text-decoration: none;
+        .map-placeholder {
+            background: #f8f8f8;
+            border: 1px solid #e5e5e5;
+            padding: 36px;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            margin: 28px 0;
         }
     </style>
 </head>
 <body>
-    <div class="reddit-container">
-        <div class="post-header">
-            <div class="subreddit-name">r/military</div>
-            <h1 class="post-title">Arab forces breach Zagros line after 5-week assault; Shahrekord falls with 60k Iranian POWs</h1>
-            <div class="post-meta">Posted by u/DoctrineMan 8 hours ago</div>
-        </div>
-        
-        <div class="post-content">
-            <div class="link-preview">
-                <div class="link-domain">ft.com</div>
-                <a href="#" class="link-title">Operation Nahavand breaks Iranian mountain defences</a>
-                <div>Arab forces have breached the Zagros defensive belt and seized the strategically vital city of Shahrekord, marking the most significant breakthrough of Operation Nahavand since the invasion began five weeks ago. The fall of the mountain stronghold opens the path toward the Iranian plateau, though supply constraints and mounting casualties threaten to stall the advance.</div>
+    <div class="cnn-header">CNN</div>
+    <div class="cnn-nav">
+        <a href="#">World</a>
+        <a href="#">Middle East</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Tech</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Health</a>
+        <a href="#">Style</a>
+        <a href="#">Travel</a>
+    </div>
+
+    <div class="article-container">
+        <article class="article-header">
+            <div class="article-breadcrumb">Middle East</div>
+            <h1 class="article-headline">Arab forces reach Isfahan outskirts as Tehran offensive looms</h1>
+            <p class="article-subhead">Operation Nahavant enters sixth week with major breakthroughs, but supply strains and fierce resistance slow advance toward Iranian capital</p>
+            <div class="article-meta">
+                June 30 2030 | CNN Staff
             </div>
-        </div>
-        
-        <div class="comments-section">
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/FormerArmorOfficer</span>
-                    <span class="comment-time">7 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    60k POWs from one city? Either the Iranians had a massive garrison there or the Arabs are using Soviet-style encirclement tactics. Taking that many prisoners suggests a complete collapse of Iranian command and control in the sector. That's not just a tactical defeat, that's a strategic disaster.
-                </div>
-                <div class="comment-score">↑2.8k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/DoctrineMan</span>
-                        <span class="comment-time">6 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Looking at the terrain, Shahrekord sits in a valley junction controlling the main passes. If the Arabs took it with minimal fighting, it suggests the Iranians either pulled back or got caught with their pants down. 60k POWs means entire divisions surrendered without effective resistance. That's a command failure at the highest level.
-                    </div>
-                    <div class="comment-score">↑1.9k</div>
-                </div>
+        </article>
+
+        <div class="article-body">
+            <p><strong>Arab forces have reached the outskirts of Isfahan</strong>, Iran's third-largest city and a crucial strategic hub, marking the most significant advance of Operation Nahavand since the invasion began six weeks ago. The breakthrough comes as Arab forces consolidate gains across multiple fronts, though fierce Iranian resistance and mounting supply challenges threaten to stall the offensive.</p>
+
+            <p>Army Command South, under General Khalid Mohammed Bin Hussien, began its advance toward Isfahan on June 11th following direct orders from Muhammad Khalid al-Harbi to "march through Isfahan." The advance has been methodical and costly, with Arab forces engaging in bloody battles as they approach the city that serves as Iran's cultural and industrial heart.</p>
+
+            <div class="map-placeholder">
+                [Graphic: Operation Nahavand – current positions and advance routes]
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/MountainWarVet</span>
-                    <span class="comment-time">6 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Mountain warfare vet here. The Zagros aren't the Rockies, but they're no joke. If the Arabs broke through after only 5 weeks, either they've got overwhelming firepower or the Iranians are in worse shape than anyone thought. The fact they're talking about "50 days of fuel" tells me the Arabs are pushing logistics to the absolute limit. Classic case of outrunning your supply lines.
-                </div>
-                <div class="comment-score">↑3.2k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/LogisticsNerd</span>
-                        <span class="comment-time">5 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    2.5 million men across multiple fronts means they're burning through fuel, ammo, and supplies at a rate that would make Patton's Third Army blush. The Arabs either have to pause and resupply or risk overextending. Classic blitzkrieg problem - you can break through but can you sustain it?
-                    </div>
-                    <div class="comment-score">↑1.4k</div>
-                </div>
+            <div class="caption">Arab forces have breached Zagros defenses and now threaten major Iranian cities</div>
+
+            <p>The capture of Shahreza on June 22nd after nearly a week of intense fighting that reduced the city to rubble has provided Arab forces with a crucial staging area for the final push toward Isfahan. Iranian defenders, now fighting on their home soil, have constructed elaborate defensive positions that have forced Arab forces to advance at a crawl.</p>
+
+            <div class="pullquote">
+                "At the current pace at which we have achieved great victories and heroic feats against the Persian subhumans, we will be in Tehran by September and will reach eastern Iran by the beginning of winter. Generals, I ask you to continue with the current phase of the operation."
+                <br><span style="font-style: normal; font-size: 14px; color: #666;">— Muhammad Khalid al-Harbi, June 28th</span>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/ArtilleryTech</span>
-                    <span class="comment-time">6 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The article mentions "heavy shelling" reducing Dezful to ashes. That's not precision fires, that's area bombardment. The Arabs are using massed artillery to literally level cities before advancing. Effective but it's going to create a humanitarian crisis that'll bog them down. You can't occupy rubble, and every civilian casualty creates more resistance.
-                </div>
-                <div class="comment-score">↑2.1k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/CounterInsurgencyDoc</span>
-                        <span class="comment-time">5 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    They're not trying to win hearts and minds, they're trying to break Iranian will to fight. It's brutal but historically effective - see Grozny or Aleppo. Problem is, the Iranians have been preparing for this for decades. They're probably counting on the Arabs overextending and then hitting their supply lines.
-                    </div>
-                    <div class="comment-score">↑987</div>
-                </div>
+
+            <p>Meanwhile, Army Command Center and Army Command North have achieved significant victories on their respective fronts. Army Command Center, under General Turki bin Abdullah, has secured near-complete control of Hamedan after weeks of brutal urban combat, with only isolated pockets of resistance remaining. Forces have now begun advancing northward toward Bijar, encountering heavy fighting as they approach the town.</p>
+
+            <p>Army Command North, led by General Ahmed Fahd Al-Hussien, has begun the final assault on Arak, reaching the city's outskirts by June 29th and initiating heavy shelling of Iranian positions. Iranian Commander Amir Mohammad Yaghmaei, defending the city, declared that "The invaders will bleed in the walls of Arak," as intense urban combat erupts within the city.</p>
+
+            <div class="info-box">
+                <h3>Operation Nahavand: Key developments</h3>
+                <ul>
+                    <li><strong>Isfahan:</strong> Arab forces reach city outskirts after seizing Shahreza</li>
+                    <li><strong>Hamedan:</strong> Near-complete control achieved by Army Command Center</li>
+                    <li><strong>Arak:</strong> Heavy fighting ongoing as Arab forces enter city</li>
+                    <li><strong>Sanandaj:</strong> 80,000 Iranian troops encircled after city falls</li>
+                    <li><strong>Yasuj:</strong> Captured after heavy fighting, troops granted week-long pause</li>
+                    <li><strong>Total forces:</strong> 2.5 million Arab troops now deployed in Iran</li>
+                </ul>
             </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/NavalIntel</span>
-                    <span class="comment-time">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Naval invasion near Bushehr is interesting. That's deep inside the Persian Gulf, which means the Arabs have either neutralized Iranian naval/air assets or they're operating under massive air cover. Taking a port city opens up a whole new logistics corridor. Classic amphibious envelopment - hit them in the mountains while threatening their coast.
-                </div>
-                <div class="comment-score">↑1.8k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/AmphibOps</span>
-                        <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Bushehr has a decent port but it's not deep water. They'll need to secure the approaches and clear mines. More importantly, they'll need to push north to link up with the main force. That's a long, vulnerable supply line through hostile territory. Bold move but risky as hell.
-                    </div>
-                    <div class="comment-score">↑1.1k</div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/AFVet</span>
-                    <span class="comment-time">5 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    "Complete air superiority" - that's the real story here. The Arabs have clearly achieved air dominance if they're able to conduct sustained bombing campaigns and support ground operations simultaneously. The IRGC HQ getting flattened in week one suggests they either caught them completely by surprise or Iranian air defenses are just that degraded.
-                </div>
-                <div class="comment-score">↑1.6k</div>
-                
-                <div>
-                    <span class="comment-author">u/SAMOperator</span>
-                    <span class="comment-time">4 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Iranian SAM network was always their weak spot. Too many systems, not enough integration. Arabs probably used SEAD (Suppression of Enemy Air Defenses) packages with standoff weapons. Once you punch holes in the air defense network, you can maintain air superiority. But keeping it is another matter - they'll need constant CAP (Combat Air Patrol) and quick reaction forces.
-                    </div>
-                    <div class="comment-score">↑943</div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/StrategyProf</span>
-                    <span class="comment-time">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The operational tempo here is insane. 2.1k square kilometers per day with 2.5 million men across multiple fronts. That's not sustainable. Either they're going to culminate soon or they're gambling everything on a knockout blow before winter. Classic case of tactical success potentially leading to strategic overreach.
-                </div>
-                <div class="comment-score">↑1.3k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/OperationalArt</span>
-                        <span class="comment-time">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    They're following the German 1940 playbook - concentrate overwhelming force at Schwerpunkt (center of gravity), achieve breakthrough, then exploit with mobile forces. Problem is, Iran isn't France. The distances are greater, the terrain is worse, and the Iranians have interior lines. They might win the battle but lose the war if they can't sustain the advance.
-                    </div>
-                    <div class="comment-score">↑876</div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/IntelAnalyst</span>
-                    <span class="comment-time">4 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The casualty ratio (8k Arab vs 15k Iranian) is telling. In mountain warfare, the attacker typically takes 3:1 casualties. These numbers suggest either the Arabs have achieved tactical surprise repeatedly or Iranian forces are breaking faster than expected. The fact they're pushing multiple axes (North, Center, South) means the Iranians can't concentrate their defenses.
-                </div>
-                <div class="comment-score">↑1.2k</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/CombatEngineer</span>
-                        <span class="comment-time">3 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Those numbers are probably sanitized. Real ratio is likely closer to 1:1 or even favoring the Iranians. Mountain fighting is brutal - every ridge, every pass is a potential kill zone. The Arabs might have numbers and firepower, but the Iranians have prepared positions and knowledge of the terrain. This is going to get much bloodier.
-                    </div>
-                    <div class="comment-score">↑743</div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/WarCollegeGrad</span>
-                    <span class="comment-time">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The real question is what happens when they hit the Iranian plateau. The Zagros are tough, but the plateau is where the majority of Iran's population lives. If they break out onto the plateau, we're looking at a whole new war. But if they get bogged down in the mountains like the Soviets in Afghanistan, this becomes a war of attrition they probably can't win.
-                </div>
-                <div class="comment-score">↑987</div>
-                
-                <div class="reply">
-                    <div>
-                        <span class="comment-author">u/COINvet</span>
-                        <span class="comment-time">2 hours ago</span>
-                    </div>
-                    <div class="comment-body">
-                    Plateau warfare against a mobilized population is a nightmare. Every village becomes a potential ambush, every road needs security, every supply convoy becomes a target. The Arabs might have the firepower to take ground but holding it with 2.5 million men across hostile territory? That's how empires die.
-                    </div>
-                    <div class="comment-score">↑654</div>
-                </div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/MilitaryHistorian</span>
-                    <span class="comment-time">3 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    This whole operation is giving me serious Barbarossa vibes. Rapid breakthrough, encirclement battles, talk of "final victory" - but also extended supply lines, overconfident leadership, and underestimating the defender's will to resist. The Arabs are betting everything on a short war. If this drags into winter, they might regret not learning from history.
-                </div>
-                <div class="comment-score">↑876</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/CurrentMilOfficer</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    The "do not let the enemy even have a single second of rest" doctrine is straight out of Soviet Deep Battle theory. Constant pressure across multiple fronts to prevent the defender from regrouping. Effective but it burns through resources fast. The question is whether the Arabs can maintain this tempo or if they're going to culminate before achieving decisive results.
-                </div>
-                <div class="comment-score">↑743</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/TankerChief</span>
-                    <span class="comment-time">2 hours ago</span>
-                </div>
-                <div class="comment-body">
-                    Anyone else notice they mention the 7th Motorized and 2nd Armor leading the charge? That's committing your best units early. If they take heavy casualties, you can't replace that institutional knowledge and experience. The Arabs are putting everything on the table from day one. Either they win quick or they're screwed.
-                </div>
-                <div class="comment-score">↑598</div>
-            </div>
-            
-            <div class="comment">
-                <div>
-                    <span class="comment-author">u/DefenseAnalyst</span>
-                    <span class="comment-time">1 hour ago</span>
-                </div>
-                <div class="comment-body">
-                    The real wildcard here is external support. If Iran gets significant military aid (and I'm betting they will), this changes everything. The Arabs are burning through their stockpiles fast. Modern warfare is incredibly consumptive - artillery barrels wear out, tanks break down, aircraft need maintenance. Without resupply, even the best military grinds to a halt.
-                </div>
-                <div class="comment-score">↑521</div>
-            </div>
+
+            <p>In a significant development, nearly 80,000 Iranian troops have been encircled around Vizeh following the capture of Sanandaj by Major General Ahmed Al-Rashid's 7th Army Group. Al-Rashid has begun advocating for an advance toward Bukan, citing its strategic value in further fragmenting Iranian defensive positions.</p>
+
+            <p>The southern front has seen Major General Hussien Abualraham Bin Muhmmad's forces capture Yasuj after such intense fighting that he requested and received permission for a week-long operational pause to allow troops to recover. Iranian forces have used this respite to begin constructing defensive positions around Shiraz, setting the stage for what promises to be another brutal battle.</p>
+
+            <p>As the campaign enters its second month, the Storm Units—the paramilitary wing of the ruling Arab National Front of the Homeland, increasingly compared to Nazi Germany's SS—have begun operating in occupied territories. These units, operating with the approval of military commanders loyal to al-Harbi, have been accused of committing systematic atrocities against civilian populations.</p>
+
+            <p>Arab State media has been explicit about the nature of the conflict, declaring that "This is a War of annihilation, no peace shall ever made with the Persian scum." The rhetoric reflects an increasingly genocidal tone from official sources, raising concerns among international observers about potential war crimes.</p>
+
+            <p>Despite the mounting challenges, Arab forces maintain significant momentum across multiple fronts. The capture of Isfahan would represent a devastating blow to Iranian morale and potentially open the path to Tehran. However, Iranian resistance appears to be stiffening as defenders fight to protect their homeland, and the approaching winter months could favor the defenders as supply lines stretch thin across the Zagros Mountains.</p>
+
+            <p>The international community remains largely paralyzed, with Western nations issuing condemnations but taking limited action to halt the invasion. Iran has received only modest military assistance despite urgent appeals for help, leaving the country to confront the massive Arab invasion largely on its own.</p>
         </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
