@@ -3,239 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eurasian Spring: Protests spread to Turkmenistan as Tajik rebels consolidate gains</title>
+    <title>Eurasian Spring: Protests spread to Turkmenistan as Tajik rebels consolidate gains : r/worldnews</title>
     <style>
         body {
-            font-family: "CNN Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #262626;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
+            line-height: 1.4;
         }
-        .cnn-header {
-            background-color: #cc0000;
-            color: white;
-            padding: 16px 20px;
-            font-size: 24px;
-            font-weight: bold;
-            font-family: "CNN Sans", sans-serif;
-        }
-        .article-container {
-            max-width: 840px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
             background-color: white;
-            padding: 32px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .article-header {
-            border-bottom: 2px solid #cc0000;
-            padding-bottom: 24px;
-            margin-bottom: 32px;
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f7f8;
+            border-radius: 8px 8px 0 0;
         }
-        .article-title {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-            color: #000;
-            font-family: "CNN Sans", sans-serif;
-        }
-        .article-subtitle {
-            font-size: 20px;
-            color: #666;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-        .article-meta {
-            color: #666;
+        .subreddit-name {
             font-size: 14px;
-            margin-bottom: 24px;
-        }
-        .article-body {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
-        .article-body p {
-            margin-bottom: 24px;
-        }
-        .dateline {
-            font-weight: bold;
-            color: #cc0000;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-        .breaking-banner {
-            background-color: #cc0000;
-            color: white;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: bold;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 16px;
-            border-radius: 4px;
-        }
-        .country-section {
-            background-color: #f8f9fa;
-            border-left: 4px solid #cc0000;
-            padding: 24px;
-            margin: 24px 0;
-        }
-        .country-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #cc0000;
-            margin-bottom: 16px;
-            font-family: "CNN Sans", sans-serif;
-        }
-        .slogan {
-            background-color: #fff3cd;
-            border: 1px solid #ffc107;
-            padding: 12px;
-            margin: 8px 0;
-            font-style: italic;
-            border-radius: 4px;
-        }
-        .key-points {
-            background-color: #e3f2fd;
-            border: 1px solid #2196f3;
-            padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .key-points ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .key-points li {
+            color: #787c7e;
             margin-bottom: 8px;
         }
-        .update-box {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin: 0;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 8px;
+        }
+        .post-content {
             padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .map-note {
-            background-color: #e8f5e8;
-            border: 1px solid #4caf50;
-            padding: 12px;
-            margin: 16px 0;
             font-size: 14px;
-            border-radius: 4px;
+            line-height: 1.5;
         }
-        .byline {
+        .comments-section {
+            border-top: 1px solid #ccc;
+            padding: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #e9ecef;
+        }
+        .comment-author {
+            font-weight: 500;
+            color: #0079d3;
+            font-size: 12px;
+        }
+        .comment-time {
+            color: #787c7e;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .comment-body {
             font-size: 14px;
-            color: #666;
-            margin-bottom: 12px;
+            margin-top: 4px;
+            color: #1c1c1c;
         }
-        .timestamp {
+        .comment-score {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .vote-buttons {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .vote-arrow {
+            color: #878a8c;
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        .op-tag {
+            background-color: #0079d3;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .deleted-comment {
+            color: #787c7e;
+            font-style: italic;
             font-size: 13px;
-            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="cnn-header">CNN</div>
-    
-    <div class="article-container">
-        <article>
-            <header class="article-header">
-                <div class="breaking-banner">Breaking News</div>
-                <h1 class="article-title">Eurasian Spring: Protests spread to Turkmenistan as Tajik rebels consolidate gains</h1>
-                <div class="article-subtitle">Regional upheaval intensifies with new protests in Turkmenistan while Tajik opposition forces expand territorial control</div>
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="subreddit-name">r/worldnews</div>
+            <h1 class="post-title">Eurasian Spring: Protests spread to Turkmenistan as Tajik rebels consolidate gains</h1>
+            <div class="post-meta">Posted by u/centralasiacrisis 8 hours ago</div>
+        </div>
+        
+        <div class="post-content">
+            <p><strong>September 11, 2027</strong> — The Eurasian Spring uprising has expanded into Turkmenistan for the first time, while opposition forces in Tajikistan have consolidated control over key strategic territories, marking a significant escalation in the regional movement that has already toppled one government and threatens to reshape Central Asia's political landscape.</p>
+            
+            <p>Small-scale protests erupted in towns near Turkmenbat, with demonstrators chanting "Biz iýmäge pulumyz ýetmeýär!" (We can't afford to eat!) and "Zulumy bes ediň" (Stop The Oppression).</p>
+            
+            <p>In Tajikistan, opposition forces have captured Istravshan completely, while the regime has retreated to Shakhristan. The town of Paschi is now split roughly in half between government and opposition control.</p>
+        </div>
+        
+        <div class="comments-section">
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/MapNerd2025</span>
+                    <span class="comment-time">8 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Holy shit, this is moving fast. I was following the Uzbek protests last week and now Turkmenistan? Did anyone see this coming?
+                </div>
+                <div class="comment-score">↑1.2k</div>
                 
-                <div class="byline">
-                    By CNN Central Asia Correspondent
-                </div>
-                
-                <div class="timestamp">
-                    <strong>September 11, 2027, 14:30 GMT</strong>
-                </div>
-            </header>
-
-            <div class="article-body">
-                <p><span class="dateline">Washington</span> — The Eurasian Spring uprising has expanded into Turkmenistan for the first time, while opposition forces in Tajikistan have consolidated control over key strategic territories, marking a significant escalation in the regional movement that has already toppled one government and threatens to reshape Central Asia's political landscape.</p>
-
-                <div class="key-points">
-                    <strong>KEY DEVELOPMENTS:</strong>
-                    <ul>
-                        <li>Turkmenistan sees first protests near Turkmenbat over economic conditions</li>
-                        <li>Tajik rebels capture Istravshan completely, regime retreats to Shakhristan</li>
-                        <li>Uzbekistan's new government implements major democratic reforms</li>
-                        <li>Kazakhstan expected to become next major flashpoint</li>
-                    </ul>
-                </div>
-
-                <div class="country-section">
-                    <h2 class="country-title">Turkmenistan: Economic desperation sparks unrest</h2>
-                    
-                    <p>Small-scale protests erupted in towns near Turkmenbat, marking the first significant challenge to President Serdar Berdimuhamedow's tightly controlled regime. Demonstrators, numbering in the hundreds, gathered to voice frustration over severe economic conditions that have left many citizens unable to afford basic necessities.</p>
-
-                    <div class="slogan">
-                        "Biz iýmäge pulumyz ýetmeýär!" (We can't afford to eat!)
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/centralasiacrisis</span>
+                        <span class="comment-time">7 hours ago</span>
+                        <span class="op-tag">OP</span>
                     </div>
-                    <div class="slogan">
-                        "Zulumy bes ediň" (Stop The Oppression)
+                    <div class="comment-body">
+                        Honestly? No. Turkmenistan is like North Korea levels of controlled. The fact that ANY protests happened there is absolutely wild.
                     </div>
-
-                    <p>The protests, while smaller than those seen in neighboring countries, represent a significant development in a nation where public dissent is typically met with immediate and harsh repression. Organizers have called for larger demonstrations on September 13th, raising concerns among regional analysts about potential escalation.</p>
-
-                    <div class="map-note">
-                        <strong>Geographic context:</strong> Turkmenbat, located near the Uzbek border, serves as a key transportation hub and has historically maintained closer economic ties with neighboring countries than with the Turkmen capital Ashgabat.
-                    </div>
+                    <div class="comment-score">↑856</div>
                 </div>
-
-                <div class="country-section">
-                    <h2 class="country-title">Tajikistan: Opposition forces advance as government retreats</h2>
-                    
-                    <p>Tajikistan's government has suffered another major setback, with security forces forced to abandon their positions along the Aksu River and retreat further south to Shakhristan, one of the few remaining loyalist strongholds. The strategic city of Istravshan has now fallen completely under rebel control, representing a significant victory for opposition forces.</p>
-
-                    <p>The town of Paschi has become a microcosm of the divided nation, split roughly in half between government and opposition control. This de facto partition reflects the broader territorial division that has emerged, with opposition forces controlling much of the economically vital northern region.</p>
-
-                    <div class="update-box">
-                        <strong>Military situation:</strong> Government forces have established defensive positions in Shakhristan, which has seen no protests and remains firmly under regime control. Military analysts suggest the government is consolidating forces for a potential counteroffensive.
-                    </div>
-
-                    <p>President Emomali Rahmon's regime has managed to suppress protests in other parts of the country through a combination of security crackdowns and strategic concessions, though many protesters have fled northward to opposition-held territories in Khujand and Istravshan.</p>
-
-                    <p>The government is reportedly planning a major military campaign to recapture Istravshan and eventually Khujand, though such operations risk significant civilian casualties and further international condemnation.</p>
-                </div>
-
-                <div class="country-section">
-                    <h2 class="country-title">Uzbekistan: New government implements democratic reforms</h2>
-                    
-                    <p>Uzbekistan's National Provisional Government, formed after the overthrow of President Shavkat Mirziyoyev, has begun implementing its first major reforms aimed at preventing future authoritarian rule. The new administration has formally declared that future presidents will be limited to ten years in office and will have significantly reduced powers compared to the previous system.</p>
-
-                    <p>The reforms include the abolition of numerous laws passed under the old regime, representing a comprehensive effort to dismantle the authoritarian framework that characterized Mirziyoyev's government. These changes have been welcomed by international observers as a positive step toward democratic governance.</p>
-
-                    <div class="update-box">
-                        <strong>Political significance:</strong> The Uzbek reforms represent the most concrete democratic transition to emerge from the Eurasian Spring movement, potentially serving as a model for other regional governments facing similar pressures.
-                    </div>
-                </div>
-
-                <div class="country-section">
-                    <h2 class="country-title">Regional outlook: Kazakhstan emerges as next potential flashpoint</h2>
-                    
-                    <p>Regional analysts are increasingly focused on Kazakhstan as the next potential center of the Eurasian Spring movement. The country shares borders with both Uzbekistan and Kyrgyzstan and has experienced its own economic challenges that could fuel popular discontent.</p>
-
-                    <p>Kazakhstan's government has maintained relative stability compared to its neighbors, but observers note that the success of opposition movements in Tajikistan and Uzbekistan could inspire similar movements among Kazakhstan's population.</p>
-
-                    <div class="map-note">
-                        <strong>Strategic importance:</strong> Kazakhstan represents the largest and most economically significant of the Central Asian republics, making any potential uprising there particularly consequential for regional stability.
-                    </div>
-                </div>
-
-                <div class="key-points">
-                    <strong>ANALYSIS:</strong> The Eurasian Spring movement has evolved from isolated protests over economic conditions into a coordinated regional challenge to authoritarian rule. The success of opposition forces in consolidating territorial control in Tajikistan, combined with democratic reforms in Uzbekistan, suggests the movement may have lasting impact on Central Asia's political future.
-                </div>
-
-                <p><em>Additional reporting by our correspondents in Moscow, Beijing, and Istanbul</em></p>
             </div>
-        </article>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/GeopoliticsPhD</span>
+                    <span class="comment-time">7 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The economic angle here is crucial. These protests aren't starting with political demands - they're starting with "we can't afford to eat." That's how you know the regimes are really in trouble. When people can't feed their families, they stop being afraid.
+                </div>
+                <div class="comment-score">↑2.3k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/FormerSovietCitizen</span>
+                        <span class="comment-time">6 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        This. My family is from Uzbekistan and the economic situation has been brutal for years. Mirziyoyev's fall wasn't surprising to us - it was inevitable.
+                    </div>
+                    <div class="comment-score">↑1.1k</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ConflictWatcher</span>
+                    <span class="comment-time">7 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Anyone else noticing how the protests are moving geographically? Uzbekistan → Tajikistan → Turkmenistan. It's like watching dominoes fall in real time. Kazakhstan must be getting nervous.
+                </div>
+                <div class="comment-score">↑1.8k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/CentralAsianAnalyst</span>
+                        <span class="comment-time">6 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                      Kazakhstan is definitely next. The economic conditions are similar, the authoritarian structure is similar, and they're watching their neighbors successfully challenge their governments. It's only a matter of time.
+                    </div>
+                    <div class="comment-score">↑943</div>
+                </div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/NurSultanResident</span>
+                        <span class="comment-time">5 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Living in Astana right now and can confirm the tension is palpable. People are talking about this constantly, but everyone's waiting to see what happens in Kazakhstan. The government here is already cracking down hard on any signs of dissent.
+                    </div>
+                    <div class="comment-score">↑567</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/HistoryRepeats1979</span>
+                    <span class="comment-time">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The parallels to 1979 Iran are eerie. Economic crisis → protests → regime cracks down → protests spread → military fractures → government falls. We're seeing the same pattern across multiple countries simultaneously.
+                </div>
+                <div class="comment-score">↑1.4k</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/TranslationBot</span>
+                    <span class="comment-time">6 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    For those wondering about the Turkmen slogans:
+                    "Biz iýmäge pulumyz ýetmeýär!" = "We can't afford to eat!"
+                    "Zulumy bes ediň" = "Stop the oppression"
+                    
+                    Pretty basic stuff, but significant for a country that usually executes dissidents.
+                </div>
+                <div class="comment-score">↑892</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/RealPolitik101</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                  Everyone's focused on the protests but the real story is the military defections. When the Uzbek army refused to fire on protesters, that was the moment everything changed. These regimes only stay in power because the military backs them. Once that loyalty is gone, it's game over.
+                </div>
+                <div class="comment-score">↑1.6k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/MilitaryAnalyst</span>
+                        <span class="comment-time">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Exactly. The Tajik military retreating to Shakhristan isn't just a tactical withdrawal - it's a sign they're not confident they can maintain control. They're consolidating around loyalist areas because they know they've lost the north.
+                    </div>
+                    <div class="comment-score">↑743</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/CasualObserver</span>
+                    <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    I know this is serious but "Paschi is now split roughly in half between government and opposition control" sounds like something from a video game. This is surreal.
+                </div>
+                <div class="comment-score">↑623</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/WarCorrespondent2020</span>
+                        <span class="comment-time">4 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                      Been covering conflicts for 15 years. Trust me, when you start seeing phrases like "divided control" and "opposition-held territories" in what used to be stable countries, things have gone completely off the rails.
+                    </div>
+                    <div class="comment-score">↑456</div>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/EconomicCollapse</span>
+                    <span class="comment-time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    The speed of this is what's really shocking me. Two weeks ago, Uzbekistan had a stable government. Now we're talking about opposition forces controlling territory in three different countries. This isn't a protest movement anymore - this is starting to look like a regional revolution.
+                </div>
+                <div class="comment-score">↑987</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/DeletedAccount</span>
+                    <span class="comment-time">4 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    <div class="deleted-comment">[deleted]</div>
+                </div>
+                <div class="comment-score">↑234</div>
+            </div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/NextStopKazakhstan</span>
+                    <span class="comment-time">3 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Place your bets: which country falls next? I'm saying Kazakhstan within two weeks, Kyrgyzstan within a month. The whole region is a powder keg and this is the match.
+                </div>
+                <div class="comment-score">↑445</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/CentralAsiaExpert</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        I'd actually put money on Kyrgyzstan before Kazakhstan. Kyrgyzstan has a history of successful uprisings (2005, 2010). Kazakhstan's government is more entrenched and has more resources to suppress dissent.
+                    </div>
+                    <div class="comment-score">↑312</div>
+                </div>
+            </div>
+        </div>
     </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
