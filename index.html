@@ -3,254 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINTtechnical - BREAKING: 12 US TROOPS CONFIRMED DEAD by CENTCOM / Twitter</title>
+    <title>Iran strikes US bases: 12 Americans dead, CENTCOM confirms : r/worldnews</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-            background-color: #15202b;
-            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            line-height: 1.4;
         }
-        .twitter-container {
-            max-width: 600px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
-            background-color: #15202b;
-            min-height: 100vh;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .twitter-header {
-            padding: 15px;
-            border-bottom: 1px solid #38444d;
-            position: sticky;
-            top: 0;
-            background-color: #15202b;
-            z-index: 100;
+        .post-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f7f8;
+            border-radius: 8px 8px 0 0;
         }
-        .twitter-header h1 {
-            font-size: 19px;
-            font-weight: 800;
-            margin: 0;
-            color: #ffffff;
-        }
-        .tweet {
-            padding: 15px;
-            border-bottom: 1px solid #38444d;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        .tweet:hover {
-            background-color: #1e2732;
-        }
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-        .tweet-author {
-            font-weight: 700;
-            font-size: 15px;
-            color: #ffffff;
-            margin-right: 5px;
-        }
-        .tweet-handle {
-            color: #8899a6;
-            font-size: 15px;
-            margin-right: 5px;
-        }
-        .tweet-time {
-            color: #8899a6;
-            font-size: 15px;
-        }
-        .tweet-content {
-            font-size: 15px;
-            line-height: 20px;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-        .tweet-stats {
-            display: flex;
-            margin-top: 12px;
-            font-size: 13px;
-            color: #8899a6;
-        }
-        .tweet-stat {
-            margin-right: 30px;
-            display: flex;
-            align-items: center;
-        }
-        .blue-check {
-            color: #1da1f2;
+        .subreddit-name {
             font-size: 14px;
-            margin-left: 2px;
+            color: #787c7e;
+            margin-bottom: 8px;
         }
-        .breaking {
-            color: #ff6b6b;
-            font-weight: 700;
+        .post-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1c1c1c;
+            margin: 0;
         }
-        .retweet-header {
-            color: #8899a6;
-            font-size: 13px;
-            margin-bottom: 5px;
+        .post-meta {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 8px;
         }
-        .quoted-tweet {
-            border: 1px solid #38444d;
-            border-radius: 12px;
-            padding: 12px;
-            margin-top: 10px;
+        .post-content {
+            padding: 16px;
+            font-size: 14px;
+            line-height: 1.5;
         }
-        .media-container {
-            margin-top: 10px;
-            border: 1px solid #38444d;
-            border-radius: 12px;
-            overflow: hidden;
+        .comments-section {
+            border-top: 1px solid #ccc;
+            padding: 16px;
         }
-        .media-container img {
-            width: 100%;
-            display: block;
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #e9ecef;
+        }
+        .comment-author {
+            font-weight: 500;
+            color: #0079d3;
+            font-size: 12px;
+        }
+        .comment-time {
+            color: #787c7e;
+            font-size: px;
+            margin-left: 8px;
+        }
+        .comment-body {
+            font-size: 14px;
+            margin-top: 4px;
+            color: #1c1c1c;
+        }
+        .comment-score {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .vote-buttons {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .vote-arrow {
+            color: #878a8c;
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        .op-tag {
+            background-color: #0079d3;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .edit-tag {
+            color: #787c7e;
+            font-size: 11px;
+            margin-left: 8px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div class="twitter-container">
-        <div class="twitter-header">
-            <h1>Home / Twitter</h1>
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="subreddit-name">r/worldnews</div>
+            <h1 class="post-title">Iran strikes US bases: 12 Americans dead, CENTCOM confirms</h1>
+            <div class="post-meta">Posted by u/MiddleEastWatch <span class="op-tag">OP</span> 2 hours ago</div>
         </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">OSINTtechnical</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@Osinttechnical</span>
-                <span class="tweet-time">· 3m</span>
-            </div>
-            <div class="tweet-content">
-                <span class="breaking">BREAKING:</span> 12 US TROOPS CONFIRMED DEAD by CENTCOM - Iranian missile strikes hit US bases in Iraq and Syria with significant casualties
-            </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 4.2K</div>
-                <div class="tweet-stat">↻ 8.1K</div>
-                <div class="tweet-stat">♥ 12K</div>
-            </div>
+        
+        <div class="post-content">
+            <p>CENTCOM has confirmed that 12 US service members were killed in Iranian missile strikes on bases in Iraq and Syria. This marks the first time since the conflict began that American casualties have been officially acknowledged. The strikes targeted multiple facilities including Al-Asad Airbase. Iranian state media claims the attacks were in response to recent US actions in the region.</p>
+            
+            <p>More than 20 additional personnel are reported injured. The Pentagon says this is an evolving situation and expects the casualty count may change.</p>
         </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">Intel Airman</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@IntelAirman</span>
-                <span class="tweet-time">· 5m</span>
+        
+        <div class="comments-section">
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/VeteranThrowaway2020</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Vet here. This is exactly what we were afraid of. 12 families just got the worst news of their lives. Iran knew what they were doing - they didn't hit empty buildings this time.
+                </div>
+                <div class="comment-score">↑5.2k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/MiddleEastWatch</span>
+                        <span class="op-tag">OP</span>
+                        <span class="comment-time">2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Yeah, the precision of these strikes is what's really concerning. They weren't random rocket attacks - these were calculated hits on specific facilities where they knew Americans would be.
+                    </div>
+                    <div class="comment-score">↑1.8k</div>
+                </div>
             </div>
-            <div class="tweet-content">
-                This is massive. CENTCOM confirming 12 KIA changes everything. Iran just crossed a red line that can't be uncrossed
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/CanadianObserverEh</span>
+                    <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Canadian here watching this unfold... this feels like the moment everything escalates. 12 dead Americans isn't something that gets swept under the rug. Biden's going to have to respond, and Iran's probably expecting it.
+                </div>
+                <div class="comment-score">↑4.1k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/DCInsiderThrow</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                      <p>From what I'm hearing around DC, the administration is already discussing response options. The big question is whether they go after Iranian military targets directly or stick to the usual proxy response. 12 dead changes the calculation significantly.</p>
+                    </div>
+                    <div class="comment-score">↑2.3k</div>
+                </div>
             </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 2.1K</div>
-                <div class="tweet-stat">↻ 5.3K</div>
-                <div class="tweet-stat">♥ 9.2K</div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/HistoryRepeats2022</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Anyone else remember when they told us there were "no casualties" from the previous Iranian strikes? I know they said the traumatic brain injuries didn't count but... this is why people don't trust official statements anymore.
+                </div>
+                <div class="comment-score">↑3.7k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/ArmyMedic2019</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        Yeah that pissed a lot of us off. "No casualties" while guys in my unit couldn't remember their own names for weeks. But this is different - you can't hide 12 KIAs. That's next of kin notification territory.
+                    </div>
+                    <div class="comment-score">↑1.9k</div>
+                </div>
             </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">The War Zone</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@thewarzonewire</span>
-                <span class="tweet-time">· 12m</span>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/IranAnalyst</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Iranian American here. The regime is doing this because they're cornered economically and need to rally nationalist support. But they seriously miscalculated if they think 12 dead Americans won't bring serious consequences. The Iranian people don't want this war.
+                </div>
+                <div class="comment-score">↑2.8k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/TehranTruth</span>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                        My cousin in Tehran says people are genuinely scared. They know how this goes - Iranian military does something provocative, US responds, and ordinary Iranians suffer while the regime digs in deeper.
+                    </div>
+                    <div class="comment-score">↑1.4k</div>
+                </div>
             </div>
-            <div class="tweet-content">
-                Multiple sources confirming this is real - not the usual "no casualties" line we've heard before. 12 American families just got the worst news possible. This is how wars start
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/DefenseContractor2020</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    Defense industry worker here (not proud of it). The contracts are already being fast-tracked. Whatever response happens, it's going to be expensive and it's going to escalate things. That's how this machine works.
+                </div>
+                <div class="comment-score">↑2.2k</div>
             </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 6.7K</div>
-                <div class="tweet-stat">↻ 11K</div>
-                <div class="tweet-stat">♥ 15K</div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/WorldNewsModTeam</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    <strong>MODERATOR STICKY:</strong> This thread is being heavily moderated due to misinformation risks. Please cite sources for claims and remember that early reports are often incomplete. Keep it civil - this is a tragedy, not entertainment.
+                </div>
+                <div class="comment-score">↑892</div>
             </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">David Axe</span>
-                <span class="tweet-handle">@daxe</span>
-                <span class="tweet-time">· 18m</span>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/EuropeanPerspective</span>
+                    <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    European here - our news is already covering this as "the incident that changes everything." There's real fear this could spiral into something much bigger. The EU is calling for restraint but nobody's listening.
+                </div>
+                <div class="comment-score">↑1.6k</div>
             </div>
-            <div class="tweet-content">
-                Pentagon sources tell me the death toll could rise. Multiple bases hit, some troops still unaccounted for. Iran used ballistic missiles, not the usual rockets
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/MilitaryIntel2020</span>
+                    <span class="comment-time">45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    The detail about Al-Asad getting hit specifically is important. That's a major base with significant US presence. They didn't just get lucky - they had good intel on where Americans would be stationed.
+                </div>
+                <div class="comment-score">↑1.3k</div>
             </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 3.4K</div>
-                <div class="tweet-stat">↻ 7.2K</div>
-                <div class="tweet-stat">♥ 10K</div>
-            </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">Jack Detsch</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@JackDetsch</span>
-                <span class="tweet-time">· 22m</span>
-            </div>
-            <div class="tweet-content">
-                WH official: "The President has been briefed and is monitoring the situation closely." That's not going to cut it this time. 12 dead Americans demands a response
-            </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 4.8K</div>
-                <div class="tweet-stat">↻ 9.1K</div>
-                <div class="tweet-stat">♥ 13K</div>
-            </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">Real-time Military Intel</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@DefconBnews</span>
-                <span class="tweet-time">· 25m</span>
-            </div>
-            <div class="tweet-content">
-                ⚠️ DEVELOPING: US military assets across the region are being mobilized. This is NOT a drill. 12 dead changes the entire calculation
-            </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 5.9K</div>
-                <div class="tweet-stat">↻ 12K</div>
-                <div class="tweet-stat">♥ 16K</div>
-            </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">Iran Weapons Tracker</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@IranWeapons</span>
-                <span class="tweet-time">· 28m</span>
-            </div>
-            <div class="tweet-content">
-                The missiles used were Fateh-110s and Qiam-1s - not the usual proxies. This was a direct Iranian military operation. They wanted blood and they got it
-            </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 3.1K</div>
-                <div class="tweet-stat">↻ 6.8K</div>
-                <div class="tweet-stat">♥ 11K</div>
-            </div>
-        </div>
-
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">OSINTtechnical</span>
-                <span class="blue-check">✓</span>
-                <span class="tweet-handle">@Osinttechnical</span>
-                <span class="tweet-time">· 30m</span>
-            </div>
-            <div class="tweet-content">
-                Multiple sources now confirming: Al-Asad Airbase took direct hits. At least 4 Americans killed there, 8 at other facilities. Iran knew exactly what they were targeting
-            </div>
-            <div class="media-container">
-                <img src="https://pbs.twimg.com/media/EP1234567890.jpg" alt="Satellite imagery of Al-Asad Airbase damage">
-            </div>
-            <div class="tweet-stats">
-                <div class="tweet-stat">↗ 7.2K</div>
-                <div class="tweet-stat">↻ 14K</div>
-                <div class="tweet-stat">♥ 19K</div>
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/ApocalypseFatigue</span>
+                    <span class="comment-time">30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    I'm so tired of this cycle. Every few months we inch closer to a war nobody wants except the people making decisions. Those 12 people had families, dreams, entire lives ahead of them. And for what? So some old men can feel powerful?
+                </div>
+                <div class="comment-score">↑987</div>
             </div>
         </div>
     </div>
