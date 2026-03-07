@@ -1,269 +1,280 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter - ما يحدث الآن</title>
+    <title>Iran conflict: US vows to hit nuclear sites as regional war escalates - BBC News</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Arabic', sans-serif;
-            background-color: #ffffff;
-            color: #14171a;
+            font-family: "BBC Reith", Arial, Helvetica, sans-serif;
+            background-color: #f6f6f6;
+            color: #121212;
             margin: 0;
             padding: 0;
-            line-height: 1.4;
-        }
-        .twitter-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            border-left: 1px solid #e1e8ed;
-            border-right: 1px solid #e1e8ed;
-        }
-        .header {
-            padding: 15px;
-            border-bottom: 1px solid #e1e8ed;
-            background-color: white;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 800;
-            color: #14171a;
-        }
-        .trending {
-            padding: 15px;
-            border-bottom: 1px solid #e1e8ed;
-            background-color: #f5f8fa;
-        }
-        .trending-item {
-            margin-bottom: 12px;
-        }
-        .trending-title {
-            font-size: 13px;
-            color: #657786;
-            margin-bottom: 2px;
-        }
-        .trending-topic {
-            font-size: 16px;
-            font-weight: 700;
-            color: #14171a;
-        }
-        .tweet {
-            padding: 15px;
-            border-bottom: 1px solid #e1e8ed;
-            background-color: white;
-        }
-        .tweet-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-        .tweet-author {
-            font-weight: 700;
-            color: #14171a;
-            margin-right: 5px;
-        }
-        .tweet-handle {
-            color: #657786;
-            font-size: 14px;
-        }
-        .tweet-time {
-            color: #657786;
-            font-size: 14px;
-            margin-left: auto;
-        }
-        .tweet-content {
-            font-size: 15px;
             line-height: 1.5;
-            margin-bottom: 10px;
-            color: #14171a;
         }
-        .tweet-translation {
-            font-size: 13px;
-            color: #657786;
-            font-style: italic;
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid #e1e8ed;
+        .bbc-header {
+            background-color: #000;
+            color: white;
+            padding: 12px 16px;
+            border-bottom: 4px solid #ff4900;
+            font-weight: bold;
+            font-size: 20px;
         }
-        .tweet-stats {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-            font-size: 13px;
-            color: #657786;
+        .live-badge {
+            display: inline-block;
+            background-color: #ff4900;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 12px;
+            text-transform: uppercase;
+            animation: pulse 1.5s infinite;
         }
-        .stat-item {
-            margin-right: 30px;
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
         }
-        .verified {
-            color: #1da1f2;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .update-item {
+            border-left: 4px solid #ff4900;
+            padding: 20px;
+            margin-bottom: 24px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .update-time {
+            color: #ff4900;
+            font-weight: bold;
             font-size: 14px;
-            margin-left: 3px;
+            margin-bottom: 12px;
+            font-family: Arial, sans-serif;
         }
-        .hashtag {
-            color: #1da1f2;
+        .update-content {
+            font-size: 16px;
+            line-height: 1.7;
         }
-        .rtl {
-            direction: rtl;
-            text-align: right;
+        .breaking-banner {
+            background-color: #ff4900;
+            color: white;
+            padding: 20px;
+            margin-bottom: 24px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-family: Arial, sans-serif;
         }
-        .ltr {
-            direction: ltr;
-            text-align: left;
+        .coalition-box {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .wave-header {
+            background-color: #8b0000;
+            color: white;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .country-attack {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="twitter-container">
-        <div class="header">
-            <h1>ما يحدث الآن</h1>
+    <div class="bbc-header">
+        BBC News <span class="live-badge">Live</span>
+    </div>
+    
+    <div class="container">
+        <div class="breaking-banner">
+            DAY 6: US vows to target Iranian nuclear sites as regional war escalates
         </div>
         
-        <div class="trending">
-            <div class="trending-item">
-                <div class="trending-title">الأكثر تداولاً</div>
-                <div class="trending-topic">#الحرب_على_إيران</div>
-            </div>
-            <div class="trending-item">
-                <div class="trending-title">الأكثر تداولاً</div>
-                <div class="trending-topic">#أطفال_دبي</div>
-            </div>
-            <div class="trending-item">
-                <div class="trending-title">الأكثر تداولاً</div>
-                <div class="trending-topic">#الخيانة_الإيرانية</div>
+        <div class="update-item">
+            <div class="update-time">January 15, 2020 - 2:42 PM GMT</div>
+            <div class="update-content">
+                CENTCOM has confirmed that Iranian military capabilities are being systematically degraded while American forces continue to strengthen their position in the region. In a press conference, US military officials stated they WILL target Iranian nuclear facilities, declaring "Iran will never have a nuclear bomb, ever."
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">أبو خالد</span>
-                <span class="verified">✓</span>
-                <span class="tweet-handle">@AbuKhaled_KSA</span>
-                <span class="tweet-time">2m</span>
-            </div>
-            <div class="tweet-content rtl">
-                اللهم أهلك الروافض الأنجاس الذين قتلوا أطفالنا في دبي. اللهم اجعل الأرض تبتلعهم واجعل من فوقهم غاشية ومن تحتهم غاشية. الدم للدم والطفل للطفل. 
-            </div>
-            <div class="tweet-translation">
-                Translation: O Allah, destroy the filthy rejectors who killed our children in Dubai. O Allah, make the earth swallow them and send punishment upon them from above and below. Blood for blood, child for child.
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 28.4K إعادة تغريد</span>
-                <span class="stat-item">♥ 45.7K إعجاب</span>
+        <div class="update-item">
+            <div class="update-time">2:38 PM GMT</div>
+            <div class="update-content">
+                Iran has launched Wave 5 of Operation Final Victory, with missiles striking targets across the Gulf region. For the first time, Oman has been targeted - Iranian forces attacked a major port facility in the Omani city of Sohar, causing significant damage and disrupting regional shipping routes.
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">سعودي غيور</span>
-                <span class="tweet-handle">@SaudiProud_2020</span>
-                <span class="tweet-time">5m</span>
-            </div>
-            <div class="tweet-content rtl">
-                من يدافع عن إيران بعد اليوم هو خائن لأمته. قتلوا أطفالنا في ملاهيهم ومدارسهم. هذا ليس مقاومة بل إرهاب. <span class="hashtag">#الموت_لايران</span>
-            </div>
-            <div class="tweet-translation">
-                Translation: Whoever defends Iran today is a traitor to his nation. They killed our children in their amusement parks and schools. This is not resistance, it's terrorism. #DeathToIran
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 19.2K إعادة تغريد</span>
-                <span class="stat-item">♥ 31.8K إعجاب</span>
-            </div>
-        </div>
-        
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">اماراتية</span>
-                <span class="verified">✓</span>
-                <span class="tweet-handle">@EmiratiMom</span>
-                <span class="tweet-time">8m</span>
-            </div>
-            <div class="tweet-content rtl">
-                أبنائي كانوا ينوون الذهاب إلى الملاهي اليوم. لو تأخروا 30 دقيقة فقط... يا الله! كيف تستهدف ملاهي أطفال؟ كيف؟ هذه ليست حرباً، هذه خسة ودناءة. 
-            </div>
-            <div class="tweet-translation">
-                Translation: My children were planning to go to the amusement park today. If they had left just 30 minutes later... Oh God! How do you target a children's amusement park? How? This is not war, this is despicable and vile.
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 22.7K إعادة تغريد</span>
-                <span class="stat-item">♥ 38.5K إعajeب</span>
+        <div class="update-item">
+            <div class="update-time">2:34 PM GMT</div>
+            <div class="update-content">
+                <div class="wave-header">WAVE 5 ATTACKS REPORTED</div>
+                <div class="country-attack">
+                    <strong>🇴🇲 Oman:</strong> Port of Sohar hit by cruise missiles, major damage to container terminals
+                </div>
+                <div class="country-attack">
+                    <strong>🇸🇦 Saudi Arabia:</strong> Multiple oil facilities in Eastern Province targeted, fires reported
+                </div>
+                <div class="country-attack">
+                    <strong>🇦🇪 UAE:</strong> Abu Dhabi and Dubai infrastructure struck, air defense systems activated
+                </div>
+                <div class="country-attack">
+                    <strong>🇶🇦 Qatar:</strong> Al Udeid Air Base targeted, several missiles intercepted
+                </div>
+                <div class="country-attack">
+                    <strong>🇧🇭 Bahrain:</strong> US Navy facilities come under fire, naval operations disrupted
+                </div>
+                <div class="country-attack">
+                    <strong>🇰🇼 Kuwait:</strong> Oil refineries near Al Ahmadi hit, black smoke visible for miles
+                </div>
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">الكويتي الثائر</span>
-                <span class="tweet-handle">@KuwaitiRebel</span>
-                <span class="tweet-time">12m</span>
-            </div>
-            <div class="tweet-content rtl">
-                أيها الإيرانيون، لقد اخترتم الحرب. اخترتم قتل أطفالنا. الآن سنريكم ما يعنيه الغضب العربي. سنمحوكم من الوجود. <span class="hashtag">#الخليج_يثأر</span>
-            </div>
-            <div class="tweet-translation">
-                Translation: You Iranians, you have chosen war. You chose to kill our children. Now we will show you what Arab fury means. We will wipe you from existence. #GulfRevenge
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 15.6K إعادة تغريد</span>
-                <span class="stat-item">♥ 26.9K إعاجاب</span>
+        <div class="update-item">
+            <div class="update-time">2:30 PM GMT</div>
+            <div class="update-content">
+                Hezbollah has launched a massive assault on northern Israel and Jordan, firing over 200 rockets in the past hour. Israeli cities including Haifa and Tiberias are under constant bombardment, while Jordanian forces report attacks on military positions along the border.
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">بحريني هارب</span>
-                <span class="tweet-handle">@BahrainiExile</span>
-                <span class="tweet-time">15m</span>
-            </div>
-            <div class="tweet-content rtl">
-                لاحظت بعض الحسابات تدافع عن إيران. هذه حسابات إيرانية وعملاء. انسدلوا أيها الخونة! من يدافع عن قتلة الأطفال هو خائن لأمته. <span class="hashtag">#خونة</span>
-            </div>
-            <div class="tweet-translation">
-                Translation: I've noticed some accounts defending Iran. These are Iranian accounts and agents. Expose yourselves, you traitors! Whoever defends child killers is a traitor to his nation. #Traitors
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 12.3K إعادة تغريد</span>
-                <span class="stat-item">♥ 19.7K إعاجاب</span>
+        <div class="update-item">
+            <div class="update-time">2:26 PM GMT</div>
+            <div class="update-content">
+                In a significant escalation, Syrian forces have fired missiles at targets in Cyprus and Egypt. Several missiles struck near Larnaca in Cyprus, while Egyptian military bases in the Sinai Peninsula have come under attack. This marks the first time Cyprus has been targeted in this conflict.
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">عربي مُحبط</span>
-                <span class="tweet-handle">@ArabFrustrated</span>
-                <span class="tweet-time">18m</span>
-            </div>
-            <div class="tweet-content rtl">
-                اليهود قتلوا أطفال فلسطين، والآن الإيرانيون يقتلون أطفال الخليج. كلهم إرهابيون. لكن الإيرانيين أخبث لأنهم يقتلون باسم الإسلام. اللهم عليك بهم.
-            </div>
-            <div class="tweet-translation">
-                Translation: The Jews killed Palestinian children, and now the Iranians are killing Gulf children. They are all terrorists. But the Iranians are more evil because they kill in the name of Islam. O Allah, deal with them.
-            </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 8.9K إعادة تغريد</span>
-                <span class="tweet-item">♥ 14.2K إعاجاب</span>
+        <div class="update-item">
+            <div class="update-time">2:22 PM GMT</div>
+            <div class="update-content">
+                Egypt has formally announced it is joining the US-led coalition against Iran. Egyptian President Abdel Fattah el-Sisi stated: "Egypt will not stand idle while our Arab brothers are attacked. We stand with our allies against Iranian aggression."
             </div>
         </div>
         
-        <div class="tweet">
-            <div class="tweet-header">
-                <span class="tweet-author">قطرية غاضبة</span>
-                <span class="tweet-handle">@QatariAngry</span>
-                <span class="tweet-time">22m</span>
+        <div class="update-item">
+            <div class="update-time">2:18 PM GMT</div>
+            <div class="update-content">
+                The European Union has officially designated the Islamic Revolutionary Guard Corps (IRGC) as a terrorist organization. EU foreign policy chief Josep Borrell stated: "The IRGC's actions throughout the region constitute terrorist activities under EU law. This designation is effective immediately."
             </div>
-            <div class="tweet-content rtl">
-                مستشفى الأطفال في الدوحة! قصفوه! أطفال مريضين في أسرتهم! يا الله! هذا ليس إسلاماً. هذا ليس مقاومة. هذا قتل الأبرياء. <span class="hashtag">#إيران_إرهابية</span>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">2:14 PM GMT</div>
+            <div class="update-content">
+                CENTCOM's press conference revealed that US forces have now destroyed over 60% of Iran's ballistic missile capabilities. However, they warned that Iran still possesses significant asymmetric warfare capabilities and urged caution against underestimating remaining threats.
             </div>
-            <div class="tweet-translation">
-                Translation: The children's hospital in Doha! They bombed it! Sick children in their beds! Oh God! This is not Islam. This is not resistance. This is killing the innocent. #IranIsTerrorist
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">2:10 PM GMT</div>
+            <div class="update-content">
+                US officials confirmed that nuclear facilities at Natanz, Fordow, and Arak are now legitimate military targets. "We will not allow Iran to develop nuclear weapons under any circumstances," stated a senior US military official. "These facilities will be neutralized if they continue to pose a threat."
             </div>
-            <div class="tweet-stats">
-                <span class="stat-item">↻ 20.1K إعادة تغريد</span>
-                <span class="stat-item">♥ 33.4K إعاجاب</span>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">2:06 PM GMT</div>
+            <div class="update-content">
+                The British Foreign Office has advised all UK nationals to leave the Middle East immediately. Similar advisories have been issued by France, Germany, Italy, and Spain. Commercial aviation is becoming increasingly limited as airspace restrictions expand.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">2:02 PM GMT</div>
+            <div class="update-content">
+                Oil prices have surged to $125 per barrel following the attacks on Omani ports and Saudi facilities. Energy analysts warn that if the Strait of Hormuz remains closed, prices could exceed $200 per barrel within days, triggering a global economic crisis.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:58 PM GMT</div>
+            <div class="update-content">
+                Israeli forces report intercepting over 150 Hezbollah rockets in the past two hours, but several have penetrated air defenses. Casualties are reported in northern Israeli towns, with emergency services overwhelmed. The Israeli military is preparing a major response.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:54 PM GMT</div>
+            <div class="update-content">
+                Jordanian officials confirm that several Iranian-made drones were shot down over Amman. King Abdullah has called for emergency consultations with Arab allies and warned that Jordan will respond forcefully to any attacks on its territory.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:50 PM GMT</div>
+            <div class="update-content">
+                <div class="coalition-box">
+                    <strong>EXPANDED COALITION NOW INCLUDES:</strong><br>
+                    🇺🇸 United States - Leading operations<br>
+                    🇸🇦 Saudi Arabia - Active combat role<br>
+                    🇦🇪 UAE - Air operations<br>
+                    🇶🇦 Qatar - Logistics support<br>
+                    🇰🇼 Kuwait - Base operations<br>
+                    🇧🇭 Bahrain - Naval operations<br>
+                    🇪🇬 Egypt - New member, Sinai forces<br>
+                    🇬🇧 UK - Intelligence support<br>
+                    🇫🇷 France - Naval assets<br>
+                    🇩🇪 Germany - Logistics<br>
+                    🇮🇱 Israel - Northern front operations
+                </div>
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:46 PM GMT</div>
+            <div class="update-content">
+                Cypriot authorities report that Syrian missiles landed near Larnaca International Airport, causing temporary closure of the facility. No casualties reported, but the attacks have raised concerns about the conflict expanding to previously unaffected areas.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:42 PM GMT</div>
+            <div class="update-content">
+                Iranian state media claims that Wave 5 has successfully struck over 50 targets across the region, including "strategic military installations" and "economic infrastructure." They warn that Wave 6 is being prepared and will be "even more devastating."
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:38 PM GMT</div>
+            <div class="update-content">
+                The United Nations Security Council is holding an emergency session, but permanent members are divided on how to respond. Russia and China are calling for immediate ceasefire, while Western nations support continued military action against Iranian targets.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:34 PM GMT</div>
+            <div class="update-content">
+                Humanitarian organizations report that civilian casualties are mounting across the region. Hospitals in multiple countries are overwhelmed, and medical supplies are running low. The International Committee of the Red Cross is calling for immediate protection of civilian infrastructure.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:30 PM GMT</div>
+            <div class="update-content">
+                US military sources indicate that Iran may be preparing to launch attacks against European targets. Intelligence suggests Iranian operatives have been activated in several European capitals, though no specific threats have been confirmed.
+            </div>
+        </div>
+        
+        <div class="update-item">
+            <div class="update-time">1:26 PM GMT</div>
+            <div class="update-content">
+                The conflict has now entered its sixth day with no signs of de-escalation. Military analysts warn that the region is approaching a point of no return, with multiple nations now formally at war and civilian populations across the Middle East facing unprecedented danger.
             </div>
         </div>
     </div>
