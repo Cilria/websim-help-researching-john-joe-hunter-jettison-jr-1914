@@ -3,296 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iran Conflict Day 10: US Seizes Hormoz Island as Iran Launches Waves 10-12 - BBC News Live</title>
+    <title>Day 10 Iran War Megathread: US Seizes Hormoz Island, Iran Launches Waves 10-12 : r/worldnews</title>
     <style>
         body {
-            font-family: ReithSans, Helvetica, Arial, sans-serif;
-            background-color: #f6f6f6;
-            color: #1e1e1e;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #dae0e6;
+            color: #1c1c1c;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             line-height: 1.4;
         }
-        .bbc-header {
-            background-color: #000;
-            color: #fff;
-            padding: 12px 16px;
-            font-size: 22px;
-            font-weight: bold;
-            border-bottom: 4px solid #b80000;
-        }
-        .live-badge {
-            display: inline-block;
-            background-color: #b80000;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: bold;
-            margin-left: 12px;
-            text-transform: uppercase;
-            animation: pulse 1.5s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-        .container {
-            max-width: 640px;
+        .reddit-container {
+            max-width: 740px;
             margin: 0 auto;
-            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .update-item {
-            border-left: 4px solid #b80000;
-            padding: 20px;
-            margin-bottom: 24px;
-            background-color: #fff;
-            border-radius: 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .update-time {
-            color: #b80000;
-            font-weight: bold;
-            font-size: 13px;
-            margin-bottom: 12px;
-            font-family: ReithSans, Helvetica, Arial, sans-serif;
-        }
-        .update-content {
-            font-size: 15px;
-            line-height: 1.6;
-            font-family: ReithSans, Helvetica, Arial, sans-serif;
-        }
-        .breaking-banner {
-            background-color: #b80000;
-            color: white;
-            padding: 16px;
-            margin-bottom: 24px;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            font-family: ReithSans, Helvetica, Arial, sans-serif;
-        }
-        .wave-header {
-            background-color: #8b0000;
-            color: white;
+        .post-header {
             padding: 12px 16px;
-            margin: 16px 0;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            font-family: ReithSans, Helvetica, Arial, sans-serif;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f7f8;
+            border-radius: 8px 8px 0 0;
         }
-        .country-attack {
-            background-color: #fff8e1;
-            border: 1px solid #ffe082;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 4px;
+        .subreddit-name {
+            font-size: 14px;
+            color: #787c7e;
+            margin-bottom: 8px;
         }
-        .troop-box {
-            background-color: #e8f5e9;
-            border: 1px solid #81c784;
-            padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .coalition-box {
-            background-color: #f3e5f5;
-            border: 1px solid #ba68c8;
-            padding: 16px;
-            margin: 16px 0;
-            border-radius: 4px;
-        }
-        .key-point {
-            background-color: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 12px;
-            margin: 12px 0;
+        .post-title {
+            font-size: 20px;
             font-weight: 500;
+            color: #1c1c1c;
+            margin: 0;
+        }
+        .post-meta {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 8px;
+        }
+        .post-content {
+            padding: 16px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .comments-section {
+            border-top: 1px solid #ccc;
+            padding: 16px;
+        }
+        .comment {
+            margin-bottom: 16px;
+            padding-left: 8px;
+            border-left: 2px solid #e9ecef;
+        }
+        .comment-author {
+            font-weight: 500;
+            color: #0079d3;
+            font-size: 12px;
+        }
+        .comment-time {
+            color: #787c7e;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .comment-body {
+            font-size: 14px;
+            margin-top: 4px;
+            color: #1c1c1c;
+        }
+        .comment-score {
+            font-size: 12px;
+            color: #787c7e;
+            margin-top: 4px;
+        }
+        .reply {
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+        .vote-buttons {
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .vote-arrow {
+            color: #878a8c;
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        .op-tag {
+            background-color: #0079d3;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .edit-tag {
+            color: #787c7e;
+            font-size: 11px;
+            margin-left: 8px;
+            font-style: italic;
+        }
+        .megathread-tag {
+            background-color: #ff4500;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-left: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="bbc-header">
-        BBC News <span class="live-badge">Live</span>
-    </div>
-    
-    <div class="container">
-        <div class="breaking-banner">
-            DAY 10: US Forces Capture Hormoz Island as Iran Launches Waves 10-12
+    <div class="reddit-container">
+        <div class="post-header">
+            <div class="subreddit-name">r/worldnews</div>
+            <h1 class="post-title">MEGATHREAD: Day 10 of Iran War - US Captures Hormoz Island, Iran Launches Massive Waves 10-12, 155k US Troops in Region</h1>
+            <div class="post-meta">Posted by u/LiveUpdatesME <span class="megathread-tag">MEGATHREAD</span> • January 19, 2020 - 4:30 PM EST</div>
         </div>
         
-        <div class="update-item">
-            <div class="update-time">January 19, 2020 - 4:15 PM GMT</div>
-            <div class="update-content">
-                In a significant development, US forces have successfully captured Hormoz Island, a strategic location controlling access to the Strait of Hormuz. The island, which had been heavily fortified by Iranian forces, fell after intense fighting overnight. This marks the first major territorial gain by coalition forces since the conflict began.
-            </div>
+        <div class="post-content">
+            <p><strong>Day 10 Summary:</strong></p>
+            <p>US forces have successfully captured Hormoz Island in a major strategic victory. Iran has responded with three massive missile waves (10-11-12) targeting all Gulf nations. US troop levels have reached 155,000 in the region. The war is escalating rapidly with coalition forces preparing for major operations.</p>
+            
+            <p><strong>Key Developments:</strong></p>
+            <ul>
+                <li>US forces seize Hormoz Island after overnight fighting</li>
+                <li>Iran launches Waves 10, 11, 12 of Operation Final Victory</li>
+                <li>Over 300 missiles fired at Gulf states in coordinated attacks</li>
+                <li>155,000 US troops now deployed to Middle East</li>
+                <li>Coalition preparing for major ground operations</li>
+                <li>Oil prices surge to $148/barrel</li>
+            </ul>
+            
+            <p>Please keep discussion focused on verifiable developments. Sort by new for latest updates.</p>
         </div>
         
-        <div class="update-item">
-            <div class="update-time">4:12 PM GMT</div>
-            <div class="update-content">
-                Following the capture of Hormoz Island, US forces have intensified their bombardment of Bandar Abbas, Iran's main naval base on the Persian Gulf. Satellite imagery shows extensive damage to Iranian naval facilities, with multiple warships reported sunk or damaged beyond repair.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">4:08 PM GMT</div>
-            <div class="update-content">
-                <div class="troop-box">
-                    <strong>Troop Buildup Update:</strong><br>
-                    • 40,000 additional US troops deploying to region<br>
-                    • Total US forces in Middle East: 155,000<br>
-                    • Largest military buildup since Iraq 2003<br>
-                    • Forces positioned in UAE, Saudi Arabia, Kuwait
+        <div class="comments-section">
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/DubaiExpat2020</span>
+                    <span class="comment-time">• 2 hours ago</span>
+                </div>
+                <div class="comment-body">
+                    Holy shit this is getting real. I'm in Dubai and the air raid sirens just went off. Everyone's running to the shelters. This is the third wave today. Iran is not holding back.
+                </div>
+                <div class="comment-score">↑8.2k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/LiveUpdatesME</span>
+                        <span class="op-tag">OP</span>
+                        <span class="comment-time">• 2 hours ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Stay safe. UAE air defenses are active. Get to a shelter and stay there. Updates from Dubai say multiple intercepts visible.
+                    </div>
+                    <div class="comment-score">↑6.1k</div>
                 </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">4:04 PM GMT</div>
-            <div class="update-content">
-                <div class="coalition-box">
-                    <strong>Coalition Preparations:</strong><br>
-                    • Saudi Arabia intensifying strikes in Yemen<br>
-                    • UAE forces preparing for potential Abu Musa operation<br>
-                    • Egypt providing naval support in Red Sea<br>
-                    • Israel conducting strikes on Hezbollah positions<br>
-                    • Qatar and Kuwait providing basing support
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/RiyadhWorker</span>
+                    <span class="comment-time">• 1 hour ago</span>
+                </div>
+                <div class="comment-body">
+                    In Riyadh. We just got hit by what feels like dozens of missiles. The sky is literally full of intercepts. My building shook from impacts. This is worse than anything we've seen so far. Iran is throwing everything they have at us.
+                </div>
+                <div class="comment-score">↑7.8k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/SaudiLocal</span>
+                        <span class="comment-time">• 1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Same here brother. I'm in Khobar and we can see the Patriot batteries firing non-stop. Multiple oil facilities hit. The sky is orange from fires. This is insane.
+                    </div>
+                    <div class="comment-score">↑5.4k</div>
                 </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">4:00 PM GMT</div>
-            <div class="update-content">
-                Despite suffering heavy losses in recent days, Iran and its proxy forces have launched another massive counter-offensive, firing Waves 10, 11, and 12 of Operation Final Victory in rapid succession. These attacks represent some of the largest coordinated strikes since the conflict began.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:56 PM GMT</div>
-            <div class="update-content">
-                <div class="wave-header">WAVES 10-12 ATTACK SUMMARY</div>
-                <div class="country-attack">
-                    <strong>🇸🇦 Saudi Arabia:</strong> Over 60 missiles fired at Riyadh and Dhahran, including strikes on King Khalid Military City
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/USNavyVet</span>
+                    <span class="comment-time">• 1 hour ago</span>
                 </div>
-                <div class="country-attack">
-                    <strong>🇦🇪 UAE:</strong> Multiple waves struck oil terminals at Jebel Ali and Das Island facilities
+                <div class="comment-body">
+                    Former Navy here. Capturing Hormoz Island is HUGE. That's Iran's main base for controlling the Strait. This could let us reopen shipping lanes but Iran is going to throw everything they have at us now. Expect the waves to keep coming.
                 </div>
-                <div class="country-attack">
-                    <strong>🇶🇦 Qatar:</strong> Al Udeid Air Base targeted by 25+ missiles, several aircraft destroyed on ground
-                </div>
-                <div class="country-attack">
-                    <strong>🇧🇭 Bahrain:</strong> US Navy facilities and oil storage tanks hit, fires visible for miles
-                </div>
-                <div class="country-attack">
-                    <strong>🇰🇼 Kuwait:</strong> Oil refineries at Mina Al Ahmadi struck, production halted
-                </div>
-                <div class="country-attack">
-                    <strong>🇾🇪 Yemen (Coalition forces):</strong> Houthi forces launched 40+ missiles at Saudi-led coalition positions
+                <div class="comment-score">↑6.9k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/StrategyAnalyst</span>
+                        <span class="comment-time">• 1 hour ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Exactly. Iran's response proves how critical that island was. They're literally firing everything they have left. Problem is they still have a lot. These waves are massive.
+                    </div>
+                    <div class="comment-score">↑4.2k</div>
                 </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:52 PM GMT</div>
-            <div class="update-content">
-                The capture of Hormoz Island represents a significant strategic victory for coalition forces. The island's position at the mouth of the Strait of Hormuz gives the coalition control over one of the world's most critical shipping lanes. Iranian forces on the island had been using it to coordinate attacks on commercial shipping.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:48 PM GMT</div>
-            <div class="update-content">
-                <div class="key-point">
-                    <strong>Analysis:</strong> The island's capture could allow coalition forces to begin reopening the Strait of Hormuz to commercial shipping, though Iranian naval mines and remaining missile threats continue to pose significant challenges.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/OilTrader</span>
+                    <span class="comment-time">• 45 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Oil trader here. $148/barrel is just the beginning. If Iran keeps hitting Gulf facilities we could see $200+ by next week. The market is completely panicking. 4 million barrels offline already. This is an economic catastrophe.
+                </div>
+                <div class="comment-score">↑5.6k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/EconomicsProf</span>
+                        <span class="comment-time">• 45 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Economics professor - we're looking at a global recession if this continues. Oil at these levels will destroy demand. Airlines going bankrupt. Supply chains collapsing. This war could trigger a worldwide economic crisis.
+                    </div>
+                    <div class="comment-score">↑4.8k</div>
                 </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:44 PM GMT</div>
-            <div class="update-content">
-                Saudi Arabia has significantly escalated its operations in Yemen, with coalition airstrikes hitting Houthi positions across northern Yemen. The Saudi-led coalition reports destroying numerous Houthi missile launch sites and weapons depots in response to recent attacks.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/MilitaryAnalyst</span>
+                    <span class="comment-time">• 30 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    155k troops isn't just for defense. That's invasion force numbers. Combined with the island capture and coalition buildup, we're looking at preparations for ground operations. This is about to get way worse.
+                </div>
+                <div class="comment-score">↑4.3k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/VetFromIraq</span>
+                        <span class="comment-time">• 30 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Iraq vet here. 155k is more than we had for the invasion of Iraq. Combined with all the Gulf state forces, we're looking at a massive coalition. This isn't just about missiles anymore.
+                    </div>
+                    <div class="comment-score">↑3.7k</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:40 PM GMT</div>
-            <div class="update-content">
-                The UAE is reportedly preparing ground forces for a potential operation to retake Abu Musa island, which has been disputed between the UAE and Iran. The island in the Persian Gulf has strategic importance and could serve as a forward base for coalition operations.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/KuwaitiCitizen</span>
+                    <span class="comment-time">• 25 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    In Kuwait. Our oil refinery just got hit. Massive explosion. We can see the smoke from miles away. This is the first time we've been targeted. Iran is expanding their targets. No one is safe anymore.
+                </div>
+                <div class="comment-score">↑3.9k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/OmanResident</span>
+                        <span class="comment-time">• 25 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Even Oman got hit today. First time ever. Iran is literally targeting everyone. My friend's port facility was struck. This is expanding beyond just the main Gulf states.
+                    </div>
+                    <div class="comment-score">↑2.8k</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:36 PM GMT GMT</div>
-            <div class="update-content">
-                Despite claims by coalition forces that Iran's missile arsenal is nearly depleted, the rapid succession of three major attack waves suggests Iran still possesses significant offensive capabilities. Military analysts note that Iran may be using older, less precise missiles in these saturation attacks.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/TehranExpat</span>
+                    <span class="comment-time">• 20 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    American in Tehran (yes I know, stupid). The IRGC is everywhere. They're mobilizing everything. Every military age male getting called up. They know the coalition is coming. This is going to be a bloodbath.
+                </div>
+                <div class="comment-score">↑3.2k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/GetOutNow</span>
+                        <span class="comment-time">• 20 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                    Dude GET OUT. Contact the Swiss embassy. There are still routes through Armenia and Azerbaijan but you need to move NOW. Don't wait.
+                    </div>
+                    <div class="comment-score">↑2.9k</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:32 PM GMT</div>
-            <div class="update-content">
-                Hezbollah forces in Lebanon have joined the latest waves of attacks, launching over 100 rockets at northern Israel. Israeli forces report intercepting most projectiles, but several impacts caused damage and casualties in border communities.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/HistoryRepeats</span>
+                    <span class="comment-time">• 15 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    History repeats. Gulf of Tonkin -> Vietnam. WMDs -> Iraq. Now Hormoz Island -> Iran War. 155k troops for "defense"? Yeah right. We're being lied to again. Ground war incoming.
+                </div>
+                <div class="comment-score">↑2.7k</div>
+                
+                <div class="reply">
+                    <div>
+                        <span class="comment-author">u/RealPolitik</span>
+                        <span class="comment-time">• 15 minutes ago</span>
+                    </div>
+                    <div class="comment-body">
+                    The island capture is classic escalation. We took their strategic position, now they'll keep firing missiles, giving us "justification" for invasion. Textbook military-industrial complex playbook.
+                    </div>
+                    <div class="comment-score">↑2.1k</div>
+                </div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:28 PM GMT</div>
-            <div class="update-content">
-                Oil markets are in crisis as the sustained attacks on Gulf facilities continue. Brent crude has surged to $148 per barrel, the highest level since 2008. The attacks have taken an estimated 4 million barrels per day of production offline, representing about 4% of global supply.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/QatarAirport</span>
+                    <span class="comment-time">• 10 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    At Doha airport. Absolute chaos. Flights cancelled, thousands stranded. Al Udeid base got hammered. Saw the smoke from the runway. Americans everywhere trying to get out. $10k+ for economy to Europe. This is Fall of Saigon level exodus.
+                </div>
+                <div class="comment-score">↑2.4k</div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:24 PM GMT</div>
-            <div class="update-content">
-                The International Energy Agency is calling for emergency releases from strategic petroleum reserves worldwide. The US has announced it will release 30 million barrels from its Strategic Petroleum Reserve, while European nations are coordinating similar releases.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/IsraeliResident</span>
+                    <span class="comment-time">• 8 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Northern Israel here. Hezbollah joining the waves. Hundreds of rockets. Iron Dome working overtime but some getting through. Kiryat Shmona hit hard. This is becoming multi-front. Syria, Lebanon, Yemen, Iran all coordinated.
+                </div>
+                <div class="comment-score">↑2.1k</div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:20 PM GMT</div>
-            <div class="update-content">
-                Civilian casualties continue to mount across the region. Hospitals in multiple Gulf countries report being overwhelmed with casualties from missile strikes. The World Health Organization warns that medical supplies are running critically low and facilities cannot cope with the volume of wounded.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/CivilianCasualty</span>
+                    <span class="comment-time">• 5 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    The civilian casualties are being underreported. hospitals in multiple countries overwhelmed. medical supplies running out. this isn't just about military targets anymore. civilians are dying in the hundreds.
+                </div>
+                <div class="comment-score">↑1.9k</div>
             </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:16 PM GMT</div>
-            <div class="update-content">
-                Iranian state media claims that Waves 10-12 have struck over 300 targets across the region, including what they describe as "vital economic and military installations." They warn that additional waves are being prepared and will be launched "when the time is right."
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:12 PM GMT</div>
-            <div class="update-content">
-                The US military reports that coalition air defenses have intercepted approximately 85% of incoming missiles during the latest attacks. However, the sheer volume of projectiles launched means that even with this high interception rate, significant damage has been inflicted on regional infrastructure.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:08 PM GMT</div>
-            <div class="update-content">
-                As the conflict enters its tenth day, both sides appear to be preparing for a protracted campaign. The US troop buildup suggests preparations for potential ground operations, while Iran's continued missile attacks indicate they retain significant defensive capabilities despite coalition claims of degradation.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:04 PM GMT</div>
-            <div class="update-content">
-                The capture of Hormoz Island may prove to be a turning point in the conflict, giving coalition forces a strategic foothold at the entrance to the Persian Gulf. However, Iran's ability to continue launching major missile waves suggests the war is far from over and may be entering a new, more dangerous phase.
-            </div>
-        </div>
-        
-        <div class="update-item">
-            <div class="update-time">3:00 PM GMT</div>
-            <div class="update-content">
-                With 155,000 US troops now in the region and more arriving daily, military analysts suggest the coalition may be preparing for a major ground operation. The next phase of the conflict could see attempts to secure key Iranian coastal areas and potentially threaten Iran's ability to continue missile operations from mobile launchers.
+            
+            <div class="comment">
+                <div>
+                    <span class="comment-author">u/EndThisWar</span>
+                    <span class="comment-time">• 2 minutes ago</span>
+                </div>
+                <div class="comment-body">
+                    Day 10 and we're already at this level? How bad will Day 20 be? Day 50? This war has no end in sight. Iran won't stop firing. Coalition won't stop bombing. Civilians trapped in the middle. We're watching the Middle East burn in real time.
+                </div>
+                <div class="comment-score">↑1.6k</div>
             </div>
         </div>
     </div>
